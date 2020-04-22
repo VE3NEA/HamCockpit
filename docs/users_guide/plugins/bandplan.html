@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Band Plan Plugin | Ham Cockpit </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Band Plan Plugin | Ham Cockpit ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/HamCockpit.svg" alt="">
+                <font size="+3"><b>&nbsp;Ham Cockpit&nbsp;&nbsp;&nbsp;</b></font>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="band-plan-plugin">Band Plan Plugin</h1>
+
+<h2 id="purpose">Purpose</h2>
+<p>This is a non-visual plugin that works behind the scenes and provides the band plan data
+to other plugins. In particular, the
+<a href="frequency_display.html">Frequency Display</a>
+plugin receives information from this plugin
+when it needs to switch to the next or previous band, and the
+<a href="waterfall.html">Waterfall Display</a>
+plugin uses band plan information to paint the band map.</p>
+<h2 id="settings">Settings</h2>
+<ul>
+<li><p><strong>Mode Colors</strong></p>
+<p>Background colors for different Ham modes. Click on the ellipses button [...]
+to open the collection editor:</p>
+</li>
+</ul>
+<p><img src="../../images/ModeColors.png" alt="Mode Colors"></p>
+<p>Add or remove the entries on the left panel, and set the mode name and color on the right panel.
+Click on the <em>OK</em> button to save the changes.</p>
+<h2 id="band-plan-files">Band Plan Files</h2>
+<p>Band Plan information is stored in the
+<a href="https://www.w3schools.com/whatis/whatis_json.asp">JSON</a> files located in this folder:</p>
+<p><code>C:\ProgramData\Afreet\HamCockpit\VE3NEA\BandPlans</code></p>
+<p>The users may create their own band plan files with a text editor
+and switch between them using a drop-down list on the Toolbar</p>
+<p><img src="../../images/BandPlanBtn.png" alt="Band Plan Button"></p>
+<p>It is recommended to have at least two band plans, one for the regular operation and another
+for contesting, since frequency allocation by mode changes significantly during the contests.</p>
+<h2 id="band-plan-file-format">Band Plan File Format</h2>
+<p>The band plan file contains a list of band segments. Each segment has these parameters:</p>
+<ul>
+<li><p><em>Band</em> - the band name, preferably as defined in the
+<a href="http://www.adif.org">ADIF</a> format.</p>
+</li>
+<li><p><em>StartFrequency</em>, <em>EndFrequency</em> - the boundaries of the band, in Hertz.</p>
+</li>
+<li><p><em>DefaultFrequency</em> - when changing the bands, the radio will be initially tuned to this frequency.
+Assumed to be equal to <em>StartFrequency</em> if not specified.</p>
+</li>
+<li><p><em>PrimaryMode</em> - the main mode in the given frequency segment. Used, in particular, to infer the mode
+of a cluster spot from its frequency.</p>
+</li>
+<li><p><em>ValidModes</em> - all modes allowed in the segment. Used, in particular, by the skimmer plugins
+to determine where to decode a particular mode. If not specified, assumed to include only the primary mode.</p>
+</li>
+<li><p><em>MainSegment</em> - On some bands, there is more than one segment used for a particular mode. For example,
+the 14074-14078 kHz and 14095-14099 kHz segments are used for FT8 on the 20m band. One of these segments
+must be marked as main.</p>
+</li>
+<li><p><em>Remark</em> - optional text that will be appended to the segment label when information about the segment
+is displayed. For example,
+<em>&quot;F/H&quot;</em> is a remark in the  14095-14099 kHz segment because this segment is used for the Fox-and-Hound style QSO.
+The mouse tooltip on the band map is a combination of the band, mode and remark: <em>&quot;20M FT8 (F/H)&quot;</em></p>
+</li>
+</ul>
+<p>Here is an example of segment definition:</p>
+<pre><code class="lang-JSON">{
+  &quot;Band&quot;: &quot;40M&quot;,
+  &quot;StartFrequency&quot;: 7000000,
+  &quot;EndFrequency&quot;: 7025000,
+  &quot;PrimaryMode&quot;: &quot;CW&quot;,
+  &quot;ValidModes&quot;: [&quot;CW&quot;,&quot;RTTY&quot;],
+  &quot;MainSegment&quot;: true,
+  &quot;Remark&quot;: &quot;Only Extra class in the USA&quot;
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1902 @@
+{
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "Ham Cockpit Plugin API Reference | Ham Cockpit",
+    "keywords": "Ham Cockpit Plugin API Reference Currently contains mostly the stub pages. Real documentation is coming soon."
+  },
+  "api/VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.html",
+    "title": "Enum AudclntErrorCodes | Ham Cockpit",
+    "keywords": "Enum AudclntErrorCodes Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public enum AudclntErrorCodes Fields Name Description AUDCLNT_E_ALREADY_INITIALIZED AUDCLNT_E_BUFDURATION_PERIOD_NOT_EQUAL AUDCLNT_E_BUFFER_ERROR AUDCLNT_E_BUFFER_OPERATION_PENDING AUDCLNT_E_BUFFER_SIZE_ERROR AUDCLNT_E_BUFFER_SIZE_NOT_ALIGNED AUDCLNT_E_BUFFER_TOO_LARGE AUDCLNT_E_CPUUSAGE_EXCEEDED AUDCLNT_E_DEVICE_IN_USE AUDCLNT_E_DEVICE_INVALIDATED AUDCLNT_E_ENDPOINT_CREATE_FAILED AUDCLNT_E_EVENTHANDLE_NOT_EXPECTED AUDCLNT_E_EVENTHANDLE_NOT_SET AUDCLNT_E_EXCLUSIVE_MODE_NOT_ALLOWED AUDCLNT_E_EXCLUSIVE_MODE_ONLY AUDCLNT_E_INCORRECT_BUFFER_SIZE AUDCLNT_E_INVALID_SIZE AUDCLNT_E_NO_SINGLE_PROCESS AUDCLNT_E_NOT_INITIALIZED AUDCLNT_E_NOT_STOPPED AUDCLNT_E_OUT_OF_ORDER AUDCLNT_E_SERVICE_NOT_RUNNING AUDCLNT_E_THREAD_NOT_REGISTERED AUDCLNT_E_UNSUPPORTED_FORMAT AUDCLNT_E_WRONG_ENDPOINT_TYPE"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.AudioClientErrors.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.AudioClientErrors.html",
+    "title": "Class AudioClientErrors | Ham Cockpit",
+    "keywords": "Class AudioClientErrors Inheritance Object AudioClientErrors Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class AudioClientErrors Methods Name Description Message(Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.AudioClientErrors.Message.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.AudioClientErrors.Message.html",
+    "title": "Method Message | Ham Cockpit",
+    "keywords": "Method Message Message(Int32) Declaration public static string Message(int errorCode) Parameters Type Name Description Int32 errorCode Returns Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.-ctor.html",
+    "title": "Constructor BaseFft | Ham Cockpit",
+    "keywords": "Constructor BaseFft BaseFft(Int32) Declaration public BaseFft(int size) Parameters Type Name Description Int32 size"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.FreqData.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.FreqData.html",
+    "title": "Field FreqData | Ham Cockpit",
+    "keywords": "Field FreqData Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public Complex32[] FreqData Returns Type Description MathNet.Numerics.Complex32 []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.html",
+    "title": "Class BaseFft | Ham Cockpit",
+    "keywords": "Class BaseFft Inheritance Object BaseFft ComplexFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class BaseFft : IDisposable Constructors Name Description BaseFft(Int32) Fields Name Description FreqData IPP_FFT_NODIV_BY_ANY LnToDb order specBuffer workBuf Methods Name Description Dispose() LogPowerSpectrum(Single[]) PowerSpectrum(Single[])"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.IPP_FFT_NODIV_BY_ANY.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.IPP_FFT_NODIV_BY_ANY.html",
+    "title": "Field IPP_FFT_NODIV_BY_ANY | Ham Cockpit",
+    "keywords": "Field IPP_FFT_NODIV_BY_ANY Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax protected const int IPP_FFT_NODIV_BY_ANY = 8 Returns Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.LnToDb.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.LnToDb.html",
+    "title": "Field LnToDb | Ham Cockpit",
+    "keywords": "Field LnToDb Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax protected static readonly float LnToDb Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.LogPowerSpectrum.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.LogPowerSpectrum.html",
+    "title": "Method LogPowerSpectrum | Ham Cockpit",
+    "keywords": "Method LogPowerSpectrum LogPowerSpectrum(Single[]) Declaration public float[] LogPowerSpectrum(float[] power = null) Parameters Type Name Description Single [] power Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.order.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.order.html",
+    "title": "Field order | Ham Cockpit",
+    "keywords": "Field order Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax protected readonly int order Returns Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum.html",
+    "title": "Method PowerSpectrum | Ham Cockpit",
+    "keywords": "Method PowerSpectrum PowerSpectrum(Single[]) Declaration public float[] PowerSpectrum(float[] power = null) Parameters Type Name Description Single [] power Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.specBuffer.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.specBuffer.html",
+    "title": "Field specBuffer | Ham Cockpit",
+    "keywords": "Field specBuffer Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax protected byte *specBuffer Returns Type Description Byte *"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.workBuf.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.workBuf.html",
+    "title": "Field workBuf | Ham Cockpit",
+    "keywords": "Field workBuf Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax protected byte[] workBuf Returns Type Description Byte []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.-ctor.html",
+    "title": "Constructor BaseSlidingFilter | Ham Cockpit",
+    "keywords": "Constructor BaseSlidingFilter BaseSlidingFilter(Int32) Declaration public BaseSlidingFilter(int length) Parameters Type Name Description Int32 length"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.FilterArrayInplace.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.FilterArrayInplace.html",
+    "title": "Method FilterArrayInplace | Ham Cockpit",
+    "keywords": "Method FilterArrayInplace FilterArrayInplace(Single[]) Declaration public void FilterArrayInplace(float[] data) Parameters Type Name Description Single [] data"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.html",
+    "title": "Class BaseSlidingFilter | Ham Cockpit",
+    "keywords": "Class BaseSlidingFilter Inheritance Object BaseSlidingFilter SlidingMax SlidingMin Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public abstract class BaseSlidingFilter Constructors Name Description BaseSlidingFilter(Int32) Methods Name Description FilterArrayInplace(Single[]) MinOrMax(Single, Single) Process(Single)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.MinOrMax.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.MinOrMax.html",
+    "title": "Method MinOrMax | Ham Cockpit",
+    "keywords": "Method MinOrMax MinOrMax(Single, Single) Declaration protected abstract float MinOrMax(float x, float y) Parameters Type Name Description Single x Single y Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.Process.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.Process.html",
+    "title": "Method Process | Ham Cockpit",
+    "keywords": "Method Process Process(Single) Declaration public float Process(float value) Parameters Type Name Description Single value Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.-ctor.html",
+    "title": "Constructor ChannelSelector | Ham Cockpit",
+    "keywords": "Constructor ChannelSelector ChannelSelector(ISampleSource, ChannelMask) Creates a new instance of the ChannelSelector class from an existing sample source. Declaration public ChannelSelector(ISampleSource source, ChannelMask channel) Parameters Type Name Description CSCore.ISampleSource source The sample source. CSCore.ChannelMask channel The channel to select. Exceptions Type Condition ArgumentNullException source is null ArgumentException The source is not stereo or Wrong channel."
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose(Boolean) Disposes allocated resources. Declaration protected override void Dispose(bool disposing) Parameters Type Name Description Boolean disposing True to release both managed and unmanaged resources; false to release only unmanaged resources. Overrides CSCore.SampleAggregatorBase.Dispose(System.Boolean)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.html",
+    "title": "Class ChannelSelector | Ham Cockpit",
+    "keywords": "Class ChannelSelector Selects one of the channels from a stereo data source. Inheritance Object CSCore.SampleAggregatorBase ChannelSelector Implements CSCore.ISampleAggregator CSCore.ISampleSource CSCore.IAggregator < Single , CSCore.ISampleSource > CSCore.IReadableAudioSource < Single > CSCore.IAudioSource IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ChannelSelector : SampleAggregatorBase, ISampleAggregator, ISampleSource, IAggregator<float, ISampleSource>, IReadableAudioSource<float>, IAudioSource, IDisposable Constructors Name Description ChannelSelector(ISampleSource, ChannelMask) Creates a new instance of the ChannelSelector class from an existing sample source. Properties Name Description Length Position WaveFormat Methods Name Description Dispose(Boolean) Disposes allocated resources. Read(Single[], Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Length.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Length.html",
+    "title": "Property Length | Ham Cockpit",
+    "keywords": "Property Length Length Declaration public override long Length { get; } Property Value Type Description Int64 Overrides CSCore.SampleAggregatorBase.Length"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Position.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Position.html",
+    "title": "Property Position | Ham Cockpit",
+    "keywords": "Property Position Position Declaration public override long Position { get; set; } Property Value Type Description Int64 Overrides CSCore.SampleAggregatorBase.Position"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration public override int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Overrides CSCore.SampleAggregatorBase.Read(System.Single[], System.Int32, System.Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.WaveFormat.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.WaveFormat.html",
+    "title": "Property WaveFormat | Ham Cockpit",
+    "keywords": "Property WaveFormat WaveFormat Declaration public override WaveFormat WaveFormat { get; } Property Value Type Description CSCore.WaveFormat Overrides CSCore.SampleAggregatorBase.WaveFormat"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeForward.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeForward.html",
+    "title": "Method ComputeForward | Ham Cockpit",
+    "keywords": "Method ComputeForward ComputeForward() Declaration public void ComputeForward()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeInverse.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeInverse.html",
+    "title": "Method ComputeInverse | Ham Cockpit",
+    "keywords": "Method ComputeInverse ComputeInverse() Declaration public void ComputeInverse()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFft.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.-ctor.html",
+    "title": "Constructor ComplexFft | Ham Cockpit",
+    "keywords": "Constructor ComplexFft ComplexFft(Int32) Declaration public ComplexFft(int size) Parameters Type Name Description Int32 size"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFft.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.html",
+    "title": "Class ComplexFft | Ham Cockpit",
+    "keywords": "Class ComplexFft Inheritance Object BaseFft ComplexFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFft : BaseFft, IDisposable Constructors Name Description ComplexFft(Int32) Fields Name Description TimeData Methods Name Description ComputeForward() ComputeInverse() SlicePower(Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower.html",
+    "title": "Method SlicePower | Ham Cockpit",
+    "keywords": "Method SlicePower SlicePower(Int32, Int32) Declaration public float[] SlicePower(int start, int length) Parameters Type Name Description Int32 start Int32 length Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData.html",
+    "title": "Field TimeData | Ham Cockpit",
+    "keywords": "Field TimeData Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly Complex32[] TimeData Returns Type Description MathNet.Numerics.Complex32 []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.-ctor.html",
+    "title": "Constructor ComplexFirFilter | Ham Cockpit",
+    "keywords": "Constructor ComplexFirFilter ComplexFirFilter(Complex32[], IppAlgType) Declaration public ComplexFirFilter(Complex32[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description MathNet.Numerics.Complex32 [] taps IppAlgType algType"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Format.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Format.html",
+    "title": "Property Format | Ham Cockpit",
+    "keywords": "Property Format Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.html",
+    "title": "Class ComplexFirFilter | Ham Cockpit",
+    "keywords": "Class ComplexFirFilter Inheritance Object ComplexFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description ComplexFirFilter(Complex32[], IppAlgType) Properties Name Description Format Taps Methods Name Description Dispose() Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Initialize.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Initialize.html",
+    "title": "Method Initialize | Ham Cockpit",
+    "keywords": "Method Initialize Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.SamplesAvailable.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.SamplesAvailable.html",
+    "title": "Event SamplesAvailable | Ham Cockpit",
+    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Taps.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Taps.html",
+    "title": "Property Taps | Ham Cockpit",
+    "keywords": "Property Taps Taps Declaration public Complex32[] Taps { get; set; } Property Value Type Description MathNet.Numerics.Complex32 []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.ApproximateRatio.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ApproximateRatio.html",
+    "title": "Method ApproximateRatio | Ham Cockpit",
+    "keywords": "Method ApproximateRatio ApproximateRatio(Double, Double) Declaration public static (int L, int M) ApproximateRatio(double ratio, double maxError) Parameters Type Name Description Double ratio Double maxError Returns Type Description ValueTuple < Int32 , Int32 >"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.ArrayToString.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ArrayToString.html",
+    "title": "Method ArrayToString | Ham Cockpit",
+    "keywords": "Method ArrayToString ArrayToString(Single[]) Declaration public static string ArrayToString(float[] array) Parameters Type Name Description Single [] array Returns Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanHarrisWindow.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanHarrisWindow.html",
+    "title": "Method BlackmanHarrisWindow | Ham Cockpit",
+    "keywords": "Method BlackmanHarrisWindow BlackmanHarrisWindow(Int32) Declaration public static float[] BlackmanHarrisWindow(int length) Parameters Type Name Description Int32 length Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanSincKernel.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanSincKernel.html",
+    "title": "Method BlackmanSincKernel | Ham Cockpit",
+    "keywords": "Method BlackmanSincKernel BlackmanSincKernel(Single, Int32) Declaration public static float[] BlackmanSincKernel(float Fc, int length) Parameters Type Name Description Single Fc Int32 length Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanWindow.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanWindow.html",
+    "title": "Method BlackmanWindow | Ham Cockpit",
+    "keywords": "Method BlackmanWindow BlackmanWindow(Int32) Declaration public static float[] BlackmanWindow(int length) Parameters Type Name Description Int32 length Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.ComplexToStrided.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ComplexToStrided.html",
+    "title": "Method ComplexToStrided | Ham Cockpit",
+    "keywords": "Method ComplexToStrided ComplexToStrided(Complex32[], Int32, Single[], Int32, Int32, Int32) Declaration public static void ComplexToStrided(Complex32[] source, int srcOffset, float[] destination, int dstOffset, int dstStride, int complexCount) Parameters Type Name Description MathNet.Numerics.Complex32 [] source Int32 srcOffset Single [] destination Int32 dstOffset Int32 dstStride Int32 complexCount"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.COMPONENTS_IN_COMPLEX.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.COMPONENTS_IN_COMPLEX.html",
+    "title": "Field COMPONENTS_IN_COMPLEX | Ham Cockpit",
+    "keywords": "Field COMPONENTS_IN_COMPLEX Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public const int COMPONENTS_IN_COMPLEX = 2 Returns Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.FloatToComplex32.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.FloatToComplex32.html",
+    "title": "Method FloatToComplex32 | Ham Cockpit",
+    "keywords": "Method FloatToComplex32 FloatToComplex32(Single[]) Declaration public static Complex32[] FloatToComplex32(float[] array) Parameters Type Name Description Single [] array Returns Type Description MathNet.Numerics.Complex32 []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.FloatToStrided.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.FloatToStrided.html",
+    "title": "Method FloatToStrided | Ham Cockpit",
+    "keywords": "Method FloatToStrided FloatToStrided(Single[], Int32, Single[], Int32, Int32, Int32) Declaration public static void FloatToStrided(float[] source, int srcOffset, float[] destination, int dstOffset, int dstStride, int count) Parameters Type Name Description Single [] source Int32 srcOffset Single [] destination Int32 dstOffset Int32 dstStride Int32 count"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.FromDb.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.FromDb.html",
+    "title": "Method FromDb | Ham Cockpit",
+    "keywords": "Method FromDb FromDb(Single) Declaration public static float FromDb(float x) Parameters Type Name Description Single x Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.FromDb2.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.FromDb2.html",
+    "title": "Method FromDb2 | Ham Cockpit",
+    "keywords": "Method FromDb2 FromDb2(Single) Declaration public static float FromDb2(float x) Parameters Type Name Description Single x Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.html",
+    "title": "Class Dsp | Ham Cockpit",
+    "keywords": "Class Dsp Inheritance Object Dsp Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public static class Dsp Fields Name Description COMPONENTS_IN_COMPLEX Methods Name Description ApproximateRatio(Double, Double) ArrayToString(Single[]) BlackmanHarrisWindow(Int32) BlackmanSincKernel(Single, Int32) BlackmanWindow(Int32) ComplexToStrided(Complex32[], Int32, Single[], Int32, Int32, Int32) FloatToComplex32(Single[]) FloatToStrided(Single[], Int32, Single[], Int32, Int32, Int32) FromDb(Single) FromDb2(Single) Mix(Complex32[], Double, Double) Normalize(Single[]) Sinc(Single, Int32) StridedToComplex(Single[], Int32, Int32, Complex32[], Int32, Int32) StridedToComplex(Single[], Int32, Int32, Single[], Int32, Int32) StridedToFloat(Single[], Int32, Int32, Single[], Int32, Int32) SwapIQ(Single[], Int32, Int32) ToDb(Single) ToDb2(Single)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.Mix.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.Mix.html",
+    "title": "Method Mix | Ham Cockpit",
+    "keywords": "Method Mix Mix(Complex32[], Double, Double) Declaration public static void Mix(Complex32[] data, double frequency, double phase = 0) Parameters Type Name Description MathNet.Numerics.Complex32 [] data Double frequency Double phase"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.Normalize.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.Normalize.html",
+    "title": "Method Normalize | Ham Cockpit",
+    "keywords": "Method Normalize Normalize(Single[]) Declaration public static void Normalize(float[] data) Parameters Type Name Description Single [] data"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.Sinc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.Sinc.html",
+    "title": "Method Sinc | Ham Cockpit",
+    "keywords": "Method Sinc Sinc(Single, Int32) Declaration public static float[] Sinc(float Fc, int length) Parameters Type Name Description Single Fc Int32 length Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.StridedToComplex.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.StridedToComplex.html",
+    "title": "Method StridedToComplex | Ham Cockpit",
+    "keywords": "Method StridedToComplex StridedToComplex(Single[], Int32, Int32, Complex32[], Int32, Int32) Declaration public static void StridedToComplex(float[] source, int srcOffset, int srcStride, Complex32[] destination, int dstOffset, int complexCount) Parameters Type Name Description Single [] source Int32 srcOffset Int32 srcStride MathNet.Numerics.Complex32 [] destination Int32 dstOffset Int32 complexCount StridedToComplex(Single[], Int32, Int32, Single[], Int32, Int32) Declaration public static void StridedToComplex(float[] source, int srcOffset, int srcStride, float[] destination, int dstOffset, int complexCount) Parameters Type Name Description Single [] source Int32 srcOffset Int32 srcStride Single [] destination Int32 dstOffset Int32 complexCount"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.StridedToFloat.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.StridedToFloat.html",
+    "title": "Method StridedToFloat | Ham Cockpit",
+    "keywords": "Method StridedToFloat StridedToFloat(Single[], Int32, Int32, Single[], Int32, Int32) Declaration public static void StridedToFloat(float[] source, int srcOffset, int srcStride, float[] destination, int dstOffset, int count) Parameters Type Name Description Single [] source Int32 srcOffset Int32 srcStride Single [] destination Int32 dstOffset Int32 count"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.SwapIQ.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.SwapIQ.html",
+    "title": "Method SwapIQ | Ham Cockpit",
+    "keywords": "Method SwapIQ SwapIQ(Single[], Int32, Int32) Declaration public static void SwapIQ(float[] buffer, int floatOffset, int complexCount) Parameters Type Name Description Single [] buffer Int32 floatOffset Int32 complexCount"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.ToDb.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ToDb.html",
+    "title": "Method ToDb | Ham Cockpit",
+    "keywords": "Method ToDb ToDb(Single) Declaration public static float ToDb(float x) Parameters Type Name Description Single x Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Dsp.ToDb2.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ToDb2.html",
+    "title": "Method ToDb2 | Ham Cockpit",
+    "keywords": "Method ToDb2 ToDb2(Single) Declaration public static float ToDb2(float x) Parameters Type Name Description Single x Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.html",
+    "title": "Namespace VE3NEA.HamCockpit.DspFun | Ham Cockpit",
+    "keywords": "Namespace VE3NEA.HamCockpit.DspFun Classes AudioClientErrors BaseFft BaseSlidingFilter ChannelSelector Selects one of the channels from a stereo data source. ComplexFft ComplexFirFilter Dsp Ipp IppException IppHelper IppRealFirFilter IppResampler Mixer MovingAverage MultipassAverage OmniRigClient RealFft RealFirFilter Resampler RingBuffer SampleSourceWrapper SidebandFlipper SlidingMax SlidingMin Structs IppsFIRSpec_32f IppsFIRSpec_32fc IppsResamplingPolyphaseFixed_32f Enums AudclntErrorCodes IppAlgType RigStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.html",
+    "title": "Class Ipp | Ham Cockpit",
+    "keywords": "Class Ipp Inheritance Object Ipp Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Ipp Methods Name Description ippsFIRMR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*) ippsFIRMRGetStateSize_32fc(Int32, Int32, Int32, IppDataType, Int32*, Int32*) ippsFIRMRInit_32fc(Complex32*, Int32, Int32, Int32, Int32, Int32, IppsFIRSpec_32fc*) ippsFIRSR_32f(Single*, Single*, Int32, IppsFIRSpec_32f*, Single*, Single*, Byte*) ippsFIRSR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*) ippsFIRSRGetSize(Int32, IppDataType, Int32*, Int32*) ippsFIRSRInit_32f(Single*, Int32, IppAlgType, IppsFIRSpec_32f*) ippsFIRSRInit_32fc(Complex32*, Int32, IppAlgType, IppsFIRSpec_32fc*) ippsFree(Void*) ippsMalloc_32f(Int32) ippsMalloc_32fc(Int32) ippsMalloc_8u(Int32) ippsResamplePolyphaseFixed_32f(Single*, Int32, Single*, Single, Double*, Int32*, IppsResamplingPolyphaseFixed_32f*) ippsResamplePolyphaseFixedGetSize_32f(Int32, Int32, Int32, Int32*, Int32*, Int32*, IppHintAlgorithm) ippsResamplePolyphaseFixedInit_32f(Int32, Int32, Int32, Single, Single, IppsResamplingPolyphaseFixed_32f*, IppHintAlgorithm) ippsTone_32fc(Ipp32fc*, Int32, Single, Single, Single*, IppHintAlgorithm)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc.html",
+    "title": "Method ippsFIRMR_32fc | Ham Cockpit",
+    "keywords": "Method ippsFIRMR_32fc ippsFIRMR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*) Declaration public static IppStatus ippsFIRMR_32fc(Complex32*pSrc, Complex32*pDst, int numIters, IppsFIRSpec_32fc*pSpec, Complex32*pDlySrc, Complex32*pDlyDst, byte *pBuf) Parameters Type Name Description MathNet.Numerics.Complex32 * pSrc MathNet.Numerics.Complex32 * pDst Int32 numIters IppsFIRSpec_32fc * pSpec MathNet.Numerics.Complex32 * pDlySrc MathNet.Numerics.Complex32 * pDlyDst Byte * pBuf Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc.html",
+    "title": "Method ippsFIRMRGetStateSize_32fc | Ham Cockpit",
+    "keywords": "Method ippsFIRMRGetStateSize_32fc ippsFIRMRGetStateSize_32fc(Int32, Int32, Int32, IppDataType, Int32*, Int32*) Declaration public static IppStatus ippsFIRMRGetStateSize_32fc(int tapsLen, int upFactor, int downFactor, IppDataType tapsType, int *pSpecSize, int *pBufSize) Parameters Type Name Description Int32 tapsLen Int32 upFactor Int32 downFactor CSIntel.Ipp.IppDataType tapsType Int32 * pSpecSize Int32 * pBufSize Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc.html",
+    "title": "Method ippsFIRMRInit_32fc | Ham Cockpit",
+    "keywords": "Method ippsFIRMRInit_32fc ippsFIRMRInit_32fc(Complex32*, Int32, Int32, Int32, Int32, Int32, IppsFIRSpec_32fc*) Declaration public static IppStatus ippsFIRMRInit_32fc(Complex32*pTaps, int tapsLen, int upFactor, int upPhase, int downFactor, int downPhase, IppsFIRSpec_32fc*pSpec) Parameters Type Name Description MathNet.Numerics.Complex32 * pTaps Int32 tapsLen Int32 upFactor Int32 upPhase Int32 downFactor Int32 downPhase IppsFIRSpec_32fc * pSpec Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f.html",
+    "title": "Method ippsFIRSR_32f | Ham Cockpit",
+    "keywords": "Method ippsFIRSR_32f ippsFIRSR_32f(Single*, Single*, Int32, IppsFIRSpec_32f*, Single*, Single*, Byte*) Declaration public static IppStatus ippsFIRSR_32f(float *pSrc, float *pDst, int numIters, IppsFIRSpec_32f*pSpec, float *pDlySrc, float *pDlyDst, byte *pBuf) Parameters Type Name Description Single * pSrc Single * pDst Int32 numIters IppsFIRSpec_32f * pSpec Single * pDlySrc Single * pDlyDst Byte * pBuf Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc.html",
+    "title": "Method ippsFIRSR_32fc | Ham Cockpit",
+    "keywords": "Method ippsFIRSR_32fc ippsFIRSR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*) Declaration public static IppStatus ippsFIRSR_32fc(Complex32*pSrc, Complex32*pDst, int numIters, IppsFIRSpec_32fc*pSpec, Complex32*pDlySrc, Complex32*pDlyDst, byte *pBuf) Parameters Type Name Description MathNet.Numerics.Complex32 * pSrc MathNet.Numerics.Complex32 * pDst Int32 numIters IppsFIRSpec_32fc * pSpec MathNet.Numerics.Complex32 * pDlySrc MathNet.Numerics.Complex32 * pDlyDst Byte * pBuf Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize.html",
+    "title": "Method ippsFIRSRGetSize | Ham Cockpit",
+    "keywords": "Method ippsFIRSRGetSize ippsFIRSRGetSize(Int32, IppDataType, Int32*, Int32*) Declaration public static IppStatus ippsFIRSRGetSize(int tapsLen, IppDataType tapsType, int *pSpecSize, int *pBufSize) Parameters Type Name Description Int32 tapsLen CSIntel.Ipp.IppDataType tapsType Int32 * pSpecSize Int32 * pBufSize Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f.html",
+    "title": "Method ippsFIRSRInit_32f | Ham Cockpit",
+    "keywords": "Method ippsFIRSRInit_32f ippsFIRSRInit_32f(Single*, Int32, IppAlgType, IppsFIRSpec_32f*) Declaration public static IppStatus ippsFIRSRInit_32f(float *pTaps, int tapsLen, IppAlgType algType, IppsFIRSpec_32f*pSpec) Parameters Type Name Description Single * pTaps Int32 tapsLen IppAlgType algType IppsFIRSpec_32f * pSpec Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc.html",
+    "title": "Method ippsFIRSRInit_32fc | Ham Cockpit",
+    "keywords": "Method ippsFIRSRInit_32fc ippsFIRSRInit_32fc(Complex32*, Int32, IppAlgType, IppsFIRSpec_32fc*) Declaration public static IppStatus ippsFIRSRInit_32fc(Complex32*pTaps, int tapsLen, IppAlgType algType, IppsFIRSpec_32fc*pSpec) Parameters Type Name Description MathNet.Numerics.Complex32 * pTaps Int32 tapsLen IppAlgType algType IppsFIRSpec_32fc * pSpec Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFree.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFree.html",
+    "title": "Method ippsFree | Ham Cockpit",
+    "keywords": "Method ippsFree ippsFree(Void*) Declaration public static void ippsFree(void *ptr) Parameters Type Name Description Void * ptr"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f.html",
+    "title": "Method ippsMalloc_32f | Ham Cockpit",
+    "keywords": "Method ippsMalloc_32f ippsMalloc_32f(Int32) Declaration public static float *ippsMalloc_32f(int len) Parameters Type Name Description Int32 len Returns Type Description Single *"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc.html",
+    "title": "Method ippsMalloc_32fc | Ham Cockpit",
+    "keywords": "Method ippsMalloc_32fc ippsMalloc_32fc(Int32) Declaration public static Complex32*ippsMalloc_32fc(int len) Parameters Type Name Description Int32 len Returns Type Description MathNet.Numerics.Complex32 *"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u.html",
+    "title": "Method ippsMalloc_8u | Ham Cockpit",
+    "keywords": "Method ippsMalloc_8u ippsMalloc_8u(Int32) Declaration public static byte *ippsMalloc_8u(int len) Parameters Type Name Description Int32 len Returns Type Description Byte *"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f.html",
+    "title": "Method ippsResamplePolyphaseFixed_32f | Ham Cockpit",
+    "keywords": "Method ippsResamplePolyphaseFixed_32f ippsResamplePolyphaseFixed_32f(Single*, Int32, Single*, Single, Double*, Int32*, IppsResamplingPolyphaseFixed_32f*) Declaration public static IppStatus ippsResamplePolyphaseFixed_32f(float *pSrc, int len, float *pDst, float norm, double *pTime, int *pOutlen, IppsResamplingPolyphaseFixed_32f*pSpec) Parameters Type Name Description Single * pSrc Int32 len Single * pDst Single norm Double * pTime Int32 * pOutlen IppsResamplingPolyphaseFixed_32f * pSpec Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f.html",
+    "title": "Method ippsResamplePolyphaseFixedGetSize_32f | Ham Cockpit",
+    "keywords": "Method ippsResamplePolyphaseFixedGetSize_32f ippsResamplePolyphaseFixedGetSize_32f(Int32, Int32, Int32, Int32*, Int32*, Int32*, IppHintAlgorithm) Declaration public static IppStatus ippsResamplePolyphaseFixedGetSize_32f(int inRate, int outRate, int len, int *pSize, int *pLen, int *pHeight, IppHintAlgorithm hint) Parameters Type Name Description Int32 inRate Int32 outRate Int32 len Int32 * pSize Int32 * pLen Int32 * pHeight CSIntel.Ipp.IppHintAlgorithm hint Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f.html",
+    "title": "Method ippsResamplePolyphaseFixedInit_32f | Ham Cockpit",
+    "keywords": "Method ippsResamplePolyphaseFixedInit_32f ippsResamplePolyphaseFixedInit_32f(Int32, Int32, Int32, Single, Single, IppsResamplingPolyphaseFixed_32f*, IppHintAlgorithm) Declaration public static IppStatus ippsResamplePolyphaseFixedInit_32f(int inRate, int outRate, int len, float rollf, float alpha, IppsResamplingPolyphaseFixed_32f*pSpec, IppHintAlgorithm hint) Parameters Type Name Description Int32 inRate Int32 outRate Int32 len Single rollf Single alpha IppsResamplingPolyphaseFixed_32f * pSpec CSIntel.Ipp.IppHintAlgorithm hint Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc.html",
+    "title": "Method ippsTone_32fc | Ham Cockpit",
+    "keywords": "Method ippsTone_32fc ippsTone_32fc(Ipp32fc*, Int32, Single, Single, Single*, IppHintAlgorithm) Declaration public static IppStatus ippsTone_32fc(Ipp32fc*pDst, int len, float magn, float rFreq, float *pPhase, IppHintAlgorithm hint) Parameters Type Name Description CSIntel.Ipp.Ipp32fc * pDst Int32 len Single magn Single rFreq Single * pPhase CSIntel.Ipp.IppHintAlgorithm hint Returns Type Description CSIntel.Ipp.IppStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppAlgType.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppAlgType.html",
+    "title": "Enum IppAlgType | Ham Cockpit",
+    "keywords": "Enum IppAlgType Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public enum IppAlgType Fields Name Description ippAlgAuto ippAlgDirect ippAlgFFT ippAlgMask"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppException.Check.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppException.Check.html",
+    "title": "Method Check | Ham Cockpit",
+    "keywords": "Method Check Check(IppStatus) Declaration public static void Check(IppStatus status) Parameters Type Name Description CSIntel.Ipp.IppStatus status"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppException.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppException.-ctor.html",
+    "title": "Constructor IppException | Ham Cockpit",
+    "keywords": "Constructor IppException IppException(IppStatus) Declaration public IppException(IppStatus status) Parameters Type Name Description CSIntel.Ipp.IppStatus status"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppException.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppException.html",
+    "title": "Class IppException | Ham Cockpit",
+    "keywords": "Class IppException Inheritance Object Exception IppException Implements ISerializable _Exception Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppException : Exception, ISerializable, _Exception Constructors Name Description IppException(IppStatus) Methods Name Description Check(IppStatus)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppHelper.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppHelper.html",
+    "title": "Class IppHelper | Ham Cockpit",
+    "keywords": "Class IppHelper Inheritance Object IppHelper Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppHelper Fields Name Description LnToDb Methods Name Description PowerToLogPower(Single[])"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb.html",
+    "title": "Field LnToDb | Ham Cockpit",
+    "keywords": "Field LnToDb Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax protected static readonly float LnToDb Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower.html",
+    "title": "Method PowerToLogPower | Ham Cockpit",
+    "keywords": "Method PowerToLogPower PowerToLogPower(Single[]) Declaration public static void PowerToLogPower(float[] power) Parameters Type Name Description Single [] power"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.-ctor.html",
+    "title": "Constructor IppRealFirFilter | Ham Cockpit",
+    "keywords": "Constructor IppRealFirFilter IppRealFirFilter(Single[], IppAlgType) Declaration public IppRealFirFilter(float[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description Single [] taps IppAlgType algType"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data.html",
+    "title": "Field Data | Ham Cockpit",
+    "keywords": "Field Data Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public float[] Data Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.html",
+    "title": "Class IppRealFirFilter | Ham Cockpit",
+    "keywords": "Class IppRealFirFilter Inheritance Object IppRealFirFilter Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppRealFirFilter : IDisposable Constructors Name Description IppRealFirFilter(Single[], IppAlgType) Fields Name Description Data Methods Name Description Dispose() Process(Int32) ProcessStrided(Single[], Int32, Int32, Int32) SetTaps(Single[])"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process.html",
+    "title": "Method Process | Ham Cockpit",
+    "keywords": "Method Process Process(Int32) Declaration public void Process(int count) Parameters Type Name Description Int32 count"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided.html",
+    "title": "Method ProcessStrided | Ham Cockpit",
+    "keywords": "Method ProcessStrided ProcessStrided(Single[], Int32, Int32, Int32) Declaration public void ProcessStrided(float[] buffer, int offset, int stride, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 stride Int32 count"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps.html",
+    "title": "Method SetTaps | Ham Cockpit",
+    "keywords": "Method SetTaps SetTaps(Single[]) Declaration public void SetTaps(float[] taps) Parameters Type Name Description Single [] taps"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppResampler.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.-ctor.html",
+    "title": "Constructor IppResampler | Ham Cockpit",
+    "keywords": "Constructor IppResampler IppResampler(Int32, Int32, Int32, Single, Single) Declaration public IppResampler(int inRate, int outRate, int requestedFilterOrder, float filterCutoff, float kaiserAlpha) Parameters Type Name Description Int32 inRate Int32 outRate Int32 requestedFilterOrder Single filterCutoff Single kaiserAlpha"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppResampler.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppResampler.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.html",
+    "title": "Class IppResampler | Ham Cockpit",
+    "keywords": "Class IppResampler Inheritance Object IppResampler Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppResampler : IDisposable Constructors Name Description IppResampler(Int32, Int32, Int32, Single, Single) Fields Name Description OutData Methods Name Description Dispose() Process(Single[], Int32, Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppResampler.OutData.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.OutData.html",
+    "title": "Field OutData | Ham Cockpit",
+    "keywords": "Field OutData Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public float[] OutData Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppResampler.Process.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.Process.html",
+    "title": "Method Process | Ham Cockpit",
+    "keywords": "Method Process Process(Single[], Int32, Int32, Int32) Declaration public int Process(float[] source, int srcOffset, int srcStride, int count) Parameters Type Name Description Single [] source Int32 srcOffset Int32 srcStride Int32 count Returns Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f.html",
+    "title": "Struct IppsFIRSpec_32f | Ham Cockpit",
+    "keywords": "Struct IppsFIRSpec_32f Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public struct IppsFIRSpec_32f"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc.html",
+    "title": "Struct IppsFIRSpec_32fc | Ham Cockpit",
+    "keywords": "Struct IppsFIRSpec_32fc Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public struct IppsFIRSpec_32fc"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f.html",
+    "title": "Struct IppsResamplingPolyphaseFixed_32f | Ham Cockpit",
+    "keywords": "Struct IppsResamplingPolyphaseFixed_32f Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public struct IppsResamplingPolyphaseFixed_32f"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Mixer.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.-ctor.html",
+    "title": "Constructor Mixer | Ham Cockpit",
+    "keywords": "Constructor Mixer Mixer(Int64) Declaration public Mixer(long frequency) Parameters Type Name Description Int64 frequency"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Mixer.Format.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.Format.html",
+    "title": "Property Format | Ham Cockpit",
+    "keywords": "Property Format Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Mixer.Frequency.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.Frequency.html",
+    "title": "Property Frequency | Ham Cockpit",
+    "keywords": "Property Frequency Frequency Declaration public long Frequency { get; set; } Property Value Type Description Int64"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Mixer.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.html",
+    "title": "Class Mixer | Ham Cockpit",
+    "keywords": "Class Mixer Inheritance Object Mixer Implements IIqProcessor IInitSampleStream ISampleStream Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Mixer : IIqProcessor, IInitSampleStream, ISampleStream Constructors Name Description Mixer(Int64) Properties Name Description Format Frequency Methods Name Description Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Mixer.Initialize.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.Initialize.html",
+    "title": "Method Initialize | Ham Cockpit",
+    "keywords": "Method Initialize Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Mixer.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Mixer.SamplesAvailable.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.SamplesAvailable.html",
+    "title": "Event SamplesAvailable | Ham Cockpit",
+    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MovingAverage.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MovingAverage.-ctor.html",
+    "title": "Constructor MovingAverage | Ham Cockpit",
+    "keywords": "Constructor MovingAverage MovingAverage(Int32) Declaration public MovingAverage(int length) Parameters Type Name Description Int32 length"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MovingAverage.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MovingAverage.html",
+    "title": "Class MovingAverage | Ham Cockpit",
+    "keywords": "Class MovingAverage Inheritance Object MovingAverage Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class MovingAverage Constructors Name Description MovingAverage(Int32) Properties Name Description Scale Methods Name Description Process(Single)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MovingAverage.Process.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MovingAverage.Process.html",
+    "title": "Method Process | Ham Cockpit",
+    "keywords": "Method Process Process(Single) Declaration public float Process(float value) Parameters Type Name Description Single value Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MovingAverage.Scale.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MovingAverage.Scale.html",
+    "title": "Property Scale | Ham Cockpit",
+    "keywords": "Property Scale Scale Declaration public float Scale { get; } Property Value Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.-ctor.html",
+    "title": "Constructor MultipassAverage | Ham Cockpit",
+    "keywords": "Constructor MultipassAverage MultipassAverage(Int32, Int32) Declaration public MultipassAverage(int length, int passCount) Parameters Type Name Description Int32 length Int32 passCount"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.html",
+    "title": "Class MultipassAverage | Ham Cockpit",
+    "keywords": "Class MultipassAverage Inheritance Object MultipassAverage Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class MultipassAverage Constructors Name Description MultipassAverage(Int32, Int32) Properties Name Description Scale Methods Name Description Process(Single) ProcessUnscaled(Single)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Process.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Process.html",
+    "title": "Method Process | Ham Cockpit",
+    "keywords": "Method Process Process(Single) Declaration public float Process(float value) Parameters Type Name Description Single value Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.ProcessUnscaled.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.ProcessUnscaled.html",
+    "title": "Method ProcessUnscaled | Ham Cockpit",
+    "keywords": "Method ProcessUnscaled ProcessUnscaled(Single) Declaration public float ProcessUnscaled(float value) Parameters Type Name Description Single value Returns Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Scale.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Scale.html",
+    "title": "Property Scale | Ham Cockpit",
+    "keywords": "Property Scale Scale Declaration public float Scale { get; } Property Value Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Active.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Active.html",
+    "title": "Property Active | Ham Cockpit",
+    "keywords": "Property Active Active Declaration public bool Active { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.GetStatusText.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.GetStatusText.html",
+    "title": "Method GetStatusText | Ham Cockpit",
+    "keywords": "Method GetStatusText GetStatusText() Declaration public string GetStatusText() Returns Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.html",
+    "title": "Class OmniRigClient | Ham Cockpit",
+    "keywords": "Class OmniRigClient Inheritance Object OmniRigClient Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class OmniRigClient Fields Name Description ModeChanged StatusChanged Tuned Properties Name Description Active Mode RigNo RxFrequency Status Methods Name Description GetStatusText() ShowDialog()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Mode.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Mode.html",
+    "title": "Property Mode | Ham Cockpit",
+    "keywords": "Property Mode Mode Declaration public string Mode { get; set; } Property Value Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged.html",
+    "title": "Field ModeChanged | Ham Cockpit",
+    "keywords": "Field ModeChanged Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public EventHandler ModeChanged Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.RigNo.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.RigNo.html",
+    "title": "Property RigNo | Ham Cockpit",
+    "keywords": "Property RigNo RigNo Declaration public int RigNo { get; set; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.RxFrequency.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.RxFrequency.html",
+    "title": "Property RxFrequency | Ham Cockpit",
+    "keywords": "Property RxFrequency RxFrequency Declaration public int RxFrequency { get; set; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ShowDialog.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ShowDialog.html",
+    "title": "Method ShowDialog | Ham Cockpit",
+    "keywords": "Method ShowDialog ShowDialog() Declaration public void ShowDialog()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Status.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Status.html",
+    "title": "Property Status | Ham Cockpit",
+    "keywords": "Property Status Status Declaration public RigStatus Status { get; } Property Value Type Description RigStatus"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged.html",
+    "title": "Field StatusChanged | Ham Cockpit",
+    "keywords": "Field StatusChanged Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public EventHandler StatusChanged Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned.html",
+    "title": "Field Tuned | Ham Cockpit",
+    "keywords": "Field Tuned Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public EventHandler Tuned Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeForward.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeForward.html",
+    "title": "Method ComputeForward | Ham Cockpit",
+    "keywords": "Method ComputeForward ComputeForward() Declaration public void ComputeForward()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeInverse.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeInverse.html",
+    "title": "Method ComputeInverse | Ham Cockpit",
+    "keywords": "Method ComputeInverse ComputeInverse() Declaration public void ComputeInverse()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFft.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.-ctor.html",
+    "title": "Constructor RealFft | Ham Cockpit",
+    "keywords": "Constructor RealFft RealFft(Int32) Declaration public RealFft(int size) Parameters Type Name Description Int32 size"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFft.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.html",
+    "title": "Class RealFft | Ham Cockpit",
+    "keywords": "Class RealFft Inheritance Object BaseFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFft : BaseFft, IDisposable Constructors Name Description RealFft(Int32) Fields Name Description TimeData Methods Name Description ComputeForward() ComputeInverse()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFft.TimeData.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.TimeData.html",
+    "title": "Field TimeData | Ham Cockpit",
+    "keywords": "Field TimeData Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly float[] TimeData Returns Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.-ctor.html",
+    "title": "Constructor RealFirFilter | Ham Cockpit",
+    "keywords": "Constructor RealFirFilter RealFirFilter(Single[], IppAlgType) Declaration public RealFirFilter(float[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description Single [] taps IppAlgType algType"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Format.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Format.html",
+    "title": "Property Format | Ham Cockpit",
+    "keywords": "Property Format Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.html",
+    "title": "Class RealFirFilter | Ham Cockpit",
+    "keywords": "Class RealFirFilter Inheritance Object RealFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description RealFirFilter(Single[], IppAlgType) Properties Name Description Format Taps Methods Name Description Dispose() Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Initialize.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Initialize.html",
+    "title": "Method Initialize | Ham Cockpit",
+    "keywords": "Method Initialize Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.SamplesAvailable.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.SamplesAvailable.html",
+    "title": "Event SamplesAvailable | Ham Cockpit",
+    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Taps.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Taps.html",
+    "title": "Property Taps | Ham Cockpit",
+    "keywords": "Property Taps Taps Declaration public float[] Taps { get; set; } Property Value Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Resampler.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.-ctor.html",
+    "title": "Constructor Resampler | Ham Cockpit",
+    "keywords": "Constructor Resampler Resampler(Int32) Declaration public Resampler(int outputSamplingRate) Parameters Type Name Description Int32 outputSamplingRate Resampler(Int32, Int32) Declaration public Resampler(int outputSamplingRate, int quality) Parameters Type Name Description Int32 outputSamplingRate Int32 quality"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Resampler.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Resampler.Format.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.Format.html",
+    "title": "Property Format | Ham Cockpit",
+    "keywords": "Property Format Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Resampler.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.html",
+    "title": "Class Resampler | Ham Cockpit",
+    "keywords": "Class Resampler Inheritance Object Resampler Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Resampler : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description Resampler(Int32) Resampler(Int32, Int32) Properties Name Description Format Methods Name Description Dispose() Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Resampler.Initialize.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.Initialize.html",
+    "title": "Method Initialize | Ham Cockpit",
+    "keywords": "Method Initialize Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Resampler.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.Resampler.SamplesAvailable.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.SamplesAvailable.html",
+    "title": "Event SamplesAvailable | Ham Cockpit",
+    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RigStatus.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RigStatus.html",
+    "title": "Enum RigStatus | Ham Cockpit",
+    "keywords": "Enum RigStatus Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public enum RigStatus Fields Name Description Disabled NotConfigured NotInstalled NotResponding Online PortBusy"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Count.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Count.html",
+    "title": "Property Count | Ham Cockpit",
+    "keywords": "Property Count Count Declaration public int Count { get; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.-ctor.html",
+    "title": "Constructor RingBuffer | Ham Cockpit",
+    "keywords": "Constructor RingBuffer RingBuffer(Int32) Declaration public RingBuffer(int capacity) Parameters Type Name Description Int32 capacity"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Dump.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Dump.html",
+    "title": "Method Dump | Ham Cockpit",
+    "keywords": "Method Dump Dump(Int32) Declaration public void Dump(int count) Parameters Type Name Description Int32 count"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.FillWithZeros.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.FillWithZeros.html",
+    "title": "Property FillWithZeros | Ham Cockpit",
+    "keywords": "Property FillWithZeros FillWithZeros Declaration public bool FillWithZeros { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.html",
+    "title": "Class RingBuffer | Ham Cockpit",
+    "keywords": "Class RingBuffer Inheritance Object RingBuffer Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RingBuffer Constructors Name Description RingBuffer(Int32) Properties Name Description Count FillWithZeros Methods Name Description Dump(Int32) Read(Single[], Int32, Int32) Resize(Int32) Write(Single[], Int32, Int32) WriteInt16(Byte[], Int32) WriteStrided(Single[], Int32, Int32, SignalFormat) Events Name Description SamplesAvailable"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Resize.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Resize.html",
+    "title": "Method Resize | Ham Cockpit",
+    "keywords": "Method Resize Resize(Int32) Declaration public void Resize(int capacity) Parameters Type Name Description Int32 capacity"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.SamplesAvailable.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.SamplesAvailable.html",
+    "title": "Event SamplesAvailable | Ham Cockpit",
+    "keywords": "Event SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Write.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Write.html",
+    "title": "Method Write | Ham Cockpit",
+    "keywords": "Method Write Write(Single[], Int32, Int32) Declaration public void Write(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16.html",
+    "title": "Method WriteInt16 | Ham Cockpit",
+    "keywords": "Method WriteInt16 WriteInt16(Byte[], Int32) Declaration public void WriteInt16(byte[] buffer, int byteCount) Parameters Type Name Description Byte [] buffer Int32 byteCount"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteStrided.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteStrided.html",
+    "title": "Method WriteStrided | Ham Cockpit",
+    "keywords": "Method WriteStrided WriteStrided(Single[], Int32, Int32, SignalFormat) Declaration public void WriteStrided(float[] data, int offset, int inFloatCount, SignalFormat format) Parameters Type Name Description Single [] data Int32 offset Int32 inFloatCount SignalFormat format"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.CanSeek.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.CanSeek.html",
+    "title": "Property CanSeek | Ham Cockpit",
+    "keywords": "Property CanSeek CanSeek Declaration public bool CanSeek { get; } Property Value Type Description Boolean Implements CSCore.IAudioSource.CanSeek"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.-ctor.html",
+    "title": "Constructor SampleSourceWrapper | Ham Cockpit",
+    "keywords": "Constructor SampleSourceWrapper SampleSourceWrapper(ISampleStream) Declaration public SampleSourceWrapper(ISampleStream source) Parameters Type Name Description ISampleStream source"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.html",
+    "title": "Class SampleSourceWrapper | Ham Cockpit",
+    "keywords": "Class SampleSourceWrapper Inheritance Object SampleSourceWrapper Implements CSCore.ISampleSource CSCore.IReadableAudioSource < Single > CSCore.IAudioSource IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SampleSourceWrapper : ISampleSource, IReadableAudioSource<float>, IAudioSource, IDisposable Constructors Name Description SampleSourceWrapper(ISampleStream) Properties Name Description CanSeek Length Position WaveFormat Methods Name Description Dispose() Read(Single[], Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Length.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Length.html",
+    "title": "Property Length | Ham Cockpit",
+    "keywords": "Property Length Length Declaration public long Length { get; } Property Value Type Description Int64 Implements CSCore.IAudioSource.Length"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Position.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Position.html",
+    "title": "Property Position | Ham Cockpit",
+    "keywords": "Property Position Position Declaration public long Position { get; set; } Property Value Type Description Int64 Implements CSCore.IAudioSource.Position"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements CSCore.IReadableAudioSource<T>.Read(T[], System.Int32, System.Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.WaveFormat.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.WaveFormat.html",
+    "title": "Property WaveFormat | Ham Cockpit",
+    "keywords": "Property WaveFormat WaveFormat Declaration public WaveFormat WaveFormat { get; } Property Value Type Description CSCore.WaveFormat Implements CSCore.IAudioSource.WaveFormat"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Enabled.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Enabled.html",
+    "title": "Property Enabled | Ham Cockpit",
+    "keywords": "Property Enabled Enabled Declaration public bool Enabled { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Format.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Format.html",
+    "title": "Property Format | Ham Cockpit",
+    "keywords": "Property Format Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.html",
+    "title": "Class SidebandFlipper | Ham Cockpit",
+    "keywords": "Class SidebandFlipper Inheritance Object SidebandFlipper Implements IIqProcessor IInitSampleStream ISampleStream Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SidebandFlipper : IIqProcessor, IInitSampleStream, ISampleStream Properties Name Description Enabled Format Methods Name Description Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Initialize.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Initialize.html",
+    "title": "Method Initialize | Ham Cockpit",
+    "keywords": "Method Initialize Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.SamplesAvailable.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.SamplesAvailable.html",
+    "title": "Event SamplesAvailable | Ham Cockpit",
+    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SlidingMax.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMax.-ctor.html",
+    "title": "Constructor SlidingMax | Ham Cockpit",
+    "keywords": "Constructor SlidingMax SlidingMax(Int32) Declaration public SlidingMax(int length) Parameters Type Name Description Int32 length"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SlidingMax.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMax.html",
+    "title": "Class SlidingMax | Ham Cockpit",
+    "keywords": "Class SlidingMax Inheritance Object BaseSlidingFilter SlidingMax Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SlidingMax : BaseSlidingFilter Constructors Name Description SlidingMax(Int32) Methods Name Description MinOrMax(Single, Single)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SlidingMax.MinOrMax.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMax.MinOrMax.html",
+    "title": "Method MinOrMax | Ham Cockpit",
+    "keywords": "Method MinOrMax MinOrMax(Single, Single) Declaration protected override float MinOrMax(float x, float y) Parameters Type Name Description Single x Single y Returns Type Description Single Overrides BaseSlidingFilter.MinOrMax(Single, Single)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SlidingMin.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.-ctor.html",
+    "title": "Constructor SlidingMin | Ham Cockpit",
+    "keywords": "Constructor SlidingMin SlidingMin(Int32) Declaration public SlidingMin(int length) Parameters Type Name Description Int32 length"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SlidingMin.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.html",
+    "title": "Class SlidingMin | Ham Cockpit",
+    "keywords": "Class SlidingMin Inheritance Object BaseSlidingFilter SlidingMin Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SlidingMin : BaseSlidingFilter Constructors Name Description SlidingMin(Int32) Methods Name Description MinOrMax(Single, Single)"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SlidingMin.MinOrMax.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.MinOrMax.html",
+    "title": "Method MinOrMax | Ham Cockpit",
+    "keywords": "Method MinOrMax MinOrMax(Single, Single) Declaration protected override float MinOrMax(float x, float y) Parameters Type Name Description Single x Single y Returns Type Description Single Overrides BaseSlidingFilter.MinOrMax(Single, Single)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.CanResetValue.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.CanResetValue.html",
+    "title": "Method CanResetValue | Ham Cockpit",
+    "keywords": "Method CanResetValue CanResetValue(Object) Declaration public override bool CanResetValue(object component) Parameters Type Name Description Object component Returns Type Description Boolean Overrides PropertyDescriptor.CanResetValue(Object)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ComponentType.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ComponentType.html",
+    "title": "Property ComponentType | Ham Cockpit",
+    "keywords": "Property ComponentType ComponentType Declaration public override Type ComponentType { get; } Property Value Type Description Type Overrides PropertyDescriptor.ComponentType"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.-ctor.html",
+    "title": "Constructor CollectionItemPropertyDescriptor | Ham Cockpit",
+    "keywords": "Constructor CollectionItemPropertyDescriptor CollectionItemPropertyDescriptor() Declaration public CollectionItemPropertyDescriptor()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.DisplayName.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.DisplayName.html",
+    "title": "Property DisplayName | Ham Cockpit",
+    "keywords": "Property DisplayName DisplayName Declaration public override string DisplayName { get; } Property Value Type Description String Overrides MemberDescriptor.DisplayName"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.GetName.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.GetName.html",
+    "title": "Method GetName | Ham Cockpit",
+    "keywords": "Method GetName GetName() Declaration protected virtual string GetName() Returns Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.GetValue.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.GetValue.html",
+    "title": "Method GetValue | Ham Cockpit",
+    "keywords": "Method GetValue GetValue(Object) Declaration public override object GetValue(object component) Parameters Type Name Description Object component Returns Type Description Object Overrides PropertyDescriptor.GetValue(Object)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.html",
+    "title": "Class CollectionItemPropertyDescriptor<TItem> | Ham Cockpit",
+    "keywords": "Class CollectionItemPropertyDescriptor<TItem> Inheritance Object MemberDescriptor PropertyDescriptor CollectionItemPropertyDescriptor<TItem> Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public class CollectionItemPropertyDescriptor<TItem> : PropertyDescriptor Type Parameters Name Description TItem Constructors Name Description CollectionItemPropertyDescriptor() Properties Name Description ComponentType DisplayName IsReadOnly Name PropertyType Methods Name Description CanResetValue(Object) GetName() GetValue(Object) ResetValue(Object) SetValue(Object, Object) ShouldSerializeValue(Object)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.IsReadOnly.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.IsReadOnly.html",
+    "title": "Property IsReadOnly | Ham Cockpit",
+    "keywords": "Property IsReadOnly IsReadOnly Declaration public override bool IsReadOnly { get; } Property Value Type Description Boolean Overrides PropertyDescriptor.IsReadOnly"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.Name.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.Name.html",
+    "title": "Property Name | Ham Cockpit",
+    "keywords": "Property Name Name Declaration public override string Name { get; } Property Value Type Description String Overrides MemberDescriptor.Name"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.PropertyType.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.PropertyType.html",
+    "title": "Property PropertyType | Ham Cockpit",
+    "keywords": "Property PropertyType PropertyType Declaration public override Type PropertyType { get; } Property Value Type Description Type Overrides PropertyDescriptor.PropertyType"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ResetValue.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ResetValue.html",
+    "title": "Method ResetValue | Ham Cockpit",
+    "keywords": "Method ResetValue ResetValue(Object) Declaration public override void ResetValue(object component) Parameters Type Name Description Object component Overrides PropertyDescriptor.ResetValue(Object)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.SetValue.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.SetValue.html",
+    "title": "Method SetValue | Ham Cockpit",
+    "keywords": "Method SetValue SetValue(Object, Object) Declaration public override void SetValue(object component, object value) Parameters Type Name Description Object component Object value Overrides PropertyDescriptor.SetValue(Object, Object)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ShouldSerializeValue.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ShouldSerializeValue.html",
+    "title": "Method ShouldSerializeValue | Ham Cockpit",
+    "keywords": "Method ShouldSerializeValue ShouldSerializeValue(Object) Declaration public override bool ShouldSerializeValue(object component) Parameters Type Name Description Object component Returns Type Description Boolean Overrides PropertyDescriptor.ShouldSerializeValue(Object)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.collection.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.collection.html",
+    "title": "Field collection | Ham Cockpit",
+    "keywords": "Field collection Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public IList<TItem> collection Returns Type Description IList <TItem>"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.-ctor.html",
+    "title": "Constructor CollectionTypeDescriptor | Ham Cockpit",
+    "keywords": "Constructor CollectionTypeDescriptor CollectionTypeDescriptor(IList<TItem>) Declaration public CollectionTypeDescriptor(IList<TItem> collection) Parameters Type Name Description IList <TItem> collection"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetAttributes.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetAttributes.html",
+    "title": "Method GetAttributes | Ham Cockpit",
+    "keywords": "Method GetAttributes GetAttributes() Declaration public AttributeCollection GetAttributes() Returns Type Description AttributeCollection Implements ICustomTypeDescriptor.GetAttributes()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetClassName.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetClassName.html",
+    "title": "Method GetClassName | Ham Cockpit",
+    "keywords": "Method GetClassName GetClassName() Declaration public string GetClassName() Returns Type Description String Implements ICustomTypeDescriptor.GetClassName()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetComponentName.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetComponentName.html",
+    "title": "Method GetComponentName | Ham Cockpit",
+    "keywords": "Method GetComponentName GetComponentName() Declaration public string GetComponentName() Returns Type Description String Implements ICustomTypeDescriptor.GetComponentName()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetConverter.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetConverter.html",
+    "title": "Method GetConverter | Ham Cockpit",
+    "keywords": "Method GetConverter GetConverter() Declaration public TypeConverter GetConverter() Returns Type Description TypeConverter Implements ICustomTypeDescriptor.GetConverter()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetDefaultEvent.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetDefaultEvent.html",
+    "title": "Method GetDefaultEvent | Ham Cockpit",
+    "keywords": "Method GetDefaultEvent GetDefaultEvent() Declaration public EventDescriptor GetDefaultEvent() Returns Type Description EventDescriptor Implements ICustomTypeDescriptor.GetDefaultEvent()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetDefaultProperty.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetDefaultProperty.html",
+    "title": "Method GetDefaultProperty | Ham Cockpit",
+    "keywords": "Method GetDefaultProperty GetDefaultProperty() Declaration public PropertyDescriptor GetDefaultProperty() Returns Type Description PropertyDescriptor Implements ICustomTypeDescriptor.GetDefaultProperty()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEditor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEditor.html",
+    "title": "Method GetEditor | Ham Cockpit",
+    "keywords": "Method GetEditor GetEditor(Type) Declaration public object GetEditor(Type editorBaseType) Parameters Type Name Description Type editorBaseType Returns Type Description Object Implements ICustomTypeDescriptor.GetEditor(Type)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEvents.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEvents.html",
+    "title": "Method GetEvents | Ham Cockpit",
+    "keywords": "Method GetEvents GetEvents(Attribute[]) Declaration public EventDescriptorCollection GetEvents(Attribute[] attributes) Parameters Type Name Description Attribute [] attributes Returns Type Description EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents(Attribute[]) GetEvents() Declaration public EventDescriptorCollection GetEvents() Returns Type Description EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetProperties.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetProperties.html",
+    "title": "Method GetProperties | Ham Cockpit",
+    "keywords": "Method GetProperties GetProperties() Declaration public PropertyDescriptorCollection GetProperties() Returns Type Description PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties() GetProperties(Attribute[]) Declaration public PropertyDescriptorCollection GetProperties(Attribute[] attributes) Parameters Type Name Description Attribute [] attributes Returns Type Description PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties(Attribute[])"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetPropertyOwner.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetPropertyOwner.html",
+    "title": "Method GetPropertyOwner | Ham Cockpit",
+    "keywords": "Method GetPropertyOwner GetPropertyOwner(PropertyDescriptor) Declaration public object GetPropertyOwner(PropertyDescriptor pd) Parameters Type Name Description PropertyDescriptor pd Returns Type Description Object Implements ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.html",
+    "title": "Class CollectionTypeDescriptor<TItem, TDescriptor> | Ham Cockpit",
+    "keywords": "Class CollectionTypeDescriptor<TItem, TDescriptor> Inheritance Object CollectionTypeDescriptor<TItem, TDescriptor> Implements ICustomTypeDescriptor Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public class CollectionTypeDescriptor<TItem, TDescriptor> : ICustomTypeDescriptor where TDescriptor : CollectionItemPropertyDescriptor<TItem>, new() Type Parameters Name Description TItem TDescriptor Constructors Name Description CollectionTypeDescriptor(IList<TItem>) Fields Name Description collection Methods Name Description GetAttributes() GetClassName() GetComponentName() GetConverter() GetDefaultEvent() GetDefaultProperty() GetEditor(Type) GetEvents() GetEvents(Attribute[]) GetProperties() GetProperties(Attribute[]) GetPropertyOwner(PropertyDescriptor)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.html",
+    "title": "Namespace VE3NEA.HamCockpit.PluginAPI | Ham Cockpit",
+    "keywords": "Namespace VE3NEA.HamCockpit.PluginAPI Classes CollectionItemPropertyDescriptor<TItem> CollectionTypeDescriptor<TItem, TDescriptor> SamplesAvailableEventArgs event arguments class for the SamplesAvailable event SignalFormat StoppedEventArgs Event arguments class for the Stopped event Interfaces IAudioOutput IAudioProcessor IBandpassFilter IBandPlan IBandSegment IDebugWindow IDemodulator IDspPipeline IInitSampleStream IIqProcessor IModeSwitch IPlugin The main interface implemented by every plugin. IPluginHost ISampleStream ISampleStreamTap ISignalSource ITransmitter ITuner IVisualPlugin The interface implemented by the plugins that show one or more dockable visual panels. Enums QsyDirection Sideband"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Active.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Active.html",
+    "title": "Property Active | Ham Cockpit",
+    "keywords": "Property Active Active Declaration bool Active { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.html",
+    "title": "Interface IAudioOutput | Ham Cockpit",
+    "keywords": "Interface IAudioOutput Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IAudioOutput Properties Name Description Active Mute Methods Name Description Initialize(ISampleStream)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Initialize.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Initialize.html",
+    "title": "Method Initialize | Ham Cockpit",
+    "keywords": "Method Initialize Initialize(ISampleStream) Declaration void Initialize(ISampleStream audioSignal) Parameters Type Name Description ISampleStream audioSignal"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Mute.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Mute.html",
+    "title": "Property Mute | Ham Cockpit",
+    "keywords": "Property Mute Mute Declaration bool Mute { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IAudioProcessor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IAudioProcessor.html",
+    "title": "Interface IAudioProcessor | Ham Cockpit",
+    "keywords": "Interface IAudioProcessor Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IAudioProcessor : IInitSampleStream, ISampleStream"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.html",
+    "title": "Interface IBandpassFilter | Ham Cockpit",
+    "keywords": "Interface IBandpassFilter Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IBandpassFilter Methods Name Description SetBandwidth(Int32) SetPassband(Int32, Int32) Events Name Description PassbandChanged"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.PassbandChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.PassbandChanged.html",
+    "title": "Event PassbandChanged | Ham Cockpit",
+    "keywords": "Event PassbandChanged Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler<EventArgs> PassbandChanged Returns Type Description EventHandler < EventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.SetBandwidth.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.SetBandwidth.html",
+    "title": "Method SetBandwidth | Ham Cockpit",
+    "keywords": "Method SetBandwidth SetBandwidth(Int32) Declaration void SetBandwidth(int bandwidth) Parameters Type Name Description Int32 bandwidth"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.SetPassband.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.SetPassband.html",
+    "title": "Method SetPassband | Ham Cockpit",
+    "keywords": "Method SetPassband SetPassband(Int32, Int32) Declaration void SetPassband(int passbandLow, int passbandHigh) Parameters Type Name Description Int32 passbandLow Int32 passbandHigh"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.BandPlanChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.BandPlanChanged.html",
+    "title": "Event BandPlanChanged | Ham Cockpit",
+    "keywords": "Event BandPlanChanged Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler BandPlanChanged Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetBandStart.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetBandStart.html",
+    "title": "Method GetBandStart | Ham Cockpit",
+    "keywords": "Method GetBandStart GetBandStart(Int64, String, QsyDirection) Declaration long GetBandStart(long frequency, string mode, QsyDirection qsyDirection) Parameters Type Name Description Int64 frequency String mode QsyDirection qsyDirection Returns Type Description Int64"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegment.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegment.html",
+    "title": "Method GetSegment | Ham Cockpit",
+    "keywords": "Method GetSegment GetSegment(Int64, QsyDirection) Declaration IBandSegment GetSegment(long frequency, QsyDirection qsyDirection) Parameters Type Name Description Int64 frequency QsyDirection qsyDirection Returns Type Description IBandSegment"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegments.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegments.html",
+    "title": "Method GetSegments | Ham Cockpit",
+    "keywords": "Method GetSegments GetSegments(Int64, Int64) Declaration IBandSegment[] GetSegments(long startFrequency, long endFrequency) Parameters Type Name Description Int64 startFrequency Int64 endFrequency Returns Type Description IBandSegment []"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.html",
+    "title": "Interface IBandPlan | Ham Cockpit",
+    "keywords": "Interface IBandPlan Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IBandPlan Methods Name Description GetBandStart(Int64, String, QsyDirection) GetSegment(Int64, QsyDirection) GetSegments(Int64, Int64) Events Name Description BandPlanChanged"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.BackColor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.BackColor.html",
+    "title": "Property BackColor | Ham Cockpit",
+    "keywords": "Property BackColor BackColor Declaration Color BackColor { get; } Property Value Type Description Color"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.Band.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.Band.html",
+    "title": "Property Band | Ham Cockpit",
+    "keywords": "Property Band Band Declaration string Band { get; } Property Value Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.DefaultFrequency.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.DefaultFrequency.html",
+    "title": "Property DefaultFrequency | Ham Cockpit",
+    "keywords": "Property DefaultFrequency DefaultFrequency Declaration long DefaultFrequency { get; } Property Value Type Description Int64"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.EndFrequency.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.EndFrequency.html",
+    "title": "Property EndFrequency | Ham Cockpit",
+    "keywords": "Property EndFrequency EndFrequency Declaration long EndFrequency { get; } Property Value Type Description Int64"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.html",
+    "title": "Interface IBandSegment | Ham Cockpit",
+    "keywords": "Interface IBandSegment Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IBandSegment Properties Name Description BackColor Band DefaultFrequency EndFrequency MainSegment PrimaryMode Remark StartFrequency ValidModes"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.MainSegment.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.MainSegment.html",
+    "title": "Property MainSegment | Ham Cockpit",
+    "keywords": "Property MainSegment MainSegment Declaration bool MainSegment { get; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.PrimaryMode.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.PrimaryMode.html",
+    "title": "Property PrimaryMode | Ham Cockpit",
+    "keywords": "Property PrimaryMode PrimaryMode Declaration string PrimaryMode { get; } Property Value Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.Remark.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.Remark.html",
+    "title": "Property Remark | Ham Cockpit",
+    "keywords": "Property Remark Remark Declaration string Remark { get; } Property Value Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.StartFrequency.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.StartFrequency.html",
+    "title": "Property StartFrequency | Ham Cockpit",
+    "keywords": "Property StartFrequency StartFrequency Declaration long StartFrequency { get; } Property Value Type Description Int64"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.ValidModes.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.ValidModes.html",
+    "title": "Property ValidModes | Ham Cockpit",
+    "keywords": "Property ValidModes ValidModes Declaration string[] ValidModes { get; } Property Value Type Description String []"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDebugWindow.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDebugWindow.html",
+    "title": "Interface IDebugWindow | Ham Cockpit",
+    "keywords": "Interface IDebugWindow Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IDebugWindow Properties Name Description LabelText Methods Name Description LogMessage(String)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDebugWindow.LabelText.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDebugWindow.LabelText.html",
+    "title": "Property LabelText | Ham Cockpit",
+    "keywords": "Property LabelText LabelText Declaration string LabelText { set; } Property Value Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDebugWindow.LogMessage.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDebugWindow.LogMessage.html",
+    "title": "Method LogMessage | Ham Cockpit",
+    "keywords": "Method LogMessage LogMessage(String) Declaration void LogMessage(string message) Parameters Type Name Description String message"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDemodulator.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDemodulator.html",
+    "title": "Interface IDemodulator | Ham Cockpit",
+    "keywords": "Interface IDemodulator Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IDemodulator : IInitSampleStream, ISampleStream, IModeSwitch"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Active.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Active.html",
+    "title": "Property Active | Ham Cockpit",
+    "keywords": "Property Active Active Declaration bool Active { get; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.DemodulatedAudio.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.DemodulatedAudio.html",
+    "title": "Property DemodulatedAudio | Ham Cockpit",
+    "keywords": "Property DemodulatedAudio DemodulatedAudio Declaration ISampleStreamTap DemodulatedAudio { get; } Property Value Type Description ISampleStreamTap"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.html",
+    "title": "Interface IDspPipeline | Ham Cockpit",
+    "keywords": "Interface IDspPipeline Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IDspPipeline Properties Name Description Active DemodulatedAudio InputSignal ModeSwitch ProcessedAudio ProcessedSignal Transmitter Tuner Events Name Description StatusChanged"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.InputSignal.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.InputSignal.html",
+    "title": "Property InputSignal | Ham Cockpit",
+    "keywords": "Property InputSignal InputSignal Declaration ISampleStreamTap InputSignal { get; } Property Value Type Description ISampleStreamTap"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ModeSwitch.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ModeSwitch.html",
+    "title": "Property ModeSwitch | Ham Cockpit",
+    "keywords": "Property ModeSwitch ModeSwitch Declaration IModeSwitch ModeSwitch { get; } Property Value Type Description IModeSwitch"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ProcessedAudio.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ProcessedAudio.html",
+    "title": "Property ProcessedAudio | Ham Cockpit",
+    "keywords": "Property ProcessedAudio ProcessedAudio Declaration ISampleStreamTap ProcessedAudio { get; } Property Value Type Description ISampleStreamTap"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ProcessedSignal.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ProcessedSignal.html",
+    "title": "Property ProcessedSignal | Ham Cockpit",
+    "keywords": "Property ProcessedSignal ProcessedSignal Declaration ISampleStreamTap ProcessedSignal { get; } Property Value Type Description ISampleStreamTap"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.StatusChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.StatusChanged.html",
+    "title": "Event StatusChanged | Ham Cockpit",
+    "keywords": "Event StatusChanged Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler StatusChanged Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Transmitter.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Transmitter.html",
+    "title": "Property Transmitter | Ham Cockpit",
+    "keywords": "Property Transmitter Transmitter Declaration ITransmitter Transmitter { get; } Property Value Type Description ITransmitter"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Tuner.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Tuner.html",
+    "title": "Property Tuner | Ham Cockpit",
+    "keywords": "Property Tuner Tuner Declaration ITuner Tuner { get; } Property Value Type Description ITuner"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IInitSampleStream.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IInitSampleStream.html",
+    "title": "Interface IInitSampleStream | Ham Cockpit",
+    "keywords": "Interface IInitSampleStream Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IInitSampleStream : ISampleStream Methods Name Description Initialize(ISampleStream)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IInitSampleStream.Initialize.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IInitSampleStream.Initialize.html",
+    "title": "Method Initialize | Ham Cockpit",
+    "keywords": "Method Initialize Initialize(ISampleStream) Declaration void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IIqProcessor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IIqProcessor.html",
+    "title": "Interface IIqProcessor | Ham Cockpit",
+    "keywords": "Interface IIqProcessor Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IIqProcessor : IInitSampleStream, ISampleStream"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IModeSwitch.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IModeSwitch.html",
+    "title": "Interface IModeSwitch | Ham Cockpit",
+    "keywords": "Interface IModeSwitch Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IModeSwitch Properties Name Description Mode Sideband Events Name Description ModeChanged"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IModeSwitch.Mode.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IModeSwitch.Mode.html",
+    "title": "Property Mode | Ham Cockpit",
+    "keywords": "Property Mode Mode Declaration string Mode { get; set; } Property Value Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IModeSwitch.ModeChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IModeSwitch.ModeChanged.html",
+    "title": "Event ModeChanged | Ham Cockpit",
+    "keywords": "Event ModeChanged Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler ModeChanged Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IModeSwitch.Sideband.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IModeSwitch.Sideband.html",
+    "title": "Property Sideband | Ham Cockpit",
+    "keywords": "Property Sideband Sideband Declaration Sideband Sideband { get; set; } Property Value Type Description Sideband"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.Author.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.Author.html",
+    "title": "Property Author | Ham Cockpit",
+    "keywords": "Property Author Author Plugin author's id Declaration string Author { get; } Property Value Type Description String Remarks Must be unique. A licensed radio amateur should use his callsign as id."
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.Enabled.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.Enabled.html",
+    "title": "Property Enabled | Ham Cockpit",
+    "keywords": "Property Enabled Enabled True when the plugin is enabled by the user, false otherwise. Declaration bool Enabled { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.html",
+    "title": "Interface IPlugin | Ham Cockpit",
+    "keywords": "Interface IPlugin The main interface implemented by every plugin. Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IPlugin Properties Name Description Author Plugin author's id Enabled True when the plugin is enabled by the user, false otherwise. Name Plugin name Settings The plugin settings object StatusItem The toolstrip item that will appear on the host application's status bar. ToolStrip The toolstrip that will appear on the host application's toolbar."
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.Name.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.Name.html",
+    "title": "Property Name | Ham Cockpit",
+    "keywords": "Property Name Name Plugin name Declaration string Name { get; } Property Value Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.Settings.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.Settings.html",
+    "title": "Property Settings | Ham Cockpit",
+    "keywords": "Property Settings Settings The plugin settings object Declaration object Settings { get; set; } Property Value Type Description Object Remarks The plugin can use this object to store its settings. The host application saves the Settings object of each plugin on exit and reloads it on the next program start. The properties of the object appear in the Plugin Settings dialog and are editable by the user."
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.StatusItem.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.StatusItem.html",
+    "title": "Property StatusItem | Ham Cockpit",
+    "keywords": "Property StatusItem StatusItem The toolstrip item that will appear on the host application's status bar. Declaration ToolStripItem StatusItem { get; } Property Value Type Description ToolStripItem"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.ToolStrip.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPlugin.ToolStrip.html",
+    "title": "Property ToolStrip | Ham Cockpit",
+    "keywords": "Property ToolStrip ToolStrip The toolstrip that will appear on the host application's toolbar. Declaration ToolStrip ToolStrip { get; } Property Value Type Description ToolStrip"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.BackColor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.BackColor.html",
+    "title": "Property BackColor | Ham Cockpit",
+    "keywords": "Property BackColor BackColor Declaration Color BackColor { get; } Property Value Type Description Color"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.DspPipeline.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.DspPipeline.html",
+    "title": "Property DspPipeline | Ham Cockpit",
+    "keywords": "Property DspPipeline DspPipeline Declaration IDspPipeline DspPipeline { get; } Property Value Type Description IDspPipeline"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.GetReferenceDataFolder.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.GetReferenceDataFolder.html",
+    "title": "Method GetReferenceDataFolder | Ham Cockpit",
+    "keywords": "Method GetReferenceDataFolder GetReferenceDataFolder(String) Declaration string GetReferenceDataFolder(string author) Parameters Type Name Description String author Returns Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.GetUserDataFolder.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.GetUserDataFolder.html",
+    "title": "Method GetUserDataFolder | Ham Cockpit",
+    "keywords": "Method GetUserDataFolder GetUserDataFolder(String) Declaration string GetUserDataFolder(string author) Parameters Type Name Description String author Returns Type Description String"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.html",
+    "title": "Interface IPluginHost | Ham Cockpit",
+    "keywords": "Interface IPluginHost Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IPluginHost Properties Name Description BackColor DspPipeline Methods Name Description GetReferenceDataFolder(String) GetUserDataFolder(String)"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.Format.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.Format.html",
+    "title": "Property Format | Ham Cockpit",
+    "keywords": "Property Format Format Declaration SignalFormat Format { get; } Property Value Type Description SignalFormat"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.html",
+    "title": "Interface ISampleStream | Ham Cockpit",
+    "keywords": "Interface ISampleStream Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface ISampleStream Properties Name Description Format Methods Name Description Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.Read.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.Read.html",
+    "title": "Method Read | Ham Cockpit",
+    "keywords": "Method Read Read(Single[], Int32, Int32) Declaration int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.SamplesAvailable.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.SamplesAvailable.html",
+    "title": "Event SamplesAvailable | Ham Cockpit",
+    "keywords": "Event SamplesAvailable Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap.html",
+    "title": "Interface ISampleStreamTap | Ham Cockpit",
+    "keywords": "Interface ISampleStreamTap Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface ISampleStreamTap : ISampleStream Properties Name Description IsAvailable"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap.IsAvailable.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap.IsAvailable.html",
+    "title": "Property IsAvailable | Ham Cockpit",
+    "keywords": "Property IsAvailable IsAvailable Declaration bool IsAvailable { get; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.Active.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.Active.html",
+    "title": "Property Active | Ham Cockpit",
+    "keywords": "Property Active Active Declaration bool Active { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.html",
+    "title": "Interface ISignalSource | Ham Cockpit",
+    "keywords": "Interface ISignalSource Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface ISignalSource : ISampleStream, ITuner Properties Name Description Active Methods Name Description Initialize() Events Name Description Stopped"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.Initialize.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.Initialize.html",
+    "title": "Method Initialize | Ham Cockpit",
+    "keywords": "Method Initialize Initialize() Declaration void Initialize()"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.Stopped.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.Stopped.html",
+    "title": "Event Stopped | Ham Cockpit",
+    "keywords": "Event Stopped Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler<StoppedEventArgs> Stopped Returns Type Description EventHandler < StoppedEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Active.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Active.html",
+    "title": "Property Active | Ham Cockpit",
+    "keywords": "Property Active Active Declaration bool Active { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Frequency.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Frequency.html",
+    "title": "Property Frequency | Ham Cockpit",
+    "keywords": "Property Frequency Frequency Declaration long Frequency { get; set; } Property Value Type Description Int64"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.html",
+    "title": "Interface ITransmitter | Ham Cockpit",
+    "keywords": "Interface ITransmitter Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface ITransmitter : IModeSwitch Properties Name Description Active Frequency Split Transmit Methods Name Description IsTransceiver() Events Name Description SettingsChanged Stopped Tuned"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.IsTransceiver.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.IsTransceiver.html",
+    "title": "Method IsTransceiver | Ham Cockpit",
+    "keywords": "Method IsTransceiver IsTransceiver() Declaration bool IsTransceiver() Returns Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.SettingsChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.SettingsChanged.html",
+    "title": "Event SettingsChanged | Ham Cockpit",
+    "keywords": "Event SettingsChanged Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler SettingsChanged Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Split.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Split.html",
+    "title": "Property Split | Ham Cockpit",
+    "keywords": "Property Split Split Declaration bool Split { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Stopped.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Stopped.html",
+    "title": "Event Stopped | Ham Cockpit",
+    "keywords": "Event Stopped Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler<StoppedEventArgs> Stopped Returns Type Description EventHandler < StoppedEventArgs >"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Transmit.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Transmit.html",
+    "title": "Property Transmit | Ham Cockpit",
+    "keywords": "Property Transmit Transmit Declaration bool Transmit { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Tuned.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Tuned.html",
+    "title": "Event Tuned | Ham Cockpit",
+    "keywords": "Event Tuned Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler Tuned Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITuner.GetDialFrequency.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITuner.GetDialFrequency.html",
+    "title": "Method GetDialFrequency | Ham Cockpit",
+    "keywords": "Method GetDialFrequency GetDialFrequency(Int32) Declaration long GetDialFrequency(int channel = 0) Parameters Type Name Description Int32 channel Returns Type Description Int64"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITuner.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITuner.html",
+    "title": "Interface ITuner | Ham Cockpit",
+    "keywords": "Interface ITuner Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface ITuner Methods Name Description GetDialFrequency(Int32) SetDialFrequency(Int64, Int32) Events Name Description Tuned"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITuner.SetDialFrequency.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITuner.SetDialFrequency.html",
+    "title": "Method SetDialFrequency | Ham Cockpit",
+    "keywords": "Method SetDialFrequency SetDialFrequency(Int64, Int32) Declaration void SetDialFrequency(long frequency, int channel = 0) Parameters Type Name Description Int64 frequency Int32 channel"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.ITuner.Tuned.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.ITuner.Tuned.html",
+    "title": "Event Tuned | Ham Cockpit",
+    "keywords": "Event Tuned Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax event EventHandler Tuned Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.CanCreatePanel.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.CanCreatePanel.html",
+    "title": "Property CanCreatePanel | Ham Cockpit",
+    "keywords": "Property CanCreatePanel CanCreatePanel Gets a value indicating whether this instance can create a panel. Declaration bool CanCreatePanel { get; } Property Value Type Description Boolean true if the plugin can create a panel; otherwise, false ."
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.CreatePanel.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.CreatePanel.html",
+    "title": "Method CreatePanel | Ham Cockpit",
+    "keywords": "Method CreatePanel CreatePanel() Creates a visual panel. Declaration UserControl CreatePanel() Returns Type Description UserControl The panel object"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.DestroyPanel.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.DestroyPanel.html",
+    "title": "Method DestroyPanel | Ham Cockpit",
+    "keywords": "Method DestroyPanel DestroyPanel(UserControl) Destroys the panel. Declaration void DestroyPanel(UserControl panel) Parameters Type Name Description UserControl panel The panel."
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.html",
+    "title": "Interface IVisualPlugin | Ham Cockpit",
+    "keywords": "Interface IVisualPlugin The interface implemented by the plugins that show one or more dockable visual panels. Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public interface IVisualPlugin Properties Name Description CanCreatePanel Gets a value indicating whether this instance can create a panel. Methods Name Description CreatePanel() Creates a visual panel. DestroyPanel(UserControl) Destroys the panel."
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.QsyDirection.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.QsyDirection.html",
+    "title": "Enum QsyDirection | Ham Cockpit",
+    "keywords": "Enum QsyDirection Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public enum QsyDirection Fields Name Description Down Here Up"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Count.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Count.html",
+    "title": "Property Count | Ham Cockpit",
+    "keywords": "Property Count Count The number of available values Declaration public int Count { get; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.-ctor.html",
+    "title": "Constructor SamplesAvailableEventArgs | Ham Cockpit",
+    "keywords": "Constructor SamplesAvailableEventArgs SamplesAvailableEventArgs(Single[], Int32, Int32) Creates an instance of the class and initializes all properties Declaration public SamplesAvailableEventArgs(float[] data, int offset, int count) Parameters Type Name Description Single [] data Int32 offset Int32 count"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Data.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Data.html",
+    "title": "Property Data | Ham Cockpit",
+    "keywords": "Property Data Data Audio or I/Q data Declaration public float[] Data { get; } Property Value Type Description Single []"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.html",
+    "title": "Class SamplesAvailableEventArgs | Ham Cockpit",
+    "keywords": "Class SamplesAvailableEventArgs event arguments class for the SamplesAvailable event Inheritance Object EventArgs SamplesAvailableEventArgs Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public sealed class SamplesAvailableEventArgs : EventArgs Constructors Name Description SamplesAvailableEventArgs(Single[], Int32, Int32) Creates an instance of the class and initializes all properties Properties Name Description Count The number of available values Data Audio or I/Q data Offset The offset to the first available value"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Offset.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Offset.html",
+    "title": "Property Offset | Ham Cockpit",
+    "keywords": "Property Offset Offset The offset to the first available value Declaration public int Offset { get; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.Sideband.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.Sideband.html",
+    "title": "Enum Sideband | Ham Cockpit",
+    "keywords": "Enum Sideband Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public enum Sideband Fields Name Description Lower None Upper"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.AUDIO_SAMPLING_RATE.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.AUDIO_SAMPLING_RATE.html",
+    "title": "Field AUDIO_SAMPLING_RATE | Ham Cockpit",
+    "keywords": "Field AUDIO_SAMPLING_RATE The sampling rate of all audio signals. Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public const int AUDIO_SAMPLING_RATE = 12000 Returns Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.Channels.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.Channels.html",
+    "title": "Property Channels | Ham Cockpit",
+    "keywords": "Property Channels Channels Declaration public int Channels { get; set; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.-ctor.html",
+    "title": "Constructor SignalFormat | Ham Cockpit",
+    "keywords": "Constructor SignalFormat SignalFormat(Int32, Boolean, Boolean, Int32, Int32, Int32, Int32, Sideband, Single) Declaration public SignalFormat(int samplingRate, bool isComplex, bool isSync, int channels, int passbandLow, int passbandHigh, int dialOffset, Sideband sideband = Sideband.Upper, float stageGain = 0F) Parameters Type Name Description Int32 samplingRate Boolean isComplex Boolean isSync Int32 channels Int32 passbandLow Int32 passbandHigh Int32 dialOffset Sideband sideband Single stageGain SignalFormat() Declaration public SignalFormat() SignalFormat(SignalFormat) Declaration public SignalFormat(SignalFormat prototype) Parameters Type Name Description SignalFormat prototype"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.DialOffset.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.DialOffset.html",
+    "title": "Property DialOffset | Ham Cockpit",
+    "keywords": "Property DialOffset DialOffset Declaration public int DialOffset { get; set; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.html",
+    "title": "Class SignalFormat | Ham Cockpit",
+    "keywords": "Class SignalFormat Inheritance Object SignalFormat Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public class SignalFormat Constructors Name Description SignalFormat() SignalFormat(Int32, Boolean, Boolean, Int32, Int32, Int32, Int32, Sideband, Single) SignalFormat(SignalFormat) Fields Name Description AUDIO_SAMPLING_RATE The sampling rate of all audio signals. Properties Name Description Channels DialOffset IsComplex IsSync PassbandHigh PassbandLow SamplingRate Sideband StageGain TotalGain"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.IsComplex.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.IsComplex.html",
+    "title": "Property IsComplex | Ham Cockpit",
+    "keywords": "Property IsComplex IsComplex Declaration public bool IsComplex { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.IsSync.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.IsSync.html",
+    "title": "Property IsSync | Ham Cockpit",
+    "keywords": "Property IsSync IsSync Declaration public bool IsSync { get; set; } Property Value Type Description Boolean"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.PassbandHigh.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.PassbandHigh.html",
+    "title": "Property PassbandHigh | Ham Cockpit",
+    "keywords": "Property PassbandHigh PassbandHigh Declaration public int PassbandHigh { get; set; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.PassbandLow.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.PassbandLow.html",
+    "title": "Property PassbandLow | Ham Cockpit",
+    "keywords": "Property PassbandLow PassbandLow Declaration public int PassbandLow { get; set; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.SamplingRate.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.SamplingRate.html",
+    "title": "Property SamplingRate | Ham Cockpit",
+    "keywords": "Property SamplingRate SamplingRate Declaration public int SamplingRate { get; set; } Property Value Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.Sideband.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.Sideband.html",
+    "title": "Property Sideband | Ham Cockpit",
+    "keywords": "Property Sideband Sideband Declaration public Sideband Sideband { get; set; } Property Value Type Description Sideband"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.StageGain.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.StageGain.html",
+    "title": "Property StageGain | Ham Cockpit",
+    "keywords": "Property StageGain StageGain Declaration public float StageGain { get; set; } Property Value Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.TotalGain.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.TotalGain.html",
+    "title": "Property TotalGain | Ham Cockpit",
+    "keywords": "Property TotalGain TotalGain Declaration public float TotalGain { get; } Property Value Type Description Single"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs.-ctor.html",
+    "title": "Constructor StoppedEventArgs | Ham Cockpit",
+    "keywords": "Constructor StoppedEventArgs StoppedEventArgs(Exception) Creates an instance of the class and initializes the Exception property. Declaration public StoppedEventArgs(Exception exception) Parameters Type Name Description Exception exception The the exception object to be assigned to the Exception property."
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs.Exception.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs.Exception.html",
+    "title": "Field Exception | Ham Cockpit",
+    "keywords": "Field Exception The exception that caused the data source to stop. Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public readonly Exception Exception Returns Type Description Exception"
+  },
+  "api/VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs.html",
+    "title": "Class StoppedEventArgs | Ham Cockpit",
+    "keywords": "Class StoppedEventArgs Event arguments class for the Stopped event Inheritance Object EventArgs StoppedEventArgs Namespace : VE3NEA.HamCockpit.PluginAPI Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public sealed class StoppedEventArgs : EventArgs Constructors Name Description StoppedEventArgs(Exception) Creates an instance of the class and initializes the Exception property. Fields Name Description Exception The exception that caused the data source to stop."
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CollectionChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CollectionChanged.html",
+    "title": "Event CollectionChanged | Ham Cockpit",
+    "keywords": "Event CollectionChanged Namespace : VE3NEA.HamCockpit.PluginHelpers Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public static event EventHandler CollectionChanged Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CreateCollectionForm.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CreateCollectionForm.html",
+    "title": "Method CreateCollectionForm | Ham Cockpit",
+    "keywords": "Method CreateCollectionForm CreateCollectionForm() Declaration protected override CollectionEditor.CollectionForm CreateCollectionForm() Returns Type Description CollectionEditor.CollectionForm Overrides CollectionEditor.CreateCollectionForm()"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.-ctor.html",
+    "title": "Constructor CollectionEditorWithEvent | Ham Cockpit",
+    "keywords": "Constructor CollectionEditorWithEvent CollectionEditorWithEvent(Type) Declaration public CollectionEditorWithEvent(Type type) Parameters Type Name Description Type type"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.html",
+    "title": "Class CollectionEditorWithEvent | Ham Cockpit",
+    "keywords": "Class CollectionEditorWithEvent Inheritance Object UITypeEditor CollectionEditor CollectionEditorWithEvent Namespace : VE3NEA.HamCockpit.PluginHelpers Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public class CollectionEditorWithEvent : CollectionEditor Constructors Name Description CollectionEditorWithEvent(Type) Methods Name Description CreateCollectionForm() Events Name Description CollectionChanged"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertFrom.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertFrom.html",
+    "title": "Method CanConvertFrom | Ham Cockpit",
+    "keywords": "Method CanConvertFrom CanConvertFrom(ITypeDescriptorContext, Type) Declaration public override bool CanConvertFrom(ITypeDescriptorContext context, Type srcType) Parameters Type Name Description ITypeDescriptorContext context Type srcType Returns Type Description Boolean Overrides EnumConverter.CanConvertFrom(ITypeDescriptorContext, Type)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertTo.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertTo.html",
+    "title": "Method CanConvertTo | Ham Cockpit",
+    "keywords": "Method CanConvertTo CanConvertTo(ITypeDescriptorContext, Type) Declaration public override bool CanConvertTo(ITypeDescriptorContext context, Type destType) Parameters Type Name Description ITypeDescriptorContext context Type destType Returns Type Description Boolean Overrides EnumConverter.CanConvertTo(ITypeDescriptorContext, Type)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertFrom.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertFrom.html",
+    "title": "Method ConvertFrom | Ham Cockpit",
+    "keywords": "Method ConvertFrom ConvertFrom(ITypeDescriptorContext, CultureInfo, Object) Declaration public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value) Parameters Type Name Description ITypeDescriptorContext context CultureInfo culture Object value Returns Type Description Object Overrides EnumConverter.ConvertFrom(ITypeDescriptorContext, CultureInfo, Object)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertTo.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertTo.html",
+    "title": "Method ConvertTo | Ham Cockpit",
+    "keywords": "Method ConvertTo ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type) Declaration public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destType) Parameters Type Name Description ITypeDescriptorContext context CultureInfo culture Object value Type destType Returns Type Description Object Overrides EnumConverter.ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.-ctor.html",
+    "title": "Constructor EnumDescriptionConverter | Ham Cockpit",
+    "keywords": "Constructor EnumDescriptionConverter EnumDescriptionConverter(Type) Declaration public EnumDescriptionConverter(Type type) Parameters Type Name Description Type type"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.html",
+    "title": "Class EnumDescriptionConverter | Ham Cockpit",
+    "keywords": "Class EnumDescriptionConverter Inheritance Object TypeConverter EnumConverter EnumDescriptionConverter Namespace : VE3NEA.HamCockpit.PluginHelpers Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public class EnumDescriptionConverter : EnumConverter Constructors Name Description EnumDescriptionConverter(Type) Methods Name Description CanConvertFrom(ITypeDescriptorContext, Type) CanConvertTo(ITypeDescriptorContext, Type) ConvertFrom(ITypeDescriptorContext, CultureInfo, Object) ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.html",
+    "title": "Namespace VE3NEA.HamCockpit.PluginHelpers | Ham Cockpit",
+    "keywords": "Namespace VE3NEA.HamCockpit.PluginHelpers Classes CollectionEditorWithEvent EnumDescriptionConverter InputSoundcardNameConverter OutputSoundcardNameConverter SoundcardNameConverter"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.InputSoundcardNameConverter.Direction.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.InputSoundcardNameConverter.Direction.html",
+    "title": "Method Direction | Ham Cockpit",
+    "keywords": "Method Direction Direction() Declaration protected override DataFlow Direction() Returns Type Description CSCore.CoreAudioAPI.DataFlow Overrides SoundcardNameConverter.Direction()"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.InputSoundcardNameConverter.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.InputSoundcardNameConverter.html",
+    "title": "Class InputSoundcardNameConverter | Ham Cockpit",
+    "keywords": "Class InputSoundcardNameConverter Inheritance Object TypeConverter StringConverter SoundcardNameConverter InputSoundcardNameConverter Namespace : VE3NEA.HamCockpit.PluginHelpers Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public class InputSoundcardNameConverter : SoundcardNameConverter Methods Name Description Direction()"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter.Direction.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter.Direction.html",
+    "title": "Method Direction | Ham Cockpit",
+    "keywords": "Method Direction Direction() Declaration protected override DataFlow Direction() Returns Type Description CSCore.CoreAudioAPI.DataFlow Overrides SoundcardNameConverter.Direction()"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter.html",
+    "title": "Class OutputSoundcardNameConverter | Ham Cockpit",
+    "keywords": "Class OutputSoundcardNameConverter Inheritance Object TypeConverter StringConverter SoundcardNameConverter OutputSoundcardNameConverter Namespace : VE3NEA.HamCockpit.PluginHelpers Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public class OutputSoundcardNameConverter : SoundcardNameConverter Methods Name Description Direction()"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ConvertFrom.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ConvertFrom.html",
+    "title": "Method ConvertFrom | Ham Cockpit",
+    "keywords": "Method ConvertFrom ConvertFrom(ITypeDescriptorContext, CultureInfo, Object) Declaration public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value) Parameters Type Name Description ITypeDescriptorContext context CultureInfo culture Object value Returns Type Description Object Overrides StringConverter.ConvertFrom(ITypeDescriptorContext, CultureInfo, Object)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ConvertTo.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ConvertTo.html",
+    "title": "Method ConvertTo | Ham Cockpit",
+    "keywords": "Method ConvertTo ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type) Declaration public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType) Parameters Type Name Description ITypeDescriptorContext context CultureInfo culture Object value Type destinationType Returns Type Description Object Overrides TypeConverter.ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.Direction.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.Direction.html",
+    "title": "Method Direction | Ham Cockpit",
+    "keywords": "Method Direction Direction() Declaration protected abstract DataFlow Direction() Returns Type Description CSCore.CoreAudioAPI.DataFlow"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.GetStandardValues.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.GetStandardValues.html",
+    "title": "Method GetStandardValues | Ham Cockpit",
+    "keywords": "Method GetStandardValues GetStandardValues(ITypeDescriptorContext) Declaration public override TypeConverter.StandardValuesCollection GetStandardValues(ITypeDescriptorContext context) Parameters Type Name Description ITypeDescriptorContext context Returns Type Description TypeConverter.StandardValuesCollection Overrides TypeConverter.GetStandardValues(ITypeDescriptorContext)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.GetStandardValuesSupported.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.GetStandardValuesSupported.html",
+    "title": "Method GetStandardValuesSupported | Ham Cockpit",
+    "keywords": "Method GetStandardValuesSupported GetStandardValuesSupported(ITypeDescriptorContext) Declaration public override bool GetStandardValuesSupported(ITypeDescriptorContext context) Parameters Type Name Description ITypeDescriptorContext context Returns Type Description Boolean Overrides TypeConverter.GetStandardValuesSupported(ITypeDescriptorContext)"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.html",
+    "title": "Class SoundcardNameConverter | Ham Cockpit",
+    "keywords": "Class SoundcardNameConverter Inheritance Object TypeConverter StringConverter SoundcardNameConverter InputSoundcardNameConverter OutputSoundcardNameConverter Namespace : VE3NEA.HamCockpit.PluginHelpers Assembly : VE3NEA.HamCockpit.PluginAPI.dll Syntax public abstract class SoundcardNameConverter : StringConverter Methods Name Description ConvertFrom(ITypeDescriptorContext, CultureInfo, Object) ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type) Direction() GetStandardValues(ITypeDescriptorContext) GetStandardValuesSupported(ITypeDescriptorContext) ListDevices()"
+  },
+  "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ListDevices.html": {
+    "href": "api/VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ListDevices.html",
+    "title": "Method ListDevices | Ham Cockpit",
+    "keywords": "Method ListDevices ListDevices() Declaration protected void ListDevices()"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.bandplan.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.bandplan.html",
+    "title": "Field bandplan | Ham Cockpit",
+    "keywords": "Field bandplan Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public IBandPlan bandplan Returns Type Description IBandPlan"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.-ctor.html",
+    "title": "Constructor FrequencyDisplayPanel | Ham Cockpit",
+    "keywords": "Constructor FrequencyDisplayPanel FrequencyDisplayPanel() Declaration public FrequencyDisplayPanel()"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose(Boolean) Clean up any resources being used. Declaration protected override void Dispose(bool disposing) Parameters Type Name Description Boolean disposing true if managed resources should be disposed; otherwise, false. Overrides ContainerControl.Dispose(Boolean)"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.FrequencyLabel.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.FrequencyLabel.html",
+    "title": "Field FrequencyLabel | Ham Cockpit",
+    "keywords": "Field FrequencyLabel Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public Label FrequencyLabel Returns Type Description Label"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.html",
+    "title": "Class FrequencyDisplayPanel | Ham Cockpit",
+    "keywords": "Class FrequencyDisplayPanel Inheritance Object MarshalByRefObject Component Control ScrollableControl ContainerControl UserControl FrequencyDisplayPanel Implements IDropTarget ISynchronizeInvoke IWin32Window IBindableComponent IComponent IDisposable IContainerControl Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public class FrequencyDisplayPanel : UserControl, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IArrangedElement, IComponent, IDisposable, IContainerControl Constructors Name Description FrequencyDisplayPanel() Fields Name Description bandplan FrequencyLabel PageSizeHz pipeline SplitModeLabel TuneButton Methods Name Description Dispose(Boolean) Clean up any resources being used. UpdateDisplayedInfo()"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.PageSizeHz.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.PageSizeHz.html",
+    "title": "Field PageSizeHz | Ham Cockpit",
+    "keywords": "Field PageSizeHz Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public int PageSizeHz Returns Type Description Int32"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.pipeline.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.pipeline.html",
+    "title": "Field pipeline | Ham Cockpit",
+    "keywords": "Field pipeline Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public IDspPipeline pipeline Returns Type Description IDspPipeline"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.SplitModeLabel.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.SplitModeLabel.html",
+    "title": "Field SplitModeLabel | Ham Cockpit",
+    "keywords": "Field SplitModeLabel Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public Label SplitModeLabel Returns Type Description Label"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.TuneButton.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.TuneButton.html",
+    "title": "Field TuneButton | Ham Cockpit",
+    "keywords": "Field TuneButton Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public Button TuneButton Returns Type Description Button"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.UpdateDisplayedInfo.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.UpdateDisplayedInfo.html",
+    "title": "Method UpdateDisplayedInfo | Ham Cockpit",
+    "keywords": "Method UpdateDisplayedInfo UpdateDisplayedInfo() Declaration public void UpdateDisplayedInfo()"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyEntryForm.-ctor.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyEntryForm.-ctor.html",
+    "title": "Constructor FrequencyEntryForm | Ham Cockpit",
+    "keywords": "Constructor FrequencyEntryForm FrequencyEntryForm() Declaration public FrequencyEntryForm()"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyEntryForm.Dispose.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyEntryForm.Dispose.html",
+    "title": "Method Dispose | Ham Cockpit",
+    "keywords": "Method Dispose Dispose(Boolean) Clean up any resources being used. Declaration protected override void Dispose(bool disposing) Parameters Type Name Description Boolean disposing true if managed resources should be disposed; otherwise, false. Overrides Form.Dispose(Boolean)"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyEntryForm.EnteredFrequency.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyEntryForm.EnteredFrequency.html",
+    "title": "Field EnteredFrequency | Ham Cockpit",
+    "keywords": "Field EnteredFrequency Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public long EnteredFrequency Returns Type Description Int64"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.FrequencyEntryForm.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.FrequencyEntryForm.html",
+    "title": "Class FrequencyEntryForm | Ham Cockpit",
+    "keywords": "Class FrequencyEntryForm Inheritance Object MarshalByRefObject Component Control ScrollableControl ContainerControl Form FrequencyEntryForm Implements IDropTarget ISynchronizeInvoke IWin32Window IBindableComponent IComponent IDisposable IContainerControl Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public class FrequencyEntryForm : Form, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IArrangedElement, IComponent, IDisposable, IContainerControl Constructors Name Description FrequencyEntryForm() Fields Name Description EnteredFrequency Methods Name Description Dispose(Boolean) Clean up any resources being used."
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.html",
+    "title": "Namespace VE3NEA.HamCockpit.SharedControls | Ham Cockpit",
+    "keywords": "Namespace VE3NEA.HamCockpit.SharedControls Classes FrequencyDisplayPanel FrequencyEntryForm LedFont"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.LedFont.Family.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.LedFont.Family.html",
+    "title": "Property Family | Ham Cockpit",
+    "keywords": "Property Family Family Declaration public static FontFamily Family { get; } Property Value Type Description FontFamily"
+  },
+  "api/VE3NEA.HamCockpit.SharedControls.LedFont.html": {
+    "href": "api/VE3NEA.HamCockpit.SharedControls.LedFont.html",
+    "title": "Class LedFont | Ham Cockpit",
+    "keywords": "Class LedFont Inheritance Object LedFont Namespace : VE3NEA.HamCockpit.SharedControls Assembly : VE3NEA.HamCockpit.SharedControls.dll Syntax public class LedFont Properties Name Description Family"
+  },
+  "developers_guide/intro.html": {
+    "href": "developers_guide/intro.html",
+    "title": "Introduction | Ham Cockpit",
+    "keywords": "Introduction Coming soon"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Ham Cockpit | Ham Cockpit",
+    "keywords": "Ham Cockpit Radio Amateur's integrated envoronment Copyright © 2020 Alex Shovkoplyas VE3NEA freeware Tested on Windows 10 , but may work on the earlier versions of Windows as well. Please try and let me know! Ham Cockpit Ham Cockpit is a program of a new type. All of its functions are implemented in the plugins, the main program simply loads the plugins and helps them work together. Some standard plugins come with the software, a wide variety of optional and third party plugins will hopefully be available soon. Due to the modular approach taken to the extreme, Ham Cockpit becomes an integrated environment for a Radio Amateur that every user can build according to his needs. By installing the right plugins, one will be able to turn the program into an SDR client, a logger, a cluster monitor, a propagation prediction tool, etc., etc. - or have any combination of these working together in one program (once the corresponding plugins are available). Ham Cockpit 1.0 This is the very first release of Ham Cockpit , it includes only a handful of plugins that turn it into an SDR client. Moreover, this version has drivers only for the ICOM IC-7610 radio , making use of its I/Q streaming capability, and Afedri-822x SDR . Don't worry, the drivers are just plugins, more radios will be supported soon. Note Despite the small number of currently available plugins, the program in its present state is an ideal tool for cracking CW pileups that I am already using on the air. I built it as part of my preparation to work 3Y0I , the only announced DXpedition to a country on my needed list. At 330 DXCC entities confirmed, I need just one more to win the Honor Roll award, so I did my best to get the right tool for the job. Third Party Developers All software developers are welcome to create their own plugins for Ham Cockpit : open source, freeware, shareware - your choice. If you have an idea of a new signal processing algorithm, it will be much easier for you to create a plugin that implements it than to build a stand alone application with its own audio input and output, radio control, settings dialog, etc. In a plugin, you will just write the interesting part and let Ham Cockpit do the rest. What kinds of plugins can you create? Not just the signal processing ones. Any function useful for Radio Amateurs could become your next plugin. QSO logging, cluster monitoring, award tracking, propagation prediction, contesting, SO2R operation - the choice is limited only by your imagination. A short Plugin Developer's Guide is now available for those who want to start writing plugins. I am working on a complete set of plugin API documentation, including the source code of selected plugins. Non-programmers are also welcome to participate in the Ham Cockpit project. You can help with documentation, tutorials, video demos or data preparation. One area where data needs to be prepared is band plans . Currently we have only one band plan, for the Ham bands in the USA and Canada. We need band plans for other countries, broadcasting band plans, UHF band plans, etc. Downloads Download Ham Cockpit Download additional plugins Resources Online User's Guide Ham Cockpit Forum Waterfall demo on YouTube"
+  },
+  "users_guide/configuration.html": {
+    "href": "users_guide/configuration.html",
+    "title": "Configuration | Ham Cockpit",
+    "keywords": "Configuration Virtually all functions in Ham Cockpit are implemented in the plugins. To configure the program, just configure the settings of the installed plugins. Click on the View / Plugin Settings command in the menu to open the Plugin Settings dialog. The left panel of the Plugin Settings dialog shows all installed plugins. Click on the plugin to select it for configuration and edit its settings on the right panel. Click on the Save button to save all changes and close the dialog. The Apply button saves the changes but does not close the dialog. To reset the setting to its default value, right-click on the setting name and click on Reset in the popup menu. Click on the checkbox next to each plugin name to enable or disable the plugin. Another way to disable a plugin permanently is to simply delete its DLL file from the installation folder. For some plugin types the order is important. For example, Audio Processors are applied to the signals in the same order in which they appear in the Plugin Settings dialog. Drag and drop such plugins to change their order. Warning Some of the plugins that come with Ham Cockpit perform audio input and output, control the radio via a USB or RS-232 port, or work with other non-standard hardware in various ways. Be sure to configure them properly before you start using them."
+  },
+  "users_guide/docking.html": {
+    "href": "users_guide/docking.html",
+    "title": "Docking | Ham Cockpit",
+    "keywords": "Docking Visual plugins installed in Ham Cockpit may be opened and closed using the View menu and arranged in the desired layout using drag-and-drop. The visual panels may be docked inside the docking area of the program: or left floating: The program saves the panel layout on exit and restores it on the next start."
+  },
+  "users_guide/dsp_pipeline.html": {
+    "href": "users_guide/dsp_pipeline.html",
+    "title": "DSP Pipeline | Ham Cockpit",
+    "keywords": "DSP Pipeline The plugins that perform digital signal processing are organized in a DSP Pipeline . When working with the SDR radios and other devices that produce wideband quadrature (I/Q) signals, the pipeline looks like this: Signal source receives I/Q data from an external device and controls the radio settings. Example: IC-7610 I/Q plugin. I/Q processors process I/Q data received from the signal source. Demodulator converts I/Q data to the audio suitable for listening. Audio processors process demodulated audio in different ways. Examples are Bandpass Filter and AGC plugins. Audio Output sends processed audio to a soundcard or another device. Transmitter controls the transmit frequency, Split mode and T/R switch in the transmitter. If the radio outputs already demodulated signals, such as audio output of the conventional transceivers, the pipeline includes only a subset of stages: Signal source receives audio data from an external device and controls the radio settings. Example: Conventional Receiver plugin. Audio processors Audio Output Transmitter The DSP Pipeline is represented visually with a toolstrip on the program toolbar. By clicking on the toolbar buttons, the user can start and stop the signal source, turn the audio on and off and switch the radio to the RX or TX mode. The drop-down lists attached to the buttons allow the user to select the signal source demodulator and transmitter In case of an audio data source, the program receives audio signals already demodulated in the receiver. When such signal source is selected, the demodulator plugins are not used, and the Mode dropdown list has commands to change the mode in the radio via its CAT interface:"
+  },
+  "users_guide/faq.html": {
+    "href": "users_guide/faq.html",
+    "title": "Frequently Asked Questions | Ham Cockpit",
+    "keywords": "Frequently Asked Questions Q How can I ask questions about Ham Cockpit ? A You can post your questions to the Ham Cockpit forum , or click on the Help / Email the Author command in the program menu and send a direct email to the author."
+  },
+  "users_guide/installation.html": {
+    "href": "users_guide/installation.html",
+    "title": "Installation | Ham Cockpit",
+    "keywords": "Installation To install Ham Cockpit download the setup package double-click on the downloaded zip file to open it in File Explorer double-click on the HamCockpitSetup.exe file in the zip follow the on-screen instructions Play with the program and get familiar with its functions. Once you feel that you need more plugins, proceed to installing the additional plugins package. To install additional plugins download the additional plugins package double-click on the downloaded zip file to open it in File Explorer extract all files from the zip to the folder where Ham Cockpit is installed start Ham Cockpit , click on View / Plugin Settings in the menu and configure the installed plugins. To uninstall Ham Cockpit On Windows 10 right-click on the Start button click on Apps and Features in the popup menu select Ham Cockpit in the list of installed programs click on the Uninstall button"
+  },
+  "users_guide/intro.html": {
+    "href": "users_guide/intro.html",
+    "title": "Ham Cockpit | Ham Cockpit",
+    "keywords": "Ham Cockpit Radio Amateur's integrated envoronment Copyright (c) 2020 Alex Shovkoplyas VE3NEA Please visit the Ham Cockpit web site for general information."
+  },
+  "users_guide/omnirig.html": {
+    "href": "users_guide/omnirig.html",
+    "title": "OmniRig | Ham Cockpit",
+    "keywords": "OmniRig OmniRig is a freeware CAT control engine used in over 50 applications . All programs that support OmniRig can access the radio simultaneously. Some Ham Cockpit plugins, such as Conventional Receiver , use this engine. If you install one of those plugins, make sure that you have the latest version of OmniRig . To install or update OmniRig , download it from the link below and run the Setup program. OmniRig is extensible, one can add support of a new radio by creating an INI file with the description of its CAT commands. The INI files are located in this folder: C:\\Program Files (x86)\\Afreet\\OmniRig\\Rigs To get the latest set of INI files, download the INI Files for OmniRig package and unzip all files into the Rigs folder. Most of the INI files have been contributed by the users. Open the file in Notepad to see who created it and how to contact the author. If your radio is currently not supported, you can create your own INI for it. The documentation and tools required for INI file creation are available on the OmniRig web page . Tip Delete the unused ini files from the Rigs folder to make OmniRig start faster. Resources OmniRig web page Download OmniRig Download INI Files for OmniRig"
+  },
+  "users_guide/plugins/afedri.html": {
+    "href": "users_guide/plugins/afedri.html",
+    "title": "Afedri-822x SDR Plugin | Ham Cockpit",
+    "keywords": "Afedri-822x SDR Plugin Purpose This plugin is an interface to the Afedri-822x receiver. Works with the single, double and quad channel models. Only the Ethernet connection is supported, not the USB connection. Settings Multichannel Mode The plugin allows starting the radio in the single, double and quad channel modes if supported by the hardware. However, currently there are no plugins that could make use of multiple data streams provided by this plugin, so it is recommended to use the single-channel mode even if the radio has two or four channels. Sampling Rate This radio supports a discrete set of sampling rates. If an unsupported sampling rate is entered, it is replaced with the nearest supported value. 96 kHz is recommended since currently there are no plugins that could benefit from a higher sampling rate."
+  },
+  "users_guide/plugins/agc.html": {
+    "href": "users_guide/plugins/agc.html",
+    "title": "AGC Plugin | Ham Cockpit",
+    "keywords": "AGC Plugin Purpose This plugin performs automatic gain control, keeping the output audio within a range of comfortable listening. Settings This plugin does not have any configurable settings. It is important to ensure that the plugin appears at the right place in the DSP Pipeline . Using drag-and-drop in the Plugin Settings dialog , put it after the Bandpass Filter but before Volume Control Note If AGC is placed before Bandpass Filter plugin, it reacts to the signals outside of the filter passband, causing so-called AGC pumping. If it is placed after the Volume Control plugin, audio level changes made with the Volume slider are effectively removed by AGC. Enable / Disable To enable or disable AGC, click on the AGC button on the toolbar:"
+  },
+  "users_guide/plugins/audio_output.html": {
+    "href": "users_guide/plugins/audio_output.html",
+    "title": "Audio Output to Soundcard Plugin | Ham Cockpit",
+    "keywords": "Audio Output to Soundcard Plugin Purpose This plugin sends the audio processed in the program to the soundcard for listening. It is recommended to use a pair of headphones instead of a speaker, especially when copying weak signals. Settings Latency Experimental. Keep the default value. Soundcard The soundcard to which the audio is sent."
+  },
+  "users_guide/plugins/bandpass_filter.html": {
+    "href": "users_guide/plugins/bandpass_filter.html",
+    "title": "Bandpass Filter Plugin | Ham Cockpit",
+    "keywords": "Bandpass Filter Plugin Purpose This plugin implements a digital bandpass filter for the received audio. The bandwidth of the filter is adjustable by the user. Settings Latency There is a trade-off between the sharpness of the filter skirts and the delay introduced by the filter. Increase the latency for a sharper filter, or decrease it for faster response. The default latency is 10 ms. Visual Representation Some plugins, such as Waterfall Display and Band Scope , provide visual representation of the filter and allow the user to adjust the filter passband to match the operating conditions. On the screenshot below, the blue rectangle 3 shows the extent of the filter passband. You can change the upper and lower cutoff frequencies of the filter by dragging the edges 2 and 4 of the filter rectangle. Since the SSB signal 1 being received is also shown, it is easy to match the filter to the signal. The green triangle 5 indicates the dial frequency of the radio. In the SSB mode it is the frequency of the suppressed carrier. In the CW mode, only the bandwidth of the filter is adjustable, the passband is always centered at the dial frequency. The next screenshot shows a CW signal and an unmodulated carrier near it. You could get rid of the carrier by setting the filter passband to its minimum, 20 Hz, but the sound of such narrowband audio is not pleasant to the ear. Normally you want to have the filter only as narrow as is needed to suppress the interference. Using the visual filter control in the waterfall display, you can set the filter bandwidth in such a way that the upper cutoff is just below the carrier, to have nice audio and no interference."
+  },
+  "users_guide/plugins/bandplan.html": {
+    "href": "users_guide/plugins/bandplan.html",
+    "title": "Band Plan Plugin | Ham Cockpit",
+    "keywords": "Band Plan Plugin Purpose This is a non-visual plugin that works behind the scenes and provides the band plan data to other plugins. In particular, the Frequency Display plugin receives information from this plugin when it needs to switch to the next or previous band, and the Waterfall Display plugin uses band plan information to paint the band map. Settings Mode Colors Background colors for different Ham modes. Click on the ellipses button [...] to open the collection editor: Add or remove the entries on the left panel, and set the mode name and color on the right panel. Click on the OK button to save the changes. Band Plan Files Band Plan information is stored in the JSON files located in this folder: C:\\ProgramData\\Afreet\\HamCockpit\\VE3NEA\\BandPlans The users may create their own band plan files with a text editor and switch between them using a drop-down list on the Toolbar It is recommended to have at least two band plans, one for the regular operation and another for contesting, since frequency allocation by mode changes significantly during the contests. Band Plan File Format The band plan file contains a list of band segments. Each segment has these parameters: Band - the band name, preferably as defined in the ADIF format. StartFrequency , EndFrequency - the boundaries of the band, in Hertz. DefaultFrequency - when changing the bands, the radio will be initially tuned to this frequency. Assumed to be equal to StartFrequency if not specified. PrimaryMode - the main mode in the given frequency segment. Used, in particular, to infer the mode of a cluster spot from its frequency. ValidModes - all modes allowed in the segment. Used, in particular, by the skimmer plugins to determine where to decode a particular mode. If not specified, assumed to include only the primary mode. MainSegment - On some bands, there is more than one segment used for a particular mode. For example, the 14074-14078 kHz and 14095-14099 kHz segments are used for FT8 on the 20m band. One of these segments must be marked as main. Remark - optional text that will be appended to the segment label when information about the segment is displayed. For example, \"F/H\" is a remark in the 14095-14099 kHz segment because this segment is used for the Fox-and-Hound style QSO. The mouse tooltip on the band map is a combination of the band, mode and remark: \"20M FT8 (F/H)\" Here is an example of segment definition: { \"Band\": \"40M\", \"StartFrequency\": 7000000, \"EndFrequency\": 7025000, \"PrimaryMode\": \"CW\", \"ValidModes\": [\"CW\",\"RTTY\"], \"MainSegment\": true, \"Remark\": \"Only Extra class in the USA\" }"
+  },
+  "users_guide/plugins/clock_demo.html": {
+    "href": "users_guide/plugins/clock_demo.html",
+    "title": "Clock Demo Plugin | Ham Cockpit",
+    "keywords": "Clock Demo Plugin Purpose The Clock Demo plugin shows a UTC or Local Time clock on the toolbar. Click on the UTC indicator to switch between the UTC and local time. Note This plugin comes with source code to help plugin developers learn how to add their own controls to the toolbar. Settings Blink enable or disable blinking of the \":\" time separator Dock to Right move the clock to the right side of the toolbar:"
+  },
+  "users_guide/plugins/conventional_receiver.html": {
+    "href": "users_guide/plugins/conventional_receiver.html",
+    "title": "Conventional Receiver Plugin | Ham Cockpit",
+    "keywords": "Conventional Receiver Plugin Purpose This plugin provides an interface to a conventional receiver that outputs demodulated audio and has CAT control via an RS-232 port. Most radios used by the Hams fall in this category, including the ICOM, Yaesu, Kenwood and Elecraft transceivers. Note This plugin makes use of the OmniRig engine. Make sure that you have the latest version of OmniRig installed on your system. Settings OmniRig Radio Select to use Rig1 or Rig2 in OmniRig for CAT control. Soundcard Select the soundcard that will be used to input the audio signals from the radio. Soundcard Channel Specify which channel of the stereo soundcard to use. CW, SSB and DIG Settings Each of these settings has three parameters: Passband High, Passband Low - the upper and lower cutoff frequencies of the filter in the radio. Dial Offset - the audio tone that corresponds to the dial frequency of the radio. Exlcusive, Latency Experimental, do not change. Explanation The Conventional Receiver plugin inputs audio signals in the range of 0 to 6000 Hz, but most radios produce the audio that occupies only a part of this range. For example, the radios in the CW mode typically have a 500-Hz filter that suppresses all signals outside of this range. The CW Settings , SSB Settings and RTTY Settings parameters tell the program what part of the input spectrum is usable in each mode. Other plugins use this information to show only that part of the spectrum on the waterfall, to decode signals only in that frequency range, etc. Examples In the CW mode, the CW Pitch setting in the radio is 800 Hz, and the filter bandwidth is 500 Hz. The settings should be: Dial Offset: 800 Hz Passband Low: 800 - 250 = 550 Hz Passband High: 800 + 250 = 1050 hz In the SSB mode, the filter passband is 300 - 2700 Hz, and the radio displays the frequency of the suppressed carrier (0 Hz audio). The settings should be: Dial Offset: 0 Hz Passband Low: 300 Hz Passband High: 2700Hz Status Bar The Conventional Receiver plugin shows an icon on the status bar that indicates current status of the CAT control interface. Place the mouse cursor over the icon to see information on the tooltip. Click on the icon to open the OmniRig setup dialog."
+  },
+  "users_guide/plugins/demodulators.html": {
+    "href": "users_guide/plugins/demodulators.html",
+    "title": "CW Demodulator Plugin | Ham Cockpit",
+    "keywords": "CW Demodulator Plugin SSB Demodulator Plugin RTTY Demodulator Plugin Purpose The demodulator plugins are used to convert the I/Q signals received from an SDR radio into the audio signals for listening. These plugins are not used when the input to the program is already demodulated in the receiver. Settings Pitch The desired pitch of the demodulated audio, in Hertz. Recommended values: CW: 600 Hz RTTY: 2125 Hz SSB: must be 0 Hz."
+  },
+  "users_guide/plugins/frequency_display.html": {
+    "href": "users_guide/plugins/frequency_display.html",
+    "title": "Frequency Display Plugin | Ham Cockpit",
+    "keywords": "Frequency Display Plugin Purpose This is a stand-alone version of the frequency display built into the Waterfall Display Plugin . See the description of that plugin for more information."
+  },
+  "users_guide/plugins/ic_7610_iq.html": {
+    "href": "users_guide/plugins/ic_7610_iq.html",
+    "title": "IC-7610 I/Q Plugin | Ham Cockpit",
+    "keywords": "IC-7610 I/Q Plugin Purpose This plugin interfaces the program with the IC-7610 radio via its USB3 port, receives wideband I/Q data and controls the radio settings via the same port. OmniRig is not used by this plugin. Settings Use Sub-Receiver select to receive I/Q data from the main receiver or from the sub-receiver. Blocks per Second Experimental, use the default value. Tip Press the DUAL-W button on the radio to enable streaming of the sub-receiver I/Q data."
+  },
+  "users_guide/plugins/plugin_list.html": {
+    "href": "users_guide/plugins/plugin_list.html",
+    "title": "Plugin List Plugin | Ham Cockpit",
+    "keywords": "Plugin List Plugin Shows the list of all plugins and their exported interfaces. This plugin is more useful for the developers than for the end users, but still could be handy for checking if the program finds the plugins that you have installed."
+  },
+  "users_guide/plugins/s_meter.html": {
+    "href": "users_guide/plugins/s_meter.html",
+    "title": "S-Meter Plugin | Ham Cockpit",
+    "keywords": "S-Meter Plugin Purpose Shows the level of the audio sent to the soundcard for listening. Expressed in the dBFS units (dB Over Full Scale), relative to the maximum amplitude that the soundcard can reproduce."
+  },
+  "users_guide/plugins/volume_control.html": {
+    "href": "users_guide/plugins/volume_control.html",
+    "title": "Volume Control Plugin | Ham Cockpit",
+    "keywords": "Volume Control Plugin Purpose Allows the operator to change the level of the output audio sent to the soundcard. Settings This control does not have any settings in the Plugin Settings Dialog . Be sure to put it after the AGC plugin in the DSP Pipeline , or AGC will undo the manual volume changes. Use drag-and-drop in the Plugin Settings Dialog to change the order of plugins."
+  },
+  "users_guide/plugins/waterfall.html": {
+    "href": "users_guide/plugins/waterfall.html",
+    "title": "Waterfall Display Plugin | Ham Cockpit",
+    "keywords": "Waterfall Display Plugin Purpose This is a visual plugin that shows the waterfall display and a band map, and provides a number of commands to control the RX and TX frequencies and filter settings. The primary purpose of this plugin is to provide the means for visual navigation in the Ham bands. Settings Scale Background Color, Scale Foreground Color Use these settings to change the colors of the frequency scale. The colors of the band map may be configured in the Band Plan plugin settings. Controls Zoom slider . Controls the vertical zoom of the waterfall. Speed slider . Controls the horizontal speed of the waterfall. Relative Scale button . Switches between the absolute frequencies and frequency offsets on the frequency scale 8 . Signal trace . Left-click to tune the receiver at the signal. Right-click to enable the Split mode and set the transmit frequency. Ctrl-click to set a frequency mark ( 11 ). Tune Button . Used for paging the waterfall display up and down, switching between the band plan segments and changing the bands. Left-click - tune page up Right-click - tune page down Alt-Left-click - next band segment Alt-Right-click - previous band segment Ctrl-Left-click - band up Ctrl-Right-click - band down. Frequency Display . Shows the current dial frequency. Left-click - jump to the band start (mode dependent). Right-click - enter the new dial frequency manually. Split offset display . Shows the transmitter offset in the Split mode. Red color indicates that Split is enabled. Left-click to toggle Split On/Off Right-click to reset the Split offset to zero. Frequency scale . Shows either the absolute frequencies or frequency offsets, depending on the state of the button 3 . Drag up and down to pan the waterfall vertically without changing the dial frequency. Left-click to set the dial frequency Right-click to enable the Split mode and set the transmit frequency. Ctrl-click to set a frequency mark ( 11 ). Band Map . Shows the band segments using the data provided by the Band Plan plugin. Move the mouse cursor to see band plan information on the mouse tooltip. Transmit frequency indicator . Visible only when the Split mode is enabled. Frequency mark . Ctrl-click on the waterfall ( 4 ) or band map ( 10 ) to place a frequency mark. Up to 4 marks are available. Useful for tracking the listening pattern of a DX station. Bandpass filter . Represents the bandpass filter in the Bandpass Filter plugin. The blue rectangle shows the extent of the filter passband. Drag with the mouse to change the filter bandwidth. In the SSB mode the upper and lower cutoff frequencies are adjusted independently, in CW only the filter bandwidth may be adjusted. Dial frequency indicator . Left-click on the waterfall ( 4 ) or band map ( 10 ) to change the frequency. Example The video below was recorded with the IC-7610 I/Q plugin as signal source. It shows how to zoom and pan the waterfall, adjust filter passband and navigate the band using the mouse and dial knob."
+  },
+  "users_guide/roadmap.html": {
+    "href": "users_guide/roadmap.html",
+    "title": "Roadmap | Ham Cockpit",
+    "keywords": "Roadmap Documentation Documentation is my top priority. I am working on this User's Guide, Plugin Developer's Guide and API Documentation . These plugins are in my immediate plans Conventional Transmitter , a plugin to control the transmitter in a conventional radio IF Adapter , support of the analog I/Q output from a conventional radio fed to a soundcard Bandscope , a band scope plugin Decoded Text Display , a panel that displays color-highlighted text produced by the CW/RTTY/Digi decoder plugins These plugins will come later Adapters for other SDR radios Spot Provider that downloads spots from the Telnet DX clusters, RBN and other sources Spot Manager that collects spots from all spot providers, archives them and serves spot data to other plugins Cluster Monitor , a visual plugin that shows the spots provided by Spot manager CW Decoder , a single-channel CW decoder based on the decoding algorithms used in CW Skimmer Logger Interface , a non-visual plugin that talks to the logger database and allows other plugins to add QSO, check the Needed status of the callsigns, etc. QSO Entry Box , a visual plugin to enter QSO to the logger database"
+  },
+  "users_guide/thanks.html": {
+    "href": "users_guide/thanks.html",
+    "title": "Thanks | Ham Cockpit",
+    "keywords": "Thanks This project uses quite a few free resources. Many thanks to their authors! Visual Studio 2019 , Community Edition IPP , Intel Integrated Performance Primitives CSCore , audio library for C# DockPanelSuite , docking library for C# SharpGL , OpenGL wrapper for C# Json.NET , JSON serializer for C# CSIntelPerfLibs , IPP wrapper for C# ScintillaNET , Scintilla text editor for C# MathNet.Numerics , math library for C# FTD3xx_Net , FTDI control library for C# ColorSlider , slider control for C# Win32Interop , Win32 Interop library for C# DocFX , documentation generator Icon by Freepik from www.flaticon.com"
+  },
+  "users_guide/user_interface.html": {
+    "href": "users_guide/user_interface.html",
+    "title": "User Interface | Ham Cockpit",
+    "keywords": "User Interface The user interface of Ham Cockpit provides the framework that allows the plugins to show their toolstrips, status bar controls and visual panels. Status bar . Plugins can add controls to the status bar. In this example, the Conventional Receiver plugin shows an icon that indicates the status of the radio control interface. Caption bar . Shows the name and version of the program. Main Menu : File - click File / Exit to close the program View - show or hide visual plugins, edit plugin settings Help - access information about the program Toolbar . Contains the DSP Pipeline toolstrip and the toolstrips added by the installed plugins. Re-order the toolstrips using drag-and-drop. Docking area . Contains Docked visual plugins."
+  },
+  "users_guide/version_history.html": {
+    "href": "users_guide/version_history.html",
+    "title": "Version History | Ham Cockpit",
+    "keywords": "Version History V.1.0. Initial release The program includes these plugins: Afedri-822x SDR , an interface to the Afedri SDR radio IC-7610 I/Q , an interface to the USB3 I/Q stream of the Icom 7610 radio IC-7610 Transmitter , controls T/R, Split and TX frequency via USB3 CW, SSB and RTTY demodulators , demodulate I/Q signals to audio AGC , automatic gain control Bandpass Filter , a variable bandwidth filter for CW, SSB and RTTY Volume Control , a slider to control the level of the output audio Audio Output to Soundcard , sends processed audio to an audio device Waterfall Display , a feature-rich, CW-grade waterfall display Band Plan , a non-visual plugin that provides band plan data to other plugins The pack of additional plugins, a separate download, includes: Clock Demo , adds a UTC/Local time clock to the toolbar Conventional Receiver , an interface to a receiver that outputs demodulated audio Frequency Display , displays and controls the operating frequency and TX Split offset S-Meter , an analog-type meter that shows the audio output level Plugin List , a panel that shows the list of all installed plugins and interfaces they export"
+  }
+}

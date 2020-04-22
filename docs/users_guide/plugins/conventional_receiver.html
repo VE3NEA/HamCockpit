@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Conventional Receiver Plugin | Ham Cockpit </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Conventional Receiver Plugin | Ham Cockpit ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/HamCockpit.svg" alt="">
+                <font size="+3"><b>&nbsp;Ham Cockpit&nbsp;&nbsp;&nbsp;</b></font>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="conventional-receiver-plugin">Conventional Receiver Plugin</h1>
+
+<h2 id="purpose">Purpose</h2>
+<p>This plugin provides an interface to a conventional receiver that outputs demodulated audio
+and has CAT control via an RS-232 port.
+Most radios used by the Hams fall in this category,
+including the ICOM, Yaesu, Kenwood and Elecraft transceivers.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This plugin makes use of the <a href="../omnirig.html">OmniRig</a> engine. Make sure that you have
+the latest version of <a href="../omnirig.html">OmniRig</a> installed on your system.</p>
+</div>
+<h2 id="settings">Settings</h2>
+<ul>
+<li><p><strong>OmniRig Radio</strong></p>
+<p>Select to use Rig1 or Rig2 in
+<a href="../omnirig.html">OmniRig</a>
+for CAT control.</p>
+</li>
+<li><p><strong>Soundcard</strong></p>
+<p>Select the soundcard that will be used to input the audio signals from the radio.</p>
+</li>
+<li><p><strong>Soundcard Channel</strong></p>
+<p>Specify which channel of the stereo soundcard to use.</p>
+</li>
+<li><p><strong>CW, SSB and DIG Settings</strong></p>
+<p>Each of these settings has three parameters:</p>
+<ul>
+<li><p><strong>Passband High, Passband Low</strong> - the upper and lower cutoff frequencies of the filter in the radio.</p>
+</li>
+<li><p><strong>Dial Offset</strong> - the audio tone that corresponds to the dial frequency of the radio.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Exlcusive, Latency</strong></p>
+<p>Experimental, do not change.</p>
+</li>
+</ul>
+<h2 id="explanation">Explanation</h2>
+<p>The <em>Conventional Receiver</em> plugin inputs audio signals in the range of 0 to 6000 Hz, but most radios
+produce the audio that occupies only a part of this range. For example, the radios in the CW mode
+typically have a 500-Hz filter that suppresses all signals outside of this range.
+The <em>CW Settings</em>, <em>SSB Settings</em> and <em>RTTY Settings</em> parameters tell the program what part
+of the input spectrum is usable in each mode.</p>
+<p>Other plugins use this information to show only that part of the spectrum on the waterfall, to decode
+signals only in that frequency range, etc.</p>
+<h2 id="examples">Examples</h2>
+<ol>
+<li><p>In the CW mode, the CW Pitch setting in the radio is 800 Hz, and the filter bandwidth is 500 Hz.</p>
+</li>
+<li><p>The settings should be:</p>
+<ul>
+<li>Dial Offset: 800 Hz</li>
+<li>Passband Low: 800 - 250 = 550 Hz</li>
+<li>Passband High: 800 + 250 = 1050 hz</li>
+</ul>
+</li>
+<li><p>In the SSB mode, the filter passband is 300 - 2700 Hz, and the radio
+displays the frequency  of the suppressed carrier (0 Hz audio). The settings should be:</p>
+<ul>
+<li>Dial Offset: 0 Hz</li>
+<li>Passband Low: 300 Hz</li>
+<li>Passband High: 2700Hz</li>
+</ul>
+</li>
+</ol>
+<h2 id="status-bar">Status Bar</h2>
+<p>The <em>Conventional Receiver</em> plugin shows an icon on the status bar
+that indicates current status of the CAT control interface. Place the mouse cursor
+over the icon to see information on the tooltip. Click on the icon to open the
+<a href="../omnirig.html">OmniRig</a> setup dialog.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
