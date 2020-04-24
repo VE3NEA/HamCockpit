@@ -1779,6 +1779,11 @@
     "title": "Configuration | Ham Cockpit",
     "keywords": "Configuration Virtually all functions in Ham Cockpit are implemented in the plugins. To configure the program, just configure the settings of the installed plugins. Click on the View / Plugin Settings command in the menu to open the Plugin Settings dialog. The left panel of the Plugin Settings dialog shows all installed plugins. Click on the plugin to select it for configuration and edit its settings on the right panel. Click on the Save button to save all changes and close the dialog. The Apply button saves the changes but does not close the dialog. To reset the setting to its default value, right-click on the setting name and click on Reset in the popup menu. Click on the checkbox next to each plugin name to enable or disable the plugin. Another way to disable a plugin permanently is to simply delete its DLL file from the installation folder. For some plugin types the order is important. For example, Audio Processors are applied to the signals in the same order in which they appear in the Plugin Settings dialog. Drag and drop such plugins to change their order. Warning Some of the plugins that come with Ham Cockpit perform audio input and output, control the radio via a USB or RS-232 port, or work with other non-standard hardware in various ways. Be sure to configure them properly before you start using them."
   },
+  "users_guide/cover.html": {
+    "href": "users_guide/cover.html",
+    "title": "Ham Cockpit | Ham Cockpit",
+    "keywords": "Ham Cockpit Radio Amateur's integrated envoronment Copyright (c) 2020 Alex Shovkoplyas VE3NEA Please visit the Ham Cockpit web site for general information."
+  },
   "users_guide/docking.html": {
     "href": "users_guide/docking.html",
     "title": "Docking | Ham Cockpit",
@@ -1798,11 +1803,6 @@
     "href": "users_guide/installation.html",
     "title": "Installation | Ham Cockpit",
     "keywords": "Installation To install Ham Cockpit download the setup package double-click on the downloaded zip file to open it in File Explorer double-click on the HamCockpitSetup.exe file in the zip follow the on-screen instructions Play with the program and get familiar with its functions. Once you feel that you need more plugins, proceed to installing the additional plugins package. To install additional plugins download the additional plugins package double-click on the downloaded zip file to open it in File Explorer extract all files from the zip to the folder where Ham Cockpit is installed start Ham Cockpit , click on View / Plugin Settings in the menu and configure the installed plugins. To uninstall Ham Cockpit On Windows 10 right-click on the Start button click on Apps and Features in the popup menu select Ham Cockpit in the list of installed programs click on the Uninstall button"
-  },
-  "users_guide/intro.html": {
-    "href": "users_guide/intro.html",
-    "title": "Ham Cockpit | Ham Cockpit",
-    "keywords": "Ham Cockpit Radio Amateur's integrated envoronment Copyright (c) 2020 Alex Shovkoplyas VE3NEA Please visit the Ham Cockpit web site for general information."
   },
   "users_guide/omnirig.html": {
     "href": "users_guide/omnirig.html",
