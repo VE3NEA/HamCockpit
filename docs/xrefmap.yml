@@ -2158,419 +2158,6 @@ references:
   commentId: N:VE3NEA.HamCockpit.PluginAPI
   fullName: VE3NEA.HamCockpit.PluginAPI
   nameWithType: VE3NEA.HamCockpit.PluginAPI
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1
-  name: CollectionItemPropertyDescriptor<TItem>
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.html
-  commentId: T:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1
-  name.vb: CollectionItemPropertyDescriptor(Of TItem)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem)
-  nameWithType: CollectionItemPropertyDescriptor<TItem>
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.#ctor
-  name: CollectionItemPropertyDescriptor()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.-ctor.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1__ctor
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.#ctor
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.CollectionItemPropertyDescriptor()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).CollectionItemPropertyDescriptor()
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.CollectionItemPropertyDescriptor()
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).CollectionItemPropertyDescriptor()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.#ctor*
-  name: CollectionItemPropertyDescriptor
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.-ctor.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.#ctor
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.CollectionItemPropertyDescriptor
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).CollectionItemPropertyDescriptor
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.CollectionItemPropertyDescriptor
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).CollectionItemPropertyDescriptor
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.CanResetValue(System.Object)
-  name: CanResetValue(Object)
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.CanResetValue.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_CanResetValue_System_Object_
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.CanResetValue(System.Object)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.CanResetValue(System.Object)
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).CanResetValue(System.Object)
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.CanResetValue(Object)
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).CanResetValue(Object)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.CanResetValue*
-  name: CanResetValue
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.CanResetValue.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.CanResetValue
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.CanResetValue
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).CanResetValue
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.CanResetValue
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).CanResetValue
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ComponentType
-  name: ComponentType
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ComponentType.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_ComponentType
-  commentId: P:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ComponentType
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.ComponentType
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).ComponentType
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.ComponentType
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ComponentType
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ComponentType*
-  name: ComponentType
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ComponentType.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ComponentType
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.ComponentType
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).ComponentType
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.ComponentType
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ComponentType
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.DisplayName
-  name: DisplayName
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.DisplayName.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_DisplayName
-  commentId: P:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.DisplayName
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.DisplayName
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).DisplayName
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.DisplayName
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).DisplayName
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.DisplayName*
-  name: DisplayName
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.DisplayName.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.DisplayName
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.DisplayName
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).DisplayName
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.DisplayName
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).DisplayName
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.GetName
-  name: GetName()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.GetName.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_GetName
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.GetName
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.GetName()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).GetName()
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.GetName()
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).GetName()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.GetName*
-  name: GetName
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.GetName.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.GetName
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.GetName
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).GetName
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.GetName
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).GetName
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.GetValue(System.Object)
-  name: GetValue(Object)
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.GetValue.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_GetValue_System_Object_
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.GetValue(System.Object)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.GetValue(System.Object)
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).GetValue(System.Object)
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.GetValue(Object)
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).GetValue(Object)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.GetValue*
-  name: GetValue
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.GetValue.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.GetValue
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.GetValue
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).GetValue
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.GetValue
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).GetValue
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.IsReadOnly
-  name: IsReadOnly
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.IsReadOnly.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_IsReadOnly
-  commentId: P:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.IsReadOnly
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.IsReadOnly
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).IsReadOnly
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.IsReadOnly
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).IsReadOnly
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.IsReadOnly*
-  name: IsReadOnly
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.IsReadOnly.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.IsReadOnly
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.IsReadOnly
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).IsReadOnly
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.IsReadOnly
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).IsReadOnly
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.Name
-  name: Name
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.Name.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_Name
-  commentId: P:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.Name
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.Name
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).Name
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.Name
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).Name
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.Name*
-  name: Name
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.Name.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.Name
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.Name
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).Name
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.Name
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).Name
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.PropertyType
-  name: PropertyType
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.PropertyType.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_PropertyType
-  commentId: P:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.PropertyType
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.PropertyType
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).PropertyType
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.PropertyType
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).PropertyType
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.PropertyType*
-  name: PropertyType
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.PropertyType.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.PropertyType
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.PropertyType
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).PropertyType
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.PropertyType
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).PropertyType
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ResetValue(System.Object)
-  name: ResetValue(Object)
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ResetValue.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_ResetValue_System_Object_
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ResetValue(System.Object)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.ResetValue(System.Object)
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).ResetValue(System.Object)
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.ResetValue(Object)
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ResetValue(Object)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ResetValue*
-  name: ResetValue
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ResetValue.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ResetValue
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.ResetValue
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).ResetValue
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.ResetValue
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ResetValue
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.SetValue(System.Object,System.Object)
-  name: SetValue(Object, Object)
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.SetValue.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_SetValue_System_Object_System_Object_
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.SetValue(System.Object,System.Object)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.SetValue(System.Object, System.Object)
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).SetValue(System.Object, System.Object)
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.SetValue(Object, Object)
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).SetValue(Object, Object)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.SetValue*
-  name: SetValue
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.SetValue.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.SetValue
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.SetValue
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).SetValue
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.SetValue
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).SetValue
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ShouldSerializeValue(System.Object)
-  name: ShouldSerializeValue(Object)
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ShouldSerializeValue.html#VE3NEA_HamCockpit_PluginAPI_CollectionItemPropertyDescriptor_1_ShouldSerializeValue_System_Object_
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ShouldSerializeValue(System.Object)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.ShouldSerializeValue(System.Object)
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).ShouldSerializeValue(System.Object)
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.ShouldSerializeValue(Object)
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ShouldSerializeValue(Object)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ShouldSerializeValue*
-  name: ShouldSerializeValue
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor-1.ShouldSerializeValue.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor`1.ShouldSerializeValue
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor<TItem>.ShouldSerializeValue
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionItemPropertyDescriptor(Of TItem).ShouldSerializeValue
-  nameWithType: CollectionItemPropertyDescriptor<TItem>.ShouldSerializeValue
-  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ShouldSerializeValue
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2
-  name: CollectionTypeDescriptor<TItem, TDescriptor>
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.html
-  commentId: T:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2
-  name.vb: CollectionTypeDescriptor(Of TItem, TDescriptor)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor)
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.#ctor(System.Collections.Generic.IList{`0})
-  name: CollectionTypeDescriptor(IList<TItem>)
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.-ctor.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2__ctor_System_Collections_Generic_IList__0__
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.#ctor(System.Collections.Generic.IList{`0})
-  name.vb: CollectionTypeDescriptor(IList(Of TItem))
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.CollectionTypeDescriptor(System.Collections.Generic.IList<TItem>)
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).CollectionTypeDescriptor(System.Collections.Generic.IList(Of TItem))
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.CollectionTypeDescriptor(IList<TItem>)
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).CollectionTypeDescriptor(IList(Of TItem))
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.#ctor*
-  name: CollectionTypeDescriptor
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.-ctor.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.#ctor
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.CollectionTypeDescriptor
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).CollectionTypeDescriptor
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.CollectionTypeDescriptor
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).CollectionTypeDescriptor
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.collection
-  name: collection
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.collection.html
-  commentId: F:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.collection
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.collection
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).collection
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.collection
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).collection
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetAttributes
-  name: GetAttributes()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetAttributes.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetAttributes
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetAttributes
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetAttributes()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetAttributes()
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetAttributes()
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetAttributes()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetAttributes*
-  name: GetAttributes
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetAttributes.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetAttributes
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetAttributes
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetAttributes
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetAttributes
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetAttributes
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetClassName
-  name: GetClassName()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetClassName.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetClassName
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetClassName
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetClassName()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetClassName()
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetClassName()
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetClassName()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetClassName*
-  name: GetClassName
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetClassName.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetClassName
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetClassName
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetClassName
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetClassName
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetClassName
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetComponentName
-  name: GetComponentName()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetComponentName.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetComponentName
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetComponentName
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetComponentName()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetComponentName()
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetComponentName()
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetComponentName()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetComponentName*
-  name: GetComponentName
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetComponentName.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetComponentName
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetComponentName
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetComponentName
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetComponentName
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetComponentName
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetConverter
-  name: GetConverter()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetConverter.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetConverter
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetConverter
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetConverter()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetConverter()
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetConverter()
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetConverter()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetConverter*
-  name: GetConverter
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetConverter.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetConverter
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetConverter
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetConverter
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetConverter
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetConverter
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetDefaultEvent
-  name: GetDefaultEvent()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetDefaultEvent.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetDefaultEvent
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetDefaultEvent
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetDefaultEvent()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetDefaultEvent()
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetDefaultEvent()
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetDefaultEvent()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetDefaultEvent*
-  name: GetDefaultEvent
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetDefaultEvent.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetDefaultEvent
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetDefaultEvent
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetDefaultEvent
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetDefaultEvent
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetDefaultEvent
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetDefaultProperty
-  name: GetDefaultProperty()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetDefaultProperty.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetDefaultProperty
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetDefaultProperty
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetDefaultProperty()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetDefaultProperty()
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetDefaultProperty()
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetDefaultProperty()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetDefaultProperty*
-  name: GetDefaultProperty
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetDefaultProperty.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetDefaultProperty
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetDefaultProperty
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetDefaultProperty
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetDefaultProperty
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetDefaultProperty
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEditor(System.Type)
-  name: GetEditor(Type)
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEditor.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetEditor_System_Type_
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEditor(System.Type)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetEditor(System.Type)
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetEditor(System.Type)
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetEditor(Type)
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetEditor(Type)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEditor*
-  name: GetEditor
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEditor.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEditor
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetEditor
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetEditor
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetEditor
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetEditor
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEvents
-  name: GetEvents()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEvents.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetEvents
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEvents
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetEvents()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetEvents()
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetEvents()
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetEvents()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEvents(System.Attribute[])
-  name: GetEvents(Attribute[])
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEvents.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetEvents_System_Attribute___
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEvents(System.Attribute[])
-  name.vb: GetEvents(Attribute())
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetEvents(System.Attribute[])
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetEvents(System.Attribute())
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetEvents(Attribute[])
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetEvents(Attribute())
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEvents*
-  name: GetEvents
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetEvents.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetEvents
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetEvents
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetEvents
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetEvents
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetEvents
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetProperties
-  name: GetProperties()
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetProperties.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetProperties
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetProperties
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetProperties()
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetProperties()
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetProperties()
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetProperties()
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetProperties(System.Attribute[])
-  name: GetProperties(Attribute[])
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetProperties.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetProperties_System_Attribute___
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetProperties(System.Attribute[])
-  name.vb: GetProperties(Attribute())
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetProperties(System.Attribute[])
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetProperties(System.Attribute())
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetProperties(Attribute[])
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetProperties(Attribute())
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetProperties*
-  name: GetProperties
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetProperties.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetProperties
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetProperties
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetProperties
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetProperties
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetProperties
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-  name: GetPropertyOwner(PropertyDescriptor)
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetPropertyOwner.html#VE3NEA_HamCockpit_PluginAPI_CollectionTypeDescriptor_2_GetPropertyOwner_System_ComponentModel_PropertyDescriptor_
-  commentId: M:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetPropertyOwner(PropertyDescriptor)
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetPropertyOwner(PropertyDescriptor)
-- uid: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetPropertyOwner*
-  name: GetPropertyOwner
-  href: api/VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor-2.GetPropertyOwner.html
-  commentId: Overload:VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor`2.GetPropertyOwner
-  fullName: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor<TItem, TDescriptor>.GetPropertyOwner
-  fullName.vb: VE3NEA.HamCockpit.PluginAPI.CollectionTypeDescriptor(Of TItem, TDescriptor).GetPropertyOwner
-  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>.GetPropertyOwner
-  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor).GetPropertyOwner
 - uid: VE3NEA.HamCockpit.PluginAPI.IAudioOutput
   name: IAudioOutput
   href: api/VE3NEA.HamCockpit.PluginAPI.IAudioOutput.html
@@ -3735,6 +3322,216 @@ references:
   commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CreateCollectionForm
   fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CreateCollectionForm
   nameWithType: CollectionEditorWithEvent.CreateCollectionForm
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1
+  name: CollectionItemPropertyDescriptor<TItem>
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.html
+  commentId: T:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1
+  name.vb: CollectionItemPropertyDescriptor(Of TItem)
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem)
+  nameWithType: CollectionItemPropertyDescriptor<TItem>
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem)
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.#ctor
+  name: CollectionItemPropertyDescriptor()
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.-ctor.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1__ctor
+  commentId: M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.#ctor
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.CollectionItemPropertyDescriptor()
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).CollectionItemPropertyDescriptor()
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.CollectionItemPropertyDescriptor()
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).CollectionItemPropertyDescriptor()
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.#ctor*
+  name: CollectionItemPropertyDescriptor
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.-ctor.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.#ctor
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.CollectionItemPropertyDescriptor
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).CollectionItemPropertyDescriptor
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.CollectionItemPropertyDescriptor
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).CollectionItemPropertyDescriptor
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.CanResetValue(System.Object)
+  name: CanResetValue(Object)
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.CanResetValue.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_CanResetValue_System_Object_
+  commentId: M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.CanResetValue(System.Object)
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.CanResetValue(System.Object)
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).CanResetValue(System.Object)
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.CanResetValue(Object)
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).CanResetValue(Object)
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.CanResetValue*
+  name: CanResetValue
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.CanResetValue.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.CanResetValue
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.CanResetValue
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).CanResetValue
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.CanResetValue
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).CanResetValue
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ComponentType
+  name: ComponentType
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.ComponentType.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_ComponentType
+  commentId: P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ComponentType
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.ComponentType
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).ComponentType
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.ComponentType
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ComponentType
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ComponentType*
+  name: ComponentType
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.ComponentType.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ComponentType
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.ComponentType
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).ComponentType
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.ComponentType
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ComponentType
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.DisplayName
+  name: DisplayName
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.DisplayName.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_DisplayName
+  commentId: P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.DisplayName
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.DisplayName
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).DisplayName
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.DisplayName
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).DisplayName
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.DisplayName*
+  name: DisplayName
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.DisplayName.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.DisplayName
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.DisplayName
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).DisplayName
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.DisplayName
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).DisplayName
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetName
+  name: GetName()
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.GetName.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_GetName
+  commentId: M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetName
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.GetName()
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).GetName()
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.GetName()
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).GetName()
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetName*
+  name: GetName
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.GetName.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetName
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.GetName
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).GetName
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.GetName
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).GetName
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetValue(System.Object)
+  name: GetValue(Object)
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.GetValue.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_GetValue_System_Object_
+  commentId: M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetValue(System.Object)
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.GetValue(System.Object)
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).GetValue(System.Object)
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.GetValue(Object)
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).GetValue(Object)
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetValue*
+  name: GetValue
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.GetValue.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetValue
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.GetValue
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).GetValue
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.GetValue
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).GetValue
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.IsReadOnly
+  name: IsReadOnly
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.IsReadOnly.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_IsReadOnly
+  commentId: P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.IsReadOnly
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.IsReadOnly
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).IsReadOnly
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.IsReadOnly
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).IsReadOnly
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.IsReadOnly.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.IsReadOnly
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.IsReadOnly
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).IsReadOnly
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.IsReadOnly
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).IsReadOnly
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.Name
+  name: Name
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.Name.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_Name
+  commentId: P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.Name
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.Name
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).Name
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.Name
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).Name
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.Name*
+  name: Name
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.Name.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.Name
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.Name
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).Name
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.Name
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).Name
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.PropertyType
+  name: PropertyType
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.PropertyType.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_PropertyType
+  commentId: P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.PropertyType
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.PropertyType
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).PropertyType
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.PropertyType
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).PropertyType
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.PropertyType*
+  name: PropertyType
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.PropertyType.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.PropertyType
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.PropertyType
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).PropertyType
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.PropertyType
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).PropertyType
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ResetValue(System.Object)
+  name: ResetValue(Object)
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.ResetValue.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_ResetValue_System_Object_
+  commentId: M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ResetValue(System.Object)
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.ResetValue(System.Object)
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).ResetValue(System.Object)
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.ResetValue(Object)
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ResetValue(Object)
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ResetValue*
+  name: ResetValue
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.ResetValue.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ResetValue
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.ResetValue
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).ResetValue
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.ResetValue
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ResetValue
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.SetValue(System.Object,System.Object)
+  name: SetValue(Object, Object)
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.SetValue.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_SetValue_System_Object_System_Object_
+  commentId: M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.SetValue(System.Object,System.Object)
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.SetValue(System.Object, System.Object)
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).SetValue(System.Object, System.Object)
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.SetValue(Object, Object)
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).SetValue(Object, Object)
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.SetValue*
+  name: SetValue
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.SetValue.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.SetValue
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.SetValue
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).SetValue
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.SetValue
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).SetValue
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ShouldSerializeValue(System.Object)
+  name: ShouldSerializeValue(Object)
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.ShouldSerializeValue.html#VE3NEA_HamCockpit_PluginHelpers_CollectionItemPropertyDescriptor_1_ShouldSerializeValue_System_Object_
+  commentId: M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ShouldSerializeValue(System.Object)
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.ShouldSerializeValue(System.Object)
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).ShouldSerializeValue(System.Object)
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.ShouldSerializeValue(Object)
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ShouldSerializeValue(Object)
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ShouldSerializeValue*
+  name: ShouldSerializeValue
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor-1.ShouldSerializeValue.html
+  commentId: Overload:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ShouldSerializeValue
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor<TItem>.ShouldSerializeValue
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor(Of TItem).ShouldSerializeValue
+  nameWithType: CollectionItemPropertyDescriptor<TItem>.ShouldSerializeValue
+  nameWithType.vb: CollectionItemPropertyDescriptor(Of TItem).ShouldSerializeValue
+- uid: VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2
+  name: CollectionTypeDescriptor<TItem, TDescriptor>
+  href: api/VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor-2.html
+  commentId: T:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2
+  name.vb: CollectionTypeDescriptor(Of TItem, TDescriptor)
+  fullName: VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor<TItem, TDescriptor>
+  fullName.vb: VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor(Of TItem, TDescriptor)
+  nameWithType: CollectionTypeDescriptor<TItem, TDescriptor>
+  nameWithType.vb: CollectionTypeDescriptor(Of TItem, TDescriptor)
 - uid: VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter
   name: EnumDescriptionConverter
   href: api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.html
