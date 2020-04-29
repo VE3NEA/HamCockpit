@@ -84,14 +84,16 @@
   
   <h1 id="VE3NEA_HamCockpit_PluginHelpers_OutputSoundcardNameConverter" data-uid="VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter" class="text-break">Class OutputSoundcardNameConverter
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides a type converter that allows editing the output soundcard property
+in the Plugin Settings dialog.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.typeconverter">TypeConverter</a></div>
     <div class="level2"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.stringconverter">StringConverter</a></div>
-    <div class="level3"><a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.html">SoundcardNameConverter</a></div>
+    <div class="level3"><span class="xref">VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter</span></div>
     <div class="level4"><span class="xref">OutputSoundcardNameConverter</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.html">VE3NEA.HamCockpit.PluginHelpers</a></h6>
@@ -100,24 +102,16 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class OutputSoundcardNameConverter : SoundcardNameConverter</code></pre>
   </div>
-  <h3 id="methods">Methods
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_OutputSoundcardNameConverter_Direction" data-uid="VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter.Direction">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter.Direction.html#VE3NEA_HamCockpit_PluginHelpers_OutputSoundcardNameConverter_Direction">Direction()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="VE3NEA_HamCockpit_PluginHelpers_OutputSoundcardNameConverter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If an output soundcard selection property in the <code>Settings</code> object of a plugin needs to be edited
+in the Plugin Settings dialog, use this class as a <code>TypeConverter</code> attribute for that property.
+The class populates the dropdown list with the names of available output soundcards and assigns
+<code>DeviceID</code> of the selected soundcard to the property.</p>
+</div>
+  <h5 id="VE3NEA_HamCockpit_PluginHelpers_OutputSoundcardNameConverter_examples"><strong>Examples</strong></h5>
+  <pre><code>    [TypeConverter(typeof(InputSoundcardNameConverter))]
+    public string Soundcard { get; set; }</code></pre>
+
 </article>
           </div>
           
@@ -126,7 +120,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/PropertyGridHelpers/SoundcardNameConverter.cs&amp;version=GBmaster&amp;line=70" class="contribution-link">View Source</a>
+                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/PropertyGridHelpers/SoundcardNameConverter.cs&amp;version=GBmaster&amp;line=106" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

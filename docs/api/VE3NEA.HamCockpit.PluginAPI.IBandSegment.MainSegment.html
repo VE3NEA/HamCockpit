@@ -88,11 +88,12 @@
 
 
 <span class="small pull-right mobile-hide">
-  <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/Interfaces.cs&amp;version=GBmaster&amp;line=249">View Source</a>
+  <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/Interfaces.cs&amp;version=GBmaster&amp;line=386">View Source</a>
 </span>
 <a id="VE3NEA_HamCockpit_PluginAPI_IBandSegment_MainSegment_" data-uid="VE3NEA.HamCockpit.PluginAPI.IBandSegment.MainSegment*"></a>
 <h4 id="VE3NEA_HamCockpit_PluginAPI_IBandSegment_MainSegment" data-uid="VE3NEA.HamCockpit.PluginAPI.IBandSegment.MainSegment">MainSegment</h4>
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Gets a value indicating whether the segment is the main segment.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
@@ -109,10 +110,16 @@
   <tbody>
     <tr>
       <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-      <td></td>
+      <td><p><code>true</code> if main segment; otherwise, <code>false</code>.</p>
+</td>
     </tr>
   </tbody>
 </table>
+<h5 id="VE3NEA_HamCockpit_PluginAPI_IBandSegment_MainSegment_remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>On some bands, there is more than one segment used for a particular mode.
+For example, the 14074-14078 kHz and 14095-14099 kHz segments are used for FT8
+on the 20m band.One of these segments must be marked as main.</p>
+</div>
 </article>
           </div>
           
@@ -121,7 +128,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/Interfaces.cs&amp;version=GBmaster&amp;line=249" class="contribution-link">View Source</a>
+                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/Interfaces.cs&amp;version=GBmaster&amp;line=386" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -84,7 +84,9 @@
   
   <h1 id="VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter" data-uid="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter" class="text-break">Class EnumDescriptionConverter
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides a type converter that allows editing properties of <code>enum</code> type
+in the Plugin Settings dialog.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -99,60 +101,28 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class EnumDescriptionConverter : EnumConverter</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter__ctor_System_Type_" data-uid="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.#ctor(System.Type)">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.-ctor.html#VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter__ctor_System_Type_">EnumDescriptionConverter(Type)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_CanConvertFrom_System_ComponentModel_ITypeDescriptorContext_System_Type_" data-uid="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertFrom.html#VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_CanConvertFrom_System_ComponentModel_ITypeDescriptorContext_System_Type_">CanConvertFrom(ITypeDescriptorContext, Type)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_CanConvertTo_System_ComponentModel_ITypeDescriptorContext_System_Type_" data-uid="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertTo.html#VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_CanConvertTo_System_ComponentModel_ITypeDescriptorContext_System_Type_">CanConvertTo(ITypeDescriptorContext, Type)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_ConvertFrom_System_ComponentModel_ITypeDescriptorContext_System_Globalization_CultureInfo_System_Object_" data-uid="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertFrom.html#VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_ConvertFrom_System_ComponentModel_ITypeDescriptorContext_System_Globalization_CultureInfo_System_Object_">ConvertFrom(ITypeDescriptorContext, CultureInfo, Object)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_ConvertTo_System_ComponentModel_ITypeDescriptorContext_System_Globalization_CultureInfo_System_Object_System_Type_" data-uid="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertTo.html#VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_ConvertTo_System_ComponentModel_ITypeDescriptorContext_System_Globalization_CultureInfo_System_Object_System_Type_">ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If a property of <code>enum</code> type in the <code>Settings</code> object of a plugin needs to be edited
+in the Plugin Settings dialog, use this class as a <code>TypeConverter</code> attribute for that property.
+With this attribute, the editor shows the descriptions of <code>enum</code> values instead of the values themselves.</p>
+</div>
+  <h5 id="VE3NEA_HamCockpit_PluginHelpers_EnumDescriptionConverter_examples"><strong>Examples</strong></h5>
+  <p>Enum values with descriptions:</p>
+<pre><code>  enum InputType {
+   [Description(&quot;Left Channel&quot;)]
+   LeftChannel,
+
+   [Description(&quot;Right Channel&quot;)]
+   RightChannel,
+
+   [Description(&quot;Diversity (stereo)&quot;)]
+   DiversityStereo
+}</code></pre>
+
+  <p>TypeConverter attribute:</p>
+<pre><code>[TypeConverter(typeof(EnumDescriptionConverter))]
+public InputType InputType { get; set; }</code></pre>
+
 </article>
           </div>
           
@@ -161,7 +131,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/PropertyGridHelpers/EnumDescriptionConverter.cs&amp;version=GBmaster&amp;line=12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/PropertyGridHelpers/EnumDescriptionConverter.cs&amp;version=GBmaster&amp;line=41" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

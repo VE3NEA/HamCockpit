@@ -84,7 +84,9 @@
   
   <h1 id="VE3NEA_HamCockpit_PluginHelpers_CollectionEditorWithEvent" data-uid="VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent" class="text-break">Class CollectionEditorWithEvent
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides a collection editor that can edit most types of collections
+in the Plugin Settings dialog.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -99,60 +101,14 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class CollectionEditorWithEvent : CollectionEditor</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_CollectionEditorWithEvent__ctor_System_Type_" data-uid="VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.#ctor(System.Type)">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.-ctor.html#VE3NEA_HamCockpit_PluginHelpers_CollectionEditorWithEvent__ctor_System_Type_">CollectionEditorWithEvent(Type)</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_CollectionEditorWithEvent_CreateCollectionForm" data-uid="VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CreateCollectionForm">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CreateCollectionForm.html#VE3NEA_HamCockpit_PluginHelpers_CollectionEditorWithEvent_CreateCollectionForm">CreateCollectionForm()</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="events">Events
-  </h3>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td id="VE3NEA_HamCockpit_PluginHelpers_CollectionEditorWithEvent_CollectionChanged" data-uid="VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CollectionChanged">
-          <a class="xref" href="VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CollectionChanged.html">CollectionChanged</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="VE3NEA_HamCockpit_PluginHelpers_CollectionEditorWithEvent_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If a property of collection type in the Settings object of a plugin needs to be edited
+in the Plugin Settings dialog, use this class as an Editor attribute for that property.</p>
+</div>
+  <h5 id="VE3NEA_HamCockpit_PluginHelpers_CollectionEditorWithEvent_examples"><strong>Examples</strong></h5>
+  <pre><code>    [Editor(typeof(CollectionEditorWithEvent), typeof(UITypeEditor))]
+    public ModeColorList ModeColors { get; set; } = new ModeColorList();</code></pre>
+
 </article>
           </div>
           
@@ -161,7 +117,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/PropertyGridHelpers/CollectionEditorWithEvent.cs&amp;version=GBmaster&amp;line=18" class="contribution-link">View Source</a>
+                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.PluginAPI/PropertyGridHelpers/CollectionEditorWithEvent.cs&amp;version=GBmaster&amp;line=27" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

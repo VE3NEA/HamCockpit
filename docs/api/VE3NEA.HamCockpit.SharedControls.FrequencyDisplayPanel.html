@@ -84,7 +84,8 @@
   
   <h1 id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel" class="text-break">Class FrequencyDisplayPanel
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A visual control that displays and sets the frequency.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -113,6 +114,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class FrequencyDisplayPanel : UserControl, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IArrangedElement, IComponent, IDisposable, IContainerControl</code></pre>
   </div>
+  <h5 id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This control is used in the <code>Frequency Display</code> and <code>Waterfall Display</code> plugins
+to show and control the RX and TX frequencies if the radio. Other plugins may reuse it
+if they need the frequency display and control functions in their visual interface.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,7 +133,8 @@
         <td id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel__ctor" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.#ctor">
           <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.-ctor.html#VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel__ctor">FrequencyDisplayPanel()</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.html">FrequencyDisplayPanel</a> class.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -145,37 +152,22 @@
         <td id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_bandplan" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.bandplan">
           <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.bandplan.html">bandplan</a>
         </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_FrequencyLabel" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.FrequencyLabel">
-          <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.FrequencyLabel.html">FrequencyLabel</a>
-        </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>A reference to the band plan object.</p>
+</td>
       </tr>
       <tr>
         <td id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_PageSizeHz" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.PageSizeHz">
           <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.PageSizeHz.html">PageSizeHz</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>The page size for the Page Up and Page Down command.</p>
+</td>
       </tr>
       <tr>
         <td id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_pipeline" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.pipeline">
           <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.pipeline.html">pipeline</a>
         </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_SplitModeLabel" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.SplitModeLabel">
-          <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.SplitModeLabel.html">SplitModeLabel</a>
-        </td>
-        <td class="markdown level1 summary"></td>
-      </tr>
-      <tr>
-        <td id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_TuneButton" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.TuneButton">
-          <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.TuneButton.html">TuneButton</a>
-        </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>A reference to the <a class="xref" href="VE3NEA.HamCockpit.PluginAPI.IPluginHost.DspPipeline.html#VE3NEA_HamCockpit_PluginAPI_IPluginHost_DspPipeline">DspPipeline</a>e in the hosting application.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -200,7 +192,8 @@
         <td id="VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_UpdateDisplayedInfo" data-uid="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.UpdateDisplayedInfo">
           <a class="xref" href="VE3NEA.HamCockpit.SharedControls.FrequencyDisplayPanel.UpdateDisplayedInfo.html#VE3NEA_HamCockpit_SharedControls_FrequencyDisplayPanel_UpdateDisplayedInfo">UpdateDisplayedInfo()</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Updates the displayed frequency and split information.</p>
+</td>
       </tr>
     </tbody>
   </table>
