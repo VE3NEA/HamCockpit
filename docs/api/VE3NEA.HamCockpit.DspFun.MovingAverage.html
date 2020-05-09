@@ -84,7 +84,8 @@
   
   <h1 id="VE3NEA_HamCockpit_DspFun_MovingAverage" data-uid="VE3NEA.HamCockpit.DspFun.MovingAverage" class="text-break">Class MovingAverage
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Applies a moving average filter to the floating point data.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -97,6 +98,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class MovingAverage</code></pre>
   </div>
+  <h5 id="VE3NEA_HamCockpit_DspFun_MovingAverage_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+The classical moving average, <code>y[n] = y[n-1] + x[n] - x[n-k]</code>, fails when applied
+to the floating point data
+because <code>(a + b) - b</code> is not always equal to <code>a</code> when <code>a</code> and <code>b</code>
+are floating point values. For example, <code>(1E-6 + 1E6) - 1E6</code> evaluates to
+<code>0</code>, not to <code>1E-6</code>.
+The algorithm used in this class is designed to prevent such errors.
+</p><p>
+The filtered output is not scaled, it needs to be multiplied 
+by the <a class="xref" href="VE3NEA.HamCockpit.DspFun.MovingAverage.Scale.html#VE3NEA_HamCockpit_DspFun_MovingAverage_Scale">Scale</a> factor to preserve the signal amplitude. </p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <table class="table table-bordered table-striped table-condensed">
@@ -111,7 +124,8 @@
         <td id="VE3NEA_HamCockpit_DspFun_MovingAverage__ctor_System_Int32_" data-uid="VE3NEA.HamCockpit.DspFun.MovingAverage.#ctor(System.Int32)">
           <a class="xref" href="VE3NEA.HamCockpit.DspFun.MovingAverage.-ctor.html#VE3NEA_HamCockpit_DspFun_MovingAverage__ctor_System_Int32_">MovingAverage(Int32)</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VE3NEA.HamCockpit.DspFun.MovingAverage.html">MovingAverage</a> class.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -129,7 +143,8 @@
         <td id="VE3NEA_HamCockpit_DspFun_MovingAverage_Scale" data-uid="VE3NEA.HamCockpit.DspFun.MovingAverage.Scale">
           <a class="xref" href="VE3NEA.HamCockpit.DspFun.MovingAverage.Scale.html#VE3NEA_HamCockpit_DspFun_MovingAverage_Scale">Scale</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Gets the scaling factor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -147,7 +162,8 @@
         <td id="VE3NEA_HamCockpit_DspFun_MovingAverage_Process_System_Single_" data-uid="VE3NEA.HamCockpit.DspFun.MovingAverage.Process(System.Single)">
           <a class="xref" href="VE3NEA.HamCockpit.DspFun.MovingAverage.Process.html#VE3NEA_HamCockpit_DspFun_MovingAverage_Process_System_Single_">Process(Single)</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Processes the specified value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -159,7 +175,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.DspFun/MovingAverage.cs&amp;version=GBmaster&amp;line=9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.DspFun/MovingAverage.cs&amp;version=GBmaster&amp;line=18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

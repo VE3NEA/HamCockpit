@@ -265,6 +265,18 @@ references:
   commentId: Overload:VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum
   fullName: VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum
   nameWithType: BaseFft.PowerSpectrum
+- uid: VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower(System.Int32,System.Int32)
+  name: SlicePower(Int32, Int32)
+  href: api/VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower.html#VE3NEA_HamCockpit_DspFun_BaseFft_SlicePower_System_Int32_System_Int32_
+  commentId: M:VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower(System.Int32,System.Int32)
+  fullName: VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower(System.Int32, System.Int32)
+  nameWithType: BaseFft.SlicePower(Int32, Int32)
+- uid: VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower*
+  name: SlicePower
+  href: api/VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower.html
+  commentId: Overload:VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower
+  fullName: VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower
+  nameWithType: BaseFft.SlicePower
 - uid: VE3NEA.HamCockpit.DspFun.BaseFft.specBuffer
   name: specBuffer
   href: api/VE3NEA.HamCockpit.DspFun.BaseFft.specBuffer.html
@@ -457,18 +469,6 @@ references:
   commentId: Overload:VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeInverse
   fullName: VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeInverse
   nameWithType: ComplexFft.ComputeInverse
-- uid: VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower(System.Int32,System.Int32)
-  name: SlicePower(Int32, Int32)
-  href: api/VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower.html#VE3NEA_HamCockpit_DspFun_ComplexFft_SlicePower_System_Int32_System_Int32_
-  commentId: M:VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower(System.Int32,System.Int32)
-  fullName: VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower(System.Int32, System.Int32)
-  nameWithType: ComplexFft.SlicePower(Int32, Int32)
-- uid: VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower*
-  name: SlicePower
-  href: api/VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower
-  fullName: VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower
-  nameWithType: ComplexFft.SlicePower
 - uid: VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData
   name: TimeData
   href: api/VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData.html
@@ -835,228 +835,6 @@ references:
   commentId: T:VE3NEA.HamCockpit.DspFun.Ipp
   fullName: VE3NEA.HamCockpit.DspFun.Ipp
   nameWithType: Ipp
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc(MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*,MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Byte*)
-  name: ippsFIRMR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFIRMR_32fc_MathNet_Numerics_Complex32__MathNet_Numerics_Complex32__System_Int32_VE3NEA_HamCockpit_DspFun_IppsFIRSpec_32fc__MathNet_Numerics_Complex32__MathNet_Numerics_Complex32__System_Byte__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc(MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*,MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Byte*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc(MathNet.Numerics.Complex32*, MathNet.Numerics.Complex32*, System.Int32, VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*, MathNet.Numerics.Complex32*, MathNet.Numerics.Complex32*, System.Byte*)
-  nameWithType: Ipp.ippsFIRMR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc*
-  name: ippsFIRMR_32fc
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc
-  nameWithType: Ipp.ippsFIRMR_32fc
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc(System.Int32,System.Int32,System.Int32,CSIntel.Ipp.IppDataType,System.Int32*,System.Int32*)
-  name: ippsFIRMRGetStateSize_32fc(Int32, Int32, Int32, IppDataType, Int32*, Int32*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFIRMRGetStateSize_32fc_System_Int32_System_Int32_System_Int32_CSIntel_Ipp_IppDataType_System_Int32__System_Int32__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc(System.Int32,System.Int32,System.Int32,CSIntel.Ipp.IppDataType,System.Int32*,System.Int32*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc(System.Int32, System.Int32, System.Int32, CSIntel.Ipp.IppDataType, System.Int32*, System.Int32*)
-  nameWithType: Ipp.ippsFIRMRGetStateSize_32fc(Int32, Int32, Int32, IppDataType, Int32*, Int32*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc*
-  name: ippsFIRMRGetStateSize_32fc
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc
-  nameWithType: Ipp.ippsFIRMRGetStateSize_32fc
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc(MathNet.Numerics.Complex32*,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*)
-  name: ippsFIRMRInit_32fc(Complex32*, Int32, Int32, Int32, Int32, Int32, IppsFIRSpec_32fc*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFIRMRInit_32fc_MathNet_Numerics_Complex32__System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_VE3NEA_HamCockpit_DspFun_IppsFIRSpec_32fc__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc(MathNet.Numerics.Complex32*,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc(MathNet.Numerics.Complex32*, System.Int32, System.Int32, System.Int32, System.Int32, System.Int32, VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*)
-  nameWithType: Ipp.ippsFIRMRInit_32fc(Complex32*, Int32, Int32, Int32, Int32, Int32, IppsFIRSpec_32fc*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc*
-  name: ippsFIRMRInit_32fc
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc
-  nameWithType: Ipp.ippsFIRMRInit_32fc
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f(System.Single*,System.Single*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f*,System.Single*,System.Single*,System.Byte*)
-  name: ippsFIRSR_32f(Single*, Single*, Int32, IppsFIRSpec_32f*, Single*, Single*, Byte*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFIRSR_32f_System_Single__System_Single__System_Int32_VE3NEA_HamCockpit_DspFun_IppsFIRSpec_32f__System_Single__System_Single__System_Byte__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f(System.Single*,System.Single*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f*,System.Single*,System.Single*,System.Byte*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f(System.Single*, System.Single*, System.Int32, VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f*, System.Single*, System.Single*, System.Byte*)
-  nameWithType: Ipp.ippsFIRSR_32f(Single*, Single*, Int32, IppsFIRSpec_32f*, Single*, Single*, Byte*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f*
-  name: ippsFIRSR_32f
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f
-  nameWithType: Ipp.ippsFIRSR_32f
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc(MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*,MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Byte*)
-  name: ippsFIRSR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFIRSR_32fc_MathNet_Numerics_Complex32__MathNet_Numerics_Complex32__System_Int32_VE3NEA_HamCockpit_DspFun_IppsFIRSpec_32fc__MathNet_Numerics_Complex32__MathNet_Numerics_Complex32__System_Byte__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc(MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*,MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Byte*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc(MathNet.Numerics.Complex32*, MathNet.Numerics.Complex32*, System.Int32, VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*, MathNet.Numerics.Complex32*, MathNet.Numerics.Complex32*, System.Byte*)
-  nameWithType: Ipp.ippsFIRSR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc*
-  name: ippsFIRSR_32fc
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc
-  nameWithType: Ipp.ippsFIRSR_32fc
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize(System.Int32,CSIntel.Ipp.IppDataType,System.Int32*,System.Int32*)
-  name: ippsFIRSRGetSize(Int32, IppDataType, Int32*, Int32*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFIRSRGetSize_System_Int32_CSIntel_Ipp_IppDataType_System_Int32__System_Int32__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize(System.Int32,CSIntel.Ipp.IppDataType,System.Int32*,System.Int32*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize(System.Int32, CSIntel.Ipp.IppDataType, System.Int32*, System.Int32*)
-  nameWithType: Ipp.ippsFIRSRGetSize(Int32, IppDataType, Int32*, Int32*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize*
-  name: ippsFIRSRGetSize
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize
-  nameWithType: Ipp.ippsFIRSRGetSize
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f(System.Single*,System.Int32,VE3NEA.HamCockpit.DspFun.IppAlgType,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f*)
-  name: ippsFIRSRInit_32f(Single*, Int32, IppAlgType, IppsFIRSpec_32f*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFIRSRInit_32f_System_Single__System_Int32_VE3NEA_HamCockpit_DspFun_IppAlgType_VE3NEA_HamCockpit_DspFun_IppsFIRSpec_32f__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f(System.Single*,System.Int32,VE3NEA.HamCockpit.DspFun.IppAlgType,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f(System.Single*, System.Int32, VE3NEA.HamCockpit.DspFun.IppAlgType, VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f*)
-  nameWithType: Ipp.ippsFIRSRInit_32f(Single*, Int32, IppAlgType, IppsFIRSpec_32f*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f*
-  name: ippsFIRSRInit_32f
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f
-  nameWithType: Ipp.ippsFIRSRInit_32f
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc(MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppAlgType,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*)
-  name: ippsFIRSRInit_32fc(Complex32*, Int32, IppAlgType, IppsFIRSpec_32fc*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFIRSRInit_32fc_MathNet_Numerics_Complex32__System_Int32_VE3NEA_HamCockpit_DspFun_IppAlgType_VE3NEA_HamCockpit_DspFun_IppsFIRSpec_32fc__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc(MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppAlgType,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc(MathNet.Numerics.Complex32*, System.Int32, VE3NEA.HamCockpit.DspFun.IppAlgType, VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*)
-  nameWithType: Ipp.ippsFIRSRInit_32fc(Complex32*, Int32, IppAlgType, IppsFIRSpec_32fc*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc*
-  name: ippsFIRSRInit_32fc
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc
-  nameWithType: Ipp.ippsFIRSRInit_32fc
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFree(System.Void*)
-  name: ippsFree(Void*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFree.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsFree_System_Void__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFree(System.Void*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFree(System.Void*)
-  nameWithType: Ipp.ippsFree(Void*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsFree*
-  name: ippsFree
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFree.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsFree
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsFree
-  nameWithType: Ipp.ippsFree
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f(System.Int32)
-  name: ippsMalloc_32f(Int32)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsMalloc_32f_System_Int32_
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f(System.Int32)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f(System.Int32)
-  nameWithType: Ipp.ippsMalloc_32f(Int32)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f*
-  name: ippsMalloc_32f
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f
-  nameWithType: Ipp.ippsMalloc_32f
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc(System.Int32)
-  name: ippsMalloc_32fc(Int32)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsMalloc_32fc_System_Int32_
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc(System.Int32)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc(System.Int32)
-  nameWithType: Ipp.ippsMalloc_32fc(Int32)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc*
-  name: ippsMalloc_32fc
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc
-  nameWithType: Ipp.ippsMalloc_32fc
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u(System.Int32)
-  name: ippsMalloc_8u(Int32)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsMalloc_8u_System_Int32_
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u(System.Int32)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u(System.Int32)
-  nameWithType: Ipp.ippsMalloc_8u(Int32)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u*
-  name: ippsMalloc_8u
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u
-  nameWithType: Ipp.ippsMalloc_8u
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f(System.Single*,System.Int32,System.Single*,System.Single,System.Double*,System.Int32*,VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f*)
-  name: ippsResamplePolyphaseFixed_32f(Single*, Int32, Single*, Single, Double*, Int32*, IppsResamplingPolyphaseFixed_32f*)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsResamplePolyphaseFixed_32f_System_Single__System_Int32_System_Single__System_Single_System_Double__System_Int32__VE3NEA_HamCockpit_DspFun_IppsResamplingPolyphaseFixed_32f__
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f(System.Single*,System.Int32,System.Single*,System.Single,System.Double*,System.Int32*,VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f*)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f(System.Single*, System.Int32, System.Single*, System.Single, System.Double*, System.Int32*, VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f*)
-  nameWithType: Ipp.ippsResamplePolyphaseFixed_32f(Single*, Int32, Single*, Single, Double*, Int32*, IppsResamplingPolyphaseFixed_32f*)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f*
-  name: ippsResamplePolyphaseFixed_32f
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f
-  nameWithType: Ipp.ippsResamplePolyphaseFixed_32f
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f(System.Int32,System.Int32,System.Int32,System.Int32*,System.Int32*,System.Int32*,CSIntel.Ipp.IppHintAlgorithm)
-  name: ippsResamplePolyphaseFixedGetSize_32f(Int32, Int32, Int32, Int32*, Int32*, Int32*, IppHintAlgorithm)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsResamplePolyphaseFixedGetSize_32f_System_Int32_System_Int32_System_Int32_System_Int32__System_Int32__System_Int32__CSIntel_Ipp_IppHintAlgorithm_
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f(System.Int32,System.Int32,System.Int32,System.Int32*,System.Int32*,System.Int32*,CSIntel.Ipp.IppHintAlgorithm)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f(System.Int32, System.Int32, System.Int32, System.Int32*, System.Int32*, System.Int32*, CSIntel.Ipp.IppHintAlgorithm)
-  nameWithType: Ipp.ippsResamplePolyphaseFixedGetSize_32f(Int32, Int32, Int32, Int32*, Int32*, Int32*, IppHintAlgorithm)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f*
-  name: ippsResamplePolyphaseFixedGetSize_32f
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f
-  nameWithType: Ipp.ippsResamplePolyphaseFixedGetSize_32f
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f(System.Int32,System.Int32,System.Int32,System.Single,System.Single,VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f*,CSIntel.Ipp.IppHintAlgorithm)
-  name: ippsResamplePolyphaseFixedInit_32f(Int32, Int32, Int32, Single, Single, IppsResamplingPolyphaseFixed_32f*, IppHintAlgorithm)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsResamplePolyphaseFixedInit_32f_System_Int32_System_Int32_System_Int32_System_Single_System_Single_VE3NEA_HamCockpit_DspFun_IppsResamplingPolyphaseFixed_32f__CSIntel_Ipp_IppHintAlgorithm_
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f(System.Int32,System.Int32,System.Int32,System.Single,System.Single,VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f*,CSIntel.Ipp.IppHintAlgorithm)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f(System.Int32, System.Int32, System.Int32, System.Single, System.Single, VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f*, CSIntel.Ipp.IppHintAlgorithm)
-  nameWithType: Ipp.ippsResamplePolyphaseFixedInit_32f(Int32, Int32, Int32, Single, Single, IppsResamplingPolyphaseFixed_32f*, IppHintAlgorithm)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f*
-  name: ippsResamplePolyphaseFixedInit_32f
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f
-  nameWithType: Ipp.ippsResamplePolyphaseFixedInit_32f
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc(CSIntel.Ipp.Ipp32fc*,System.Int32,System.Single,System.Single,System.Single*,CSIntel.Ipp.IppHintAlgorithm)
-  name: ippsTone_32fc(Ipp32fc*, Int32, Single, Single, Single*, IppHintAlgorithm)
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc.html#VE3NEA_HamCockpit_DspFun_Ipp_ippsTone_32fc_CSIntel_Ipp_Ipp32fc__System_Int32_System_Single_System_Single_System_Single__CSIntel_Ipp_IppHintAlgorithm_
-  commentId: M:VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc(CSIntel.Ipp.Ipp32fc*,System.Int32,System.Single,System.Single,System.Single*,CSIntel.Ipp.IppHintAlgorithm)
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc(CSIntel.Ipp.Ipp32fc*, System.Int32, System.Single, System.Single, System.Single*, CSIntel.Ipp.IppHintAlgorithm)
-  nameWithType: Ipp.ippsTone_32fc(Ipp32fc*, Int32, Single, Single, Single*, IppHintAlgorithm)
-- uid: VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc*
-  name: ippsTone_32fc
-  href: api/VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc
-  fullName: VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc
-  nameWithType: Ipp.ippsTone_32fc
-- uid: VE3NEA.HamCockpit.DspFun.IppAlgType
-  name: IppAlgType
-  href: api/VE3NEA.HamCockpit.DspFun.IppAlgType.html
-  commentId: T:VE3NEA.HamCockpit.DspFun.IppAlgType
-  fullName: VE3NEA.HamCockpit.DspFun.IppAlgType
-  nameWithType: IppAlgType
-- uid: VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgAuto
-  name: ippAlgAuto
-  href: api/VE3NEA.HamCockpit.DspFun.IppAlgType.html#VE3NEA_HamCockpit_DspFun_IppAlgType_ippAlgAuto
-  commentId: F:VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgAuto
-  fullName: VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgAuto
-  nameWithType: IppAlgType.ippAlgAuto
-- uid: VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgDirect
-  name: ippAlgDirect
-  href: api/VE3NEA.HamCockpit.DspFun.IppAlgType.html#VE3NEA_HamCockpit_DspFun_IppAlgType_ippAlgDirect
-  commentId: F:VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgDirect
-  fullName: VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgDirect
-  nameWithType: IppAlgType.ippAlgDirect
-- uid: VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgFFT
-  name: ippAlgFFT
-  href: api/VE3NEA.HamCockpit.DspFun.IppAlgType.html#VE3NEA_HamCockpit_DspFun_IppAlgType_ippAlgFFT
-  commentId: F:VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgFFT
-  fullName: VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgFFT
-  nameWithType: IppAlgType.ippAlgFFT
-- uid: VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgMask
-  name: ippAlgMask
-  href: api/VE3NEA.HamCockpit.DspFun.IppAlgType.html#VE3NEA_HamCockpit_DspFun_IppAlgType_ippAlgMask
-  commentId: F:VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgMask
-  fullName: VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgMask
-  nameWithType: IppAlgType.ippAlgMask
 - uid: VE3NEA.HamCockpit.DspFun.IppException
   name: IppException
   href: api/VE3NEA.HamCockpit.DspFun.IppException.html
@@ -1093,12 +871,6 @@ references:
   commentId: T:VE3NEA.HamCockpit.DspFun.IppHelper
   fullName: VE3NEA.HamCockpit.DspFun.IppHelper
   nameWithType: IppHelper
-- uid: VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb
-  name: LnToDb
-  href: api/VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb.html
-  commentId: F:VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb
-  fullName: VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb
-  nameWithType: IppHelper.LnToDb
 - uid: VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower(System.Single[])
   name: PowerToLogPower(Single[])
   href: api/VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower.html#VE3NEA_HamCockpit_DspFun_IppHelper_PowerToLogPower_System_Single___
@@ -1114,87 +886,6 @@ references:
   commentId: Overload:VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower
   fullName: VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower
   nameWithType: IppHelper.PowerToLogPower
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter
-  name: IppRealFirFilter
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.html
-  commentId: T:VE3NEA.HamCockpit.DspFun.IppRealFirFilter
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter
-  nameWithType: IppRealFirFilter
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.#ctor(System.Single[],VE3NEA.HamCockpit.DspFun.IppAlgType)
-  name: IppRealFirFilter(Single[], IppAlgType)
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.-ctor.html#VE3NEA_HamCockpit_DspFun_IppRealFirFilter__ctor_System_Single___VE3NEA_HamCockpit_DspFun_IppAlgType_
-  commentId: M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.#ctor(System.Single[],VE3NEA.HamCockpit.DspFun.IppAlgType)
-  name.vb: IppRealFirFilter(Single(), IppAlgType)
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.IppRealFirFilter(System.Single[], VE3NEA.HamCockpit.DspFun.IppAlgType)
-  fullName.vb: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.IppRealFirFilter(System.Single(), VE3NEA.HamCockpit.DspFun.IppAlgType)
-  nameWithType: IppRealFirFilter.IppRealFirFilter(Single[], IppAlgType)
-  nameWithType.vb: IppRealFirFilter.IppRealFirFilter(Single(), IppAlgType)
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.#ctor*
-  name: IppRealFirFilter
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.-ctor.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.#ctor
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.IppRealFirFilter
-  nameWithType: IppRealFirFilter.IppRealFirFilter
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data
-  name: Data
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data.html
-  commentId: F:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data
-  nameWithType: IppRealFirFilter.Data
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose
-  name: Dispose()
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose.html#VE3NEA_HamCockpit_DspFun_IppRealFirFilter_Dispose
-  commentId: M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose()
-  nameWithType: IppRealFirFilter.Dispose()
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose*
-  name: Dispose
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose
-  nameWithType: IppRealFirFilter.Dispose
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process(System.Int32)
-  name: Process(Int32)
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process.html#VE3NEA_HamCockpit_DspFun_IppRealFirFilter_Process_System_Int32_
-  commentId: M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process(System.Int32)
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process(System.Int32)
-  nameWithType: IppRealFirFilter.Process(Int32)
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process*
-  name: Process
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process
-  nameWithType: IppRealFirFilter.Process
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided(System.Single[],System.Int32,System.Int32,System.Int32)
-  name: ProcessStrided(Single[], Int32, Int32, Int32)
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided.html#VE3NEA_HamCockpit_DspFun_IppRealFirFilter_ProcessStrided_System_Single___System_Int32_System_Int32_System_Int32_
-  commentId: M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided(System.Single[],System.Int32,System.Int32,System.Int32)
-  name.vb: ProcessStrided(Single(), Int32, Int32, Int32)
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided(System.Single[], System.Int32, System.Int32, System.Int32)
-  fullName.vb: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided(System.Single(), System.Int32, System.Int32, System.Int32)
-  nameWithType: IppRealFirFilter.ProcessStrided(Single[], Int32, Int32, Int32)
-  nameWithType.vb: IppRealFirFilter.ProcessStrided(Single(), Int32, Int32, Int32)
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided*
-  name: ProcessStrided
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided
-  nameWithType: IppRealFirFilter.ProcessStrided
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps(System.Single[])
-  name: SetTaps(Single[])
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps.html#VE3NEA_HamCockpit_DspFun_IppRealFirFilter_SetTaps_System_Single___
-  commentId: M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps(System.Single[])
-  name.vb: SetTaps(Single())
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps(System.Single[])
-  fullName.vb: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps(System.Single())
-  nameWithType: IppRealFirFilter.SetTaps(Single[])
-  nameWithType.vb: IppRealFirFilter.SetTaps(Single())
-- uid: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps*
-  name: SetTaps
-  href: api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps.html
-  commentId: Overload:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps
-  fullName: VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps
-  nameWithType: IppRealFirFilter.SetTaps
 - uid: VE3NEA.HamCockpit.DspFun.IppResampler
   name: IppResampler
   href: api/VE3NEA.HamCockpit.DspFun.IppResampler.html
@@ -1246,24 +937,6 @@ references:
   commentId: Overload:VE3NEA.HamCockpit.DspFun.IppResampler.Process
   fullName: VE3NEA.HamCockpit.DspFun.IppResampler.Process
   nameWithType: IppResampler.Process
-- uid: VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f
-  name: IppsFIRSpec_32f
-  href: api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f.html
-  commentId: T:VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f
-  fullName: VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f
-  nameWithType: IppsFIRSpec_32f
-- uid: VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc
-  name: IppsFIRSpec_32fc
-  href: api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc.html
-  commentId: T:VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc
-  fullName: VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc
-  nameWithType: IppsFIRSpec_32fc
-- uid: VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f
-  name: IppsResamplingPolyphaseFixed_32f
-  href: api/VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f.html
-  commentId: T:VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f
-  fullName: VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f
-  nameWithType: IppsResamplingPolyphaseFixed_32f
 - uid: VE3NEA.HamCockpit.DspFun.Mixer
   name: Mixer
   href: api/VE3NEA.HamCockpit.DspFun.Mixer.html
@@ -1480,7 +1153,7 @@ references:
 - uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged
   name: ModeChanged
   href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged.html
-  commentId: F:VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged
+  commentId: E:VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged
   fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged
   nameWithType: OmniRigClient.ModeChanged
 - uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.RigNo
@@ -1534,13 +1207,13 @@ references:
 - uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged
   name: StatusChanged
   href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged.html
-  commentId: F:VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged
+  commentId: E:VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged
   fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged
   nameWithType: OmniRigClient.StatusChanged
 - uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned
   name: Tuned
   href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned.html
-  commentId: F:VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned
+  commentId: E:VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned
   fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned
   nameWithType: OmniRigClient.Tuned
 - uid: VE3NEA.HamCockpit.DspFun.RealFft

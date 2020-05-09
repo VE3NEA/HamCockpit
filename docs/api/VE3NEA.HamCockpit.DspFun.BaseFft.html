@@ -84,7 +84,8 @@
   
   <h1 id="VE3NEA_HamCockpit_DspFun_BaseFft" data-uid="VE3NEA.HamCockpit.DspFun.BaseFft" class="text-break">Class BaseFft
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The base class that implements common functionality for the <a class="xref" href="VE3NEA.HamCockpit.DspFun.RealFft.html">RealFft</a> and <a class="xref" href="VE3NEA.HamCockpit.DspFun.ComplexFft.html">ComplexFft</a> classes.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -103,6 +104,10 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class BaseFft : IDisposable</code></pre>
   </div>
+  <h5 id="VE3NEA_HamCockpit_DspFun_BaseFft_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class uses the <a href="https://software.intel.com/en-us/ipp">Intel Integrated Performance Primitives library</a>
+to compute the fast Fourier transform.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <table class="table table-bordered table-striped table-condensed">
@@ -117,7 +122,8 @@
         <td id="VE3NEA_HamCockpit_DspFun_BaseFft__ctor_System_Int32_" data-uid="VE3NEA.HamCockpit.DspFun.BaseFft.#ctor(System.Int32)">
           <a class="xref" href="VE3NEA.HamCockpit.DspFun.BaseFft.-ctor.html#VE3NEA_HamCockpit_DspFun_BaseFft__ctor_System_Int32_">BaseFft(Int32)</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VE3NEA.HamCockpit.DspFun.BaseFft.html">BaseFft</a> class.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -135,7 +141,8 @@
         <td id="VE3NEA_HamCockpit_DspFun_BaseFft_FreqData" data-uid="VE3NEA.HamCockpit.DspFun.BaseFft.FreqData">
           <a class="xref" href="VE3NEA.HamCockpit.DspFun.BaseFft.FreqData.html">FreqData</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>A buffer for the frequency domain data.</p>
+</td>
       </tr>
       <tr>
         <td id="VE3NEA_HamCockpit_DspFun_BaseFft_IPP_FFT_NODIV_BY_ANY" data-uid="VE3NEA.HamCockpit.DspFun.BaseFft.IPP_FFT_NODIV_BY_ANY">
@@ -183,22 +190,37 @@
         <td id="VE3NEA_HamCockpit_DspFun_BaseFft_Dispose" data-uid="VE3NEA.HamCockpit.DspFun.BaseFft.Dispose">
           <a class="xref" href="VE3NEA.HamCockpit.DspFun.BaseFft.Dispose.html#VE3NEA_HamCockpit_DspFun_BaseFft_Dispose">Dispose()</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</td>
       </tr>
       <tr>
         <td id="VE3NEA_HamCockpit_DspFun_BaseFft_LogPowerSpectrum_System_Single___" data-uid="VE3NEA.HamCockpit.DspFun.BaseFft.LogPowerSpectrum(System.Single[])">
           <a class="xref" href="VE3NEA.HamCockpit.DspFun.BaseFft.LogPowerSpectrum.html#VE3NEA_HamCockpit_DspFun_BaseFft_LogPowerSpectrum_System_Single___">LogPowerSpectrum(Single[])</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Compute the <code>log</code> power spectrum from the power spectrum.</p>
+</td>
       </tr>
       <tr>
         <td id="VE3NEA_HamCockpit_DspFun_BaseFft_PowerSpectrum_System_Single___" data-uid="VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum(System.Single[])">
           <a class="xref" href="VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum.html#VE3NEA_HamCockpit_DspFun_BaseFft_PowerSpectrum_System_Single___">PowerSpectrum(Single[])</a>
         </td>
-        <td class="markdown level1 summary"></td>
+        <td class="markdown level1 summary"><p>Compute the power spectrum from the complex spectrum in the <a class="xref" href="VE3NEA.HamCockpit.DspFun.BaseFft.FreqData.html">FreqData</a> array.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="VE3NEA_HamCockpit_DspFun_BaseFft_SlicePower_System_Int32_System_Int32_" data-uid="VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower(System.Int32,System.Int32)">
+          <a class="xref" href="VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower.html#VE3NEA_HamCockpit_DspFun_BaseFft_SlicePower_System_Int32_System_Int32_">SlicePower(Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Compute the given slice of the power spectrum.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="VE3NEA.HamCockpit.DspFun.RealFft.html">RealFft</a></div>
+      <div><a class="xref" href="VE3NEA.HamCockpit.DspFun.ComplexFft.html">ComplexFft</a></div>
+  </div>
 </article>
           </div>
           
@@ -207,7 +229,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.DspFun/Fft.cs&amp;version=GBmaster&amp;line=15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.DspFun/Fft.cs&amp;version=GBmaster&amp;line=24" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

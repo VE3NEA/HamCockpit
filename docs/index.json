@@ -7,37 +7,37 @@
   "api/VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.html",
     "title": "Enum AudclntErrorCodes | Ham Cockpit",
-    "keywords": "Enum AudclntErrorCodes Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public enum AudclntErrorCodes Fields Name Description AUDCLNT_E_ALREADY_INITIALIZED AUDCLNT_E_BUFDURATION_PERIOD_NOT_EQUAL AUDCLNT_E_BUFFER_ERROR AUDCLNT_E_BUFFER_OPERATION_PENDING AUDCLNT_E_BUFFER_SIZE_ERROR AUDCLNT_E_BUFFER_SIZE_NOT_ALIGNED AUDCLNT_E_BUFFER_TOO_LARGE AUDCLNT_E_CPUUSAGE_EXCEEDED AUDCLNT_E_DEVICE_IN_USE AUDCLNT_E_DEVICE_INVALIDATED AUDCLNT_E_ENDPOINT_CREATE_FAILED AUDCLNT_E_EVENTHANDLE_NOT_EXPECTED AUDCLNT_E_EVENTHANDLE_NOT_SET AUDCLNT_E_EXCLUSIVE_MODE_NOT_ALLOWED AUDCLNT_E_EXCLUSIVE_MODE_ONLY AUDCLNT_E_INCORRECT_BUFFER_SIZE AUDCLNT_E_INVALID_SIZE AUDCLNT_E_NO_SINGLE_PROCESS AUDCLNT_E_NOT_INITIALIZED AUDCLNT_E_NOT_STOPPED AUDCLNT_E_OUT_OF_ORDER AUDCLNT_E_SERVICE_NOT_RUNNING AUDCLNT_E_THREAD_NOT_REGISTERED AUDCLNT_E_UNSUPPORTED_FORMAT AUDCLNT_E_WRONG_ENDPOINT_TYPE"
+    "keywords": "Enum AudclntErrorCodes Audio Client error codes missing from CSCore . Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public enum AudclntErrorCodes Fields Name Description AUDCLNT_E_ALREADY_INITIALIZED AUDCLNT_E_BUFDURATION_PERIOD_NOT_EQUAL AUDCLNT_E_BUFFER_ERROR AUDCLNT_E_BUFFER_OPERATION_PENDING AUDCLNT_E_BUFFER_SIZE_ERROR AUDCLNT_E_BUFFER_SIZE_NOT_ALIGNED AUDCLNT_E_BUFFER_TOO_LARGE AUDCLNT_E_CPUUSAGE_EXCEEDED AUDCLNT_E_DEVICE_IN_USE AUDCLNT_E_DEVICE_INVALIDATED AUDCLNT_E_ENDPOINT_CREATE_FAILED AUDCLNT_E_EVENTHANDLE_NOT_EXPECTED AUDCLNT_E_EVENTHANDLE_NOT_SET AUDCLNT_E_EXCLUSIVE_MODE_NOT_ALLOWED AUDCLNT_E_EXCLUSIVE_MODE_ONLY AUDCLNT_E_INCORRECT_BUFFER_SIZE AUDCLNT_E_INVALID_SIZE AUDCLNT_E_NO_SINGLE_PROCESS AUDCLNT_E_NOT_INITIALIZED AUDCLNT_E_NOT_STOPPED AUDCLNT_E_OUT_OF_ORDER AUDCLNT_E_SERVICE_NOT_RUNNING AUDCLNT_E_THREAD_NOT_REGISTERED AUDCLNT_E_UNSUPPORTED_FORMAT AUDCLNT_E_WRONG_ENDPOINT_TYPE"
   },
   "api/VE3NEA.HamCockpit.DspFun.AudioClientErrors.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.AudioClientErrors.html",
     "title": "Class AudioClientErrors | Ham Cockpit",
-    "keywords": "Class AudioClientErrors Inheritance Object AudioClientErrors Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class AudioClientErrors Methods Name Description Message(Int32)"
+    "keywords": "Class AudioClientErrors Returns error messages for the Audio Client error codes. Inheritance Object AudioClientErrors Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class AudioClientErrors Methods Name Description Message(Int32) Gets the error message for the specified error code."
   },
   "api/VE3NEA.HamCockpit.DspFun.AudioClientErrors.Message.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.AudioClientErrors.Message.html",
     "title": "Method Message | Ham Cockpit",
-    "keywords": "Method Message View Source Message(Int32) Declaration public static string Message(int errorCode) Parameters Type Name Description Int32 errorCode Returns Type Description String"
+    "keywords": "Method Message View Source Message(Int32) Gets the error message for the specified error code. Declaration public static string Message(int errorCode) Parameters Type Name Description Int32 errorCode The error code. Returns Type Description String The error message."
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.-ctor.html",
     "title": "Constructor BaseFft | Ham Cockpit",
-    "keywords": "Constructor BaseFft View Source BaseFft(Int32) Declaration public BaseFft(int size) Parameters Type Name Description Int32 size"
+    "keywords": "Constructor BaseFft View Source BaseFft(Int32) Initializes a new instance of the BaseFft class. Declaration public BaseFft(int size) Parameters Type Name Description Int32 size The size of the FFT transform."
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.Dispose.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.Dispose.html",
     "title": "Method Dispose | Ham Cockpit",
-    "keywords": "Method Dispose View Source Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+    "keywords": "Method Dispose View Source Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Declaration public void Dispose() Implements IDisposable.Dispose()"
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.FreqData.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.FreqData.html",
     "title": "Field FreqData | Ham Cockpit",
-    "keywords": "Field FreqData Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public Complex32[] FreqData Returns Type Description MathNet.Numerics.Complex32 []"
+    "keywords": "Field FreqData A buffer for the frequency domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public Complex32[] FreqData Returns Type Description MathNet.Numerics.Complex32 []"
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.html",
     "title": "Class BaseFft | Ham Cockpit",
-    "keywords": "Class BaseFft Inheritance Object BaseFft ComplexFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class BaseFft : IDisposable Constructors Name Description BaseFft(Int32) Fields Name Description FreqData IPP_FFT_NODIV_BY_ANY LnToDb order specBuffer workBuf Methods Name Description Dispose() LogPowerSpectrum(Single[]) PowerSpectrum(Single[])"
+    "keywords": "Class BaseFft The base class that implements common functionality for the RealFft and ComplexFft classes. Inheritance Object BaseFft ComplexFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class BaseFft : IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description BaseFft(Int32) Initializes a new instance of the BaseFft class. Fields Name Description FreqData A buffer for the frequency domain data. IPP_FFT_NODIV_BY_ANY LnToDb order specBuffer workBuf Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. LogPowerSpectrum(Single[]) Compute the log power spectrum from the power spectrum. PowerSpectrum(Single[]) Compute the power spectrum from the complex spectrum in the FreqData array. SlicePower(Int32, Int32) Compute the given slice of the power spectrum. See Also RealFft ComplexFft"
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.IPP_FFT_NODIV_BY_ANY.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.IPP_FFT_NODIV_BY_ANY.html",
@@ -52,7 +52,7 @@
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.LogPowerSpectrum.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.LogPowerSpectrum.html",
     "title": "Method LogPowerSpectrum | Ham Cockpit",
-    "keywords": "Method LogPowerSpectrum View Source LogPowerSpectrum(Single[]) Declaration public float[] LogPowerSpectrum(float[] power = null) Parameters Type Name Description Single [] power Returns Type Description Single []"
+    "keywords": "Method LogPowerSpectrum View Source LogPowerSpectrum(Single[]) Compute the log power spectrum from the power spectrum. Declaration public float[] LogPowerSpectrum(float[] power = null) Parameters Type Name Description Single [] power The power spectrum. Returns Type Description Single [] The log power spectrum."
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.order.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.order.html",
@@ -62,7 +62,12 @@
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum.html",
     "title": "Method PowerSpectrum | Ham Cockpit",
-    "keywords": "Method PowerSpectrum View Source PowerSpectrum(Single[]) Declaration public float[] PowerSpectrum(float[] power = null) Parameters Type Name Description Single [] power Returns Type Description Single []"
+    "keywords": "Method PowerSpectrum View Source PowerSpectrum(Single[]) Compute the power spectrum from the complex spectrum in the FreqData array. Declaration public float[] PowerSpectrum(float[] power = null) Parameters Type Name Description Single [] power A buffer for the power spectrum, or null . Returns Type Description Single [] The power spectrum."
+  },
+  "api/VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower.html",
+    "title": "Method SlicePower | Ham Cockpit",
+    "keywords": "Method SlicePower View Source SlicePower(Int32, Int32) Compute the given slice of the power spectrum. Declaration public float[] SlicePower(int start, int length) Parameters Type Name Description Int32 start The start of the slice. Int32 length The length of the slice. Returns Type Description Single [] The slice of the power spectrum. Remarks This method re-orders the two halves of the spectrum to put the negative frequencies at the bottom, takes the slice of the spectrum and computes the log power."
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.specBuffer.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.specBuffer.html",
@@ -77,27 +82,27 @@
   "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.-ctor.html",
     "title": "Constructor BaseSlidingFilter | Ham Cockpit",
-    "keywords": "Constructor BaseSlidingFilter View Source BaseSlidingFilter(Int32) Declaration public BaseSlidingFilter(int length) Parameters Type Name Description Int32 length"
+    "keywords": "Constructor BaseSlidingFilter View Source BaseSlidingFilter(Int32) Initializes a new instance of the class. Declaration public BaseSlidingFilter(int length) Parameters Type Name Description Int32 length The length of the sliding filter."
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.FilterArrayInplace.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.FilterArrayInplace.html",
     "title": "Method FilterArrayInplace | Ham Cockpit",
-    "keywords": "Method FilterArrayInplace View Source FilterArrayInplace(Single[]) Declaration public void FilterArrayInplace(float[] data) Parameters Type Name Description Single [] data"
+    "keywords": "Method FilterArrayInplace View Source FilterArrayInplace(Single[]) Filters the array of input data in place. Declaration public void FilterArrayInplace(float[] data) Parameters Type Name Description Single [] data The data. Exceptions Type Condition ArgumentException Sliding Filter error: input too short"
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.html",
     "title": "Class BaseSlidingFilter | Ham Cockpit",
-    "keywords": "Class BaseSlidingFilter Inheritance Object BaseSlidingFilter SlidingMax SlidingMin Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public abstract class BaseSlidingFilter Constructors Name Description BaseSlidingFilter(Int32) Methods Name Description FilterArrayInplace(Single[]) MinOrMax(Single, Single) Process(Single)"
+    "keywords": "Class BaseSlidingFilter The base class that implements common functionality for the SlidingMin and SlidingMax classes. Inheritance Object BaseSlidingFilter SlidingMax SlidingMin Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public abstract class BaseSlidingFilter Constructors Name Description BaseSlidingFilter(Int32) Initializes a new instance of the class. Methods Name Description FilterArrayInplace(Single[]) Filters the array of input data in place. MinOrMax(Single, Single) Returns either the minimum or maximum of two values. Process(Single) Processes the specified input value."
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.MinOrMax.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.MinOrMax.html",
     "title": "Method MinOrMax | Ham Cockpit",
-    "keywords": "Method MinOrMax View Source MinOrMax(Single, Single) Declaration protected abstract float MinOrMax(float x, float y) Parameters Type Name Description Single x Single y Returns Type Description Single"
+    "keywords": "Method MinOrMax View Source MinOrMax(Single, Single) Returns either the minimum or maximum of two values. Declaration protected abstract float MinOrMax(float x, float y) Parameters Type Name Description Single x The first value. Single y The second value. Returns Type Description Single The minimum or the maximum of two values. Remarks The child class overrides this method to return either the minimum or maximum."
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.Process.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.Process.html",
     "title": "Method Process | Ham Cockpit",
-    "keywords": "Method Process View Source Process(Single) Declaration public float Process(float value) Parameters Type Name Description Single value Returns Type Description Single"
+    "keywords": "Method Process View Source Process(Single) Processes the specified input value. Declaration public float Process(float value) Parameters Type Name Description Single value The output value. Returns Type Description Single The filtered value."
   },
   "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.-ctor.html",
@@ -112,567 +117,422 @@
   "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.html",
     "title": "Class ChannelSelector | Ham Cockpit",
-    "keywords": "Class ChannelSelector Selects one of the channels from a stereo data source. Inheritance Object CSCore.SampleAggregatorBase ChannelSelector Implements CSCore.ISampleAggregator CSCore.ISampleSource CSCore.IAggregator < Single , CSCore.ISampleSource > CSCore.IReadableAudioSource < Single > CSCore.IAudioSource IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ChannelSelector : SampleAggregatorBase, ISampleAggregator, ISampleSource, IAggregator<float, ISampleSource>, IReadableAudioSource<float>, IAudioSource, IDisposable Constructors Name Description ChannelSelector(ISampleSource, ChannelMask) Creates a new instance of the ChannelSelector class from an existing sample source. Properties Name Description Length Position WaveFormat Methods Name Description Dispose(Boolean) Disposes allocated resources. Read(Single[], Int32, Int32)"
+    "keywords": "Class ChannelSelector Selects one of the channels from a stereo data source. Inheritance Object CSCore.SampleAggregatorBase ChannelSelector Implements CSCore.ISampleAggregator CSCore.ISampleSource CSCore.IAggregator < Single , CSCore.ISampleSource > CSCore.IReadableAudioSource < Single > CSCore.IAudioSource IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ChannelSelector : SampleAggregatorBase, ISampleAggregator, ISampleSource, IAggregator<float, ISampleSource>, IReadableAudioSource<float>, IAudioSource, IDisposable Constructors Name Description ChannelSelector(ISampleSource, ChannelMask) Creates a new instance of the ChannelSelector class from an existing sample source. Properties Name Description Length Gets the data length in samples. Position Gets or sets the position in samples. WaveFormat Gets the CSCore.IAudioSource.WaveFormat of the waveform-audio data. Methods Name Description Dispose(Boolean) Disposes allocated resources. Read(Single[], Int32, Int32) Reads a sequence of samples from the CSCore.SampleAggregatorBase and advances the position within the stream by the number of samples read."
   },
   "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Length.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Length.html",
     "title": "Property Length | Ham Cockpit",
-    "keywords": "Property Length View Source Length Declaration public override long Length { get; } Property Value Type Description Int64 Overrides CSCore.SampleAggregatorBase.Length"
+    "keywords": "Property Length View Source Length Gets the data length in samples. Declaration public override long Length { get; } Property Value Type Description Int64 Overrides CSCore.SampleAggregatorBase.Length"
   },
   "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Position.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Position.html",
     "title": "Property Position | Ham Cockpit",
-    "keywords": "Property Position View Source Position Declaration public override long Position { get; set; } Property Value Type Description Int64 Overrides CSCore.SampleAggregatorBase.Position"
+    "keywords": "Property Position View Source Position Gets or sets the position in samples. Declaration public override long Position { get; set; } Property Value Type Description Int64 Overrides CSCore.SampleAggregatorBase.Position"
   },
   "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Declaration public override int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Overrides CSCore.SampleAggregatorBase.Read(System.Single[], System.Int32, System.Int32)"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads a sequence of samples from the CSCore.SampleAggregatorBase and advances the position within the stream by the number of samples read. Declaration public override int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer An array of floats. When this method returns, the buffer contains the specified float array with the values between offset and ( offset + count - 1) replaced by the floats read from the current source. Int32 offset The zero-based offset in the buffer at which to begin storing the data read from the current stream. Int32 count The maximum number of samples to read from the current source. Returns Type Description Int32 The total number of samples read into the buffer. Overrides CSCore.SampleAggregatorBase.Read(System.Single[], System.Int32, System.Int32)"
   },
   "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.WaveFormat.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.WaveFormat.html",
     "title": "Property WaveFormat | Ham Cockpit",
-    "keywords": "Property WaveFormat View Source WaveFormat Declaration public override WaveFormat WaveFormat { get; } Property Value Type Description CSCore.WaveFormat Overrides CSCore.SampleAggregatorBase.WaveFormat"
+    "keywords": "Property WaveFormat View Source WaveFormat Gets the CSCore.IAudioSource.WaveFormat of the waveform-audio data. Declaration public override WaveFormat WaveFormat { get; } Property Value Type Description CSCore.WaveFormat Overrides CSCore.SampleAggregatorBase.WaveFormat"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeForward.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeForward.html",
     "title": "Method ComputeForward | Ham Cockpit",
-    "keywords": "Method ComputeForward View Source ComputeForward() Declaration public void ComputeForward()"
+    "keywords": "Method ComputeForward View Source ComputeForward() Computes the forward FFT transform. Declaration public void ComputeForward()"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeInverse.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeInverse.html",
     "title": "Method ComputeInverse | Ham Cockpit",
-    "keywords": "Method ComputeInverse View Source ComputeInverse() Declaration public void ComputeInverse()"
+    "keywords": "Method ComputeInverse View Source ComputeInverse() Computes the inverse FFT transform. Declaration public void ComputeInverse()"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFft.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.-ctor.html",
     "title": "Constructor ComplexFft | Ham Cockpit",
-    "keywords": "Constructor ComplexFft View Source ComplexFft(Int32) Declaration public ComplexFft(int size) Parameters Type Name Description Int32 size"
+    "keywords": "Constructor ComplexFft View Source ComplexFft(Int32) Initializes a new instance of the ComplexFft class. Declaration public ComplexFft(int size) Parameters Type Name Description Int32 size The size of the FFT transform."
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFft.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.html",
     "title": "Class ComplexFft | Ham Cockpit",
-    "keywords": "Class ComplexFft Inheritance Object BaseFft ComplexFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFft : BaseFft, IDisposable Constructors Name Description ComplexFft(Int32) Fields Name Description TimeData Methods Name Description ComputeForward() ComputeInverse() SlicePower(Int32, Int32)"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.SlicePower.html",
-    "title": "Method SlicePower | Ham Cockpit",
-    "keywords": "Method SlicePower View Source SlicePower(Int32, Int32) Declaration public float[] SlicePower(int start, int length) Parameters Type Name Description Int32 start Int32 length Returns Type Description Single []"
+    "keywords": "Class ComplexFft Computes forward and inverse complex FFT. Inheritance Object BaseFft ComplexFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFft : BaseFft, IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description ComplexFft(Int32) Initializes a new instance of the ComplexFft class. Fields Name Description TimeData A buffer for the time domain data. Methods Name Description ComputeForward() Computes the forward FFT transform. ComputeInverse() Computes the inverse FFT transform."
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData.html",
     "title": "Field TimeData | Ham Cockpit",
-    "keywords": "Field TimeData Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly Complex32[] TimeData Returns Type Description MathNet.Numerics.Complex32 []"
+    "keywords": "Field TimeData A buffer for the time domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly Complex32[] TimeData Returns Type Description MathNet.Numerics.Complex32 []"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.-ctor.html",
     "title": "Constructor ComplexFirFilter | Ham Cockpit",
-    "keywords": "Constructor ComplexFirFilter View Source ComplexFirFilter(Complex32[], IppAlgType) Declaration public ComplexFirFilter(Complex32[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description MathNet.Numerics.Complex32 [] taps IppAlgType algType"
+    "keywords": "Constructor ComplexFirFilter View Source ComplexFirFilter(Complex32[], IppAlgType) Initializes a new instance of the ComplexFirFilter class. Declaration public ComplexFirFilter(Complex32[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description MathNet.Numerics.Complex32 [] taps The taps. VE3NEA.HamCockpit.DspFun.IppAlgType algType Type of the algorithm."
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Dispose.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Dispose.html",
     "title": "Method Dispose | Ham Cockpit",
-    "keywords": "Method Dispose View Source Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+    "keywords": "Method Dispose View Source Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Declaration public void Dispose() Implements IDisposable.Dispose()"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Format.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Format.html",
     "title": "Property Format | Ham Cockpit",
-    "keywords": "Property Format View Source Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+    "keywords": "Property Format View Source Format Gets the format of the output data. Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat The format of the output data. Implements ISampleStream.Format Remarks Since the filter does not know its passband (all it has is the taps array), it does not update the Format property. The calling code must reflect the new bandwidth in its own Format"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.html",
     "title": "Class ComplexFirFilter | Ham Cockpit",
-    "keywords": "Class ComplexFirFilter Inheritance Object ComplexFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description ComplexFirFilter(Complex32[], IppAlgType) Properties Name Description Format Taps Methods Name Description Dispose() Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+    "keywords": "Class ComplexFirFilter Applies a FIR filter to complex-valued data. Inheritance Object ComplexFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description ComplexFirFilter(Complex32[], IppAlgType) Initializes a new instance of the ComplexFirFilter class. Properties Name Description Format Gets the format of the output data. Taps Gets or sets the filter taps. Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Initialize(ISampleStream) Initializes the filter for processing data from the specified source. Read(Single[], Int32, Int32) Reads the data into the provided buffer. Events Name Description SamplesAvailable Occurs when filtered samples are available."
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Initialize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Initialize.html",
     "title": "Method Initialize | Ham Cockpit",
-    "keywords": "Method Initialize View Source Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+    "keywords": "Method Initialize View Source Initialize(ISampleStream) Initializes the filter for processing data from the specified source. Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source The source of the data. Implements IInitSampleStream.Initialize(ISampleStream)"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads the data into the provided buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The count of the values to read. Returns Type Description Int32 The number of read values. Implements ISampleStream.Read(Single[], Int32, Int32)"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.SamplesAvailable.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.SamplesAvailable.html",
     "title": "Event SamplesAvailable | Ham Cockpit",
-    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+    "keywords": "Event SamplesAvailable Occurs when filtered samples are available. Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Taps.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Taps.html",
     "title": "Property Taps | Ham Cockpit",
-    "keywords": "Property Taps View Source Taps Declaration public Complex32[] Taps { get; set; } Property Value Type Description MathNet.Numerics.Complex32 []"
+    "keywords": "Property Taps View Source Taps Gets or sets the filter taps. Declaration public Complex32[] Taps { get; set; } Property Value Type Description MathNet.Numerics.Complex32 [] The filter taps."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.ApproximateRatio.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ApproximateRatio.html",
     "title": "Method ApproximateRatio | Ham Cockpit",
-    "keywords": "Method ApproximateRatio View Source ApproximateRatio(Double, Double) Declaration public static (int L, int M) ApproximateRatio(double ratio, double maxError) Parameters Type Name Description Double ratio Double maxError Returns Type Description ValueTuple < Int32 , Int32 >"
+    "keywords": "Method ApproximateRatio View Source ApproximateRatio(Double, Double) Finds a rational approximation of a floating point value. Declaration public static (int L, int M) ApproximateRatio(double ratio, double maxError) Parameters Type Name Description Double ratio The floating point value. Double maxError The maximum error. Returns Type Description ValueTuple < Int32 , Int32 > The approximating ratio, L/M. Remarks Finds the Diophantine approximation to the given floating point value. Useful for the design of low complexity resamplers when the exact output rate is not required."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.ArrayToString.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ArrayToString.html",
     "title": "Method ArrayToString | Ham Cockpit",
-    "keywords": "Method ArrayToString View Source ArrayToString(Single[]) Declaration public static string ArrayToString(float[] array) Parameters Type Name Description Single [] array Returns Type Description String"
+    "keywords": "Method ArrayToString View Source ArrayToString(Single[]) Converts an array of floating point values to text, one value per line. Declaration public static string ArrayToString(float[] array) Parameters Type Name Description Single [] array The array of values. Returns Type Description String The text."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanHarrisWindow.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanHarrisWindow.html",
     "title": "Method BlackmanHarrisWindow | Ham Cockpit",
-    "keywords": "Method BlackmanHarrisWindow View Source BlackmanHarrisWindow(Int32) Declaration public static float[] BlackmanHarrisWindow(int length) Parameters Type Name Description Int32 length Returns Type Description Single []"
+    "keywords": "Method BlackmanHarrisWindow View Source BlackmanHarrisWindow(Int32) Generates the Blackman-Harris window. Declaration public static float[] BlackmanHarrisWindow(int length) Parameters Type Name Description Int32 length The window length. Returns Type Description Single [] The window coefficients."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanSincKernel.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanSincKernel.html",
     "title": "Method BlackmanSincKernel | Ham Cockpit",
-    "keywords": "Method BlackmanSincKernel View Source BlackmanSincKernel(Single, Int32) Declaration public static float[] BlackmanSincKernel(float Fc, int length) Parameters Type Name Description Single Fc Int32 length Returns Type Description Single []"
+    "keywords": "Method BlackmanSincKernel View Source BlackmanSincKernel(Single, Int32) Generates the Blackman Sinc filter kernel. Declaration public static float[] BlackmanSincKernel(float Fc, int length) Parameters Type Name Description Single Fc The normalized cutoff frequency. Int32 length The kernel length. Returns Type Description Single [] The filter kernel."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanWindow.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanWindow.html",
     "title": "Method BlackmanWindow | Ham Cockpit",
-    "keywords": "Method BlackmanWindow View Source BlackmanWindow(Int32) Declaration public static float[] BlackmanWindow(int length) Parameters Type Name Description Int32 length Returns Type Description Single []"
+    "keywords": "Method BlackmanWindow View Source BlackmanWindow(Int32) Generates the Blackman window. Declaration public static float[] BlackmanWindow(int length) Parameters Type Name Description Int32 length The window length. Returns Type Description Single [] The window coefficients."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.ComplexToStrided.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ComplexToStrided.html",
     "title": "Method ComplexToStrided | Ham Cockpit",
-    "keywords": "Method ComplexToStrided View Source ComplexToStrided(Complex32[], Int32, Single[], Int32, Int32, Int32) Declaration public static void ComplexToStrided(Complex32[] source, int srcOffset, float[] destination, int dstOffset, int dstStride, int complexCount) Parameters Type Name Description MathNet.Numerics.Complex32 [] source Int32 srcOffset Single [] destination Int32 dstOffset Int32 dstStride Int32 complexCount"
+    "keywords": "Method ComplexToStrided View Source ComplexToStrided(Complex32[], Int32, Single[], Int32, Int32, Int32) Convert data format. Declaration public static void ComplexToStrided(Complex32[] source, int srcOffset, float[] destination, int dstOffset, int dstStride, int complexCount) Parameters Type Name Description MathNet.Numerics.Complex32 [] source The source array. Int32 srcOffset The offset to the first value in the source array. Single [] destination The destination array. Int32 dstOffset The offset to the first value in the destination array. Int32 dstStride The stride in the destination array. Int32 complexCount The number of the complex values to output."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.COMPONENTS_IN_COMPLEX.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.COMPONENTS_IN_COMPLEX.html",
     "title": "Field COMPONENTS_IN_COMPLEX | Ham Cockpit",
-    "keywords": "Field COMPONENTS_IN_COMPLEX Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public const int COMPONENTS_IN_COMPLEX = 2 Returns Type Description Int32"
+    "keywords": "Field COMPONENTS_IN_COMPLEX The number of components in a complex value. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public const int COMPONENTS_IN_COMPLEX = 2 Returns Type Description Int32 Remarks There are two floating point components in a complex value, the real part and the imaginary part."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.FloatToComplex32.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.FloatToComplex32.html",
     "title": "Method FloatToComplex32 | Ham Cockpit",
-    "keywords": "Method FloatToComplex32 View Source FloatToComplex32(Single[]) Declaration public static Complex32[] FloatToComplex32(float[] array) Parameters Type Name Description Single [] array Returns Type Description MathNet.Numerics.Complex32 []"
+    "keywords": "Method FloatToComplex32 View Source FloatToComplex32(Single[]) Unpacks complex values from the array of floats. Declaration public static Complex32[] FloatToComplex32(float[] source) Parameters Type Name Description Single [] source The floating point values. Returns Type Description MathNet.Numerics.Complex32 [] The complex values."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.FloatToStrided.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.FloatToStrided.html",
     "title": "Method FloatToStrided | Ham Cockpit",
-    "keywords": "Method FloatToStrided View Source FloatToStrided(Single[], Int32, Single[], Int32, Int32, Int32) Declaration public static void FloatToStrided(float[] source, int srcOffset, float[] destination, int dstOffset, int dstStride, int count) Parameters Type Name Description Single [] source Int32 srcOffset Single [] destination Int32 dstOffset Int32 dstStride Int32 count"
+    "keywords": "Method FloatToStrided View Source FloatToStrided(Single[], Int32, Single[], Int32, Int32, Int32) Convert data format. Declaration public static void FloatToStrided(float[] source, int srcOffset, float[] destination, int dstOffset, int dstStride, int count) Parameters Type Name Description Single [] source The source array. Int32 srcOffset The offset to the first value in the source array. Single [] destination The destination array. Int32 dstOffset The offset to the first value in the destination array. Int32 dstStride The stride in the destination array. Int32 count The number of the values to output."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.FromDb.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.FromDb.html",
     "title": "Method FromDb | Ham Cockpit",
-    "keywords": "Method FromDb View Source FromDb(Single) Declaration public static float FromDb(float x) Parameters Type Name Description Single x Returns Type Description Single"
+    "keywords": "Method FromDb View Source FromDb(Single) Converts the ratio in decibels to power ratio. Declaration public static float FromDb(float x) Parameters Type Name Description Single x The ratio in decibels. Returns Type Description Single The power ratio."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.FromDb2.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.FromDb2.html",
     "title": "Method FromDb2 | Ham Cockpit",
-    "keywords": "Method FromDb2 View Source FromDb2(Single) Declaration public static float FromDb2(float x) Parameters Type Name Description Single x Returns Type Description Single"
+    "keywords": "Method FromDb2 View Source FromDb2(Single) Converts the ratio in decibels to voltage ratio. Declaration public static float FromDb2(float x) Parameters Type Name Description Single x The ratio in decibels. Returns Type Description Single The voltage ratio."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.html",
     "title": "Class Dsp | Ham Cockpit",
-    "keywords": "Class Dsp Inheritance Object Dsp Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public static class Dsp Fields Name Description COMPONENTS_IN_COMPLEX Methods Name Description ApproximateRatio(Double, Double) ArrayToString(Single[]) BlackmanHarrisWindow(Int32) BlackmanSincKernel(Single, Int32) BlackmanWindow(Int32) ComplexToStrided(Complex32[], Int32, Single[], Int32, Int32, Int32) FloatToComplex32(Single[]) FloatToStrided(Single[], Int32, Single[], Int32, Int32, Int32) FromDb(Single) FromDb2(Single) Mix(Complex32[], Double, Double) Normalize(Single[]) Sinc(Single, Int32) StridedToComplex(Single[], Int32, Int32, Complex32[], Int32, Int32) StridedToComplex(Single[], Int32, Int32, Single[], Int32, Int32) StridedToFloat(Single[], Int32, Int32, Single[], Int32, Int32) SwapIQ(Single[], Int32, Int32) ToDb(Single) ToDb2(Single)"
+    "keywords": "Class Dsp A collection of functions related to digital signal processing. Inheritance Object Dsp Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public static class Dsp Fields Name Description COMPONENTS_IN_COMPLEX The number of components in a complex value. Methods Name Description ApproximateRatio(Double, Double) Finds a rational approximation of a floating point value. ArrayToString(Single[]) Converts an array of floating point values to text, one value per line. BlackmanHarrisWindow(Int32) Generates the Blackman-Harris window. BlackmanSincKernel(Single, Int32) Generates the Blackman Sinc filter kernel. BlackmanWindow(Int32) Generates the Blackman window. ComplexToStrided(Complex32[], Int32, Single[], Int32, Int32, Int32) Convert data format. FloatToComplex32(Single[]) Unpacks complex values from the array of floats. FloatToStrided(Single[], Int32, Single[], Int32, Int32, Int32) Convert data format. FromDb(Single) Converts the ratio in decibels to power ratio. FromDb2(Single) Converts the ratio in decibels to voltage ratio. Mix(Complex32[], Double, Double) Performs in-place mixing of the specified data with a complex sinusoid. Normalize(Single[]) Normalizes the specified array of floating point data to unity sum. Sinc(Single, Int32) Generates the Sinc filter kernel. StridedToComplex(Single[], Int32, Int32, Complex32[], Int32, Int32) Unpacks complex values from the array of floats. StridedToComplex(Single[], Int32, Int32, Single[], Int32, Int32) Convert data format. StridedToFloat(Single[], Int32, Int32, Single[], Int32, Int32) Convert data format. SwapIQ(Single[], Int32, Int32) Swaps the I and Q channels in the array of data. ToDb(Single) Converts power ratio to decibels. ToDb2(Single) Converts voltage ratio to decibels."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.Mix.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.Mix.html",
     "title": "Method Mix | Ham Cockpit",
-    "keywords": "Method Mix View Source Mix(Complex32[], Double, Double) Declaration public static void Mix(Complex32[] data, double frequency, double phase = 0) Parameters Type Name Description MathNet.Numerics.Complex32 [] data Double frequency Double phase"
+    "keywords": "Method Mix View Source Mix(Complex32[], Double, Double) Performs in-place mixing of the specified data with a complex sinusoid. Declaration public static void Mix(Complex32[] data, double frequency, double phase = 0) Parameters Type Name Description MathNet.Numerics.Complex32 [] data The data. Double frequency The frequency. Double phase The starting phase."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.Normalize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.Normalize.html",
     "title": "Method Normalize | Ham Cockpit",
-    "keywords": "Method Normalize View Source Normalize(Single[]) Declaration public static void Normalize(float[] data) Parameters Type Name Description Single [] data"
+    "keywords": "Method Normalize View Source Normalize(Single[]) Normalizes the specified array of floating point data to unity sum. Declaration public static void Normalize(float[] data) Parameters Type Name Description Single [] data The data."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.Sinc.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.Sinc.html",
     "title": "Method Sinc | Ham Cockpit",
-    "keywords": "Method Sinc View Source Sinc(Single, Int32) Declaration public static float[] Sinc(float Fc, int length) Parameters Type Name Description Single Fc Int32 length Returns Type Description Single []"
+    "keywords": "Method Sinc View Source Sinc(Single, Int32) Generates the Sinc filter kernel. Declaration public static float[] Sinc(float Fc, int length) Parameters Type Name Description Single Fc The normalized cutoff frequency. Int32 length The kernel length. Returns Type Description Single [] The filter kernel."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.StridedToComplex.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.StridedToComplex.html",
     "title": "Method StridedToComplex | Ham Cockpit",
-    "keywords": "Method StridedToComplex View Source StridedToComplex(Single[], Int32, Int32, Complex32[], Int32, Int32) Declaration public static void StridedToComplex(float[] source, int srcOffset, int srcStride, Complex32[] destination, int dstOffset, int complexCount) Parameters Type Name Description Single [] source Int32 srcOffset Int32 srcStride MathNet.Numerics.Complex32 [] destination Int32 dstOffset Int32 complexCount View Source StridedToComplex(Single[], Int32, Int32, Single[], Int32, Int32) Declaration public static void StridedToComplex(float[] source, int srcOffset, int srcStride, float[] destination, int dstOffset, int complexCount) Parameters Type Name Description Single [] source Int32 srcOffset Int32 srcStride Single [] destination Int32 dstOffset Int32 complexCount"
+    "keywords": "Method StridedToComplex View Source StridedToComplex(Single[], Int32, Int32, Complex32[], Int32, Int32) Unpacks complex values from the array of floats. Declaration public static void StridedToComplex(float[] source, int srcOffset, int srcStride, Complex32[] destination, int dstOffset, int complexCount) Parameters Type Name Description Single [] source The source array. Int32 srcOffset The offset to the first value in the source array. Int32 srcStride The stride in the source array. MathNet.Numerics.Complex32 [] destination The destination array. Int32 dstOffset The offset to the first value in the destination array. Int32 complexCount The number of the complex values to output. View Source StridedToComplex(Single[], Int32, Int32, Single[], Int32, Int32) Convert data format. Declaration public static void StridedToComplex(float[] source, int srcOffset, int srcStride, float[] destination, int dstOffset, int complexCount) Parameters Type Name Description Single [] source The source array. Int32 srcOffset The offset to the first value in the source array. Int32 srcStride The stride in the source array. Single [] destination The destination array. Int32 dstOffset The offset to the first value in the destination array. Int32 complexCount The number of the complex values to output."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.StridedToFloat.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.StridedToFloat.html",
     "title": "Method StridedToFloat | Ham Cockpit",
-    "keywords": "Method StridedToFloat View Source StridedToFloat(Single[], Int32, Int32, Single[], Int32, Int32) Declaration public static void StridedToFloat(float[] source, int srcOffset, int srcStride, float[] destination, int dstOffset, int count) Parameters Type Name Description Single [] source Int32 srcOffset Int32 srcStride Single [] destination Int32 dstOffset Int32 count"
+    "keywords": "Method StridedToFloat View Source StridedToFloat(Single[], Int32, Int32, Single[], Int32, Int32) Convert data format. Declaration public static void StridedToFloat(float[] source, int srcOffset, int srcStride, float[] destination, int dstOffset, int count) Parameters Type Name Description Single [] source The source array. Int32 srcOffset The offset to the first value in the source array. Int32 srcStride The stride in the source array. Single [] destination The destination array. Int32 dstOffset The offset to the first value in the destination array. Int32 count The number of the values to output."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.SwapIQ.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.SwapIQ.html",
     "title": "Method SwapIQ | Ham Cockpit",
-    "keywords": "Method SwapIQ View Source SwapIQ(Single[], Int32, Int32) Declaration public static void SwapIQ(float[] buffer, int floatOffset, int complexCount) Parameters Type Name Description Single [] buffer Int32 floatOffset Int32 complexCount"
+    "keywords": "Method SwapIQ View Source SwapIQ(Single[], Int32, Int32) Swaps the I and Q channels in the array of data. Declaration public static void SwapIQ(float[] buffer, int floatOffset, int complexCount) Parameters Type Name Description Single [] buffer The buffer. Int32 floatOffset The offset to the first floating point value to convert. Int32 complexCount The number of complex values to convert."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.ToDb.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ToDb.html",
     "title": "Method ToDb | Ham Cockpit",
-    "keywords": "Method ToDb View Source ToDb(Single) Declaration public static float ToDb(float x) Parameters Type Name Description Single x Returns Type Description Single"
+    "keywords": "Method ToDb View Source ToDb(Single) Converts power ratio to decibels. Declaration public static float ToDb(float x) Parameters Type Name Description Single x The power ratio. Returns Type Description Single The ratio in decibels."
   },
   "api/VE3NEA.HamCockpit.DspFun.Dsp.ToDb2.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Dsp.ToDb2.html",
     "title": "Method ToDb2 | Ham Cockpit",
-    "keywords": "Method ToDb2 View Source ToDb2(Single) Declaration public static float ToDb2(float x) Parameters Type Name Description Single x Returns Type Description Single"
+    "keywords": "Method ToDb2 View Source ToDb2(Single) Converts voltage ratio to decibels. Declaration public static float ToDb2(float x) Parameters Type Name Description Single x The voltage ratio. Returns Type Description Single The ratio in decibels."
   },
   "api/VE3NEA.HamCockpit.DspFun.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.html",
     "title": "Namespace VE3NEA.HamCockpit.DspFun | Ham Cockpit",
-    "keywords": "Namespace VE3NEA.HamCockpit.DspFun Classes AudioClientErrors BaseFft BaseSlidingFilter ChannelSelector Selects one of the channels from a stereo data source. ComplexFft ComplexFirFilter Dsp Ipp IppException IppHelper IppRealFirFilter IppResampler Mixer MovingAverage MultipassAverage OmniRigClient RealFft RealFirFilter Resampler RingBuffer SampleSourceWrapper SidebandFlipper SlidingMax SlidingMin Structs IppsFIRSpec_32f IppsFIRSpec_32fc IppsResamplingPolyphaseFixed_32f Enums AudclntErrorCodes IppAlgType RigStatus"
+    "keywords": "Namespace VE3NEA.HamCockpit.DspFun Classes AudioClientErrors Returns error messages for the Audio Client error codes. BaseFft The base class that implements common functionality for the RealFft and ComplexFft classes. BaseSlidingFilter The base class that implements common functionality for the SlidingMin and SlidingMax classes. ChannelSelector Selects one of the channels from a stereo data source. ComplexFft Computes forward and inverse complex FFT. ComplexFirFilter Applies a FIR filter to complex-valued data. Dsp A collection of functions related to digital signal processing. Ipp The IPP PInvoke declarations missing from CSIntelPerfLibs . IppException Represents errors that occur during the execution of the IPP functions. IppHelper Includes helper functions that use the IPP library . IppResampler Signal resampler based on the IPP library . Mixer Mixes the input complex-valued data with a complex sinusoid. MovingAverage Applies a moving average filter to the floating point data. MultipassAverage Applies a multi-pass moving average filter to the floating point data. OmniRigClient A wrapper around the OmniRig COM object. RealFft Computes forward and inverse real FFT. RealFirFilter Applies a FIR filter to real-valued data. Resampler RingBuffer SampleSourceWrapper SidebandFlipper SlidingMax Computes the sliding maximum of the input values. SlidingMin Computes the sliding minimum of the input values. Enums AudclntErrorCodes Audio Client error codes missing from CSCore . RigStatus The status of the CAT connection to the radio."
   },
   "api/VE3NEA.HamCockpit.DspFun.Ipp.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.html",
     "title": "Class Ipp | Ham Cockpit",
-    "keywords": "Class Ipp Inheritance Object Ipp Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Ipp Methods Name Description ippsFIRMR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*) ippsFIRMRGetStateSize_32fc(Int32, Int32, Int32, IppDataType, Int32*, Int32*) ippsFIRMRInit_32fc(Complex32*, Int32, Int32, Int32, Int32, Int32, IppsFIRSpec_32fc*) ippsFIRSR_32f(Single*, Single*, Int32, IppsFIRSpec_32f*, Single*, Single*, Byte*) ippsFIRSR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*) ippsFIRSRGetSize(Int32, IppDataType, Int32*, Int32*) ippsFIRSRInit_32f(Single*, Int32, IppAlgType, IppsFIRSpec_32f*) ippsFIRSRInit_32fc(Complex32*, Int32, IppAlgType, IppsFIRSpec_32fc*) ippsFree(Void*) ippsMalloc_32f(Int32) ippsMalloc_32fc(Int32) ippsMalloc_8u(Int32) ippsResamplePolyphaseFixed_32f(Single*, Int32, Single*, Single, Double*, Int32*, IppsResamplingPolyphaseFixed_32f*) ippsResamplePolyphaseFixedGetSize_32f(Int32, Int32, Int32, Int32*, Int32*, Int32*, IppHintAlgorithm) ippsResamplePolyphaseFixedInit_32f(Int32, Int32, Int32, Single, Single, IppsResamplingPolyphaseFixed_32f*, IppHintAlgorithm) ippsTone_32fc(Ipp32fc*, Int32, Single, Single, Single*, IppHintAlgorithm)"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc.html",
-    "title": "Method ippsFIRMR_32fc | Ham Cockpit",
-    "keywords": "Method ippsFIRMR_32fc ippsFIRMR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*) Declaration public static IppStatus ippsFIRMR_32fc(Complex32*pSrc, Complex32*pDst, int numIters, IppsFIRSpec_32fc*pSpec, Complex32*pDlySrc, Complex32*pDlyDst, byte *pBuf) Parameters Type Name Description MathNet.Numerics.Complex32 * pSrc MathNet.Numerics.Complex32 * pDst Int32 numIters IppsFIRSpec_32fc * pSpec MathNet.Numerics.Complex32 * pDlySrc MathNet.Numerics.Complex32 * pDlyDst Byte * pBuf Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc.html",
-    "title": "Method ippsFIRMRGetStateSize_32fc | Ham Cockpit",
-    "keywords": "Method ippsFIRMRGetStateSize_32fc ippsFIRMRGetStateSize_32fc(Int32, Int32, Int32, IppDataType, Int32*, Int32*) Declaration public static IppStatus ippsFIRMRGetStateSize_32fc(int tapsLen, int upFactor, int downFactor, IppDataType tapsType, int *pSpecSize, int *pBufSize) Parameters Type Name Description Int32 tapsLen Int32 upFactor Int32 downFactor CSIntel.Ipp.IppDataType tapsType Int32 * pSpecSize Int32 * pBufSize Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc.html",
-    "title": "Method ippsFIRMRInit_32fc | Ham Cockpit",
-    "keywords": "Method ippsFIRMRInit_32fc ippsFIRMRInit_32fc(Complex32*, Int32, Int32, Int32, Int32, Int32, IppsFIRSpec_32fc*) Declaration public static IppStatus ippsFIRMRInit_32fc(Complex32*pTaps, int tapsLen, int upFactor, int upPhase, int downFactor, int downPhase, IppsFIRSpec_32fc*pSpec) Parameters Type Name Description MathNet.Numerics.Complex32 * pTaps Int32 tapsLen Int32 upFactor Int32 upPhase Int32 downFactor Int32 downPhase IppsFIRSpec_32fc * pSpec Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f.html",
-    "title": "Method ippsFIRSR_32f | Ham Cockpit",
-    "keywords": "Method ippsFIRSR_32f ippsFIRSR_32f(Single*, Single*, Int32, IppsFIRSpec_32f*, Single*, Single*, Byte*) Declaration public static IppStatus ippsFIRSR_32f(float *pSrc, float *pDst, int numIters, IppsFIRSpec_32f*pSpec, float *pDlySrc, float *pDlyDst, byte *pBuf) Parameters Type Name Description Single * pSrc Single * pDst Int32 numIters IppsFIRSpec_32f * pSpec Single * pDlySrc Single * pDlyDst Byte * pBuf Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc.html",
-    "title": "Method ippsFIRSR_32fc | Ham Cockpit",
-    "keywords": "Method ippsFIRSR_32fc ippsFIRSR_32fc(Complex32*, Complex32*, Int32, IppsFIRSpec_32fc*, Complex32*, Complex32*, Byte*) Declaration public static IppStatus ippsFIRSR_32fc(Complex32*pSrc, Complex32*pDst, int numIters, IppsFIRSpec_32fc*pSpec, Complex32*pDlySrc, Complex32*pDlyDst, byte *pBuf) Parameters Type Name Description MathNet.Numerics.Complex32 * pSrc MathNet.Numerics.Complex32 * pDst Int32 numIters IppsFIRSpec_32fc * pSpec MathNet.Numerics.Complex32 * pDlySrc MathNet.Numerics.Complex32 * pDlyDst Byte * pBuf Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize.html",
-    "title": "Method ippsFIRSRGetSize | Ham Cockpit",
-    "keywords": "Method ippsFIRSRGetSize ippsFIRSRGetSize(Int32, IppDataType, Int32*, Int32*) Declaration public static IppStatus ippsFIRSRGetSize(int tapsLen, IppDataType tapsType, int *pSpecSize, int *pBufSize) Parameters Type Name Description Int32 tapsLen CSIntel.Ipp.IppDataType tapsType Int32 * pSpecSize Int32 * pBufSize Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f.html",
-    "title": "Method ippsFIRSRInit_32f | Ham Cockpit",
-    "keywords": "Method ippsFIRSRInit_32f ippsFIRSRInit_32f(Single*, Int32, IppAlgType, IppsFIRSpec_32f*) Declaration public static IppStatus ippsFIRSRInit_32f(float *pTaps, int tapsLen, IppAlgType algType, IppsFIRSpec_32f*pSpec) Parameters Type Name Description Single * pTaps Int32 tapsLen IppAlgType algType IppsFIRSpec_32f * pSpec Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc.html",
-    "title": "Method ippsFIRSRInit_32fc | Ham Cockpit",
-    "keywords": "Method ippsFIRSRInit_32fc ippsFIRSRInit_32fc(Complex32*, Int32, IppAlgType, IppsFIRSpec_32fc*) Declaration public static IppStatus ippsFIRSRInit_32fc(Complex32*pTaps, int tapsLen, IppAlgType algType, IppsFIRSpec_32fc*pSpec) Parameters Type Name Description MathNet.Numerics.Complex32 * pTaps Int32 tapsLen IppAlgType algType IppsFIRSpec_32fc * pSpec Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFree.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsFree.html",
-    "title": "Method ippsFree | Ham Cockpit",
-    "keywords": "Method ippsFree ippsFree(Void*) Declaration public static void ippsFree(void *ptr) Parameters Type Name Description Void * ptr"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f.html",
-    "title": "Method ippsMalloc_32f | Ham Cockpit",
-    "keywords": "Method ippsMalloc_32f ippsMalloc_32f(Int32) Declaration public static float *ippsMalloc_32f(int len) Parameters Type Name Description Int32 len Returns Type Description Single *"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc.html",
-    "title": "Method ippsMalloc_32fc | Ham Cockpit",
-    "keywords": "Method ippsMalloc_32fc ippsMalloc_32fc(Int32) Declaration public static Complex32*ippsMalloc_32fc(int len) Parameters Type Name Description Int32 len Returns Type Description MathNet.Numerics.Complex32 *"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u.html",
-    "title": "Method ippsMalloc_8u | Ham Cockpit",
-    "keywords": "Method ippsMalloc_8u ippsMalloc_8u(Int32) Declaration public static byte *ippsMalloc_8u(int len) Parameters Type Name Description Int32 len Returns Type Description Byte *"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f.html",
-    "title": "Method ippsResamplePolyphaseFixed_32f | Ham Cockpit",
-    "keywords": "Method ippsResamplePolyphaseFixed_32f ippsResamplePolyphaseFixed_32f(Single*, Int32, Single*, Single, Double*, Int32*, IppsResamplingPolyphaseFixed_32f*) Declaration public static IppStatus ippsResamplePolyphaseFixed_32f(float *pSrc, int len, float *pDst, float norm, double *pTime, int *pOutlen, IppsResamplingPolyphaseFixed_32f*pSpec) Parameters Type Name Description Single * pSrc Int32 len Single * pDst Single norm Double * pTime Int32 * pOutlen IppsResamplingPolyphaseFixed_32f * pSpec Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f.html",
-    "title": "Method ippsResamplePolyphaseFixedGetSize_32f | Ham Cockpit",
-    "keywords": "Method ippsResamplePolyphaseFixedGetSize_32f ippsResamplePolyphaseFixedGetSize_32f(Int32, Int32, Int32, Int32*, Int32*, Int32*, IppHintAlgorithm) Declaration public static IppStatus ippsResamplePolyphaseFixedGetSize_32f(int inRate, int outRate, int len, int *pSize, int *pLen, int *pHeight, IppHintAlgorithm hint) Parameters Type Name Description Int32 inRate Int32 outRate Int32 len Int32 * pSize Int32 * pLen Int32 * pHeight CSIntel.Ipp.IppHintAlgorithm hint Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f.html",
-    "title": "Method ippsResamplePolyphaseFixedInit_32f | Ham Cockpit",
-    "keywords": "Method ippsResamplePolyphaseFixedInit_32f ippsResamplePolyphaseFixedInit_32f(Int32, Int32, Int32, Single, Single, IppsResamplingPolyphaseFixed_32f*, IppHintAlgorithm) Declaration public static IppStatus ippsResamplePolyphaseFixedInit_32f(int inRate, int outRate, int len, float rollf, float alpha, IppsResamplingPolyphaseFixed_32f*pSpec, IppHintAlgorithm hint) Parameters Type Name Description Int32 inRate Int32 outRate Int32 len Single rollf Single alpha IppsResamplingPolyphaseFixed_32f * pSpec CSIntel.Ipp.IppHintAlgorithm hint Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc.html",
-    "title": "Method ippsTone_32fc | Ham Cockpit",
-    "keywords": "Method ippsTone_32fc ippsTone_32fc(Ipp32fc*, Int32, Single, Single, Single*, IppHintAlgorithm) Declaration public static IppStatus ippsTone_32fc(Ipp32fc*pDst, int len, float magn, float rFreq, float *pPhase, IppHintAlgorithm hint) Parameters Type Name Description CSIntel.Ipp.Ipp32fc * pDst Int32 len Single magn Single rFreq Single * pPhase CSIntel.Ipp.IppHintAlgorithm hint Returns Type Description CSIntel.Ipp.IppStatus"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppAlgType.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppAlgType.html",
-    "title": "Enum IppAlgType | Ham Cockpit",
-    "keywords": "Enum IppAlgType Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public enum IppAlgType Fields Name Description ippAlgAuto ippAlgDirect ippAlgFFT ippAlgMask"
+    "keywords": "Class Ipp The IPP PInvoke declarations missing from CSIntelPerfLibs . Inheritance Object Ipp Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Ipp Remarks This class contains the IPP PInvoke declarations missing from the CSIntelPerfLibs library. Please see the Integrated Performance Primitives documentation for the description of these functions."
   },
   "api/VE3NEA.HamCockpit.DspFun.IppException.Check.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppException.Check.html",
     "title": "Method Check | Ham Cockpit",
-    "keywords": "Method Check View Source Check(IppStatus) Declaration public static void Check(IppStatus status) Parameters Type Name Description CSIntel.Ipp.IppStatus status"
+    "keywords": "Method Check View Source Check(IppStatus) Checks the IPP status code and raises an IppException if the code represents an error. Declaration public static void Check(IppStatus status) Parameters Type Name Description CSIntel.Ipp.IppStatus status The status code. Exceptions Type Condition IppException status represents an error."
   },
   "api/VE3NEA.HamCockpit.DspFun.IppException.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppException.-ctor.html",
     "title": "Constructor IppException | Ham Cockpit",
-    "keywords": "Constructor IppException View Source IppException(IppStatus) Declaration public IppException(IppStatus status) Parameters Type Name Description CSIntel.Ipp.IppStatus status"
+    "keywords": "Constructor IppException View Source IppException(IppStatus) Initializes a new instance of the IppException class. Declaration public IppException(IppStatus status) Parameters Type Name Description CSIntel.Ipp.IppStatus status The IPP status code."
   },
   "api/VE3NEA.HamCockpit.DspFun.IppException.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppException.html",
     "title": "Class IppException | Ham Cockpit",
-    "keywords": "Class IppException Inheritance Object Exception IppException Implements ISerializable _Exception Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppException : Exception, ISerializable, _Exception Constructors Name Description IppException(IppStatus) Methods Name Description Check(IppStatus)"
+    "keywords": "Class IppException Represents errors that occur during the execution of the IPP functions. Inheritance Object Exception IppException Implements ISerializable _Exception Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppException : Exception, ISerializable, _Exception Constructors Name Description IppException(IppStatus) Initializes a new instance of the IppException class. Methods Name Description Check(IppStatus) Checks the IPP status code and raises an IppException if the code represents an error."
   },
   "api/VE3NEA.HamCockpit.DspFun.IppHelper.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppHelper.html",
     "title": "Class IppHelper | Ham Cockpit",
-    "keywords": "Class IppHelper Inheritance Object IppHelper Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppHelper Fields Name Description LnToDb Methods Name Description PowerToLogPower(Single[])"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb.html",
-    "title": "Field LnToDb | Ham Cockpit",
-    "keywords": "Field LnToDb Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax protected static readonly float LnToDb Returns Type Description Single"
+    "keywords": "Class IppHelper Includes helper functions that use the IPP library . Inheritance Object IppHelper Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppHelper Methods Name Description PowerToLogPower(Single[]) Converts power ratios to decibels in-place."
   },
   "api/VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower.html",
     "title": "Method PowerToLogPower | Ham Cockpit",
-    "keywords": "Method PowerToLogPower View Source PowerToLogPower(Single[]) Declaration public static void PowerToLogPower(float[] power) Parameters Type Name Description Single [] power"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.-ctor.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.-ctor.html",
-    "title": "Constructor IppRealFirFilter | Ham Cockpit",
-    "keywords": "Constructor IppRealFirFilter View Source IppRealFirFilter(Single[], IppAlgType) Declaration public IppRealFirFilter(float[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description Single [] taps IppAlgType algType"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data.html",
-    "title": "Field Data | Ham Cockpit",
-    "keywords": "Field Data Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public float[] Data Returns Type Description Single []"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose.html",
-    "title": "Method Dispose | Ham Cockpit",
-    "keywords": "Method Dispose View Source Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.html",
-    "title": "Class IppRealFirFilter | Ham Cockpit",
-    "keywords": "Class IppRealFirFilter Inheritance Object IppRealFirFilter Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppRealFirFilter : IDisposable Constructors Name Description IppRealFirFilter(Single[], IppAlgType) Fields Name Description Data Methods Name Description Dispose() Process(Int32) ProcessStrided(Single[], Int32, Int32, Int32) SetTaps(Single[])"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process.html",
-    "title": "Method Process | Ham Cockpit",
-    "keywords": "Method Process View Source Process(Int32) Declaration public void Process(int count) Parameters Type Name Description Int32 count"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided.html",
-    "title": "Method ProcessStrided | Ham Cockpit",
-    "keywords": "Method ProcessStrided View Source ProcessStrided(Single[], Int32, Int32, Int32) Declaration public void ProcessStrided(float[] buffer, int offset, int stride, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 stride Int32 count"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps.html",
-    "title": "Method SetTaps | Ham Cockpit",
-    "keywords": "Method SetTaps View Source SetTaps(Single[]) Declaration public void SetTaps(float[] taps) Parameters Type Name Description Single [] taps"
+    "keywords": "Method PowerToLogPower View Source PowerToLogPower(Single[]) Converts power ratios to decibels in-place. Declaration public static void PowerToLogPower(float[] power) Parameters Type Name Description Single [] power The values to convert."
   },
   "api/VE3NEA.HamCockpit.DspFun.IppResampler.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.-ctor.html",
     "title": "Constructor IppResampler | Ham Cockpit",
-    "keywords": "Constructor IppResampler View Source IppResampler(Int32, Int32, Int32, Single, Single) Declaration public IppResampler(int inRate, int outRate, int requestedFilterOrder, float filterCutoff, float kaiserAlpha) Parameters Type Name Description Int32 inRate Int32 outRate Int32 requestedFilterOrder Single filterCutoff Single kaiserAlpha"
+    "keywords": "Constructor IppResampler View Source IppResampler(Int32, Int32, Int32, Single, Single) Initializes a new instance of the IppResampler class. Declaration public IppResampler(int inRate, int outRate, int requestedFilterOrder, float filterCutoff, float kaiserAlpha) Parameters Type Name Description Int32 inRate The input sampling rate. Int32 outRate The output sampling rate. Int32 requestedFilterOrder The requested filter order. Single filterCutoff The 6-dB cutoff frequency of the anti-aliasing filter as a fraction of the Nyquist frequency. Must be in the range of 0...1. Single kaiserAlpha The alpha parameter of the Kaiser filter."
   },
   "api/VE3NEA.HamCockpit.DspFun.IppResampler.Dispose.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.Dispose.html",
     "title": "Method Dispose | Ham Cockpit",
-    "keywords": "Method Dispose View Source Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+    "keywords": "Method Dispose View Source Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Declaration public void Dispose() Implements IDisposable.Dispose()"
   },
   "api/VE3NEA.HamCockpit.DspFun.IppResampler.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.html",
     "title": "Class IppResampler | Ham Cockpit",
-    "keywords": "Class IppResampler Inheritance Object IppResampler Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppResampler : IDisposable Constructors Name Description IppResampler(Int32, Int32, Int32, Single, Single) Fields Name Description OutData Methods Name Description Dispose() Process(Single[], Int32, Int32, Int32)"
+    "keywords": "Class IppResampler Signal resampler based on the IPP library . Inheritance Object IppResampler Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class IppResampler : IDisposable Constructors Name Description IppResampler(Int32, Int32, Int32, Single, Single) Initializes a new instance of the IppResampler class. Fields Name Description OutData The resampled data. Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Process(Single[], Int32, Int32, Int32) Processes the specified input data."
   },
   "api/VE3NEA.HamCockpit.DspFun.IppResampler.OutData.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.OutData.html",
     "title": "Field OutData | Ham Cockpit",
-    "keywords": "Field OutData Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public float[] OutData Returns Type Description Single []"
+    "keywords": "Field OutData The resampled data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public float[] OutData Returns Type Description Single []"
   },
   "api/VE3NEA.HamCockpit.DspFun.IppResampler.Process.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.IppResampler.Process.html",
     "title": "Method Process | Ham Cockpit",
-    "keywords": "Method Process View Source Process(Single[], Int32, Int32, Int32) Declaration public int Process(float[] source, int srcOffset, int srcStride, int count) Parameters Type Name Description Single [] source Int32 srcOffset Int32 srcStride Int32 count Returns Type Description Int32"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f.html",
-    "title": "Struct IppsFIRSpec_32f | Ham Cockpit",
-    "keywords": "Struct IppsFIRSpec_32f Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public struct IppsFIRSpec_32f"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc.html",
-    "title": "Struct IppsFIRSpec_32fc | Ham Cockpit",
-    "keywords": "Struct IppsFIRSpec_32fc Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public struct IppsFIRSpec_32fc"
-  },
-  "api/VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f.html": {
-    "href": "api/VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f.html",
-    "title": "Struct IppsResamplingPolyphaseFixed_32f | Ham Cockpit",
-    "keywords": "Struct IppsResamplingPolyphaseFixed_32f Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public struct IppsResamplingPolyphaseFixed_32f"
+    "keywords": "Method Process View Source Process(Single[], Int32, Int32, Int32) Processes the specified input data. Declaration public int Process(float[] inputData, int inputOffset, int inputStride, int count) Parameters Type Name Description Single [] inputData The input data. Int32 inputOffset The offset of the first value to process. Int32 inputStride The stride in the input data. Int32 count The number of values to process. Returns Type Description Int32 The number of resampled values."
   },
   "api/VE3NEA.HamCockpit.DspFun.Mixer.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.-ctor.html",
     "title": "Constructor Mixer | Ham Cockpit",
-    "keywords": "Constructor Mixer View Source Mixer(Int64) Declaration public Mixer(long frequency) Parameters Type Name Description Int64 frequency"
+    "keywords": "Constructor Mixer View Source Mixer(Int64) Initializes a new instance of the Mixer class. Declaration public Mixer(long frequency) Parameters Type Name Description Int64 frequency The frequency."
   },
   "api/VE3NEA.HamCockpit.DspFun.Mixer.Format.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.Format.html",
     "title": "Property Format | Ham Cockpit",
-    "keywords": "Property Format View Source Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+    "keywords": "Property Format View Source Format Gets the format of the output data. Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat The format of the output data. Implements ISampleStream.Format"
   },
   "api/VE3NEA.HamCockpit.DspFun.Mixer.Frequency.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.Frequency.html",
     "title": "Property Frequency | Ham Cockpit",
-    "keywords": "Property Frequency View Source Frequency Declaration public long Frequency { get; set; } Property Value Type Description Int64"
+    "keywords": "Property Frequency View Source Frequency Gets or sets the frequency of the complex sinusoid. Declaration public long Frequency { get; set; } Property Value Type Description Int64 The frequency of the complex sinusoid."
   },
   "api/VE3NEA.HamCockpit.DspFun.Mixer.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.html",
     "title": "Class Mixer | Ham Cockpit",
-    "keywords": "Class Mixer Inheritance Object Mixer Implements IIqProcessor IInitSampleStream ISampleStream Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Mixer : IIqProcessor, IInitSampleStream, ISampleStream Constructors Name Description Mixer(Int64) Properties Name Description Format Frequency Methods Name Description Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+    "keywords": "Class Mixer Mixes the input complex-valued data with a complex sinusoid. Inheritance Object Mixer Implements IIqProcessor IInitSampleStream ISampleStream Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Mixer : IIqProcessor, IInitSampleStream, ISampleStream Constructors Name Description Mixer(Int64) Initializes a new instance of the Mixer class. Properties Name Description Format Gets the format of the output data. Frequency Gets or sets the frequency of the complex sinusoid. Methods Name Description Initialize(ISampleStream) Initializes the mixer to process data from the specified source. Read(Single[], Int32, Int32) Reads processed data to the specified buffer. Events Name Description SamplesAvailable Occurs when output samples are available."
   },
   "api/VE3NEA.HamCockpit.DspFun.Mixer.Initialize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.Initialize.html",
     "title": "Method Initialize | Ham Cockpit",
-    "keywords": "Method Initialize View Source Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+    "keywords": "Method Initialize View Source Initialize(ISampleStream) Initializes the mixer to process data from the specified source. Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source The source. Implements IInitSampleStream.Initialize(ISampleStream) Exceptions Type Condition Exception Input to the mixer must be complex."
   },
   "api/VE3NEA.HamCockpit.DspFun.Mixer.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads processed data to the specified buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The number of values to process. Returns Type Description Int32 The number of processed values. Implements ISampleStream.Read(Single[], Int32, Int32)"
   },
   "api/VE3NEA.HamCockpit.DspFun.Mixer.SamplesAvailable.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Mixer.SamplesAvailable.html",
     "title": "Event SamplesAvailable | Ham Cockpit",
-    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+    "keywords": "Event SamplesAvailable Occurs when output samples are available. Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
   },
   "api/VE3NEA.HamCockpit.DspFun.MovingAverage.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MovingAverage.-ctor.html",
     "title": "Constructor MovingAverage | Ham Cockpit",
-    "keywords": "Constructor MovingAverage View Source MovingAverage(Int32) Declaration public MovingAverage(int length) Parameters Type Name Description Int32 length"
+    "keywords": "Constructor MovingAverage View Source MovingAverage(Int32) Initializes a new instance of the MovingAverage class. Declaration public MovingAverage(int length) Parameters Type Name Description Int32 length The length of the filter."
   },
   "api/VE3NEA.HamCockpit.DspFun.MovingAverage.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MovingAverage.html",
     "title": "Class MovingAverage | Ham Cockpit",
-    "keywords": "Class MovingAverage Inheritance Object MovingAverage Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class MovingAverage Constructors Name Description MovingAverage(Int32) Properties Name Description Scale Methods Name Description Process(Single)"
+    "keywords": "Class MovingAverage Applies a moving average filter to the floating point data. Inheritance Object MovingAverage Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class MovingAverage Remarks The classical moving average, y[n] = y[n-1] + x[n] - x[n-k] , fails when applied to the floating point data because (a + b) - b is not always equal to a when a and b are floating point values. For example, (1E-6 + 1E6) - 1E6 evaluates to 0 , not to 1E-6 . The algorithm used in this class is designed to prevent such errors. The filtered output is not scaled, it needs to be multiplied by the Scale factor to preserve the signal amplitude. Constructors Name Description MovingAverage(Int32) Initializes a new instance of the MovingAverage class. Properties Name Description Scale Gets the scaling factor. Methods Name Description Process(Single) Processes the specified value."
   },
   "api/VE3NEA.HamCockpit.DspFun.MovingAverage.Process.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MovingAverage.Process.html",
     "title": "Method Process | Ham Cockpit",
-    "keywords": "Method Process View Source Process(Single) Declaration public float Process(float value) Parameters Type Name Description Single value Returns Type Description Single"
+    "keywords": "Method Process View Source Process(Single) Processes the specified value. Declaration public float Process(float value) Parameters Type Name Description Single value The input value. Returns Type Description Single The filtered value."
   },
   "api/VE3NEA.HamCockpit.DspFun.MovingAverage.Scale.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MovingAverage.Scale.html",
     "title": "Property Scale | Ham Cockpit",
-    "keywords": "Property Scale View Source Scale Declaration public float Scale { get; } Property Value Type Description Single"
+    "keywords": "Property Scale View Source Scale Gets the scaling factor. Declaration public float Scale { get; } Property Value Type Description Single The scaling factor that the filtered values need to be multiplied by."
   },
   "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.-ctor.html",
     "title": "Constructor MultipassAverage | Ham Cockpit",
-    "keywords": "Constructor MultipassAverage View Source MultipassAverage(Int32, Int32) Declaration public MultipassAverage(int length, int passCount) Parameters Type Name Description Int32 length Int32 passCount"
+    "keywords": "Constructor MultipassAverage View Source MultipassAverage(Int32, Int32) Initializes a new instance of the MultipassAverage class. Declaration public MultipassAverage(int length, int passCount) Parameters Type Name Description Int32 length The length of the filter in each pass. Int32 passCount The number of passes."
   },
   "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.html",
     "title": "Class MultipassAverage | Ham Cockpit",
-    "keywords": "Class MultipassAverage Inheritance Object MultipassAverage Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class MultipassAverage Constructors Name Description MultipassAverage(Int32, Int32) Properties Name Description Scale Methods Name Description Process(Single) ProcessUnscaled(Single)"
+    "keywords": "Class MultipassAverage Applies a multi-pass moving average filter to the floating point data. Inheritance Object MultipassAverage Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class MultipassAverage Constructors Name Description MultipassAverage(Int32, Int32) Initializes a new instance of the MultipassAverage class. Properties Name Description Scale Gets the scaling factor. Methods Name Description Process(Single) Filters the specified value with proper scaling. ProcessUnscaled(Single) Filters the specified value but does not scale the output."
   },
   "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Process.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Process.html",
     "title": "Method Process | Ham Cockpit",
-    "keywords": "Method Process View Source Process(Single) Declaration public float Process(float value) Parameters Type Name Description Single value Returns Type Description Single"
+    "keywords": "Method Process View Source Process(Single) Filters the specified value with proper scaling. Declaration public float Process(float value) Parameters Type Name Description Single value The value to filter. Returns Type Description Single The filtered value."
   },
   "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.ProcessUnscaled.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.ProcessUnscaled.html",
     "title": "Method ProcessUnscaled | Ham Cockpit",
-    "keywords": "Method ProcessUnscaled View Source ProcessUnscaled(Single) Declaration public float ProcessUnscaled(float value) Parameters Type Name Description Single value Returns Type Description Single"
+    "keywords": "Method ProcessUnscaled View Source ProcessUnscaled(Single) Filters the specified value but does not scale the output. Declaration public float ProcessUnscaled(float value) Parameters Type Name Description Single value The value to filter. Returns Type Description Single The filtered value."
   },
   "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Scale.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Scale.html",
     "title": "Property Scale | Ham Cockpit",
-    "keywords": "Property Scale View Source Scale Declaration public float Scale { get; } Property Value Type Description Single"
+    "keywords": "Property Scale View Source Scale Gets the scaling factor. Declaration public float Scale { get; } Property Value Type Description Single The scaling factor that the value returned from ProcessUnscaled(Single) needs to be multiplied by."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Active.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Active.html",
     "title": "Property Active | Ham Cockpit",
-    "keywords": "Property Active View Source Active Declaration public bool Active { get; set; } Property Value Type Description Boolean"
+    "keywords": "Property Active View Source Active Gets or sets a value indicating whether this OmniRigClient is active. Declaration public bool Active { get; set; } Property Value Type Description Boolean true if active; otherwise, false ."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.GetStatusText.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.GetStatusText.html",
     "title": "Method GetStatusText | Ham Cockpit",
-    "keywords": "Method GetStatusText View Source GetStatusText() Declaration public string GetStatusText() Returns Type Description String"
+    "keywords": "Method GetStatusText View Source GetStatusText() Gets the text that describes the current status of OmniRig. Declaration public string GetStatusText() Returns Type Description String The status text."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.html",
     "title": "Class OmniRigClient | Ham Cockpit",
-    "keywords": "Class OmniRigClient Inheritance Object OmniRigClient Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class OmniRigClient Fields Name Description ModeChanged StatusChanged Tuned Properties Name Description Active Mode RigNo RxFrequency Status Methods Name Description GetStatusText() ShowDialog()"
+    "keywords": "Class OmniRigClient A wrapper around the OmniRig COM object. Inheritance Object OmniRigClient Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class OmniRigClient Properties Name Description Active Gets or sets a value indicating whether this OmniRigClient is active. Mode Gets or sets the mode. RigNo Gets or sets the rig number. RxFrequency Gets or sets the RX frequency. Status Gets the status of the CAT connection. Methods Name Description GetStatusText() Gets the text that describes the current status of OmniRig. ShowDialog() Shows the OmniRig configuration dialog. Events Name Description ModeChanged Occurs when the mode changes. StatusChanged Occurs when the CAT connection status changes. Tuned Occurs when the dial frequency changes."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Mode.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Mode.html",
     "title": "Property Mode | Ham Cockpit",
-    "keywords": "Property Mode View Source Mode Declaration public string Mode { get; set; } Property Value Type Description String"
+    "keywords": "Property Mode View Source Mode Gets or sets the mode. Declaration public string Mode { get; set; } Property Value Type Description String The mode selected in the radio."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged.html",
-    "title": "Field ModeChanged | Ham Cockpit",
-    "keywords": "Field ModeChanged Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public EventHandler ModeChanged Returns Type Description EventHandler"
+    "title": "Event ModeChanged | Ham Cockpit",
+    "keywords": "Event ModeChanged Occurs when the mode changes. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler ModeChanged Returns Type Description EventHandler"
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.RigNo.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.RigNo.html",
     "title": "Property RigNo | Ham Cockpit",
-    "keywords": "Property RigNo View Source RigNo Declaration public int RigNo { get; set; } Property Value Type Description Int32"
+    "keywords": "Property RigNo View Source RigNo Gets or sets the rig number. Declaration public int RigNo { get; set; } Property Value Type Description Int32 The number of the rig to use, 1 or 2."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.RxFrequency.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.RxFrequency.html",
     "title": "Property RxFrequency | Ham Cockpit",
-    "keywords": "Property RxFrequency View Source RxFrequency Declaration public int RxFrequency { get; set; } Property Value Type Description Int32"
+    "keywords": "Property RxFrequency View Source RxFrequency Gets or sets the RX frequency. Declaration public int RxFrequency { get; set; } Property Value Type Description Int32 The RX frequency."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ShowDialog.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.ShowDialog.html",
     "title": "Method ShowDialog | Ham Cockpit",
-    "keywords": "Method ShowDialog View Source ShowDialog() Declaration public void ShowDialog()"
+    "keywords": "Method ShowDialog View Source ShowDialog() Shows the OmniRig configuration dialog. Declaration public void ShowDialog()"
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Status.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Status.html",
     "title": "Property Status | Ham Cockpit",
-    "keywords": "Property Status View Source Status Declaration public RigStatus Status { get; } Property Value Type Description RigStatus"
+    "keywords": "Property Status View Source Status Gets the status of the CAT connection. Declaration public RigStatus Status { get; } Property Value Type Description RigStatus The status of the CAT connection."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged.html",
-    "title": "Field StatusChanged | Ham Cockpit",
-    "keywords": "Field StatusChanged Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public EventHandler StatusChanged Returns Type Description EventHandler"
+    "title": "Event StatusChanged | Ham Cockpit",
+    "keywords": "Event StatusChanged Occurs when the CAT connection status changes. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler StatusChanged Returns Type Description EventHandler"
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned.html",
-    "title": "Field Tuned | Ham Cockpit",
-    "keywords": "Field Tuned Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public EventHandler Tuned Returns Type Description EventHandler"
+    "title": "Event Tuned | Ham Cockpit",
+    "keywords": "Event Tuned Occurs when the dial frequency changes. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler Tuned Returns Type Description EventHandler"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeForward.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeForward.html",
     "title": "Method ComputeForward | Ham Cockpit",
-    "keywords": "Method ComputeForward View Source ComputeForward() Declaration public void ComputeForward()"
+    "keywords": "Method ComputeForward View Source ComputeForward() Computes the forward FFT transform. Declaration public void ComputeForward()"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeInverse.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeInverse.html",
     "title": "Method ComputeInverse | Ham Cockpit",
-    "keywords": "Method ComputeInverse View Source ComputeInverse() Declaration public void ComputeInverse()"
+    "keywords": "Method ComputeInverse View Source ComputeInverse() Computes the inverse FFT transform. Declaration public void ComputeInverse()"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFft.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.-ctor.html",
     "title": "Constructor RealFft | Ham Cockpit",
-    "keywords": "Constructor RealFft View Source RealFft(Int32) Declaration public RealFft(int size) Parameters Type Name Description Int32 size"
+    "keywords": "Constructor RealFft View Source RealFft(Int32) Initializes a new instance of the RealFft class. Declaration public RealFft(int size) Parameters Type Name Description Int32 size The size of the FFT transform."
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFft.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.html",
     "title": "Class RealFft | Ham Cockpit",
-    "keywords": "Class RealFft Inheritance Object BaseFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFft : BaseFft, IDisposable Constructors Name Description RealFft(Int32) Fields Name Description TimeData Methods Name Description ComputeForward() ComputeInverse()"
+    "keywords": "Class RealFft Computes forward and inverse real FFT. Inheritance Object BaseFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFft : BaseFft, IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description RealFft(Int32) Initializes a new instance of the RealFft class. Fields Name Description TimeData A buffer for the time domain data. Methods Name Description ComputeForward() Computes the forward FFT transform. ComputeInverse() Computes the inverse FFT transform."
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFft.TimeData.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.TimeData.html",
     "title": "Field TimeData | Ham Cockpit",
-    "keywords": "Field TimeData Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly float[] TimeData Returns Type Description Single []"
+    "keywords": "Field TimeData A buffer for the time domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly float[] TimeData Returns Type Description Single []"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.-ctor.html",
     "title": "Constructor RealFirFilter | Ham Cockpit",
-    "keywords": "Constructor RealFirFilter View Source RealFirFilter(Single[], IppAlgType) Declaration public RealFirFilter(float[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description Single [] taps IppAlgType algType"
+    "keywords": "Constructor RealFirFilter View Source RealFirFilter(Single[], IppAlgType) Declaration public RealFirFilter(float[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description Single [] taps VE3NEA.HamCockpit.DspFun.IppAlgType algType"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Dispose.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Dispose.html",
     "title": "Method Dispose | Ham Cockpit",
-    "keywords": "Method Dispose View Source Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+    "keywords": "Method Dispose View Source Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Declaration public void Dispose() Implements IDisposable.Dispose()"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Format.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Format.html",
@@ -682,7 +542,7 @@
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.html",
     "title": "Class RealFirFilter | Ham Cockpit",
-    "keywords": "Class RealFirFilter Inheritance Object RealFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description RealFirFilter(Single[], IppAlgType) Properties Name Description Format Taps Methods Name Description Dispose() Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+    "keywords": "Class RealFirFilter Applies a FIR filter to real-valued data. Inheritance Object RealFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description RealFirFilter(Single[], IppAlgType) Properties Name Description Format Taps Gets or sets the filter taps. Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Initialize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Initialize.html",
@@ -702,7 +562,7 @@
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Taps.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Taps.html",
     "title": "Property Taps | Ham Cockpit",
-    "keywords": "Property Taps View Source Taps Declaration public float[] Taps { get; set; } Property Value Type Description Single []"
+    "keywords": "Property Taps View Source Taps Gets or sets the filter taps. Declaration public float[] Taps { get; set; } Property Value Type Description Single [] The filter taps."
   },
   "api/VE3NEA.HamCockpit.DspFun.Resampler.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.-ctor.html",
@@ -742,7 +602,7 @@
   "api/VE3NEA.HamCockpit.DspFun.RigStatus.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RigStatus.html",
     "title": "Enum RigStatus | Ham Cockpit",
-    "keywords": "Enum RigStatus Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public enum RigStatus Fields Name Description Disabled NotConfigured NotInstalled NotResponding Online PortBusy"
+    "keywords": "Enum RigStatus The status of the CAT connection to the radio. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public enum RigStatus Fields Name Description Disabled The CAT interface is disabled. NotConfigured OmniRig is not configured. NotInstalled OmniRig is not installed. NotResponding The radio is not responding. Online CAT interface OK. PortBusy The COM port is used by another program."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Count.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Count.html",
@@ -872,32 +732,32 @@
   "api/VE3NEA.HamCockpit.DspFun.SlidingMax.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMax.-ctor.html",
     "title": "Constructor SlidingMax | Ham Cockpit",
-    "keywords": "Constructor SlidingMax View Source SlidingMax(Int32) Declaration public SlidingMax(int length) Parameters Type Name Description Int32 length"
+    "keywords": "Constructor SlidingMax View Source SlidingMax(Int32) Initializes a new instance of the SlidingMax class. Declaration public SlidingMax(int length) Parameters Type Name Description Int32 length The length of the sliding filter."
   },
   "api/VE3NEA.HamCockpit.DspFun.SlidingMax.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMax.html",
     "title": "Class SlidingMax | Ham Cockpit",
-    "keywords": "Class SlidingMax Inheritance Object BaseSlidingFilter SlidingMax Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SlidingMax : BaseSlidingFilter Constructors Name Description SlidingMax(Int32) Methods Name Description MinOrMax(Single, Single)"
+    "keywords": "Class SlidingMax Computes the sliding maximum of the input values. Inheritance Object BaseSlidingFilter SlidingMax Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SlidingMax : BaseSlidingFilter Constructors Name Description SlidingMax(Int32) Initializes a new instance of the SlidingMax class. Methods Name Description MinOrMax(Single, Single) Returns the maximum of two values."
   },
   "api/VE3NEA.HamCockpit.DspFun.SlidingMax.MinOrMax.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMax.MinOrMax.html",
     "title": "Method MinOrMax | Ham Cockpit",
-    "keywords": "Method MinOrMax View Source MinOrMax(Single, Single) Declaration protected override float MinOrMax(float x, float y) Parameters Type Name Description Single x Single y Returns Type Description Single Overrides BaseSlidingFilter.MinOrMax(Single, Single)"
+    "keywords": "Method MinOrMax View Source MinOrMax(Single, Single) Returns the maximum of two values. Declaration protected override float MinOrMax(float x, float y) Parameters Type Name Description Single x The first value. Single y The second value. Returns Type Description Single The maximum of two values. Overrides BaseSlidingFilter.MinOrMax(Single, Single)"
   },
   "api/VE3NEA.HamCockpit.DspFun.SlidingMin.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.-ctor.html",
     "title": "Constructor SlidingMin | Ham Cockpit",
-    "keywords": "Constructor SlidingMin View Source SlidingMin(Int32) Declaration public SlidingMin(int length) Parameters Type Name Description Int32 length"
+    "keywords": "Constructor SlidingMin View Source SlidingMin(Int32) Initializes a new instance of the SlidingMin class. Declaration public SlidingMin(int length) Parameters Type Name Description Int32 length The length of the sliding filter."
   },
   "api/VE3NEA.HamCockpit.DspFun.SlidingMin.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.html",
     "title": "Class SlidingMin | Ham Cockpit",
-    "keywords": "Class SlidingMin Inheritance Object BaseSlidingFilter SlidingMin Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SlidingMin : BaseSlidingFilter Constructors Name Description SlidingMin(Int32) Methods Name Description MinOrMax(Single, Single)"
+    "keywords": "Class SlidingMin Computes the sliding minimum of the input values. Inheritance Object BaseSlidingFilter SlidingMin Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SlidingMin : BaseSlidingFilter Constructors Name Description SlidingMin(Int32) Initializes a new instance of the SlidingMin class. Methods Name Description MinOrMax(Single, Single) Returns the minimum of two values."
   },
   "api/VE3NEA.HamCockpit.DspFun.SlidingMin.MinOrMax.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.MinOrMax.html",
     "title": "Method MinOrMax | Ham Cockpit",
-    "keywords": "Method MinOrMax View Source MinOrMax(Single, Single) Declaration protected override float MinOrMax(float x, float y) Parameters Type Name Description Single x Single y Returns Type Description Single Overrides BaseSlidingFilter.MinOrMax(Single, Single)"
+    "keywords": "Method MinOrMax View Source MinOrMax(Single, Single) Returns the minimum of two values. Declaration protected override float MinOrMax(float x, float y) Parameters Type Name Description Single x The first value. Single y The second value. Returns Type Description Single The minimum of two values. Overrides BaseSlidingFilter.MinOrMax(Single, Single) Remarks The child class overrides this method to return either the minimum or maximum."
   },
   "api/VE3NEA.HamCockpit.PluginAPI.html": {
     "href": "api/VE3NEA.HamCockpit.PluginAPI.html",
@@ -1542,7 +1402,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Ham Cockpit | Ham Cockpit",
-    "keywords": "Ham Cockpit Radio Amateur's integrated envoronment Copyright © 2020 Alex Shovkoplyas VE3NEA freeware Tested on Windows 10 , but may work on the earlier versions of Windows as well. Please try and let me know! Ham Cockpit Ham Cockpit is a program of a new type. All of its functions are implemented in the plugins, the main program simply loads the plugins and helps them work together. Some standard plugins come with the software, a wide variety of optional and third party plugins will hopefully be available soon. Due to the modular approach taken to the extreme, Ham Cockpit becomes an integrated environment for a Radio Amateur that every user can build according to his needs. By installing the right plugins, one will be able to turn the program into an SDR client, a logger, a cluster monitor, a propagation prediction tool, etc., etc. - or have any combination of these working together in one program (once the corresponding plugins are available). Ham Cockpit 1.0 This is the very first release of Ham Cockpit , it includes only a handful of plugins that turn it into an SDR client. Moreover, this version has drivers only for the ICOM IC-7610 radio , making use of its I/Q streaming capability, and Afedri-822x SDR . Don't worry, the drivers are just plugins, more radios will be supported soon. Note Despite the small number of currently available plugins, the program in its present state is an ideal tool for cracking CW pileups that I am already using on the air. I built it as part of my preparation to work 3Y0I , the only announced DXpedition to a country on my needed list. At 330 DXCC entities confirmed, I need just one more to win the Honor Roll award, so I did my best to get the right tool for the job. Third Party Developers All software developers are welcome to create their own plugins for Ham Cockpit : open source, freeware, shareware - your choice. If you have an idea of a new signal processing algorithm, it will be much easier for you to create a plugin that implements it than to build a stand alone application with its own audio input and output, radio control, settings dialog, etc. In a plugin, you will just write the interesting part and let Ham Cockpit do the rest. What kinds of plugins can you create? Not just the signal processing ones. Any function useful for Radio Amateurs could become your next plugin. QSO logging, cluster monitoring, award tracking, propagation prediction, contesting, SO2R operation - the choice is limited only by your imagination. A short Plugin Developer's Guide is now available for those who want to start writing plugins. I am working on a complete set of plugin API documentation, including the source code of selected plugins. Non-programmers are also welcome to participate in the Ham Cockpit project. You can help with documentation, tutorials, video demos or data preparation. One area where data needs to be prepared is band plans . Currently we have only one band plan, for the Ham bands in the USA and Canada. We need band plans for other countries, broadcasting band plans, UHF band plans, etc. Downloads Download Ham Cockpit Download additional plugins Resources Online User's Guide Printable User's Guide (PDF) Ham Cockpit Forum Waterfall demo on YouTube"
+    "keywords": "Ham Cockpit Radio Amateur's integrated environment Copyright © 2020 Alex Shovkoplyas VE3NEA freeware Tested on Windows 10 , but may work on the earlier versions of Windows as well. Please try and let me know! Ham Cockpit Ham Cockpit is a program of a new type. All of its functions are implemented in the plugins, the main program simply loads the plugins and helps them work together. Some standard plugins come with the software, a wide variety of optional and third party plugins will hopefully be available soon. Due to the modular approach taken to the extreme, Ham Cockpit becomes an integrated environment for a Radio Amateur that every user can build according to his needs. By installing the right plugins, one will be able to turn the program into an SDR client, a logger, a cluster monitor, a propagation prediction tool, etc., etc. - or have any combination of these working together in one program (once the corresponding plugins are available). Ham Cockpit 1.0 This is the very first release of Ham Cockpit , it includes only a handful of plugins that turn it into an SDR client. Moreover, this version has drivers only for the ICOM IC-7610 radio , making use of its I/Q streaming capability, and Afedri-822x SDR . Don't worry, the drivers are just plugins, more radios will be supported soon. Note Despite the small number of currently available plugins, the program in its present state is an ideal tool for cracking CW pileups that I am already using on the air. I built it as part of my preparation to work 3Y0I , the only announced DXpedition to a country on my needed list. At 330 DXCC entities confirmed, I need just one more to win the Honor Roll award, so I did my best to get the right tool for the job. Third Party Developers All software developers are welcome to create their own plugins for Ham Cockpit : open source, freeware, shareware - your choice. If you have an idea of a new signal processing algorithm, it will be much easier for you to create a plugin that implements it than to build a stand alone application with its own audio input and output, radio control, settings dialog, etc. In a plugin, you will just write the interesting part and let Ham Cockpit do the rest. What kinds of plugins can you create? Not just the signal processing ones. Any function useful for Radio Amateurs could become your next plugin. QSO logging, cluster monitoring, award tracking, propagation prediction, contesting, SO2R operation - the choice is limited only by your imagination. A short Plugin Developer's Guide is now available for those who want to start writing plugins. I am working on a complete set of plugin API documentation, including the source code of selected plugins. Non-programmers are also welcome to participate in the Ham Cockpit project. You can help with documentation, tutorials, video demos or data preparation. One area where data needs to be prepared is band plans . Currently we have only one band plan, for the Ham bands in the USA and Canada. We need band plans for other countries, broadcasting band plans, UHF band plans, etc. Downloads Download Ham Cockpit Download additional plugins Resources Online User's Guide Printable User's Guide (PDF) Ham Cockpit Forum Waterfall demo on YouTube"
   },
   "users_guide/configuration.html": {
     "href": "users_guide/configuration.html",
@@ -1567,7 +1427,7 @@
   "users_guide/faq.html": {
     "href": "users_guide/faq.html",
     "title": "Frequently Asked Questions | Ham Cockpit",
-    "keywords": "Frequently Asked Questions Q How can I ask questions about Ham Cockpit ? A You can post your questions to the Ham Cockpit forum , or click on the Help / Email the Author command in the program menu and send a direct email to the author."
+    "keywords": "Frequently Asked Questions Q: How can I ask questions about Ham Cockpit? A: You can post your questions to the Ham Cockpit forum , or click on the Help / Email the Author command in the program menu and send a direct email to the author. Q: I downloaded the plugins and unzipped them to the HamCockpit folder, but they did not appear in the program. A: You have to unblock the zip file before you extract the plugins: right-click on the zip, click on Properties in the popup menu, tick the Unblock checkbox, then click on OK."
   },
   "users_guide/installation.html": {
     "href": "users_guide/installation.html",
@@ -1672,6 +1532,6 @@
   "users_guide/version_history.html": {
     "href": "users_guide/version_history.html",
     "title": "Version History | Ham Cockpit",
-    "keywords": "Version History V.1.0.3 Small Fixes improved error handling V.1.0.2 Small Fixes fixed the User's Guide menu command fixed application icon V.1.0.1 Initial release The program includes these plugins: Afedri-822x SDR , an interface to the Afedri SDR radio IC-7610 I/Q , an interface to the USB3 I/Q stream of the Icom 7610 radio IC-7610 Transmitter , controls T/R, Split and TX frequency via USB3 CW, SSB and RTTY demodulators , demodulate I/Q signals to audio AGC , automatic gain control Bandpass Filter , a variable bandwidth filter for CW, SSB and RTTY Volume Control , a slider to control the level of the output audio Audio Output to Soundcard , sends processed audio to an audio device Waterfall Display , a feature-rich, CW-grade waterfall display Band Plan , a non-visual plugin that provides band plan data to other plugins The pack of additional plugins, a separate download, includes: Clock Demo , adds a UTC/Local time clock to the toolbar Conventional Receiver , an interface to a receiver that outputs demodulated audio Frequency Display , displays and controls the operating frequency and TX Split offset S-Meter , an analog-type meter that shows the audio output level Plugin List , a panel that shows the list of all installed plugins and interfaces they export"
+    "keywords": "Version History V.1.0.4 Small Fixes added exception logging improved error handling V.1.0.3 Small Fixes improved error handling V.1.0.2 Small Fixes fixed the User's Guide menu command fixed application icon V.1.0.1 Initial release The program includes these plugins: Afedri-822x SDR , an interface to the Afedri SDR radio IC-7610 I/Q , an interface to the USB3 I/Q stream of the Icom 7610 radio IC-7610 Transmitter , controls T/R, Split and TX frequency via USB3 CW, SSB and RTTY demodulators , demodulate I/Q signals to audio AGC , automatic gain control Bandpass Filter , a variable bandwidth filter for CW, SSB and RTTY Volume Control , a slider to control the level of the output audio Audio Output to Soundcard , sends processed audio to an audio device Waterfall Display , a feature-rich, CW-grade waterfall display Band Plan , a non-visual plugin that provides band plan data to other plugins The pack of additional plugins, a separate download, includes: Clock Demo , adds a UTC/Local time clock to the toolbar Conventional Receiver , an interface to a receiver that outputs demodulated audio Frequency Display , displays and controls the operating frequency and TX Split offset S-Meter , an analog-type meter that shows the audio output level Plugin List , a panel that shows the list of all installed plugins and interfaces they export"
   }
 }
