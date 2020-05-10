@@ -32,12 +32,12 @@
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.FreqData.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.FreqData.html",
     "title": "Field FreqData | Ham Cockpit",
-    "keywords": "Field FreqData A buffer for the frequency domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public Complex32[] FreqData Returns Type Description MathNet.Numerics.Complex32 []"
+    "keywords": "Field FreqData The buffer for the frequency domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public Complex32[] FreqData Returns Type Description MathNet.Numerics.Complex32 []"
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.html",
     "title": "Class BaseFft | Ham Cockpit",
-    "keywords": "Class BaseFft The base class that implements common functionality for the RealFft and ComplexFft classes. Inheritance Object BaseFft ComplexFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class BaseFft : IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description BaseFft(Int32) Initializes a new instance of the BaseFft class. Fields Name Description FreqData A buffer for the frequency domain data. IPP_FFT_NODIV_BY_ANY LnToDb order specBuffer workBuf Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. LogPowerSpectrum(Single[]) Compute the log power spectrum from the power spectrum. PowerSpectrum(Single[]) Compute the power spectrum from the complex spectrum in the FreqData array. SlicePower(Int32, Int32) Compute the given slice of the power spectrum. See Also RealFft ComplexFft"
+    "keywords": "Class BaseFft The base class that implements common functionality for the RealFft and ComplexFft classes. Inheritance Object BaseFft ComplexFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class BaseFft : IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description BaseFft(Int32) Initializes a new instance of the BaseFft class. Fields Name Description FreqData The buffer for the frequency domain data. IPP_FFT_NODIV_BY_ANY LnToDb order specBuffer workBuf Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. LogPowerSpectrum(Single[]) Compute the log power spectrum from the power spectrum. PowerSpectrum(Single[]) Compute the power spectrum from the complex spectrum in the FreqData array. SlicePower(Int32, Int32) Compute the given slice of the power spectrum. See Also RealFft ComplexFft"
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.IPP_FFT_NODIV_BY_ANY.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.IPP_FFT_NODIV_BY_ANY.html",
@@ -62,7 +62,7 @@
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum.html",
     "title": "Method PowerSpectrum | Ham Cockpit",
-    "keywords": "Method PowerSpectrum View Source PowerSpectrum(Single[]) Compute the power spectrum from the complex spectrum in the FreqData array. Declaration public float[] PowerSpectrum(float[] power = null) Parameters Type Name Description Single [] power A buffer for the power spectrum, or null . Returns Type Description Single [] The power spectrum."
+    "keywords": "Method PowerSpectrum View Source PowerSpectrum(Single[]) Compute the power spectrum from the complex spectrum in the FreqData array. Declaration public float[] PowerSpectrum(float[] power = null) Parameters Type Name Description Single [] power The buffer for the power spectrum, or null . Returns Type Description Single [] The power spectrum."
   },
   "api/VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower.html",
@@ -157,12 +157,12 @@
   "api/VE3NEA.HamCockpit.DspFun.ComplexFft.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.html",
     "title": "Class ComplexFft | Ham Cockpit",
-    "keywords": "Class ComplexFft Computes forward and inverse complex FFT. Inheritance Object BaseFft ComplexFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFft : BaseFft, IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description ComplexFft(Int32) Initializes a new instance of the ComplexFft class. Fields Name Description TimeData A buffer for the time domain data. Methods Name Description ComputeForward() Computes the forward FFT transform. ComputeInverse() Computes the inverse FFT transform."
+    "keywords": "Class ComplexFft Computes forward and inverse complex FFT. Inheritance Object BaseFft ComplexFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFft : BaseFft, IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description ComplexFft(Int32) Initializes a new instance of the ComplexFft class. Fields Name Description TimeData The buffer for the time domain data. Methods Name Description ComputeForward() Computes the forward FFT transform. ComputeInverse() Computes the inverse FFT transform."
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData.html",
     "title": "Field TimeData | Ham Cockpit",
-    "keywords": "Field TimeData A buffer for the time domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly Complex32[] TimeData Returns Type Description MathNet.Numerics.Complex32 []"
+    "keywords": "Field TimeData The buffer for the time domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly Complex32[] TimeData Returns Type Description MathNet.Numerics.Complex32 []"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.-ctor.html",
@@ -517,12 +517,12 @@
   "api/VE3NEA.HamCockpit.DspFun.RealFft.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.html",
     "title": "Class RealFft | Ham Cockpit",
-    "keywords": "Class RealFft Computes forward and inverse real FFT. Inheritance Object BaseFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFft : BaseFft, IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description RealFft(Int32) Initializes a new instance of the RealFft class. Fields Name Description TimeData A buffer for the time domain data. Methods Name Description ComputeForward() Computes the forward FFT transform. ComputeInverse() Computes the inverse FFT transform."
+    "keywords": "Class RealFft Computes forward and inverse real FFT. Inheritance Object BaseFft RealFft Implements IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFft : BaseFft, IDisposable Remarks This class uses the Intel Integrated Performance Primitives library to compute the fast Fourier transform. Constructors Name Description RealFft(Int32) Initializes a new instance of the RealFft class. Fields Name Description TimeData The buffer for the time domain data. Methods Name Description ComputeForward() Computes the forward FFT transform. ComputeInverse() Computes the inverse FFT transform."
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFft.TimeData.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.TimeData.html",
     "title": "Field TimeData | Ham Cockpit",
-    "keywords": "Field TimeData A buffer for the time domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly float[] TimeData Returns Type Description Single []"
+    "keywords": "Field TimeData The buffer for the time domain data. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public readonly float[] TimeData Returns Type Description Single []"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.-ctor.html",
@@ -1513,6 +1513,11 @@
     "href": "users_guide/roadmap.html",
     "title": "Roadmap | Ham Cockpit",
     "keywords": "Roadmap Documentation Documentation is my top priority. I am working on this User's Guide, Plugin Developer's Guide and API Documentation . These plugins are in my immediate plans Conventional Transmitter , a plugin to control the transmitter in a conventional radio IF Adapter , support of the analog I/Q output from a conventional radio fed to a soundcard Bandscope , a band scope plugin Decoded Text Display , a panel that displays color-highlighted text produced by the CW/RTTY/Digi decoder plugins These plugins will come later Adapters for other SDR radios Spot Provider that downloads spots from the Telnet DX clusters, RBN and other sources Spot Manager that collects spots from all spot providers, archives them and serves spot data to other plugins Cluster Monitor , a visual plugin that shows the spots provided by Spot manager CW Decoder , a single-channel CW decoder based on the decoding algorithms used in CW Skimmer Logger Interface , a non-visual plugin that talks to the logger database and allows other plugins to add QSO, check the Needed status of the callsigns, etc. QSO Entry Box , a visual plugin to enter QSO to the logger database"
+  },
+  "users_guide/sidetone.html": {
+    "href": "users_guide/sidetone.html",
+    "title": "How to Add Sidetone to the Audio Processed in the Software | Ham Cockpit",
+    "keywords": "How to Add Sidetone to the Audio Processed in the Software Digital signal processing of RX audio in the PC has many advantages, but it also presents a problem: the output does not include the sidetone. Sending Morse code without hearing the sidetone is virtually impossible, but fortunately, there is an easy solution: processed audio and sidetone can be mixed together in the soundcard. 1. Use a cheap soundcard dongle (a $1 one is OK!), connect the headphones to its output, and the sidetone to the Mic input: The sidetone may come from the Morse keyer or, if the keyer is built into the radio, from the Phones connector of the radio (but not from the ACC connector). Make sure that only the sidetone is present and receiver audio is muted. How to achieve this is radio-dependent: for example, in TS-570 you can set the IF gain to the minimum, and in IC-7610 you just press the Main AF knob. Configure the software to use the dongle for audio output: Click on the Windows Start button, type \"control panel\" and click on Control Panel , then click on Soundcard . Select your soundcard and click on Properties . Click on the Levels tab in the Soundcard Properties dialog, enable both Speakers and Microphone , and adjust their levels for comfortable listening: That's it! Now you can hear both audio from the PC and sidetone from your radio or Morse keyer."
   },
   "users_guide/thanks.html": {
     "href": "users_guide/thanks.html",

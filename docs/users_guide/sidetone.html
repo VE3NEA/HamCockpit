@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Field TimeData
-   | Ham Cockpit </title>
+    <title>How to Add Sidetone to the Audio Processed in the Software | Ham Cockpit </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Field TimeData
-   | Ham Cockpit ">
+    <meta name="title" content="How to Add Sidetone to the Audio Processed in the Software | Ham Cockpit ">
     <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -79,35 +77,40 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VE3NEA.HamCockpit.DspFun.RealFft.TimeData">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-add-sidetone-to-the-audio-processed-in-the-software">How to Add Sidetone to the Audio Processed in the Software</h1>
 
-
-<h1 id="VE3NEA_HamCockpit_DspFun_RealFft_TimeData" data-uid="VE3NEA.HamCockpit.DspFun.RealFft.TimeData" class="text-break">Field TimeData
-</h1>
-<div class="markdown level0 summary"><p>The buffer for the time domain data.</p>
-</div>
-<div class="markdown level0 conceptual"></div>
-<h6><strong>Namespace</strong>: <a class="xref" href="VE3NEA.HamCockpit.DspFun.html">VE3NEA.HamCockpit.DspFun</a></h6>
-<h6><strong>Assembly</strong>: VE3NEA.HamCockpit.DspFun.dll</h6>
-<h5 id="VE3NEA_HamCockpit_DspFun_RealFft_TimeData_syntax">Syntax</h5>
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public readonly float[] TimeData</code></pre>
-</div>
-<h5 class="returns">Returns</h5>
-<table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>[]</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<p>Digital signal processing of RX audio in the PC
+has many advantages, but it also presents a problem: the output does not include
+the sidetone.
+Sending Morse code without hearing the
+<a href="https://en.wikipedia.org/wiki/Sidetone">sidetone</a>
+is virtually impossible, but fortunately, there is an easy solution:
+processed audio and sidetone can be mixed together in the soundcard.</p>
+<br>
+1. Use a cheap soundcard dongle (a $1 one is OK!), connect the headphones to its output, 
+and the sidetone to the Mic input:
+<p><img src="../images/SidetoneInjection.png" alt="Sidetone Injection"></p>
+<p>The sidetone may come from the Morse keyer or, if the keyer is built into the radio,
+from the Phones connector of the radio (but not from the ACC connector).
+Make sure that only the sidetone is present and receiver audio is muted.
+How to achieve this is radio-dependent: for example, in TS-570
+you can set the IF gain to the minimum, and in IC-7610 you just press the Main AF knob.</p>
+<br>
+<ol start="2">
+<li>Configure the software to use the dongle for audio output:</li>
+</ol>
+<p><img src="../images/OutSoundcard.png" alt="Out Soundcard"></p>
+<br>
+<ol start="3">
+<li>Click on the Windows Start button, type &quot;control panel&quot; and click on <em>Control Panel</em>,
+then click on <em>Soundcard</em>. Select your soundcard and click on <em>Properties</em>.
+Click on the <em>Levels</em> tab in the <em>Soundcard Properties</em> dialog, enable
+both <em>Speakers</em> and <em>Microphone</em>, and adjust their levels
+for comfortable listening:</li>
+</ol>
+<p><img src="../images/SidetoneLevel.png" alt="Sidetone Level"></p>
+<p>That's it! Now you can hear both audio from the PC and sidetone from your radio or Morse keyer.</p>
 </article>
           </div>
           
@@ -115,9 +118,6 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/VE3NEA/HamCockpit.git?path=VE3NEA.HamCockpit.DspFun/Fft.cs&amp;version=GBmaster&amp;line=205" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
