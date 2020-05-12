@@ -2,7 +2,7 @@
   "api/index.html": {
     "href": "api/index.html",
     "title": "Ham Cockpit Plugin API Reference | Ham Cockpit",
-    "keywords": "Ham Cockpit Plugin API Reference Work in progress, about 70% done."
+    "keywords": "Ham Cockpit Plugin API Reference VE3NEA.HamCockpit.PluginAPI contains declarations of the plugin API interfaces. VE3NEA.HamCockpit.DspFun provides a number of reusable classes for digital signal processing that simplify development of DSP plugins. VE3NEA.HamCockpit.PluginHelpers includes several helper classes for editing plugin settings. VE3NEA.HamCockpit.SharedControls includes reusable classes, visual controls and dialogs."
   },
   "api/VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.html",
@@ -177,12 +177,12 @@
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Format.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Format.html",
     "title": "Property Format | Ham Cockpit",
-    "keywords": "Property Format View Source Format Gets the format of the output data. Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat The format of the output data. Implements ISampleStream.Format Remarks Since the filter does not know its passband (all it has is the taps array), it does not update the Format property. The calling code must reflect the new bandwidth in its own Format"
+    "keywords": "Property Format View Source Format Gets the format of the output data. Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat The format of the output data. Implements ISampleStream.Format Remarks Since the filter does not know its passband (all it has is the taps array), it does not update the Format property. The calling code must change the Format settings to reflect the new bandwidth."
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.html",
     "title": "Class ComplexFirFilter | Ham Cockpit",
-    "keywords": "Class ComplexFirFilter Applies a FIR filter to complex-valued data. Inheritance Object ComplexFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description ComplexFirFilter(Complex32[], IppAlgType) Initializes a new instance of the ComplexFirFilter class. Properties Name Description Format Gets the format of the output data. Taps Gets or sets the filter taps. Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Initialize(ISampleStream) Initializes the filter for processing data from the specified source. Read(Single[], Int32, Int32) Reads the data into the provided buffer. Events Name Description SamplesAvailable Occurs when filtered samples are available."
+    "keywords": "Class ComplexFirFilter Applies a FIR filter to complex-valued data. Inheritance Object ComplexFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class ComplexFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description ComplexFirFilter(Complex32[], IppAlgType) Initializes a new instance of the ComplexFirFilter class. Properties Name Description Format Gets the format of the output data. Taps Gets or sets the filter taps. Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Initialize(ISampleStream) Initializes the filter for processing data from the specified source. Read(Single[], Int32, Int32) Reads the data to the provided buffer. Events Name Description SamplesAvailable Occurs when filtered samples are available."
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Initialize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Initialize.html",
@@ -192,7 +192,7 @@
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads the data into the provided buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The count of the values to read. Returns Type Description Int32 The number of read values. Implements ISampleStream.Read(Single[], Int32, Int32)"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads the data to the provided buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The number of the values to read. Returns Type Description Int32 The number of read values. Implements ISampleStream.Read(Single[], Int32, Int32)"
   },
   "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.SamplesAvailable.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.SamplesAvailable.html",
@@ -307,7 +307,7 @@
   "api/VE3NEA.HamCockpit.DspFun.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.html",
     "title": "Namespace VE3NEA.HamCockpit.DspFun | Ham Cockpit",
-    "keywords": "Namespace VE3NEA.HamCockpit.DspFun Classes AudioClientErrors Returns error messages for the Audio Client error codes. BaseFft The base class that implements common functionality for the RealFft and ComplexFft classes. BaseSlidingFilter The base class that implements common functionality for the SlidingMin and SlidingMax classes. ChannelSelector Selects one of the channels from a stereo data source. ComplexFft Computes forward and inverse complex FFT. ComplexFirFilter Applies a FIR filter to complex-valued data. Dsp A collection of functions related to digital signal processing. Ipp The IPP PInvoke declarations missing from CSIntelPerfLibs . IppException Represents errors that occur during the execution of the IPP functions. IppHelper Includes helper functions that use the IPP library . IppResampler Signal resampler based on the IPP library . Mixer Mixes the input complex-valued data with a complex sinusoid. MovingAverage Applies a moving average filter to the floating point data. MultipassAverage Applies a multi-pass moving average filter to the floating point data. OmniRigClient A wrapper around the OmniRig COM object. RealFft Computes forward and inverse real FFT. RealFirFilter Applies a FIR filter to real-valued data. Resampler RingBuffer SampleSourceWrapper SidebandFlipper SlidingMax Computes the sliding maximum of the input values. SlidingMin Computes the sliding minimum of the input values. Enums AudclntErrorCodes Audio Client error codes missing from CSCore . RigStatus The status of the CAT connection to the radio."
+    "keywords": "Namespace VE3NEA.HamCockpit.DspFun Classes AudioClientErrors Returns error messages for the Audio Client error codes. BaseFft The base class that implements common functionality for the RealFft and ComplexFft classes. BaseSlidingFilter The base class that implements common functionality for the SlidingMin and SlidingMax classes. ChannelSelector Selects one of the channels from a stereo data source. ComplexFft Computes forward and inverse complex FFT. ComplexFirFilter Applies a FIR filter to complex-valued data. Dsp A collection of functions related to digital signal processing. Ipp The IPP PInvoke declarations missing from CSIntelPerfLibs . IppException Represents errors that occur during the execution of the IPP functions. IppHelper Includes helper functions that use the IPP library . IppResampler Signal resampler based on the IPP library . Mixer Mixes the input complex-valued data with a complex sinusoid. MovingAverage Applies a moving average filter to the floating point data. MultipassAverage Applies a multi-pass moving average filter to the floating point data. OmniRigClient A wrapper around the OmniRig COM object. RealFft Computes forward and inverse real FFT. RealFirFilter Applies a FIR filter to real-valued data. Resampler A wrapper for the CSCore.DSP.DmoResampler class. RingBuffer A thread-safe ring buffer for the floating point values. SampleSourceWrapper A wrapper for the ISampleStream that exposes the CSCore.ISampleSource interface. SidebandFlipper Changes the sideband of the signal. SlidingMax Computes the sliding maximum of the input values. SlidingMin Computes the sliding minimum of the input values. Enums AudclntErrorCodes Audio Client error codes missing from CSCore . RigStatus The status of the CAT connection to the radio."
   },
   "api/VE3NEA.HamCockpit.DspFun.Ipp.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Ipp.html",
@@ -527,7 +527,7 @@
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.-ctor.html",
     "title": "Constructor RealFirFilter | Ham Cockpit",
-    "keywords": "Constructor RealFirFilter View Source RealFirFilter(Single[], IppAlgType) Declaration public RealFirFilter(float[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description Single [] taps VE3NEA.HamCockpit.DspFun.IppAlgType algType"
+    "keywords": "Constructor RealFirFilter View Source RealFirFilter(Single[], IppAlgType) Initializes a new instance of the RealFirFilter class. Declaration public RealFirFilter(float[] taps, IppAlgType algType = IppAlgType.ippAlgAuto) Parameters Type Name Description Single [] taps The taps. VE3NEA.HamCockpit.DspFun.IppAlgType algType Type of the algorithm."
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Dispose.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Dispose.html",
@@ -537,27 +537,27 @@
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Format.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Format.html",
     "title": "Property Format | Ham Cockpit",
-    "keywords": "Property Format View Source Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+    "keywords": "Property Format View Source Format Gets the format of the output data. Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat The format of the output data. Implements ISampleStream.Format Remarks Since the filter does not know its passband (all it has is the taps array), it does not update the Format property. The calling code must change the Format settings to reflect the new bandwidth."
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.html",
     "title": "Class RealFirFilter | Ham Cockpit",
-    "keywords": "Class RealFirFilter Applies a FIR filter to real-valued data. Inheritance Object RealFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description RealFirFilter(Single[], IppAlgType) Properties Name Description Format Taps Gets or sets the filter taps. Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+    "keywords": "Class RealFirFilter Applies a FIR filter to real-valued data. Inheritance Object RealFirFilter Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RealFirFilter : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description RealFirFilter(Single[], IppAlgType) Initializes a new instance of the RealFirFilter class. Properties Name Description Format Gets the format of the output data. Taps Gets or sets the filter taps. Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Initialize(ISampleStream) Initializes the filter for processing data from the specified source. Read(Single[], Int32, Int32) Reads processed data to the provided buffer. Events Name Description SamplesAvailable Occurs when filtered samples are available."
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Initialize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Initialize.html",
     "title": "Method Initialize | Ham Cockpit",
-    "keywords": "Method Initialize View Source Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+    "keywords": "Method Initialize View Source Initialize(ISampleStream) Initializes the filter for processing data from the specified source. Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source The source of the data. Implements IInitSampleStream.Initialize(ISampleStream)"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads processed data to the provided buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The number of the values to read. Returns Type Description Int32 The number of read values. Implements ISampleStream.Read(Single[], Int32, Int32)"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.SamplesAvailable.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.SamplesAvailable.html",
     "title": "Event SamplesAvailable | Ham Cockpit",
-    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+    "keywords": "Event SamplesAvailable Occurs when filtered samples are available. Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Taps.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFirFilter.Taps.html",
@@ -567,37 +567,37 @@
   "api/VE3NEA.HamCockpit.DspFun.Resampler.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.-ctor.html",
     "title": "Constructor Resampler | Ham Cockpit",
-    "keywords": "Constructor Resampler View Source Resampler(Int32) Declaration public Resampler(int outputSamplingRate) Parameters Type Name Description Int32 outputSamplingRate View Source Resampler(Int32, Int32) Declaration public Resampler(int outputSamplingRate, int quality) Parameters Type Name Description Int32 outputSamplingRate Int32 quality"
+    "keywords": "Constructor Resampler View Source Resampler(Int32) Initializes a new instance of the Resampler class. Declaration public Resampler(int outputSamplingRate) Parameters Type Name Description Int32 outputSamplingRate The output sampling rate. View Source Resampler(Int32, Int32) Initializes a new instance of the Resampler class. Declaration public Resampler(int outputSamplingRate, int quality) Parameters Type Name Description Int32 outputSamplingRate The output sampling rate. Int32 quality The quality factor."
   },
   "api/VE3NEA.HamCockpit.DspFun.Resampler.Dispose.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.Dispose.html",
     "title": "Method Dispose | Ham Cockpit",
-    "keywords": "Method Dispose View Source Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+    "keywords": "Method Dispose View Source Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Declaration public void Dispose() Implements IDisposable.Dispose()"
   },
   "api/VE3NEA.HamCockpit.DspFun.Resampler.Format.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.Format.html",
     "title": "Property Format | Ham Cockpit",
-    "keywords": "Property Format View Source Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+    "keywords": "Property Format View Source Format Gets the format of the resampled data. Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat The format. Implements ISampleStream.Format"
   },
   "api/VE3NEA.HamCockpit.DspFun.Resampler.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.html",
     "title": "Class Resampler | Ham Cockpit",
-    "keywords": "Class Resampler Inheritance Object Resampler Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Resampler : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description Resampler(Int32) Resampler(Int32, Int32) Properties Name Description Format Methods Name Description Dispose() Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+    "keywords": "Class Resampler A wrapper for the CSCore.DSP.DmoResampler class. Inheritance Object Resampler Implements IIqProcessor IInitSampleStream ISampleStream IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class Resampler : IIqProcessor, IInitSampleStream, ISampleStream, IDisposable Constructors Name Description Resampler(Int32) Initializes a new instance of the Resampler class. Resampler(Int32, Int32) Initializes a new instance of the Resampler class. Properties Name Description Format Gets the format of the resampled data. Methods Name Description Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Initialize(ISampleStream) Initializes the resampler for processing data from the specified source. Read(Single[], Int32, Int32) Reads processed data to the provided buffer. Events Name Description SamplesAvailable Occurs when resampled values are available."
   },
   "api/VE3NEA.HamCockpit.DspFun.Resampler.Initialize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.Initialize.html",
     "title": "Method Initialize | Ham Cockpit",
-    "keywords": "Method Initialize View Source Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+    "keywords": "Method Initialize View Source Initialize(ISampleStream) Initializes the resampler for processing data from the specified source. Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source The data source. Implements IInitSampleStream.Initialize(ISampleStream)"
   },
   "api/VE3NEA.HamCockpit.DspFun.Resampler.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads processed data to the provided buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The number of the values to read. Returns Type Description Int32 The number of read values. Implements ISampleStream.Read(Single[], Int32, Int32)"
   },
   "api/VE3NEA.HamCockpit.DspFun.Resampler.SamplesAvailable.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.Resampler.SamplesAvailable.html",
     "title": "Event SamplesAvailable | Ham Cockpit",
-    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+    "keywords": "Event SamplesAvailable Occurs when resampled values are available. Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
   },
   "api/VE3NEA.HamCockpit.DspFun.RigStatus.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RigStatus.html",
@@ -607,127 +607,132 @@
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Count.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Count.html",
     "title": "Property Count | Ham Cockpit",
-    "keywords": "Property Count View Source Count Declaration public int Count { get; } Property Value Type Description Int32"
+    "keywords": "Property Count View Source Count Gets the count of the floating point values in the buffer. Declaration public int Count { get; } Property Value Type Description Int32 The count."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.-ctor.html",
     "title": "Constructor RingBuffer | Ham Cockpit",
-    "keywords": "Constructor RingBuffer View Source RingBuffer(Int32) Declaration public RingBuffer(int capacity) Parameters Type Name Description Int32 capacity"
+    "keywords": "Constructor RingBuffer View Source RingBuffer(Int32) Initializes a new instance of the RingBuffer class. Declaration public RingBuffer(int capacity) Parameters Type Name Description Int32 capacity The capacity of the ring buffer."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Dump.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Dump.html",
     "title": "Method Dump | Ham Cockpit",
-    "keywords": "Method Dump View Source Dump(Int32) Declaration public void Dump(int count) Parameters Type Name Description Int32 count"
+    "keywords": "Method Dump View Source Dump(Int32) Removes the values from the ring buffer. Declaration public void Dump(int count) Parameters Type Name Description Int32 count The number of values to remove. Exceptions Type Condition ArgumentException Too many values to dump: {count}."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.FillWithZeros.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.FillWithZeros.html",
     "title": "Property FillWithZeros | Ham Cockpit",
-    "keywords": "Property FillWithZeros View Source FillWithZeros Declaration public bool FillWithZeros { get; set; } Property Value Type Description Boolean"
+    "keywords": "Property FillWithZeros View Source FillWithZeros Gets or sets a value indicating whether the output is padded with zeros if there is not enough data to read. Declaration public bool FillWithZeros { get; set; } Property Value Type Description Boolean true if padded with zeros; otherwise, false ."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.html",
     "title": "Class RingBuffer | Ham Cockpit",
-    "keywords": "Class RingBuffer Inheritance Object RingBuffer Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RingBuffer Constructors Name Description RingBuffer(Int32) Properties Name Description Count FillWithZeros Methods Name Description Dump(Int32) Read(Single[], Int32, Int32) Resize(Int32) Write(Single[], Int32, Int32) WriteInt16(Byte[], Int32) WriteStrided(Single[], Int32, Int32, SignalFormat) Events Name Description SamplesAvailable"
+    "keywords": "Class RingBuffer A thread-safe ring buffer for the floating point values. Inheritance Object RingBuffer Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class RingBuffer Constructors Name Description RingBuffer(Int32) Initializes a new instance of the RingBuffer class. Properties Name Description Count Gets the count of the floating point values in the buffer. FillWithZeros Gets or sets a value indicating whether the output is padded with zeros if there is not enough data to read. Methods Name Description Dump(Int32) Removes the values from the ring buffer. Read(Single[], Int32, Int32) Reads the data from the ring buffer to the provided buffer. Resize(Int32) Changes the capacity of the ring buffer. Write(Single[], Int32, Int32) Writes floating point values to the specified buffer. WriteInt16(Byte[], Int32) Converts 16-bit integers to the floating point values and writes them to the buffer. WriteStrided(Single[], Int32, Int32, SignalFormat) Writes one of the channels of the strided data to the ring buffer. Events Name Description SamplesAvailable Occurs when filtered samples are available."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads the data from the ring buffer to the provided buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The output buffer. Int32 offset The offset to the first value. Int32 count The number of the values to read. Returns Type Description Int32 The number of read values."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Resize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Resize.html",
     "title": "Method Resize | Ham Cockpit",
-    "keywords": "Method Resize View Source Resize(Int32) Declaration public void Resize(int capacity) Parameters Type Name Description Int32 capacity"
+    "keywords": "Method Resize View Source Resize(Int32) Changes the capacity of the ring buffer. Declaration public void Resize(int capacity) Parameters Type Name Description Int32 capacity The capacity."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.SamplesAvailable.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.SamplesAvailable.html",
     "title": "Event SamplesAvailable | Ham Cockpit",
-    "keywords": "Event SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+    "keywords": "Event SamplesAvailable Occurs when filtered samples are available. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Write.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Write.html",
     "title": "Method Write | Ham Cockpit",
-    "keywords": "Method Write View Source Write(Single[], Int32, Int32) Declaration public void Write(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count"
+    "keywords": "Method Write View Source Write(Single[], Int32, Int32) Writes floating point values to the specified buffer. Declaration public void Write(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The number of values."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16.html",
     "title": "Method WriteInt16 | Ham Cockpit",
-    "keywords": "Method WriteInt16 View Source WriteInt16(Byte[], Int32) Declaration public void WriteInt16(byte[] buffer, int byteCount) Parameters Type Name Description Byte [] buffer Int32 byteCount"
+    "keywords": "Method WriteInt16 View Source WriteInt16(Byte[], Int32) Converts 16-bit integers to the floating point values and writes them to the buffer. Declaration public void WriteInt16(byte[] buffer, int byteCount) Parameters Type Name Description Byte [] buffer The buffer. Int32 byteCount The number of bytes to convert and write."
   },
   "api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteStrided.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteStrided.html",
     "title": "Method WriteStrided | Ham Cockpit",
-    "keywords": "Method WriteStrided View Source WriteStrided(Single[], Int32, Int32, SignalFormat) Declaration public void WriteStrided(float[] data, int offset, int inFloatCount, SignalFormat format) Parameters Type Name Description Single [] data Int32 offset Int32 inFloatCount SignalFormat format"
+    "keywords": "Method WriteStrided View Source WriteStrided(Single[], Int32, Int32, SignalFormat) Writes one of the channels of the strided data to the ring buffer. Declaration public void WriteStrided(float[] data, int offset, int inFloatCount, SignalFormat format) Parameters Type Name Description Single [] data The data. Int32 offset The offset to the first value. Int32 inFloatCount The number of the input floating point values. SignalFormat format The format of the data."
   },
   "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.CanSeek.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.CanSeek.html",
     "title": "Property CanSeek | Ham Cockpit",
-    "keywords": "Property CanSeek View Source CanSeek Declaration public bool CanSeek { get; } Property Value Type Description Boolean Implements CSCore.IAudioSource.CanSeek"
+    "keywords": "Property CanSeek View Source CanSeek Returns false. Declaration public bool CanSeek { get; } Property Value Type Description Boolean true if this instance can seek; otherwise, false . Implements CSCore.IAudioSource.CanSeek"
   },
   "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.-ctor.html",
     "title": "Constructor SampleSourceWrapper | Ham Cockpit",
-    "keywords": "Constructor SampleSourceWrapper View Source SampleSourceWrapper(ISampleStream) Declaration public SampleSourceWrapper(ISampleStream source) Parameters Type Name Description ISampleStream source"
+    "keywords": "Constructor SampleSourceWrapper View Source SampleSourceWrapper(ISampleStream) Initializes a new instance of the SampleSourceWrapper class. Declaration public SampleSourceWrapper(ISampleStream source) Parameters Type Name Description ISampleStream source The sample source."
   },
   "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Dispose.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Dispose.html",
     "title": "Method Dispose | Ham Cockpit",
-    "keywords": "Method Dispose View Source Dispose() Declaration public void Dispose() Implements IDisposable.Dispose()"
+    "keywords": "Method Dispose View Source Dispose() Releases unmanaged and - optionally - managed resources. Declaration public void Dispose() Implements IDisposable.Dispose()"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format.html",
+    "title": "Property Format | Ham Cockpit",
+    "keywords": "Property Format View Source Format Gets the format of the output data. Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat The format."
   },
   "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.html",
     "title": "Class SampleSourceWrapper | Ham Cockpit",
-    "keywords": "Class SampleSourceWrapper Inheritance Object SampleSourceWrapper Implements CSCore.ISampleSource CSCore.IReadableAudioSource < Single > CSCore.IAudioSource IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SampleSourceWrapper : ISampleSource, IReadableAudioSource<float>, IAudioSource, IDisposable Constructors Name Description SampleSourceWrapper(ISampleStream) Properties Name Description CanSeek Length Position WaveFormat Methods Name Description Dispose() Read(Single[], Int32, Int32)"
+    "keywords": "Class SampleSourceWrapper A wrapper for the ISampleStream that exposes the CSCore.ISampleSource interface. Inheritance Object SampleSourceWrapper Implements CSCore.ISampleSource CSCore.IReadableAudioSource < Single > CSCore.IAudioSource IDisposable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SampleSourceWrapper : ISampleSource, IReadableAudioSource<float>, IAudioSource, IDisposable Constructors Name Description SampleSourceWrapper(ISampleStream) Initializes a new instance of the SampleSourceWrapper class. Properties Name Description CanSeek Returns false. Format Gets the format of the output data. Length Not implemented. Position Not implemented. WaveFormat Gets the CSCore.IAudioSource.WaveFormat of the waveform-audio data. Methods Name Description Dispose() Releases unmanaged and - optionally - managed resources. Read(Single[], Int32, Int32) Reads data from the device to the provided buffer."
   },
   "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Length.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Length.html",
     "title": "Property Length | Ham Cockpit",
-    "keywords": "Property Length View Source Length Declaration public long Length { get; } Property Value Type Description Int64 Implements CSCore.IAudioSource.Length"
+    "keywords": "Property Length View Source Length Not implemented. Declaration public long Length { get; } Property Value Type Description Int64 The length. Implements CSCore.IAudioSource.Length Exceptions Type Condition NotImplementedException"
   },
   "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Position.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Position.html",
     "title": "Property Position | Ham Cockpit",
-    "keywords": "Property Position View Source Position Declaration public long Position { get; set; } Property Value Type Description Int64 Implements CSCore.IAudioSource.Position"
+    "keywords": "Property Position View Source Position Not implemented. Declaration public long Position { get; set; } Property Value Type Description Int64 The position. Implements CSCore.IAudioSource.Position Exceptions Type Condition NotImplementedException"
   },
   "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements CSCore.IReadableAudioSource<T>.Read(T[], System.Int32, System.Int32)"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads data from the device to the provided buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The number of the values to read. Returns Type Description Int32 The number of read values. Implements CSCore.IReadableAudioSource<T>.Read(T[], System.Int32, System.Int32)"
   },
   "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.WaveFormat.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.WaveFormat.html",
     "title": "Property WaveFormat | Ham Cockpit",
-    "keywords": "Property WaveFormat View Source WaveFormat Declaration public WaveFormat WaveFormat { get; } Property Value Type Description CSCore.WaveFormat Implements CSCore.IAudioSource.WaveFormat"
+    "keywords": "Property WaveFormat View Source WaveFormat Gets the CSCore.IAudioSource.WaveFormat of the waveform-audio data. Declaration public WaveFormat WaveFormat { get; } Property Value Type Description CSCore.WaveFormat The wave format. Implements CSCore.IAudioSource.WaveFormat"
   },
   "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Enabled.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Enabled.html",
     "title": "Property Enabled | Ham Cockpit",
-    "keywords": "Property Enabled View Source Enabled Declaration public bool Enabled { get; set; } Property Value Type Description Boolean"
+    "keywords": "Property Enabled View Source Enabled Gets or sets a value indicating whether this SidebandFlipper is enabled. Declaration public bool Enabled { get; set; } Property Value Type Description Boolean true if enabled; otherwise, false ."
   },
   "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Format.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Format.html",
     "title": "Property Format | Ham Cockpit",
-    "keywords": "Property Format View Source Format Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat Implements ISampleStream.Format"
+    "keywords": "Property Format View Source Format Gets the format of the output data. Declaration public SignalFormat Format { get; } Property Value Type Description SignalFormat The format. Implements ISampleStream.Format"
   },
   "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.html",
     "title": "Class SidebandFlipper | Ham Cockpit",
-    "keywords": "Class SidebandFlipper Inheritance Object SidebandFlipper Implements IIqProcessor IInitSampleStream ISampleStream Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SidebandFlipper : IIqProcessor, IInitSampleStream, ISampleStream Properties Name Description Enabled Format Methods Name Description Initialize(ISampleStream) Read(Single[], Int32, Int32) Events Name Description SamplesAvailable"
+    "keywords": "Class SidebandFlipper Changes the sideband of the signal. Inheritance Object SidebandFlipper Implements IIqProcessor IInitSampleStream ISampleStream Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class SidebandFlipper : IIqProcessor, IInitSampleStream, ISampleStream Properties Name Description Enabled Gets or sets a value indicating whether this SidebandFlipper is enabled. Format Gets the format of the output data. Methods Name Description Initialize(ISampleStream) Initializes the sideband flipper for processing data from the specified source. Read(Single[], Int32, Int32) Reads processed data to the provided buffer. Events Name Description SamplesAvailable Occurs when filtered samples are available."
   },
   "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Initialize.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Initialize.html",
     "title": "Method Initialize | Ham Cockpit",
-    "keywords": "Method Initialize View Source Initialize(ISampleStream) Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source Implements IInitSampleStream.Initialize(ISampleStream)"
+    "keywords": "Method Initialize View Source Initialize(ISampleStream) Initializes the sideband flipper for processing data from the specified source. Declaration public void Initialize(ISampleStream source) Parameters Type Name Description ISampleStream source The source of the data. Implements IInitSampleStream.Initialize(ISampleStream)"
   },
   "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Read.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.Read.html",
     "title": "Method Read | Ham Cockpit",
-    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer Int32 offset Int32 count Returns Type Description Int32 Implements ISampleStream.Read(Single[], Int32, Int32)"
+    "keywords": "Method Read View Source Read(Single[], Int32, Int32) Reads processed data to the provided buffer. Declaration public int Read(float[] buffer, int offset, int count) Parameters Type Name Description Single [] buffer The buffer. Int32 offset The offset to the first value. Int32 count The number of the values to read. Returns Type Description Int32 The number of read values. Implements ISampleStream.Read(Single[], Int32, Int32)"
   },
   "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.SamplesAvailable.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SidebandFlipper.SamplesAvailable.html",
     "title": "Event SamplesAvailable | Ham Cockpit",
-    "keywords": "Event SamplesAvailable Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
+    "keywords": "Event SamplesAvailable Occurs when filtered samples are available. Implements SamplesAvailable Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler<SamplesAvailableEventArgs> SamplesAvailable Returns Type Description EventHandler < SamplesAvailableEventArgs >"
   },
   "api/VE3NEA.HamCockpit.DspFun.SlidingMax.-ctor.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.SlidingMax.-ctor.html",

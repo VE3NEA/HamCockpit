@@ -1651,6 +1651,18 @@ references:
   commentId: Overload:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Dispose
   fullName: VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Dispose
   nameWithType: SampleSourceWrapper.Dispose
+- uid: VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format
+  name: Format
+  href: api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format.html#VE3NEA_HamCockpit_DspFun_SampleSourceWrapper_Format
+  commentId: P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format
+  fullName: VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format
+  nameWithType: SampleSourceWrapper.Format
+- uid: VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format*
+  name: Format
+  href: api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format.html
+  commentId: Overload:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format
+  fullName: VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format
+  nameWithType: SampleSourceWrapper.Format
 - uid: VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Length
   name: Length
   href: api/VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Length.html#VE3NEA_HamCockpit_DspFun_SampleSourceWrapper_Length
