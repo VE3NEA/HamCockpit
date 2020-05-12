@@ -220,7 +220,7 @@
             <exclude />
         </member>
         <member name="F:VE3NEA.HamCockpit.DspFun.BaseFft.FreqData">
-            <summary>A buffer for the frequency domain data.</summary>
+            <summary>The buffer for the frequency domain data.</summary>
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.BaseFft.#ctor(System.Int32)">
             <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.BaseFft" /> class.</summary>
@@ -233,7 +233,7 @@
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum(System.Single[])">
             <summary>Compute the power spectrum from the complex spectrum in the <see cref="F:VE3NEA.HamCockpit.DspFun.BaseFft.FreqData" /> array.</summary>
-            <param name="power">A buffer for the power spectrum, or <c>null</c>.</param>
+            <param name="power">The buffer for the power spectrum, or <c>null</c>.</param>
             <returns>The power spectrum.</returns>
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.BaseFft.LogPowerSpectrum(System.Single[])">
@@ -259,7 +259,7 @@
             </remarks>
         </member>
         <member name="F:VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData">
-            <summary>A buffer for the time domain data.</summary>
+            <summary>The buffer for the time domain data.</summary>
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFft.#ctor(System.Int32)">
             <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.ComplexFft" /> class.</summary>
@@ -279,7 +279,7 @@
             </remarks>
         </member>
         <member name="F:VE3NEA.HamCockpit.DspFun.RealFft.TimeData">
-            <summary>A buffer for the time domain data.</summary>
+            <summary>The buffer for the time domain data.</summary>
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.RealFft.#ctor(System.Int32)">
             <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.RealFft" /> class.</summary>
@@ -316,18 +316,18 @@
             <value>The format of the output data.</value>
             <remarks>
             Since the filter does not know its passband (all it has is the taps array),
-            it does not update the Format property. The calling code must reflect 
-            the new bandwidth in its own Format
+            it does not update the Format property. The calling code must change the Format settings
+            to reflect the new bandwidth.
             </remarks>
         </member>
         <member name="E:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.SamplesAvailable">
             <summary>Occurs when filtered samples are available.</summary>
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Read(System.Single[],System.Int32,System.Int32)">
-            <summary>Reads the data into the provided buffer.</summary>
+            <summary>Reads the data to the provided buffer.</summary>
             <param name="buffer">The buffer.</param>
             <param name="offset">The offset to the first value.</param>
-            <param name="count">The count of the values to read.</param>
+            <param name="count">The number of the values to read.</param>
             <returns>The number of read values.</returns>
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Dispose">
@@ -504,6 +504,38 @@
             <summary>Gets or sets the filter taps.</summary>
             <value>The filter taps.</value>
         </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.#ctor(System.Single[],VE3NEA.HamCockpit.DspFun.IppAlgType)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.RealFirFilter" /> class.</summary>
+            <param name="taps">The taps.</param>
+            <param name="algType">Type of the algorithm.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.setTaps(System.Single[])">
+            <summary>Sets the taps of the FIR filter.</summary>
+            <param name="taps">The tap coefficients.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the filter for processing data from the specified source.</summary>
+            <param name="source">The source of the data.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.RealFirFilter.Format">
+            <summary>Gets the format of the output data.</summary>
+            <value>The format of the output data.</value>
+            <remarks>
+            Since the filter does not know its passband (all it has is the taps array),
+            it does not update the Format property. The calling code must change the Format settings
+            to reflect the new bandwidth.
+            </remarks>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.RealFirFilter.SamplesAvailable">
+            <summary>Occurs when filtered samples are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads processed data to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.Dispose">
             <summary>Performs application-defined tasks associated with freeing, 
             releasing, or resetting unmanaged resources.</summary>
@@ -528,6 +560,39 @@
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose">
             <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.Resampler">
+            <summary>A wrapper for the CSCore.DSP.DmoResampler class.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.Resampler" /> class.</summary>
+            <param name="outputSamplingRate">The output sampling rate.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.#ctor(System.Int32,System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.Resampler" /> class.</summary>
+            <param name="outputSamplingRate">The output sampling rate.</param>
+            <param name="quality">The quality factor.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the resampler for processing data from the specified source.</summary>
+            <param name="source">The data source.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.Resampler.Format">
+            <summary>Gets the format of the resampled data.</summary>
+            <value>The format.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.Resampler.SamplesAvailable">
+            <summary>Occurs when resampled values are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads processed data to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.Dispose">
+            <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
         </member>
         <member name="T:VE3NEA.HamCockpit.DspFun.Mixer">
             <summary>Mixes the input complex-valued data with a complex sinusoid.</summary>
@@ -647,6 +712,124 @@
         <member name="M:VE3NEA.HamCockpit.DspFun.IppResampler.Dispose">
             <summary>Performs application-defined tasks associated with freeing, releasing, 
             or resetting unmanaged resources.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.RingBuffer">
+            <summary>A thread-safe ring buffer for the floating point values.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.RingBuffer.Count">
+            <summary>Gets the count of the floating point values in the buffer.</summary>
+            <value>The count.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.RingBuffer.FillWithZeros">
+            <summary>Gets or sets a value indicating whether the output is padded with zeros if there is not enough data to read.</summary>
+            <value>
+              <c>true</c> if padded with zeros; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.RingBuffer.SamplesAvailable">
+            <summary>Occurs when filtered samples are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.RingBuffer" /> class.</summary>
+            <param name="capacity">The capacity of the ring buffer.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.Resize(System.Int32)">
+            <summary>  Changes the capacity of the ring buffer.</summary>
+            <param name="capacity">The capacity.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.Write(System.Single[],System.Int32,System.Int32)">
+            <summary>Writes floating point values to the specified buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of values.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16(System.Byte[],System.Int32)">
+            <summary>  Converts 16-bit integers to the floating point values and writes them to the buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="byteCount">The number of bytes to convert and write.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.WriteStrided(System.Single[],System.Int32,System.Int32,VE3NEA.HamCockpit.PluginAPI.SignalFormat)">
+            <summary>Writes one of the channels of the strided data to the ring buffer.</summary>
+            <param name="data">The data.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="inFloatCount">The number of the input floating point values.</param>
+            <param name="format">The format of the data.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads the data from the ring buffer to the provided buffer.</summary>
+            <param name="buffer">The output buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.Dump(System.Int32)">
+            <summary>Removes the values from the ring buffer.</summary>
+            <param name="count">The number of values to remove.</param>
+            <exception cref="T:System.ArgumentException">Too many values to dump: {count}.</exception>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper">
+            <summary>A wrapper for the ISampleStream that exposes the CSCore.ISampleSource interface.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.#ctor(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper" /> class.</summary>
+            <param name="source">The sample source.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format">
+            <summary>Gets the format of the output data.</summary>
+            <value>The format.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.WaveFormat">
+            <summary>Gets the CSCore.IAudioSource.WaveFormat of the waveform-audio data.</summary>
+            <value>The wave format.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads data from the device to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.CanSeek">
+            <summary>Returns false.</summary>
+            <value><c>true</c> if this instance can seek; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Position">
+            <summary>  Not implemented.</summary>
+            <value>The position.</value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Length">
+            <summary>  Not implemented.</summary>
+            <value>The length.</value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Dispose">
+            <summary>Releases unmanaged and - optionally - managed resources.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.SidebandFlipper">
+            <summary>Changes the sideband of the signal.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SidebandFlipper.Enabled">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.DspFun.SidebandFlipper" /> is enabled.</summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SidebandFlipper.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the sideband flipper for processing data from the specified source.</summary>
+            <param name="source">The source of the data.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SidebandFlipper.Format">
+            <summary>Gets the format of the output data.</summary>
+            <value>The format.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.SidebandFlipper.SamplesAvailable">
+            <summary>Occurs when filtered samples are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SidebandFlipper.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads processed data to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
         </member>
         <member name="T:VE3NEA.HamCockpit.DspFun.SlidingMin">
             <summary>Computes the sliding minimum of the input values.<br /></summary>

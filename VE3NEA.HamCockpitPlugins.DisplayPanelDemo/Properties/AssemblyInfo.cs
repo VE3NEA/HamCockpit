@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("VE3NEA")]
 [assembly: AssemblyProduct("VE3NEA.HamCockpitPlugins.DisplayPanelDemo")]
-[assembly: AssemblyCopyright("Copyright © Alex Shovkoplyas VE3NEA 2018")]
+[assembly: AssemblyCopyright("Copyright © Alex Shovkoplyas VE3NEA 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
