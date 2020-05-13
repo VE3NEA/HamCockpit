@@ -27,6 +27,90 @@
         <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CreateCollectionForm">
             <exclude />
         </member>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.collection">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.#ctor(System.Collections.Generic.IList{`0})">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetProperties">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetClassName">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetAttributes">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetComponentName">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetConverter">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetDefaultEvent">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetDefaultProperty">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetEditor(System.Type)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetEvents(System.Attribute[])">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetEvents">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetProperties(System.Attribute[])">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.#ctor">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.Name">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.DisplayName">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetName">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.SetValue(System.Object,System.Object)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetValue(System.Object)">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.PropertyType">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.IsReadOnly">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ComponentType">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.CanResetValue(System.Object)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ResetValue(System.Object)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ShouldSerializeValue(System.Object)">
+            <exclude />
+        </member>
         <member name="T:VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter">
              <summary>
              Provides a type converter that allows editing properties of <c>enum</c> type

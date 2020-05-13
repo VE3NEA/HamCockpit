@@ -10,6 +10,81 @@
             error codes missing from <a href="https://archive.codeplex.com/?p=cscore">CSCore</a>.
             </summary>
         </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_NOT_INITIALIZED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_ALREADY_INITIALIZED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_WRONG_ENDPOINT_TYPE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_DEVICE_INVALIDATED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_NOT_STOPPED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_TOO_LARGE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_OUT_OF_ORDER">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_UNSUPPORTED_FORMAT">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_INVALID_SIZE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_DEVICE_IN_USE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_OPERATION_PENDING">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_THREAD_NOT_REGISTERED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_NO_SINGLE_PROCESS">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_EXCLUSIVE_MODE_NOT_ALLOWED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_ENDPOINT_CREATE_FAILED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_SERVICE_NOT_RUNNING">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_EVENTHANDLE_NOT_EXPECTED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_EXCLUSIVE_MODE_ONLY">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFDURATION_PERIOD_NOT_EQUAL">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_EVENTHANDLE_NOT_SET">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_INCORRECT_BUFFER_SIZE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_SIZE_ERROR">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_CPUUSAGE_EXCEEDED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_ERROR">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_SIZE_NOT_ALIGNED">
+            <exclude />
+        </member>
         <member name="T:VE3NEA.HamCockpit.DspFun.AudioClientErrors">
             <summary>Returns error messages for the 
             <a href="https://docs.microsoft.com/en-us/windows/win32/api/audioclient/">Audio Client</a> 

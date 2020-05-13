@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating Your First Plugin | Ham Cockpit </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating Your First Plugin | Ham Cockpit ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/HamCockpit.svg" alt="">
+                <font size="+3"><b>&nbsp;Ham Cockpit&nbsp;&nbsp;&nbsp;</b></font>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="creating-your-first-plugin">Creating Your First Plugin</h1>
+
+<p>In this tutorial, you will learn how to create a simple plugin for Ham Cockpit
+that shows a visual panel with a text input box. The user will be able
+to change the text in the box, and the changes will be preserved between the
+sessions. The color of the panel will be configurable in the
+<a href="../users_guide/configuration.html">Plugin Settings dialog</a>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>Install <a href="https://visualstudio.microsoft.com/">Visual Studio</a> Community Edition,
+make sure that the <em>.NET desktop development</em> component is selected:</li>
+</ol>
+<p><img src="../images/first_plugin/desktop_development.png" alt="Desktop Development"></p>
+<ol start="2">
+<li><p>Install <a href="https://git-scm.com/">Git</a>.</p>
+</li>
+<li><p>Create a folder for your projects. We will assume that the folder name is
+<code>C:\MyProjects</code>.</p>
+</li>
+<li><p>Open this folder in <em>File Explorer</em>, right-click and click on <em>Git Bash Here</em> in the popup menu:</p>
+</li>
+</ol>
+<p><img src="../images/first_plugin/git_bash.png" alt="Git Bash"></p>
+<ol start="5">
+<li>Type this command in the <em>Git Bash</em> window to clone Ham Cockpit:</li>
+</ol>
+<pre><code>git clone https://github.com/VE3NEA/HamCockpit.git
+</code></pre>
+<p>This will clone the HamCockpit repository to this folder:</p>
+<pre><code>C:\MyProjects\HamCockpit
+</code></pre>
+<p>The repository contains a .NET solution with one or more example plugin projects.</p>
+<ol start="6">
+<li>In the cloned folder, double-click on the solution file, <code>HamCockpitPlugins.sln</code>,<br>
+to open it in Visual Studio.</li>
+</ol>
+<p>Click on <em>Build / Rebuild Solution</em> in the VS menu to verify that the solution
+builds without errors.</p>
+<h2 id="creating-your-project">Creating Your Project</h2>
+<ol start="7">
+<li>Right-click on the solution in the Solution Explorer, click on <em>Start / New / Project</em>
+in the menu, and select the <em>Windows Forms Control Library</em>. Click on <em>Next</em>.</li>
+</ol>
+<p><img src="../images/first_plugin/project_type.png" alt="Project Type"></p>
+<ol start="8">
+<li><p>Choose a name for your project. The name must start with author's ID, such as your
+Ham Callsign. Assuming
+that your callsign is <code>AA0AAA</code>, and your plugin name is <code>MyPlugin</code>, the project name should be</p>
+<p><code>AA0AAA.HamCockpitPlugins.MyPlugin</code></p>
+<p>Enter the project name in the <em>Project name</em> field of the <em>Configure your new project</em> dialog, and
+<code>C:\MyProjects\HamCockpit</code> in the <em>Location</em> field. Click on <em>Create</em>.</p>
+</li>
+<li><p>Right-click on the <em>References</em> entry of your new project, click on <em>Add Reference</em>.
+Navigate to the <code>C:\MyProjects\HamCockpit\Bin</code> folder, click on
+<code>VE3NEA.HamCockpit.PluginAPI.dll</code>, click on <em>Add</em>, click on <em>OK</em>.</p>
+</li>
+<li><p>Double-click on <em>Properties / AssemblyInfo.cs</em> in your project, enter your data in the
+<em>Company</em> and <em>Copyright</em> fields:</p>
+</li>
+</ol>
+<pre><code>[assembly: AssemblyTitle(&quot;AA0AAA.HamCockpitPlugins.MyPlugin&quot;)]
+[assembly: AssemblyDescription(&quot;&quot;)]
+[assembly: AssemblyConfiguration(&quot;&quot;)]
+[assembly: AssemblyCompany(&quot;AA0AAA Ham Shack&quot;)]
+[assembly: AssemblyProduct(&quot;AA0AAA.HamCockpitPlugins.MyPlugin&quot;)]
+[assembly: AssemblyCopyright(&quot;Copyright © John Smith AA0AAA 2020&quot;)]
+[assembly: AssemblyTrademark(&quot;&quot;)]
+[assembly: AssemblyCulture(&quot;&quot;)]
+</code></pre>
+<ol start="11">
+<li><em>Right-Click</em> on the project, click on <em>Properties / Build</em>. Enter <code>..\Bin</code>
+in the <em>Output path</em> box so that the compiled plugin is created in the Bin folder where
+Ham Cockpit can find it.</li>
+</ol>
+<h2 id="creating-the-plugin-class">Creating the Plugin Class</h2>
+<p>Right-click on your project,
+click on <em>Add / New Item</em> in the popup menu, select
+<em>Visual C# Items / Class</em>. Enter <code>MyPlugin</code> in the <em>Class name</em> field, click on <em>Add</em>.
+This will generate <code>MyPlugin.cs</code> with the following code:</p>
+<pre><code class="lang-C#">namespace AA0AAA.HamCockpitPlugins.MyPlugin
+{
+  class MyPlugin
+  {
+  }
+}
+</code></pre>
+<p>Now let us turn this class into a HamCockpit plugin. To be a plugin, it must
+export the <code>IPlugin</code> interface. Since we want our plugin to have a visual panel, we will
+export <code>IVisualPlugin</code> as well:</p>
+<pre><code class="lang-C#">  [Export(typeof(IPlugin))]
+  [Export(typeof(IVisualPlugin))]
+  class DisplayPanelDemo : IPlugin, IVisualPlugin
+  {
+  }
+</code></pre>
+<p>As soon as we enter this code, Visual Studio underlines the unknown identifiers with a red line.
+Let us fix this.</p>
+<ul>
+<li><p>Place your cursor on the <code>Export</code> word, press <code>Ctrl-.</code>
+to invoke the <em>Quick Actions</em> menu
+and select <code>Add reference to &quot;System.ComponentModel.Composition;&quot;</code>.</p>
+</li>
+<li><p>Press <code>Ctrl-.</code> on <code>IPlugin</code> and select <code>using VE3NEA.HamCockpit.PluginAPI</code>.</p>
+</li>
+</ul>
+<p>This will add two references to the unit:</p>
+<pre><code class="lang-C#">using System.ComponentModel.Composition;
+using VE3NEA.HamCockpit.PluginAPI;
+</code></pre>
+<p>With these references in place, VS recognizes all identifiers in our code, but there is<br>
+another problem: the <code>IPlugin</code> and <code>IVisualPlugin</code> interfaces are still underlined
+because they are declared but not implemented. Let us fix this as well.
+Press <code>Ctrl-.</code> on <code>IPlugin</code>
+and select <code>Implement interface</code>,
+do the same for <code>IVisualPlugin</code>. Now you can rebuild the project and verify
+that there are no build errors.</p>
+<h2 id="implementing-iplugin">Implementing <code>IPlugin</code></h2>
+<p><em>Quick Actions</em> created the stubs for the methods that implement the interfaces.
+Let us put some real code in the stubs. We will start with the easy ones:</p>
+<pre><code class="lang-C#">    public string Name =&gt; &quot;My Plugin&quot;;
+    public string Author =&gt; &quot;AA0AAA&quot;;
+    public bool Enabled { get; set; }
+    public ToolStrip ToolStrip =&gt; null;
+    public ToolStripItem StatusItem =&gt; null;
+</code></pre>
+<p><code>Name</code> and <code>Author</code> simply return the plugin name, as it will appear in the
+Ham Cockpit menu, and author's ID. <code>Enabled</code> is the setting that the user can change
+in the
+<a href="xref:configuration.md">Plugin Settings dialog</a>
+by ticking the checkbox next to the plugin. Finally,
+<code>ToolStrip</code> and <code>StatusItem</code> return <code>null</code> because our plugin does not need to have
+any controls on the toolbar or status bar.
+Now the only member of <code>IPlugin</code> that still needs to be implemented is <code>Settings</code>.
+We will deal with this shortly.</p>
+<h2 id="designing-the-panel">Designing the Panel</h2>
+<p>When VS created the project, a blank user control was created in the <code>UserControl1.cs</code> unit.
+Press F2 on this unit and rename it to MyPanel.cs. VS will prompt you to rename the
+class as well. Click on <em>Yes</em>.</p>
+<p>Now we can do some visual stuff. Double-click on MyPanel.cs in Project Explorer to open it
+in the visual designer. Resize the panel to a smaller size, then click on <em>View / Toolbox</em>
+in the menu and drag a text box from the <em>Toolbox</em> to your panel:</p>
+<p><img src="../images/first_plugin/MyPanel.png" alt="My Panel"></p>
+<p>Click on <em>View / Properties Window</em> in the menu. Select the text box, change its name to <code>MyTextBox</code>
+and its <code>Modifiers</code> property to <code>Internal</code> so that we can access it from the code.</p>
+<h2 id="implementing-ivisualplugin">Implementing <code>IVisualPlugin</code></h2>
+<p>The methods of the <code>IVisualPlugin</code> interface allow the host application to determine
+if the plugin can create a new panel, to create panels, and to destroy them. Implementation
+of this interface is trivial:</p>
+<pre><code class="lang-C#">    private MyPanel panel;
+
+    public bool CanCreatePanel =&gt; panel == null;
+
+    public UserControl CreatePanel()
+    {
+      panel = new MyPanel();
+      panel.Name = &quot;My Panel&quot;;
+      return panel;
+    }
+
+    public void DestroyPanel(UserControl panel)
+    {
+      this.panel = null;
+    }
+</code></pre>
+<p><code>CreatePanel</code> creates an instance of the <code>MyPanel</code> class and gives it a name that will appear
+on the panel's caption bar. A reference to the panel is stored in the <code>panel</code> field.</p>
+<p><code>DestroyPanel</code> sets <code>panel</code> to <code>null</code>, effectively destroying the panel.</p>
+<p><code>CanCreatePanel</code> ensures that at most one panel can exist at any given time.
+You could allow an unlimited number of panels to be created, as in the DisplayPanelDemo example,
+or a fixed number of panels.</p>
+<p>The user can create visual plugin panels using the <em>View</em> menu. This menu shows all plugins that
+implement <code>IVisualPlugin</code>, those plugins whose <code>CanCreatePanel</code> returns false are disabled in the menu.</p>
+<h2 id="creating-the-settings-class">Creating the <code>Settings</code> class</h2>
+<p>Ham Cockpit has a built-in mechanism for storing, reloading and editing the plugin settings
+in a centralized way. All you have to do to make use of this mechanism is to implement the
+Settings class and expose it via <code>IPlugin.Settings</code>.</p>
+<p>Let us create the Settings class. Right-click on the project, click on <em>Add / New Item / Class</em>,
+enter <code>Settings</code> in the <code>Name</code> field, and click on <code>Add</code>. Add the following code to the created unit:</p>
+<pre><code class="lang-C#">using System.ComponentModel;
+using System.Drawing;
+
+namespace AA0AAA.HamCockpitPlugins.MyPlugin
+{
+  class Settings
+  {
+    [DisplayName(&quot;Background Color&quot;)]
+    [Description(&quot;The background color of the panel.&quot;)]
+    [DefaultValue(typeof(Color), &quot;Control&quot;)]
+    public Color BackColor { get; set; } = SystemColors.Control;
+
+    [Browsable(false)]
+    public string Text { get; set; }
+  }
+}
+</code></pre>
+<p>In the <code>Settings</code> class, we simply add properties for all values that we want to be stored
+between the settings. We have added two properties, <code>BackColor</code> that will store the color of the panel,
+and <code>Text</code> that will store the text entered by the user.</p>
+<p>The host application will save and restore both settings defined in this class. By default, it also
+allows the user edit add all public properties defined in <code>Settings</code>. Since we want only the color to appear
+in the
+<a href="xref:configuration.md">Plugin Settings dialog</a>,
+but not the text, we decorate the <code>Text</code> property with the <code>[Browsable(false)]</code> attribute.</p>
+<p>The <a href="xref:configuration.md">Plugin Settings dialog</a> uses the
+<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.propertygrid?view=netcore-3.1">PropertyGrid</a>
+control for editing the settings of the plugins. There are many ways to customize the appearance
+of the properties in the grid. Many good tutorials on the subject are available on the Internet
+<a href="https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/aa302326(v=msdn.10)?redirectedfrom=MSDN">This</a>
+and
+<a href="https://www.codeproject.com/Articles/22717/Using-PropertyGrid">this</a>
+are just two examples.</p>
+<p>For the <code>BackColor</code> property, we add the <code>DisplayName</code> and <code>Description</code> attributes that <code>PropertyGrid</code>
+will use to display the setting name and description, and the<code>DefaultValue</code> attribute that
+the  <em>Reset</em> command will assign to the setting.</p>
+<h2 id="implementing-ipluginsettings">Implementing <code>IPlugin.Settings</code></h2>
+<p>Now that we have the <code>Settings</code> class, we can implement the <code>IPlugin.Settings</code> property in <code>MyPlugin</code>:</p>
+<pre><code class="lang-C#">    private Settings settings = new Settings();
+
+    public object Settings { get =&gt; settings; set =&gt; ApplySettings(value); }
+
+    private void ApplySettings(object value)
+    {
+      settings = value as Settings;
+      if (panel != null)
+      {
+        panel.MyTextBox.Text = settings.Text;
+        panel.BackColor = settings.BackColor;
+      }
+    }
+
+    private void TextChangedHandler(object sender, EventArgs e)
+    {
+      settings.Text = panel.MyTextBox.Text;
+    }
+</code></pre>
+<p>The settings object is stored in the private <code>settings</code> field. The getter of
+<code>IPlugin.Settings</code> simply returns <code>settings</code>, and the setter assigns a new value
+to <code>settings</code> and applies the settings to the panel, if it exists.</p>
+<p><code>TextChangedHandler</code> is an event handler that updates the settings when the text
+in the edit box changes.</p>
+<p>The last thing we need to do is modify the <code>CreatePanel</code> method to apply the settings
+to the newly created panel and subscribe to its <code>TextChanged</code> event:</p>
+<pre><code class="lang-C#">  public UserControl CreatePanel()
+    {
+      panel = new MyPanel();
+      panel.Name = &quot;My Panel&quot;; 
+  
+      //apply current settings   
+      ApplySettings(settings);
+
+      //subscribe to the TextChanged event
+      panel.MyTextBox.TextChanged += TextChangedHandler;
+
+      return panel;
+    }
+</code></pre>
+<p><br><br></p>
+<h2 id="finished-myplugincs">Finished <code>MyPlugin.cs</code></h2>
+<p>The finished <code>MyPlugin.cs</code> unit looks like this:</p>
+<pre><code class="lang-C#">using System;
+using System.ComponentModel.Composition;
+using System.Windows.Forms;
+using VE3NEA.HamCockpit.PluginAPI;
+
+namespace AA0AAA.HamCockpitPlugins.MyPlugin
+{
+  [Export(typeof(IPlugin))]
+  [Export(typeof(IVisualPlugin))]
+  class MyPlugin : IPlugin, IVisualPlugin
+  {
+    private MyPanel panel;
+    private Settings settings = new Settings();
+
+    #region IPlugin
+    public string Name =&gt; &quot;My Plugin&quot;;
+    public string Author =&gt; &quot;AA0AAA&quot;;
+    public bool Enabled { get; set; }
+    public ToolStrip ToolStrip =&gt; null;
+    public ToolStripItem StatusItem =&gt; null;
+    public object Settings { get =&gt; settings; set =&gt; ApplySettings(value); }
+    #endregion
+
+    #region IVisualPlugin
+    public bool CanCreatePanel =&gt; panel == null;
+
+    public UserControl CreatePanel()
+    {
+      panel = new MyPanel();
+      panel.Name = &quot;My Panel&quot;;      
+      panel.MyTextBox.TextChanged += TextChangedHandler;
+      ApplySettings(settings);
+      return panel;
+    }
+
+    public void DestroyPanel(UserControl panel)
+    {
+      this.panel = null;
+    }
+    #endregion
+
+    private void ApplySettings(object value)
+    {
+      settings = value as Settings;
+      if (panel != null)
+      {
+        panel.MyTextBox.Text = settings.Text;
+        panel.BackColor = settings.BackColor;
+      }
+    }
+
+    private void TextChangedHandler(object sender, EventArgs e)
+    {
+      settings.Text = panel.MyTextBox.Text;
+    }
+  }
+}
+</code></pre>
+<br>
+<h2 id="testing-the-plugin">Testing the plugin</h2>
+<p>Press <em>Ctrl-B</em> to build the project, open the <code>Bin</code> folder
+and double-click on <em>HamCockpit.exe</em>.
+When the program starts, click on the <em>View</em> menu - and see your plugin listed!</p>
+<p><img src="../images/first_plugin/ViewMenu.png" alt="View Menu"></p>
+<p>Open My Plugin and play with it.</p>
+<p><img src="../images/first_plugin/MyPlugin.png" alt="My Plugin"></p>
+<p>Resize it, dock it, enter some text.
+Close it and open again.
+Exit the program and restart, see that the text you entered is preserved.</p>
+<p>Now open the Plugin Settings dialog, select your plugin and change its background color:</p>
+<p><img src="../images/first_plugin/MyPluginSettings.png" alt="My Plugin Settings"></p>
+<p>The color is also remembered between the sessions.</p>
+<h2 id="congratulations">Congratulations!</h2>
+<p>Your first plugin for Ham Cockpit is finished. It has a visual panel, resizable and dockable,
+it accepts user input, remembers its state when the program is closed and has settings that
+the user can edit in the Plugin Settings dialog. It's time to start a real project!</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
