@@ -206,7 +206,7 @@ Let us put some real code in the stubs. We will start with the easy ones:</p>
 <p><code>Name</code> and <code>Author</code> simply return the plugin name, as it will appear in the
 Ham Cockpit menu, and author's ID. <code>Enabled</code> is the setting that the user can change
 in the
-<a href="xref:configuration.md">Plugin Settings dialog</a>
+<a href="../users_guide/configuration.html">Plugin Settings dialog</a>
 by ticking the checkbox next to the plugin. Finally,
 <code>ToolStrip</code> and <code>StatusItem</code> return <code>null</code> because our plugin does not need to have
 any controls on the toolbar or status bar.
@@ -279,9 +279,9 @@ and <code>Text</code> that will store the text entered by the user.</p>
 <p>The host application will save and restore both settings defined in this class. By default, it also
 allows the user edit add all public properties defined in <code>Settings</code>. Since we want only the color to appear
 in the
-<a href="xref:configuration.md">Plugin Settings dialog</a>,
+<a href="../users_guide/configuration.html">Plugin Settings dialog</a>,
 but not the text, we decorate the <code>Text</code> property with the <code>[Browsable(false)]</code> attribute.</p>
-<p>The <a href="xref:configuration.md">Plugin Settings dialog</a> uses the
+<p>The <a href="../users_guide/configuration.html">Plugin Settings dialog</a> uses the
 <a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.propertygrid?view=netcore-3.1">PropertyGrid</a>
 control for editing the settings of the plugins. There are many ways to customize the appearance
 of the properties in the grid. Many good tutorials on the subject are available on the Internet
