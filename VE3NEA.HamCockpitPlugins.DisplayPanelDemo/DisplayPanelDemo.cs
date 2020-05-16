@@ -19,23 +19,25 @@ namespace VE3NEA.HamCockpitPlugins.DisplayPanelDemo
     private Settings settings = new Settings();
 
 
+
+
     //----------------------------------------------------------------------------------------------
     //                                        IPlugin
     //----------------------------------------------------------------------------------------------
     public string Name => "Display Panel Demo";
-    public string Author => "VE3NEA"; //use your callsign if you have one.
-    public bool Enabled { get; set; }
-    
-    // we do not use these.
+    public string Author => "VE3NEA"; 
+    public bool Enabled { get; set; }    
     public ToolStrip ToolStrip => null;
     public ToolStripItem StatusItem => null;
 
     // let the host save and load our settings, and allow the user edit those that are 
     // marked as browsable. No browsable settings in this demo though.
-    public object Settings { get => BuildSettings(); set => ApplySettings(value); }
+    public object Settings { get => BuildSettings(); set => settings = value as Settings; }
 
     // we will create as many panels as the host needs
     public bool CanCreatePanel => true;
+
+
 
 
     //----------------------------------------------------------------------------------------------
@@ -67,14 +69,7 @@ namespace VE3NEA.HamCockpitPlugins.DisplayPanelDemo
     }
 
 
-    //----------------------------------------------------------------------------------------------
-    //                                    private methods
-    //----------------------------------------------------------------------------------------------
-    private void ApplySettings(object value)
-    {
-      // just store the settings. 
-      settings = value as Settings;
-    }
+
 
     private object BuildSettings()
     {
@@ -83,8 +78,6 @@ namespace VE3NEA.HamCockpitPlugins.DisplayPanelDemo
       return settings;
     }
   }
-
-
 
   // this class is a container for all settings of the plugin
   // that we want to be preserved between the program restarts.
