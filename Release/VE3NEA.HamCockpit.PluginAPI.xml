@@ -1,0 +1,805 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VE3NEA.HamCockpit.PluginAPI</name>
+    </assembly>
+    <members>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent">
+            <summary>
+            Provides a collection editor that can edit most types of collections 
+            in the Plugin Settings dialog.
+            </summary>
+            <remarks>
+            If a property of collection type in the Settings object of a plugin needs to be edited
+            in the Plugin Settings dialog, use this class as an Editor attribute for that property.
+            </remarks>
+            <example><code>
+            [Editor(typeof(CollectionEditorWithEvent), typeof(UITypeEditor))]
+            public ModeColorList ModeColors { get; set; } = new ModeColorList();
+            </code></example>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.#ctor(System.Type)">
+            <exclude />
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CollectionChanged">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionEditorWithEvent.CreateCollectionForm">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.collection">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.#ctor(System.Collections.Generic.IList{`0})">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetProperties">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetClassName">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetAttributes">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetComponentName">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetConverter">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetDefaultEvent">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetDefaultProperty">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetEditor(System.Type)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetEvents(System.Attribute[])">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetEvents">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionTypeDescriptor`2.GetProperties(System.Attribute[])">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.#ctor">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.Name">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.DisplayName">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetName">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.SetValue(System.Object,System.Object)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.GetValue(System.Object)">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.PropertyType">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.IsReadOnly">
+            <exclude />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ComponentType">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.CanResetValue(System.Object)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ResetValue(System.Object)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.CollectionItemPropertyDescriptor`1.ShouldSerializeValue(System.Object)">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter">
+             <summary>
+             Provides a type converter that allows editing properties of <c>enum</c> type
+             in the Plugin Settings dialog.
+             </summary>
+             <remarks>
+             If a property of <c>enum</c> type in the <c>Settings</c> object of a plugin needs to be edited
+             in the Plugin Settings dialog, use this class as a <c>TypeConverter</c> attribute for that property.
+             With this attribute, the editor shows the descriptions of <c>enum</c> values instead of the values themselves.
+             </remarks>
+             <example>
+             Enum values with descriptions:
+             <code>
+               enum InputType {
+                [Description("Left Channel")]
+                LeftChannel,
+            
+                [Description("Right Channel")]
+                RightChannel,
+            
+                [Description("Diversity (stereo)")]
+                DiversityStereo
+            }
+             </code></example>
+             <example>
+             TypeConverter attribute:
+             <code>
+             [TypeConverter(typeof(EnumDescriptionConverter))]
+             public InputType InputType { get; set; }
+             </code></example>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.#ctor(System.Type)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.Direction">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ListDevices">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.SoundcardNameConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.InputSoundcardNameConverter">
+             <summary>
+             Provides a type converter that allows editing the input soundcard property
+             in the Plugin Settings dialog.
+             </summary>
+             <remarks>
+             If an input soundcard selection property in the <c>Settings</c> object of a plugin needs to be edited
+             in the Plugin Settings dialog, use this class as a <c>TypeConverter</c> attribute for that property.
+             The class populates the dropdown list with the names of available input soundcards and assigns
+             <c>DeviceID</c> of the selected soundcard to the property.
+             </remarks>
+             <example><code>
+            [TypeConverter(typeof(InputSoundcardNameConverter))]
+            public string Soundcard { get; set; }
+             </code></example>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.InputSoundcardNameConverter.Direction">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter">
+             <summary>
+             Provides a type converter that allows editing the output soundcard property
+             in the Plugin Settings dialog.
+             </summary>
+             <remarks>
+             If an output soundcard selection property in the <c>Settings</c> object of a plugin needs to be edited
+             in the Plugin Settings dialog, use this class as a <c>TypeConverter</c> attribute for that property.
+             The class populates the dropdown list with the names of available output soundcards and assigns
+             <c>DeviceID</c> of the selected soundcard to the property.
+             </remarks>
+             <example><code>
+            [TypeConverter(typeof(InputSoundcardNameConverter))]
+            public string Soundcard { get; set; }
+             </code></example>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginHelpers.OutputSoundcardNameConverter.Direction">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs">
+            <summary>Event arguments class for the <see cref="E:VE3NEA.HamCockpit.PluginAPI.ISampleStream.SamplesAvailable"/> event</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Data">
+            <summary>Gets the data array.</summary>
+            <value>Audio or I/Q data.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Offset">
+            <summary>Offset if the first available value</summary>
+            <value>The offset if the first available value in the data array.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.Count">
+            <summary>Gets the number of values.</summary>
+            <value>The number of available values in the data array.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs.#ctor(System.Single[],System.Int32,System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.PluginAPI.SamplesAvailableEventArgs" /> class.</summary>
+            <param name="data">The data.</param>
+            <param name="offset">The offset.</param>
+            <param name="count">The count.</param>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs">
+            <summary>Event arguments class for the <see cref="E:VE3NEA.HamCockpit.PluginAPI.ISignalSource.Stopped"/> event</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs.Exception">
+            <summary>The exception that caused the data source stop.</summary>
+            <value>The exception.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs.#ctor(System.Exception)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.PluginAPI.StoppedEventArgs" /> class.</summary>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IPlugin">
+            <summary>The main interface implemented by all plugins.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IPlugin.Name">
+            <summary>Gets the plugin name.</summary>
+            <value>The plugin name.</value>
+            <remarks>This is the name that will appear in the Plugin Settings dialog, and in the View menu if the plugin has a visible panel.</remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IPlugin.Author">
+            <summary>Gets the author's ID.</summary>
+            <value>The author's ID.</value>
+            <remarks>A unique identifier of the plugin author. A licensed radio amateur should use his callsign as identifier.</remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IPlugin.Enabled">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.PluginAPI.IPlugin" /> is enabled by the user.</summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IPlugin.Settings">
+            <summary>Gets or sets the settings object.</summary>
+            <value>The plugin settings object.</value>
+            <remarks>
+            The plugin can use this object to store its settings. The host application saves the Settings
+            object of each plugin on exit and reloads it on the next program start. The properties of the 
+            object appear in the Plugin Settings dialog and are editable by the user.
+            </remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IPlugin.ToolStrip">
+            <summary>Gets the toolstrip object.</summary>
+            <value>The toolstrip that will appear on the application's toolbar.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IPlugin.StatusItem">
+            <summary>Gets the status toolstrip item.</summary>
+            <value>The toolstrip item that will appear on the application's status bar.</value>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IVisualPlugin">
+            <summary>The interface implemented by the plugins that show one or more visual panels.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.CanCreatePanel">
+            <summary>
+            Gets a value indicating whether this instance can create a visual panel.
+            </summary>
+            <value>
+              <c>true</c> if the plugin can create a visual panel; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.CreatePanel">
+            <summary>
+            Creates a visual panel.
+            </summary>
+            <returns>The panel object</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.DestroyPanel(System.Windows.Forms.UserControl)">
+            <summary>
+            Destroys the panel.
+            </summary>
+            <param name="panel">The panel.</param>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IDebugWindow">
+            <summary>Represents a window used to output debug information.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IDebugWindow.LogMessage(System.String)">
+            <summary>  Adds a message to the debug window.</summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDebugWindow.LabelText">
+            <summary>Sets the label text in the debug window.</summary>
+            <value>The label text.</value>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.Sideband">
+            <summary>The sideband of the signal.</summary>
+             <remarks>
+             The signal is <see cref="F:VE3NEA.HamCockpit.PluginAPI.Sideband.Upper"/> sideband if higher frequencies in the sampled data
+             correspond to higher RF frequencies. Examples of the <see cref="F:VE3NEA.HamCockpit.PluginAPI.Sideband.Upper"/> 
+             sideband signals are
+             the audio demodulated in the USB mode, and I/Q (quadrature) signals. Examples of the
+             <see cref="F:VE3NEA.HamCockpit.PluginAPI.Sideband.Lower"/> sideband are the audio demodulated in the LSB mode, and
+             I/Q signals with the I and Q channels swapped. If there is no direct correspondence between 
+             the frequencies in the sampled data and RF frequencies, as in the demodulated FM signals,
+             the signal sideband is <see cref="F:VE3NEA.HamCockpit.PluginAPI.Sideband.None"/>.
+             </remarks>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginAPI.Sideband.Upper">
+            <summary>The upper sideband.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginAPI.Sideband.Lower">
+            <summary>The lower sideband.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginAPI.Sideband.None">
+            <summary>The notion of sideband is not applicable.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.ISampleStream">
+            <summary>
+            Represents a stream of floating point values 
+            and information how the values are grouped into samples.
+            </summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.ISampleStream.Format">
+            <summary>Gets the format.</summary>
+            <value>The format of the data in the stream.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.ISampleStream.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads the specified buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset if the first value to read.</param>
+            <param name="count">The number of values to read.</param>
+            <returns>The number of values read.</returns>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.ISampleStream.SamplesAvailable">
+            <summary>Occurs when the stream has data samples available.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.ITuner">
+            <summary>Represents a device that can be tuned to an RF frequency.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.ITuner.GetDialFrequency(System.Int32)">
+            <summary>Gets the dial frequency.</summary>
+            <param name="channel">The channel id.</param>
+            <returns>The dial frequency of the specified channel in Hertz.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.ITuner.SetDialFrequency(System.Int64,System.Int32)">
+            <summary>Sets the dial frequency of the specified channel.</summary>
+            <param name="frequency">The dial frequency in Hertz.</param>
+            <param name="channel">The channel id.</param>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.ITuner.Tuned">
+            <summary>Occurs when the dial frequency changes.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.ISignalSource">
+            <summary>Represents a device that produces a stream of samples 
+            mapped to RF frequency</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.ISignalSource.Initialize">
+            <summary>Initializes this instance.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.ISignalSource.Active">
+            <summary>Gets or sets a value indicating whether this 
+            <see cref="T:VE3NEA.HamCockpit.PluginAPI.ISignalSource" /> is active.</summary>
+            <value>
+              <c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.ISignalSource.Stopped">
+            <summary>Occurs when the signal source is no longer able to provide
+            signal data.</summary>
+            <remarks>
+            This event should be fired when the device stops working for one reason or another,
+            e.g., it is turned off, its cable is disconnected, etc. The application uses
+            this event to stop the <see cref="P:VE3NEA.HamCockpit.PluginAPI.IPluginHost.DspPipeline"/> and display an error message.
+            </remarks>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IInitSampleStream">
+            <summary>Represents a sample stream that requires initialization.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IInitSampleStream.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the sample stream.</summary>
+            <param name="source">The source sample stream.</param>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IModeSwitch">
+            <summary>Represents a device or plugin that can change the modulation type.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IModeSwitch.Mode">
+            <summary>Gets or sets the signal mode.</summary>
+            <value>The mode.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IModeSwitch.Sideband">
+            <summary>Gets or sets the signal sideband.</summary>
+            <value>The sideband.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.IModeSwitch.ModeChanged">
+            <summary>Occurs when the signal mode or sideband changes.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IIqProcessor">
+            <summary>Represents a plugin that processes I/Q data.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IDemodulator">
+            <summary>Represents a plugin that demodulates I/Q data to audio signals.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IAudioProcessor">
+            <summary>Represents a plugin that processes audio signals.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IAudioOutput">
+            <summary>Represents a device that outputs audio data.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the specified audio output device.</summary>
+            <param name="audioSignal">The audio signal that will be sent to the device..</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Active">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.PluginAPI.IAudioOutput" /> is active.</summary>
+            <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IAudioOutput.Mute">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.PluginAPI.IAudioOutput" /> is muted.</summary>
+            <value><c>true</c> if muted; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IBandpassFilter">
+            <summary>Represents a plugin that performs bandpass filtering of the audio signals.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.SetPassband(System.Int32,System.Int32)">
+            <summary>Sets the passband of the filter.</summary>
+            <param name="passbandLow">The lower cutoff frequency of the filter passband in Hertz.</param>
+            <param name="passbandHigh">The upper cutoff frequency of the filter passband in Hertz/</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.SetBandwidth(System.Int32)">
+            <summary>Sets the filter bandwidth.</summary>
+            <param name="bandwidth">The bandwidth of the filter in Hertz.</param>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.IBandpassFilter.PassbandChanged">
+            <summary>Occurs when the filter passband changes.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.ITransmitter">
+            <summary>Represents a transmitting device.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.ITransmitter.Frequency">
+            <summary>Gets or sets the transmitter frequency.</summary>
+            <value>The transmitter frequency in Hertz.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.ITransmitter.Split">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.PluginAPI.ITransmitter" /> is in the Split mode.</summary>
+            <value>
+              <c>true</c> if the transmitter is in the Split mode; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.ITransmitter.Transmit">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.PluginAPI.ITransmitter" /> is in the transmit mode.</summary>
+            <value>
+              <c>true</c> if the transmitter in the transmit mode; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.ITransmitter.IsTransceiver">
+            <summary>Determines whether the transmitter is a transceiver.</summary>
+            <returns>
+              <c>true</c> if this transmitter is a transceiver; otherwise, <c>false</c>.</returns>
+            <remarks>
+            This function must return <c>true</c> if the same radio is currently used for receiving and transmitting,
+            and its transmit frequency follows receiver's dial frequency in the simplex mode; otherwise <c>false</c>.
+            </remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.ITransmitter.Active">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.PluginAPI.ITransmitter" /> is active.</summary>
+            <value>
+              <c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.ITransmitter.Tuned">
+            <summary>Occurs when the transmit frequency changes.</summary>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.ITransmitter.SettingsChanged">
+            <summary>Occurs when the settings of the transmitter change.</summary>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.ITransmitter.Stopped">
+            <summary>Occurs when the transmitter stops working.</summary>
+            <remarks>
+            This event should be fired when the radio stops working for one reason or another, 
+            e.g., it is turned off, its cable is disconnected, etc. The application uses
+            this event to stop the <see cref="P:VE3NEA.HamCockpit.PluginAPI.IPluginHost.DspPipeline"/> and display an error message.
+            </remarks>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.QsyDirection">
+            <summary>
+            Direction of the frequency change.
+            </summary>
+            <remarks>
+            Used in the frequency navigation commands to request a band change or a switch 
+            to the next or previous band segment
+            </remarks>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginAPI.QsyDirection.Down">
+            <summary>Previous band or segment.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginAPI.QsyDirection.Here">
+            <summary>Current band or segment.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginAPI.QsyDirection.Up">
+            <summary>Next band or segment.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IBandPlan">
+            <summary>Represents a plugin that provides the band plan data.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegment(System.Int64,VE3NEA.HamCockpit.PluginAPI.QsyDirection)">
+            <summary>Gets the current or next/previous band segment given the frequency.</summary>
+            <param name="frequency">The frequency in Hertz.</param>
+            <param name="qsyDirection">The QSY direction.</param>
+            <returns>The band segment.</returns>
+            <remarks>
+            This method may be used, in particular, to find out the band and mode of a cluster spot, 
+            or to jump to the next or previous band segment.
+            </remarks>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegments(System.Int64,System.Int64)">
+            <summary>Gets all band segments in the given range of frequencies.</summary>
+            <param name="startFrequency">The start frequency in Hertz.</param>
+            <param name="endFrequency">The end frequency in Hertz.</param>
+            <returns>The band segments.</returns>
+            <remarks>
+            This method may be used, in particular, to draw segments on a band map.
+            </remarks>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetBandStart(System.Int64,System.String,VE3NEA.HamCockpit.PluginAPI.QsyDirection)">
+            <summary>Gets the start frequency for the given mode on the current, next-upper or next-lower band.</summary>
+            <param name="frequency">The frequency in Hertz.</param>
+            <param name="mode">The mode.</param>
+            <param name="qsyDirection">The QSY direction.</param>
+            <returns>The start frequency in Hertz.</returns>
+            <remarks>
+            This method may be used, in particular, for band switching.
+            </remarks>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.IBandPlan.BandPlanChanged">
+            <summary>Occurs when the user selects a different band plan.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IBandSegment">
+            <summary>Represents a segment in the band plan</summary>
+            <seealso cref="T:VE3NEA.HamCockpit.PluginAPI.IBandPlan" />
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.Band">
+            <summary>Gets the band.</summary>
+            <value>  
+            The band name, preferably as defined in the 
+            <a href="http://www.adif.org">ADIF</a> format.
+            </value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.StartFrequency">
+            <summary>Gets the start frequency.</summary>
+            <value>The start frequency in Hertz.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.EndFrequency">
+            <summary>Gets the end frequency.</summary>
+            <value>The end frequency in Hertz.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.DefaultFrequency">
+            <summary>Gets the default frequency.</summary>
+            <value>The default frequency in Hertz.</value>
+            <remarks>When changing the bands, the radio will be initially tuned 
+            to this frequency. If not specified, defaults to <see cref="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.StartFrequency"/>.</remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.PrimaryMode">
+            <summary>Gets the primary mode.</summary>
+            <value>The primary mode in the band segment.</value>
+            <remarks>This property may be used, in particular, to determine the mode
+            of a cluster spot from its frequency.
+            </remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.ValidModes">
+            <summary>Gets the valid modes.</summary>
+            <value>The modes that are valid in the segment.</value>
+            <remarks>This property may be used, in particular, 
+            by the skimmer plugins to determine where to decode a particular mode.
+            If not specified, assumed to include only the primary mode.
+            </remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.MainSegment">
+            <summary>Gets a value indicating whether the segment is the main segment.</summary>
+            <value><c>true</c> if main segment; otherwise, <c>false</c>.</value>
+            <remarks>On some bands, there is more than one segment used for a particular mode. 
+            For example, the 14074-14078 kHz and 14095-14099 kHz segments are used for FT8 
+            on the 20m band.One of these segments must be marked as main.
+            </remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.Remark">
+             <summary>Gets the remark text.</summary>
+             <value>The remark text.</value>
+             <remarks>Remark is an optional string that will be appended to the segment label 
+             when information about the segment is displayed. For example,
+            "F/H" is a remark in the  14095-14099 kHz segment because this segment is used 
+            for the Fox-and-Hound style QSO. The mouse tooltip on the band map is a combination 
+            of the band, mode and remark: "20M FT8 (F/H)".
+            </remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IBandSegment.BackColor">
+            <summary>Gets the color of the segment background.</summary>
+            <value>The color of the segment background.</value>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IPluginHost">
+            <summary>Represents the application that hosts the plugins.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IPluginHost.DspPipeline">
+            <summary>Gets the DSP pipeline.</summary>
+            <value>The DSP pipeline.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IPluginHost.BackColor">
+            <summary>Gets the color of the background.</summary>
+            <value>The color of the background.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IPluginHost.GetUserDataFolder(System.String)">
+            <summary>Gets the user data folder.</summary>
+            <param name="author">The author ID.</param>
+            <returns>The folder where the program stores user-specific data.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.IPluginHost.GetReferenceDataFolder(System.String)">
+            <summary>Gets the reference data folder.</summary>
+            <param name="author">The author ID.</param>
+            <returns>The folder where the program stores reference data.</returns>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.IDspPipeline">
+            <summary>Represents the <see cref="P:VE3NEA.HamCockpit.PluginAPI.IPluginHost.DspPipeline"/> in the host application.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Active">
+            <summary>Gets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.PluginAPI.IDspPipeline" /> is active.</summary>
+            <value>
+              <c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.StatusChanged">
+            <summary>Occurs when the <see cref="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Active"/> status changes.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Tuner">
+            <summary>Gets the RX frequency tuner.</summary>
+            <value>The RX frequency tuner.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ModeSwitch">
+            <summary>Gets the mode switch.</summary>
+            <value>The mode switch.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.InputSignal">
+            <summary>Gets the input I/Q or audio stream.</summary>
+            <value>The input I/Q or audio stream.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ProcessedSignal">
+            <summary>Gets the processed I/Q signal stream.</summary>
+            <value>The processed I/Q signal stream.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.DemodulatedAudio">
+            <summary>Gets the demodulated audio stream.</summary>
+            <value>The demodulated audio stream.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.ProcessedAudio">
+            <summary>Gets the processed audio stream.</summary>
+            <value>The processed audio stream.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.IDspPipeline.Transmitter">
+            <summary>Gets the transmitter.</summary>
+            <value>The transmitter.</value>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap">
+            <summary>Represents a tap into the <see cref="P:VE3NEA.HamCockpit.PluginAPI.IPluginHost.DspPipeline"/>.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap.IsAvailable">
+            <summary>Gets a value indicating whether the signal at this tap is available.</summary>
+            <value>
+              <c>true</c> if the signal is available; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.PluginAPI.SignalFormat">
+            <summary>
+            Describes the format and characteristics of the signal samples in the data stream
+            </summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.PluginAPI.SignalFormat.AUDIO_SAMPLING_RATE">
+            <summary>The sampling rate of audio signals.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.SamplingRate">
+            <summary>
+            Gets or sets the sampling rate of the signal.
+            </summary>
+            <value>
+            The sampling rate.
+            </value>    
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.IsComplex">
+            <summary>
+            Gets or sets a value indicating whether the samples are complex or real.
+            </summary>
+            <value>
+              <c>true</c> if the samples are complex; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.IsSync">
+            <summary>
+            Gets or sets a value indicating whether the channels of the multi-channel data stream are phase-synchronized or independent.
+            </summary>
+            <value>
+              <c>true</c> if the channels are phase-synchronized; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.Channels">
+            <summary>
+            Gets or sets the number of channels.
+            </summary>
+            <value>
+            The number of channels in the data stream.
+            </value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.PassbandLow">
+            <summary>
+            Gets or sets the lower end of the signal spectrum.
+            </summary>
+            <value>
+            The lower end of the signal spectrum in Hertz.
+            </value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.PassbandHigh">
+            <summary>
+            Gets or sets the upper end of the signal spectrum.
+            </summary>
+            <value>
+            The upper end of the signal spectrum in Hertz.
+            </value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.DialOffset">
+            <summary>
+            Gets or sets the dial frequency offset.
+            </summary>
+            <value>
+            The offset in Hertz of the point in the sampled bandwidth that corresponds to the dial frequency
+            </value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.Sideband">
+            <summary>
+            Gets or sets the sideband of the signal.
+            </summary>
+            <value>
+            The sideband.
+            </value>
+            <remarks>The sideband is <see cref="F:VE3NEA.HamCockpit.PluginAPI.Sideband.Upper"/> if higher
+            frequencies in the sampled data correspond to higher RF frequencies; 
+            <see cref="F:VE3NEA.HamCockpit.PluginAPI.Sideband.Lower"/> otherwise.</remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.StageGain">
+            <summary>
+            Gets or sets the stage gain.
+            </summary>
+            <value>
+            The gain of the current signal processing stage, in dB.
+            </value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.PluginAPI.SignalFormat.TotalGain">
+            <summary>
+            Gets the total gain.
+            </summary>
+            <value>
+            The total gain, in dB, of all signal processing stages, from the signal source to the current stage.
+            </value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.SignalFormat.#ctor(System.Int32,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,VE3NEA.HamCockpit.PluginAPI.Sideband,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.PluginAPI.SignalFormat"/> class and sets all of its properties.
+            </summary>
+            <param name="samplingRate">The sampling rate.</param>
+            <param name="isComplex">The IsComplex flag.</param>
+            <param name="isSync">The IsSync flag.</param>
+            <param name="channels">The number of channels.</param>
+            <param name="passbandLow">The lower end of the signal spectrum.</param>
+            <param name="passbandHigh">The upper end of the signal spectrum.</param>
+            <param name="dialOffset">The dial frequency offset.</param>
+            <param name="sideband">The sideband.</param>
+            <param name="stageGain">The stage gain.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.SignalFormat.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.PluginAPI.SignalFormat"/> class that describes a single-channel audio signal stream.
+            </summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.PluginAPI.SignalFormat.#ctor(VE3NEA.HamCockpit.PluginAPI.SignalFormat)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.PluginAPI.SignalFormat"/> class.
+            </summary>
+            <param name="prototype">The output format of the preceding signal processing stage.</param>
+        </member>
+    </members>
+</doc>

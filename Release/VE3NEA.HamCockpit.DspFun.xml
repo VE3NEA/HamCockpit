@@ -1,0 +1,964 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VE3NEA.HamCockpit.DspFun</name>
+    </assembly>
+    <members>
+        <member name="T:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes">
+            <summary>
+            <a href="https://docs.microsoft.com/en-us/windows/win32/api/audioclient/">Audio Client</a> 
+            error codes missing from <a href="https://archive.codeplex.com/?p=cscore">CSCore</a>.
+            </summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_NOT_INITIALIZED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_ALREADY_INITIALIZED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_WRONG_ENDPOINT_TYPE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_DEVICE_INVALIDATED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_NOT_STOPPED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_TOO_LARGE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_OUT_OF_ORDER">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_UNSUPPORTED_FORMAT">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_INVALID_SIZE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_DEVICE_IN_USE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_OPERATION_PENDING">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_THREAD_NOT_REGISTERED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_NO_SINGLE_PROCESS">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_EXCLUSIVE_MODE_NOT_ALLOWED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_ENDPOINT_CREATE_FAILED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_SERVICE_NOT_RUNNING">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_EVENTHANDLE_NOT_EXPECTED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_EXCLUSIVE_MODE_ONLY">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFDURATION_PERIOD_NOT_EQUAL">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_EVENTHANDLE_NOT_SET">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_INCORRECT_BUFFER_SIZE">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_SIZE_ERROR">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_CPUUSAGE_EXCEEDED">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_ERROR">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.AudclntErrorCodes.AUDCLNT_E_BUFFER_SIZE_NOT_ALIGNED">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.AudioClientErrors">
+            <summary>Returns error messages for the 
+            <a href="https://docs.microsoft.com/en-us/windows/win32/api/audioclient/">Audio Client</a> 
+            error codes.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.AudioClientErrors.Message(System.Int32)">
+            <summary>  Gets the error message for the specified error code.</summary>
+            <param name="errorCode">The error code.</param>
+            <returns>The error message.</returns>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.ChannelSelector">
+            <summary>Selects one of the channels from a stereo data source.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ChannelSelector.#ctor(CSCore.ISampleSource,CSCore.ChannelMask)">
+            <summary>Creates a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.ChannelSelector"/> class 
+            from an existing sample source.</summary>
+            <param name="source">The sample source.</param>
+            <param name="channel">The channel to select.</param>
+            <exception cref="T:System.ArgumentNullException">source is null</exception>
+            <exception cref="T:System.ArgumentException">The source is not stereo
+            or Wrong channel.</exception>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ChannelSelector.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads a sequence of samples from the <see cref="T:CSCore.SampleAggregatorBase" /> and advances the position within the stream by
+            the number of samples read.</summary>
+            <param name="buffer">
+            An array of floats. When this method returns, the <paramref name="buffer" /> contains the specified
+            float array with the values between <paramref name="offset" /> and (<paramref name="offset" /> +
+            <paramref name="count" /> - 1) replaced by the floats read from the current source.
+            </param>
+            <param name="offset">The zero-based offset in the <paramref name="buffer" /> at which to begin storing the data
+            read from the current stream.</param>
+            <param name="count">The maximum number of samples to read from the current source.</param>
+            <returns>The total number of samples read into the buffer.</returns>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.ChannelSelector.Position">
+            <summary>Gets or sets the position in samples.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.ChannelSelector.Length">
+            <summary>Gets the data length in samples.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.ChannelSelector.WaveFormat">
+            <summary>Gets the <see cref="P:CSCore.IAudioSource.WaveFormat" /> of the waveform-audio data.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ChannelSelector.Dispose(System.Boolean)">
+            <summary>Disposes allocated resources.</summary>
+            <param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged
+            resources.</param>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.Dsp">
+            <summary>A collection of functions related to digital signal processing.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.Dsp.COMPONENTS_IN_COMPLEX">
+            <summary>The number of components in a complex value.</summary>
+            <remarks>There are two floating point components in a complex value, 
+            the real part and the imaginary part.</remarks>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.BlackmanWindow(System.Int32)">
+            <summary>Generates the Blackman window.</summary>
+            <param name="length">The window length.</param>
+            <returns>The window coefficients.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.BlackmanHarrisWindow(System.Int32)">
+            <summary>Generates the Blackman-Harris window.</summary>
+            <param name="length">The window length.</param>
+            <returns>The window coefficients.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.Sinc(System.Single,System.Int32)">
+            <summary>Generates the Sinc filter kernel.</summary>
+            <param name="Fc">The normalized cutoff frequency.</param>
+            <param name="length">The kernel length.</param>
+            <returns>The filter kernel.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.BlackmanSincKernel(System.Single,System.Int32)">
+            <summary>Generates the Blackman Sinc filter kernel.</summary>
+            <param name="Fc">The normalized cutoff frequency.</param>
+            <param name="length">The kernel length.</param>
+            <returns>The filter kernel.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.Normalize(System.Single[])">
+            <summary>Normalizes the specified array of floating point data to unity sum.</summary>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.ToDb(System.Single)">
+            <summary>Converts power ratio to decibels.</summary>
+            <param name="x">The power ratio.</param>
+            <returns>The ratio in decibels.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.ToDb2(System.Single)">
+            <summary>Converts voltage ratio to decibels.</summary>
+            <param name="x">The voltage ratio.</param>
+            <returns>The ratio in decibels.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.FromDb2(System.Single)">
+            <summary>  Converts the ratio in decibels to voltage ratio.</summary>
+            <param name="x">The ratio in decibels.</param>
+            <returns>The voltage ratio.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.FromDb(System.Single)">
+            <summary>  Converts the ratio in decibels to power ratio.</summary>
+            <param name="x">The ratio in decibels.</param>
+            <returns>The power ratio.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.SwapIQ(System.Single[],System.Int32,System.Int32)">
+            <summary>Swaps the I and Q channels in the array of data.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="floatOffset">The offset to the first floating point value to convert.</param>
+            <param name="complexCount">The number of complex values to convert.</param>    
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.Mix(MathNet.Numerics.Complex32[],System.Double,System.Double)">
+            <summary>Performs in-place mixing of the specified data with a complex sinusoid.</summary>
+            <param name="data">The data.</param>
+            <param name="frequency">The frequency.</param>
+            <param name="phase">The starting phase.</param>    
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.FloatToComplex32(System.Single[])">
+            <summary>Unpacks complex values from the array of floats.</summary>
+            <param name="source">The floating point values.</param>
+            <returns>The complex values.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.ApproximateRatio(System.Double,System.Double)">
+            <summary>Finds a rational approximation
+            of a floating point value.</summary>
+            <param name="ratio">The floating point value.</param>
+            <param name="maxError">The maximum error.</param>
+            <returns>The approximating ratio, L/M.</returns>
+            <remarks>Finds the 
+            <a href="https://en.wikipedia.org/wiki/Diophantine_approximation">Diophantine approximation</a> 
+            to the given floating point value. Useful for the design of low complexity 
+            <a href="https://dspguru.com/dsp/faqs/multirate/resampling/">resamplers</a> 
+            when the exact output rate is not required.
+            </remarks>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.StridedToComplex(System.Single[],System.Int32,System.Int32,MathNet.Numerics.Complex32[],System.Int32,System.Int32)">
+            <summary>Unpacks complex values from the array of floats.</summary>
+            <param name="source">The source array.</param>
+            <param name="srcOffset">The offset to the first value in the source array.</param>
+            <param name="srcStride">The stride in the source array.</param>
+            <param name="destination">The destination array.</param>
+            <param name="dstOffset">The offset to the first value in the destination array.</param>
+            <param name="complexCount">The number of the complex values to output.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.StridedToComplex(System.Single[],System.Int32,System.Int32,System.Single[],System.Int32,System.Int32)">
+            <summary>Convert data format.</summary>
+            <param name="source">The source array.</param>
+            <param name="srcOffset">The offset to the first value in the source array.</param>
+            <param name="srcStride">The stride in the source array.</param>
+            <param name="destination">The destination array.</param>
+            <param name="dstOffset">The offset to the first value in the destination array.</param>
+            <param name="complexCount">The number of the complex values to output.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.ComplexToStrided(MathNet.Numerics.Complex32[],System.Int32,System.Single[],System.Int32,System.Int32,System.Int32)">
+            <summary>Convert data format.</summary>
+            <param name="source">The source array.</param>
+            <param name="srcOffset">The offset to the first value in the source array.</param>
+            <param name="destination">The destination array.</param>
+            <param name="dstOffset">The offset to the first value in the destination array.</param>
+            <param name="dstStride">The stride in the destination array.</param>
+            <param name="complexCount">The number of the complex values to output.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.StridedToFloat(System.Single[],System.Int32,System.Int32,System.Single[],System.Int32,System.Int32)">
+            <summary>Convert data format.</summary>
+            <param name="source">The source array.</param>
+            <param name="srcOffset">The offset to the first value in the source array.</param>
+            <param name="srcStride">The stride in the source array.</param>
+            <param name="destination">The destination array.</param>
+            <param name="dstOffset">The offset to the first value in the destination array.</param>
+            <param name="count">The number of the values to output.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.FloatToStrided(System.Single[],System.Int32,System.Single[],System.Int32,System.Int32,System.Int32)">
+            <summary>Convert data format.</summary>
+            <param name="source">The source array.</param>
+            <param name="srcOffset">The offset to the first value in the source array.</param>
+            <param name="destination">The destination array.</param>
+            <param name="dstOffset">The offset to the first value in the destination array.</param>
+            <param name="dstStride">The stride in the destination array.</param>
+            <param name="count">The number of the values to output.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Dsp.ArrayToString(System.Single[])">
+            <summary>Converts an array of floating point values to text, one value per line.</summary>
+            <param name="array">The array of values.</param>
+            <returns>The text.</returns>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.BaseFft">
+            <summary>
+            The base class that implements common functionality for the <see cref="T:VE3NEA.HamCockpit.DspFun.RealFft"/> and <see cref="T:VE3NEA.HamCockpit.DspFun.ComplexFft"/> classes.
+            </summary>
+            <remarks>
+            This class uses the <a href="https://software.intel.com/en-us/ipp">Intel Integrated Performance Primitives library</a>
+            to compute the fast Fourier transform.
+            </remarks>
+            <seealso cref="T:VE3NEA.HamCockpit.DspFun.RealFft" />
+            <seealso cref="T:VE3NEA.HamCockpit.DspFun.ComplexFft" />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.BaseFft.specBuffer">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.BaseFft.IPP_FFT_NODIV_BY_ANY">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.BaseFft.LnToDb">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.BaseFft.order">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.BaseFft.workBuf">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.BaseFft.FreqData">
+            <summary>The buffer for the frequency domain data.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseFft.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.BaseFft" /> class.</summary>
+            <param name="size">The size of the FFT transform.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseFft.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseFft.PowerSpectrum(System.Single[])">
+            <summary>Compute the power spectrum from the complex spectrum in the <see cref="F:VE3NEA.HamCockpit.DspFun.BaseFft.FreqData" /> array.</summary>
+            <param name="power">The buffer for the power spectrum, or <c>null</c>.</param>
+            <returns>The power spectrum.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseFft.LogPowerSpectrum(System.Single[])">
+            <summary>Compute the <c>log</c> power spectrum from the power spectrum.</summary>
+            <param name="power">The power spectrum.</param>
+            <returns>The log power spectrum.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseFft.SlicePower(System.Int32,System.Int32)">
+            <summary>  Compute the given slice of the power spectrum.</summary>
+            <param name="start">The start of the slice.</param>
+            <param name="length">The length of the slice.</param>
+            <returns>The slice of the power spectrum.</returns>
+            <remarks>
+            This method re-orders the two halves of the spectrum to put the negative frequencies 
+            at the bottom, takes the slice of the spectrum and computes the log power.
+            </remarks>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.ComplexFft">
+            <summary>Computes forward and inverse complex FFT.</summary>
+            <remarks>
+            This class uses the <a href="https://software.intel.com/en-us/ipp">Intel Integrated Performance Primitives library</a>
+            to compute the fast Fourier transform.
+            </remarks>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.ComplexFft.TimeData">
+            <summary>The buffer for the time domain data.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFft.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.ComplexFft" /> class.</summary>
+            <param name="size">The size of the FFT transform.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeForward">
+            <summary>Computes the forward FFT transform.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFft.ComputeInverse">
+            <summary>Computes the inverse FFT transform.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.RealFft">
+            <summary>Computes forward and inverse real FFT.</summary> 
+            <remarks>
+            This class uses the <a href="https://software.intel.com/en-us/ipp">Intel Integrated Performance Primitives library</a>
+            to compute the fast Fourier transform.
+            </remarks>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.RealFft.TimeData">
+            <summary>The buffer for the time domain data.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFft.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.RealFft" /> class.</summary>
+            <param name="size">The size of the FFT transform.</param> 
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFft.ComputeForward">
+            <summary>Computes the forward FFT transform.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFft.ComputeInverse">
+            <summary>Computes the inverse FFT transform.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.ComplexFirFilter">
+            <summary>Applies a FIR filter to complex-valued data.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Taps">
+            <summary>Gets or sets the filter taps.</summary>
+            <value>The filter taps.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.#ctor(MathNet.Numerics.Complex32[],VE3NEA.HamCockpit.DspFun.IppAlgType)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.ComplexFirFilter" /> class.</summary>
+            <param name="taps">The taps.</param>
+            <param name="algType">Type of the algorithm.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.setTaps(MathNet.Numerics.Complex32[])">
+            <summary>Sets the taps of the FIR filter.</summary>
+            <param name="taps">The tap coefficients.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the filter for processing data from the specified source.</summary>
+            <param name="source">The source of the data.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Format">
+            <summary>Gets the format of the output data.</summary>
+            <value>The format of the output data.</value>
+            <remarks>
+            Since the filter does not know its passband (all it has is the taps array),
+            it does not update the Format property. The calling code must change the Format settings
+            to reflect the new bandwidth.
+            </remarks>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.SamplesAvailable">
+            <summary>Occurs when filtered samples are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads the data to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.ComplexFirFilter.Dispose">
+            <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppComplexFirFilter">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppException">
+            <summary>Represents errors that occur during the execution of the 
+            <a href="https://software.intel.com/en-us/ipp">IPP</a> functions.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppException.#ctor(CSIntel.Ipp.IppStatus)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.IppException" /> class.</summary>
+            <param name="status">The IPP status code.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppException.Check(CSIntel.Ipp.IppStatus)">
+            <summary>Checks the IPP status code and raises an IppException if the code represents an error.</summary>
+            <param name="status">The status code.</param>
+            <exception cref="T:VE3NEA.HamCockpit.DspFun.IppException"><paramref name="status"/> represents an error.</exception>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppAlgType">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgAuto">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgDirect">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgFFT">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.IppAlgType.ippAlgMask">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.Ipp">
+            <summary>
+            The IPP PInvoke declarations missing from 
+            <a href="https://github.com/DNRY/CSIntelPerfLibs">CSIntelPerfLibs</a>.
+            </summary>
+            <remarks>
+            This class contains the IPP PInvoke declarations missing from the
+            <a href="https://github.com/DNRY/CSIntelPerfLibs">CSIntelPerfLibs</a> library. 
+            Please see the  
+            <a href="https://software.intel.com/en-us/ipp/documentation">Integrated Performance 
+            Primitives documentation</a> for the description of these functions. 
+            </remarks>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_8u(System.Int32)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32f(System.Int32)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsMalloc_32fc(System.Int32)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFree(System.Void*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRGetSize(System.Int32,CSIntel.Ipp.IppDataType,System.Int32*,System.Int32*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32f(System.Single*,System.Int32,VE3NEA.HamCockpit.DspFun.IppAlgType,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSRInit_32fc(MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppAlgType,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32f(System.Single*,System.Single*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32f*,System.Single*,System.Single*,System.Byte*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRSR_32fc(MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*,MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Byte*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRGetStateSize_32fc(System.Int32,System.Int32,System.Int32,CSIntel.Ipp.IppDataType,System.Int32*,System.Int32*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMRInit_32fc(MathNet.Numerics.Complex32*,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsFIRMR_32fc(MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Int32,VE3NEA.HamCockpit.DspFun.IppsFIRSpec_32fc*,MathNet.Numerics.Complex32*,MathNet.Numerics.Complex32*,System.Byte*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedGetSize_32f(System.Int32,System.Int32,System.Int32,System.Int32*,System.Int32*,System.Int32*,CSIntel.Ipp.IppHintAlgorithm)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixedInit_32f(System.Int32,System.Int32,System.Int32,System.Single,System.Single,VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f*,CSIntel.Ipp.IppHintAlgorithm)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsResamplePolyphaseFixed_32f(System.Single*,System.Int32,System.Single*,System.Single,System.Double*,System.Int32*,VE3NEA.HamCockpit.DspFun.IppsResamplingPolyphaseFixed_32f*)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Ipp.ippsTone_32fc(CSIntel.Ipp.Ipp32fc*,System.Int32,System.Single,System.Single,System.Single*,CSIntel.Ipp.IppHintAlgorithm)">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppHelper">
+            <summary>Includes helper functions that use the 
+            <a href="https://software.intel.com/en-us/ipp">IPP library</a>.
+            </summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.IppHelper.LnToDb">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppHelper.PowerToLogPower(System.Single[])">
+            <summary>Converts power ratios to decibels in-place.</summary>
+            <param name="power">The values to convert.</param>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.MovingAverage">
+            <summary>Applies a moving average filter to the floating point data.</summary>
+            <remarks>
+            <para>
+            The classical moving average, <c>y[n] = y[n-1] + x[n] - x[n-k]</c>, fails when applied
+            to the floating point data
+            because <c>(a + b) - b</c> is not always equal to <c>a</c> when <c>a</c> and <c>b</c>
+            are floating point values. For example, <c>(1E-6 + 1E6) - 1E6</c> evaluates to
+            <c>0</c>, not to <c>1E-6</c>.
+            The algorithm used in this class is designed to prevent such errors.
+            </para><para>
+            The filtered output is not scaled, it needs to be multiplied 
+            by the <see cref="P:VE3NEA.HamCockpit.DspFun.MovingAverage.Scale"/> factor to preserve the signal amplitude. </para>
+            </remarks>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.MovingAverage.Scale">
+            <summary>Gets the scaling factor.</summary>
+            <value>The scaling factor that the filtered values need to be multiplied by.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.MovingAverage.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.MovingAverage" /> class.</summary>
+            <param name="length">The length of the filter.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.MovingAverage.Process(System.Single)">
+            <summary>Processes the specified value.</summary>
+            <param name="value">The input value.</param>
+            <returns>The filtered value.</returns>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.MultipassAverage">
+            <summary>Applies a multi-pass moving average filter to the floating point data.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.MultipassAverage.Scale">
+            <summary>Gets the scaling factor.</summary>
+            <value>The scaling factor that the value returned from 
+            <see cref="M:VE3NEA.HamCockpit.DspFun.MultipassAverage.ProcessUnscaled(System.Single)"/> needs to be multiplied by.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.MultipassAverage.#ctor(System.Int32,System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.MultipassAverage" /> class.</summary>
+            <param name="length">The length of the filter in each pass.</param>
+            <param name="passCount">The number of passes.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.MultipassAverage.ProcessUnscaled(System.Single)">
+            <summary>Filters the specified value but does not scale the output.</summary>
+            <param name="value">The value to filter.</param>
+            <returns>The filtered value.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.MultipassAverage.Process(System.Single)">
+            <summary>Filters the specified value with proper scaling.</summary>
+            <param name="value">The value to filter.</param>
+            <returns>The filtered value.</returns>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.RealFirFilter">
+            <summary>Applies a FIR filter to real-valued data.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.RealFirFilter.Taps">
+            <summary>Gets or sets the filter taps.</summary>
+            <value>The filter taps.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.#ctor(System.Single[],VE3NEA.HamCockpit.DspFun.IppAlgType)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.RealFirFilter" /> class.</summary>
+            <param name="taps">The taps.</param>
+            <param name="algType">Type of the algorithm.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.setTaps(System.Single[])">
+            <summary>Sets the taps of the FIR filter.</summary>
+            <param name="taps">The tap coefficients.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the filter for processing data from the specified source.</summary>
+            <param name="source">The source of the data.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.RealFirFilter.Format">
+            <summary>Gets the format of the output data.</summary>
+            <value>The format of the output data.</value>
+            <remarks>
+            Since the filter does not know its passband (all it has is the taps array),
+            it does not update the Format property. The calling code must change the Format settings
+            to reflect the new bandwidth.
+            </remarks>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.RealFirFilter.SamplesAvailable">
+            <summary>Occurs when filtered samples are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads processed data to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RealFirFilter.Dispose">
+            <summary>Performs application-defined tasks associated with freeing, 
+            releasing, or resetting unmanaged resources.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppRealFirFilter">
+            <exclude />
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Data">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.#ctor(System.Single[],VE3NEA.HamCockpit.DspFun.IppAlgType)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.SetTaps(System.Single[])">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Process(System.Int32)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.ProcessStrided(System.Single[],System.Int32,System.Int32,System.Int32)">
+            <exclude />
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppRealFirFilter.Dispose">
+            <exclude />
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.Resampler">
+            <summary>A wrapper for the CSCore.DSP.DmoResampler class.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.Resampler" /> class.</summary>
+            <param name="outputSamplingRate">The output sampling rate.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.#ctor(System.Int32,System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.Resampler" /> class.</summary>
+            <param name="outputSamplingRate">The output sampling rate.</param>
+            <param name="quality">The quality factor.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the resampler for processing data from the specified source.</summary>
+            <param name="source">The data source.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.Resampler.Format">
+            <summary>Gets the format of the resampled data.</summary>
+            <value>The format.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.Resampler.SamplesAvailable">
+            <summary>Occurs when resampled values are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads processed data to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Resampler.Dispose">
+            <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.Mixer">
+            <summary>Mixes the input complex-valued data with a complex sinusoid.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Mixer.#ctor(System.Int64)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.Mixer" /> class.</summary>
+            <param name="frequency">The frequency.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.Mixer.Frequency">
+            <summary>Gets or sets the frequency of the complex sinusoid.</summary>
+            <value>The frequency of the complex sinusoid.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Mixer.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the mixer to process data from the specified source.</summary>
+            <param name="source">The source.</param>
+            <exception cref="T:System.Exception">Input to the mixer must be complex.</exception>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.Mixer.Format">
+            <summary>Gets the format of the output data.</summary>
+            <value>The format of the output data.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.Mixer.SamplesAvailable">
+            <summary>Occurs when output samples are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.Mixer.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads processed data to the specified buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of values to process.</param>
+            <returns>The number of processed values.</returns>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.RigStatus">
+            <summary>The status of the CAT connection to the radio.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.RigStatus.NotInstalled">
+            <summary>OmniRig is not installed.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.RigStatus.NotConfigured">
+            <summary>OmniRig is not configured.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.RigStatus.Disabled">
+            <summary>The CAT interface is disabled.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.RigStatus.PortBusy">
+            <summary>  The COM port is used by another program.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.RigStatus.NotResponding">
+            <summary>The radio is not responding.</summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.RigStatus.Online">
+            <summary>CAT interface OK.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.OmniRigClient">
+            <summary>A wrapper around the OmniRig COM object.</summary>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned">
+            <summary>Occurs when the dial frequency changes.</summary>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged">
+            <summary>Occurs when the mode changes.</summary>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged">
+            <summary>Occurs when the CAT connection status changes.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Active">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.DspFun.OmniRigClient" /> is active.</summary>
+            <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.RigNo">
+            <summary>Gets or sets the rig number.</summary>
+            <value>The number of the rig to use, 1 or 2.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.RxFrequency">
+            <summary>Gets or sets the RX frequency.</summary>
+            <value>The RX frequency.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Mode">
+            <summary>Gets or sets the mode.</summary>
+            <value>The mode selected in the radio.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Status">
+            <summary>Gets the status of the CAT connection.</summary>
+            <value>The status of the CAT connection.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.OmniRigClient.GetStatusText">
+            <summary>Gets the text that describes the current status of OmniRig.</summary>
+            <returns>The status text.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.OmniRigClient.ShowDialog">
+            <summary>Shows the OmniRig configuration dialog.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.IppResampler">
+            <summary>Signal resampler based on the 
+            <a href="https://software.intel.com/en-us/ipp">IPP library</a>.
+            </summary>
+        </member>
+        <member name="F:VE3NEA.HamCockpit.DspFun.IppResampler.OutData">
+            <summary>The resampled data.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppResampler.#ctor(System.Int32,System.Int32,System.Int32,System.Single,System.Single)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.IppResampler" /> class.</summary>
+            <param name="inRate">The input sampling rate.</param>
+            <param name="outRate">The output sampling rate.</param>
+            <param name="requestedFilterOrder">The requested filter order.</param>
+            <param name="filterCutoff">The 6-dB cutoff frequency of the anti-aliasing filter 
+            as a fraction of the Nyquist frequency. Must be in the range of 0...1.</param>
+            <param name="kaiserAlpha">The alpha parameter of the Kaiser filter.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppResampler.Process(System.Single[],System.Int32,System.Int32,System.Int32)">
+            <summary>Processes the specified input data.</summary>
+            <param name="inputData">The input data.</param>
+            <param name="inputOffset">The offset of the first value to process.</param>
+            <param name="inputStride">The stride in the input data.</param>
+            <param name="count">The number of values to process.</param>
+            <returns>The number of resampled values.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.IppResampler.Dispose">
+            <summary>Performs application-defined tasks associated with freeing, releasing, 
+            or resetting unmanaged resources.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.RingBuffer">
+            <summary>A thread-safe ring buffer for the floating point values.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.RingBuffer.Count">
+            <summary>Gets the count of the floating point values in the buffer.</summary>
+            <value>The count.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.RingBuffer.FillWithZeros">
+            <summary>Gets or sets a value indicating whether the output is padded with zeros if there is not enough data to read.</summary>
+            <value>
+              <c>true</c> if padded with zeros; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.RingBuffer.SamplesAvailable">
+            <summary>Occurs when filtered samples are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.RingBuffer" /> class.</summary>
+            <param name="capacity">The capacity of the ring buffer.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.Resize(System.Int32)">
+            <summary>  Changes the capacity of the ring buffer.</summary>
+            <param name="capacity">The capacity.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.Write(System.Single[],System.Int32,System.Int32)">
+            <summary>Writes floating point values to the specified buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of values.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16(System.Byte[],System.Int32)">
+            <summary>  Converts 16-bit integers to the floating point values and writes them to the buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="byteCount">The number of bytes to convert and write.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.WriteStrided(System.Single[],System.Int32,System.Int32,VE3NEA.HamCockpit.PluginAPI.SignalFormat)">
+            <summary>Writes one of the channels of the strided data to the ring buffer.</summary>
+            <param name="data">The data.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="inFloatCount">The number of the input floating point values.</param>
+            <param name="format">The format of the data.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads the data from the ring buffer to the provided buffer.</summary>
+            <param name="buffer">The output buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.RingBuffer.Dump(System.Int32)">
+            <summary>Removes the values from the ring buffer.</summary>
+            <param name="count">The number of values to remove.</param>
+            <exception cref="T:System.ArgumentException">Too many values to dump: {count}.</exception>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper">
+            <summary>A wrapper for the ISampleStream that exposes the CSCore.ISampleSource interface.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.#ctor(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper" /> class.</summary>
+            <param name="source">The sample source.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Format">
+            <summary>Gets the format of the output data.</summary>
+            <value>The format.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.WaveFormat">
+            <summary>Gets the CSCore.IAudioSource.WaveFormat of the waveform-audio data.</summary>
+            <value>The wave format.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads data from the device to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.CanSeek">
+            <summary>Returns false.</summary>
+            <value><c>true</c> if this instance can seek; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Position">
+            <summary>  Not implemented.</summary>
+            <value>The position.</value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Length">
+            <summary>  Not implemented.</summary>
+            <value>The length.</value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SampleSourceWrapper.Dispose">
+            <summary>Releases unmanaged and - optionally - managed resources.</summary>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.SidebandFlipper">
+            <summary>Changes the sideband of the signal.</summary>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SidebandFlipper.Enabled">
+            <summary>Gets or sets a value indicating whether this <see cref="T:VE3NEA.HamCockpit.DspFun.SidebandFlipper" /> is enabled.</summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SidebandFlipper.Initialize(VE3NEA.HamCockpit.PluginAPI.ISampleStream)">
+            <summary>Initializes the sideband flipper for processing data from the specified source.</summary>
+            <param name="source">The source of the data.</param>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.SidebandFlipper.Format">
+            <summary>Gets the format of the output data.</summary>
+            <value>The format.</value>
+        </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.SidebandFlipper.SamplesAvailable">
+            <summary>Occurs when filtered samples are available.</summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SidebandFlipper.Read(System.Single[],System.Int32,System.Int32)">
+            <summary>Reads processed data to the provided buffer.</summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset to the first value.</param>
+            <param name="count">The number of the values to read.</param>
+            <returns>The number of read values.</returns>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.SlidingMin">
+            <summary>Computes the sliding minimum of the input values.<br /></summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SlidingMin.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.SlidingMin" /> class.</summary>
+            <param name="length">The length of the sliding filter.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SlidingMin.MinOrMax(System.Single,System.Single)">
+            <summary>Returns the minimum of two values.</summary>
+            <param name="x">The first value.</param>
+            <param name="y">The second value.</param>
+            <returns>The minimum of two values.</returns>
+            <remarks>The child class overrides this method to return either the minimum or maximum.</remarks>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.SlidingMax">
+            <summary>Computes the sliding maximum of the input values.<br /></summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SlidingMax.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:VE3NEA.HamCockpit.DspFun.SlidingMax" /> class.</summary>
+            <param name="length">The length of the sliding filter.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.SlidingMax.MinOrMax(System.Single,System.Single)">
+            <summary>Returns the maximum of two values.</summary>
+            <param name="x">The first value.</param>
+            <param name="y">The second value.</param>
+            <returns>The maximum of two values.</returns>
+        </member>
+        <member name="T:VE3NEA.HamCockpit.DspFun.BaseSlidingFilter">
+            <summary>
+            The base class that implements common functionality for the
+            <see cref="T:VE3NEA.HamCockpit.DspFun.SlidingMin"/> and <see cref="T:VE3NEA.HamCockpit.DspFun.SlidingMax"/> classes.
+            </summary>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.MinOrMax(System.Single,System.Single)">
+            <summary>  Returns either the minimum or maximum of two values.</summary>
+            <param name="x">The first value.</param>
+            <param name="y">The second value.</param>
+            <returns>The minimum or the maximum of two values.</returns>
+            <remarks>The child class overrides this method to return either the minimum or maximum.</remarks>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the class.</summary>
+            <param name="length">The length of the sliding filter.</param>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.Process(System.Single)">
+            <summary>Processes the specified input value.</summary>
+            <param name="value">The output value.</param>
+            <returns>The filtered value.</returns>
+        </member>
+        <member name="M:VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.FilterArrayInplace(System.Single[])">
+            <summary>Filters the array of input data in place.</summary>
+            <param name="data">The data.</param>
+            <exception cref="T:System.ArgumentException">Sliding Filter error: input too short</exception>
+        </member>
+    </members>
+</doc>
