@@ -109,7 +109,7 @@ make sure that the <em>.NET desktop development</em> component is selected:</li>
 <p>This will clone the HamCockpit repository to this folder:</p>
 <pre><code>C:\MyProjects\HamCockpit
 </code></pre>
-<p>The repository contains a .NET solution with one or more example plugin projects.</p>
+<p>The repository contains a .NET solution with the Plugin API assemblies and example plugin projects.</p>
 <ol start="6">
 <li>In the cloned folder, double-click on the solution file, <code>HamCockpitPlugins.sln</code>,<br>
 to open it in Visual Studio.</li>
@@ -130,11 +130,10 @@ that your callsign is <code>AA0AAA</code>, and your plugin name is <code>MyPlugi
 <p>Enter the project name in the <em>Project name</em> field of the <em>Configure your new project</em> dialog, and
 <code>C:\MyProjects\HamCockpit</code> in the <em>Location</em> field. Click on <em>Create</em>.</p>
 </li>
-<li><p>Right-click on the <em>References</em> entry of your new project, click on <em>Add Reference</em>.
-Navigate to the <code>C:\MyProjects\HamCockpit\Bin</code> folder, click on
-<code>VE3NEA.HamCockpit.PluginAPI.dll</code>, click on <em>Add</em>, click on <em>OK</em>.</p>
+<li><p>Right-click on the <em>References</em> entry of your new project, click on <em>Add Reference / Projects</em>,
+and tick the checkbox next to <code>VE3NEA.HamCockpit.PluginAPI.dll</code>, click on <em>OK</em>.</p>
 </li>
-<li><p>Double-click on <em>Properties / AssemblyInfo.cs</em> in your project, enter your data in the
+<li><p>Double-click on <em>Properties / AssemblyInfo.cs</em> in your project, enter your own data in the
 <em>Company</em> and <em>Copyright</em> fields:</p>
 </li>
 </ol>
@@ -148,9 +147,9 @@ Navigate to the <code>C:\MyProjects\HamCockpit\Bin</code> folder, click on
 [assembly: AssemblyCulture(&quot;&quot;)]
 </code></pre>
 <ol start="11">
-<li><em>Right-Click</em> on the project, click on <em>Properties / Build</em>. Enter <code>..\Bin</code>
-in the <em>Output path</em> box so that the compiled plugin is created in the Bin folder where
-Ham Cockpit can find it.</li>
+<li><em>Right-Click</em> on the project, click on <em>Properties / Build</em>. Enter <code>..\Release</code>
+in the <em>Output path</em> box for all configurations so that the compiled plugin is created
+in the folder where Ham Cockpit can find it.</li>
 </ol>
 <h2 id="creating-the-plugin-class">Creating the Plugin Class</h2>
 <p>Right-click on your project,
@@ -165,11 +164,11 @@ This will generate <code>MyPlugin.cs</code> with the following code:</p>
 }
 </code></pre>
 <p>Now let us turn this class into a HamCockpit plugin. To be a plugin, it must
-export the <code>IPlugin</code> interface. Since we want our plugin to have a visual panel, we will
+export the <code>IPlugin</code> interface. Since we want <code>MyPlugin</code> to have a visual panel, we will
 export <code>IVisualPlugin</code> as well:</p>
 <pre><code class="lang-C#">  [Export(typeof(IPlugin))]
   [Export(typeof(IVisualPlugin))]
-  class DisplayPanelDemo : IPlugin, IVisualPlugin
+  class MyPlugin : IPlugin, IVisualPlugin
   {
   }
 </code></pre>
@@ -177,8 +176,8 @@ export <code>IVisualPlugin</code> as well:</p>
 Let us fix this.</p>
 <ul>
 <li><p>Place your cursor on the <code>Export</code> word, press <code>Ctrl-.</code>
-to invoke the <em>Quick Actions</em> menu
-and select <code>Add reference to &quot;System.ComponentModel.Composition;&quot;</code>.</p>
+to invoke the <em>Quick Actions</em> menu,
+and select <code>Add reference to &quot;System.ComponentModel.Composition&quot;</code>.</p>
 </li>
 <li><p>Press <code>Ctrl-.</code> on <code>IPlugin</code> and select <code>using VE3NEA.HamCockpit.PluginAPI</code>.</p>
 </li>
@@ -195,7 +194,7 @@ and select <code>Implement interface</code>,
 do the same for <code>IVisualPlugin</code>. Now you can rebuild the project and verify
 that there are no build errors.</p>
 <h2 id="implementing-iplugin">Implementing <code>IPlugin</code></h2>
-<p><em>Quick Actions</em> created the stubs for the methods that implement the interfaces.
+<p><em>Quick Actions</em> created the stubs for the interface methods and properties.
 Let us put some real code in the stubs. We will start with the easy ones:</p>
 <pre><code class="lang-C#">    public string Name =&gt; &quot;My Plugin&quot;;
     public string Author =&gt; &quot;AA0AAA&quot;;
@@ -246,10 +245,11 @@ of this interface is trivial:</p>
 on the panel's caption bar. A reference to the panel is stored in the <code>panel</code> field.</p>
 <p><code>DestroyPanel</code> sets <code>panel</code> to <code>null</code>, effectively destroying the panel.</p>
 <p><code>CanCreatePanel</code> ensures that at most one panel can exist at any given time.
-You could allow an unlimited number of panels to be created, as in the DisplayPanelDemo example,
+You could allow an unlimited number of panels to be created, as in the
+<a href="display_panel_plugin.html">Display Panel Demo</a> example,
 or a fixed number of panels.</p>
 <p>The user can create visual plugin panels using the <em>View</em> menu. This menu shows all plugins that
-implement <code>IVisualPlugin</code>, those plugins whose <code>CanCreatePanel</code> returns false are disabled in the menu.</p>
+implement <code>IVisualPlugin</code>, those plugins whose <code>CanCreatePanel</code> returns false are grayed in the menu.</p>
 <h2 id="creating-the-settings-class">Creating the <code>Settings</code> class</h2>
 <p>Ham Cockpit has a built-in mechanism for storing, reloading and editing the plugin settings
 in a centralized way. All you have to do to make use of this mechanism is to implement the
@@ -274,24 +274,24 @@ namespace AA0AAA.HamCockpitPlugins.MyPlugin
 }
 </code></pre>
 <p>In the <code>Settings</code> class, we simply add properties for all values that we want to be stored
-between the settings. We have added two properties, <code>BackColor</code> that will store the color of the panel,
+between the program starts. We have added two properties, <code>BackColor</code> that will store the color of the panel,
 and <code>Text</code> that will store the text entered by the user.</p>
 <p>The host application will save and restore both settings defined in this class. By default, it also
-allows the user edit add all public properties defined in <code>Settings</code>. Since we want only the color to appear
+allows the user edit add all public properties in <code>Settings</code>. Since we want only the color to appear
 in the
 <a href="../users_guide/configuration.html">Plugin Settings dialog</a>,
 but not the text, we decorate the <code>Text</code> property with the <code>[Browsable(false)]</code> attribute.</p>
 <p>The <a href="../users_guide/configuration.html">Plugin Settings dialog</a> uses the
 <a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.propertygrid?view=netcore-3.1">PropertyGrid</a>
 control for editing the settings of the plugins. There are many ways to customize the appearance
-of the properties in the grid. Many good tutorials on the subject are available on the Internet
+of the properties in the grid. Many good tutorials on the subject are available on the Internet.
 <a href="https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/aa302326(v=msdn.10)?redirectedfrom=MSDN">This</a>
 and
 <a href="https://www.codeproject.com/Articles/22717/Using-PropertyGrid">this</a>
 are just two examples.</p>
 <p>For the <code>BackColor</code> property, we add the <code>DisplayName</code> and <code>Description</code> attributes that <code>PropertyGrid</code>
 will use to display the setting name and description, and the<code>DefaultValue</code> attribute that
-the  <em>Reset</em> command will assign to the setting.</p>
+the  <em>Reset</em> menu command in the property grid will assign to the setting.</p>
 <h2 id="implementing-ipluginsettings">Implementing <code>IPlugin.Settings</code></h2>
 <p>Now that we have the <code>Settings</code> class, we can implement the <code>IPlugin.Settings</code> property in <code>MyPlugin</code>:</p>
 <pre><code class="lang-C#">    private Settings settings = new Settings();
@@ -397,13 +397,13 @@ namespace AA0AAA.HamCockpitPlugins.MyPlugin
 </code></pre>
 <br>
 <h2 id="testing-the-plugin">Testing the plugin</h2>
-<p>Press <em>Ctrl-B</em> to build the project, open the <code>Bin</code> folder
+<p>Press <em>Ctrl-B</em> to build the project, open the <code>Release</code> folder
 and double-click on <em>HamCockpit.exe</em>.
 When the program starts, click on the <em>View</em> menu - and see your plugin listed!</p>
 <p><img src="../images/first_plugin/ViewMenu.png" alt="View Menu"></p>
 <p>Open My Plugin and play with it.</p>
 <p><img src="../images/first_plugin/MyPlugin.png" alt="My Plugin"></p>
-<p>Resize it, dock it, enter some text.
+<p>Resize it, dock it, enter some text in the text box.
 Close it and open again.
 Exit the program and restart, see that the text you entered is preserved.</p>
 <p>Now open the Plugin Settings dialog, select your plugin and change its background color:</p>
@@ -412,7 +412,7 @@ Exit the program and restart, see that the text you entered is preserved.</p>
 <h2 id="congratulations">Congratulations!</h2>
 <p>Your first plugin for Ham Cockpit is finished. It has a visual panel, resizable and dockable,
 it accepts user input, remembers its state when the program is closed and has settings that
-the user can edit in the Plugin Settings dialog. It's time to start a real project!</p>
+the user can edit in the Plugin Settings dialog. It's time to start your own plugin project!</p>
 </article>
           </div>
           
