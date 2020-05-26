@@ -44,10 +44,7 @@ namespace VE3NEA.HamCockpitPlugins.ClockDemo
       string timeFormat = (Blink && (now.Millisecond > 500)) ? "HH' 'mm" : "HH:mm";
       timeLabel.RightToLeft = RightToLeft.No;
       timeLabel.Text = now.ToString(timeFormat);
-      dateLabel.Text = now.ToString("MMM dd");
-
-      
+      dateLabel.Text = now.ToString("MMM dd");      
     }
-
   }
 }

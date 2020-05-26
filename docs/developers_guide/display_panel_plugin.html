@@ -80,6 +80,77 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="display-panel-demo-plugin">Display Panel Demo Plugin</h1>
 
+<p>The source code of this plugin is available
+<a href="https://github.com/VE3NEA/HamCockpit/tree/master/VE3NEA.HamCockpitPlugins.DisplayPanelDemo">here</a>
+<img src="../images/GitHub.png" alt="GitHub">.</p>
+<p>This plugin allows the user to create an unlimited number of
+visual panels. Each panel has three buttons, R, G and B,
+that collectively set the background color of the panel.</p>
+<p>The design of this plugin is very similar to the one described
+in <a href="first_plugin.html">Creating Your First Plugin</a>. One important
+difference is that the <code>Settings</code> object now has to store
+the settings of a variable number of panels.</p>
+<p>The settings of one panel are stored in an instance of the
+<code>DisplayPanelSettings</code> class:</p>
+<pre><code class="lang-C#">public class DisplayPanelSettings
+  {
+    public bool Red { get; set; }
+    public bool Green { get; set; }
+    public bool Blue { get; set; }
+
+    public DisplayPanelSettings(bool red, bool green, bool blue)
+    {
+      Red = red;
+      Green = green;
+      Blue = blue;
+    }
+  }
+</code></pre>
+<p>The <code>Settings</code> object, exposed via <code>IPlugin.Settings</code> as follows</p>
+<pre><code class="lang-C#">public object Settings { get =&gt; BuildSettings(); set =&gt; settings = value as Settings; }
+</code></pre>
+<p>contains a list of <code>DisplayPanelSettings</code> objects, one per
+panel:</p>
+<pre><code class="lang-C#">  public class Settings
+  {
+    public List&lt;DisplayPanelSettings&gt; panels = new List&lt;DisplayPanelSettings&gt;();
+  }
+</code></pre>
+<p>Note that <code>panels</code> in <code>Settings</code> is not user-editable because it is a field,
+not a property.</p>
+<p>The host assigns a value to <code>IPlugin.Settings</code> in two cases:</p>
+<ul>
+<li>when it reads the saved settings on program startup;</li>
+<li>when it saves the settings edited by the user.</li>
+</ul>
+<p>Since there are no user-editable properties in Settings,
+the setter of <code>Settings</code> is called only once, on program
+startup, and our plugin just stores the settings object for
+future use.</p>
+<p>After reading the Settings properties of all plugins, the host
+application re-creates its layout, with all
+docked and floating panels that were open in the last
+session. It calls <code>IPlugin.CreatePanel</code> for every panel
+that needs to be present in the layout. This is where we use the saved
+settings of the panels:</p>
+<pre><code class="lang-C#">  public UserControl CreatePanel()
+    {
+      var new_panel = new DisplayPanel();
+
+      if (settings.panels.Count &gt; 0)
+      {
+        new_panel.Settings = settings.panels[0];
+        settings.panels.RemoveAt(0);
+      }
+
+      panels.Add(new_panel);
+      return new_panel;
+    }
+</code></pre>
+<p>The used settings object is deleted from the list, so that
+each re-created panel gets its own settings.</p>
+<p>After all settings are consumed, new panels are created
+with default settings.</p>
 </article>
           </div>
           

@@ -35,10 +35,10 @@ namespace VE3NEA.HamCockpitPlugins.ClockDemo
 
     void ApplySettings(Settings value)
     {
-      clock.UtcMode = value.UtcMode;
-      clock.Blink = value.Blink;
-      ToolStrip.RightToLeft = value.DockToRight ? RightToLeft.Yes : RightToLeft.No;
       settings = value;
+      clock.UtcMode = settings.UtcMode;
+      clock.Blink = settings.Blink;
+      ToolStrip.RightToLeft = settings.DockToRight ? RightToLeft.Yes : RightToLeft.No;
     }
 
     public void Dispose()
@@ -50,6 +50,7 @@ namespace VE3NEA.HamCockpitPlugins.ClockDemo
 
   public class Settings
   {
+    //this setting is saved/restored and editable by user
     [DisplayName("Blink")]
     [Description("Time separator blinks")]
     [DefaultValue(false)]
@@ -57,7 +58,7 @@ namespace VE3NEA.HamCockpitPlugins.ClockDemo
 
     //this setting is saved/restored and editable by user
     [DisplayName("Dock to Right")]
-    [Description("Dock to the right side of the window")]
+    [Description("Dock to the right side of the toolbar")]
     [DefaultValue(true)]
     public bool DockToRight { get; set; } = true;
 

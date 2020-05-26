@@ -1,3 +1,5 @@
+![Pilots Hat 64](OnlineDocs/images/pilots_hat_64.png)
+
 # Ham Cockpit
 
 See the [Ham Cockpit web site](https://ve3nea.github.io/HamCockpit/) for information.

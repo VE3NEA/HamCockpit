@@ -80,6 +80,61 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="clock-demo-plugin">Clock Demo Plugin</h1>
 
+<p>The source code of this plugin is available
+<a href="https://github.com/VE3NEA/HamCockpit/tree/master/VE3NEA.HamCockpitPlugins.ClockDemo">here</a>
+<img src="../images/GitHub.png" alt="GitHub">.</p>
+<p>This example demonstrates how a plugin can add a custom
+<a href="https://docs.microsoft.com/dotnet/api/system.windows.forms.toolstrip">ToolStrip</a>
+to the toolbar.</p>
+<h2 id="usercontrol-in-a-toolstrip">UserControl in a ToolStrip</h2>
+<p>Using the designer in Visual Studio, we have created a
+<a href="https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/developing-custom-windows-forms-controls?view=netcore-3.1">custom control</a>,
+a child of
+<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.usercontrol">UserControl</a>,
+that we want to appear on the toolbar. This control is just a panel with a few labels to display
+the date, time, and the UTC/Local switch. The control is located in the
+<a href="https://github.com/VE3NEA/HamCockpit/blob/master/VE3NEA.HamCockpitPlugins.ClockDemo/Clock.cs">Clock</a>
+unit.</p>
+<p>The plugin implements only one interface, <a href="">IPlugin</a>. Implementation is similar to that described in
+<a href="first_plugin.html">Creating Your First Plugin</a>,
+the only important difference is the <code>ToolStrip</code> property: it is no longer <code>null</code>, we initialize
+it with an instance of the
+<a href="https://docs.microsoft.com/dotnet/api/system.windows.forms.toolstrip">ToolStrip</a>
+class</p>
+<pre><code class="lang-C#">public ToolStrip ToolStrip { get; } = new ToolStrip();
+</code></pre>
+<p>and add our <code>Clock</code> panel to it:</p>
+<pre><code class="lang-C#">private readonly Clock clock = new Clock();
+...
+ToolStrip.Items.Add(new ToolStripControlHost(clock));
+</code></pre>
+<p>By default, the toolstrips are aligned to the left of the toolbar. If the user chooses
+to align our clock to the right, we set the <code>RightToLeft</code> property of the <code>ToolStrip</code> to <code>Yes</code>:</p>
+<pre><code class="lang-C#">ToolStrip.RightToLeft = settings.DockToRight ? RightToLeft.Yes : RightToLeft.No;
+</code></pre>
+<h2 id="standard-controls-in-a-toolstrip">Standard Controls in a ToolStrip</h2>
+<p>If we wanted to add one or more standard controls, such as buttons, to the toolstrip,
+we would not have to use the designer, we could create that control in code instead.
+Also, we could create the <code>ToolStrip</code> in the constructor instead of using an initializer.</p>
+<p>Here is how
+it is done in the <a href="../users_guide/plugins/agc.html">AGC plugin</a>. The <code>ToolStrip</code> property
+has both a getter and a setter so that it can be assigned to:</p>
+<pre><code class="lang-C#">public ToolStrip ToolStrip { get; private set; }
+</code></pre>
+<p>In the plugin constructor, a button is created, its properties are set, and finally
+a ToolStrip is created with the button in it:</p>
+<pre><code class="lang-C#">button = new ToolStripButton()
+{
+    AutoSize = false,
+    Size = new Size(30, 28),
+    ImageTransparentColor = Color.White,
+    Image = Properties.Resources.AgcImage,
+    CheckOnClick = true,
+    Checked = settings.Enabled
+};
+button.Click += Button_Click;
+ToolStrip = new ToolStrip(button);
+</code></pre>
 </article>
           </div>
           
