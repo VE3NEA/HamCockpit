@@ -106,7 +106,8 @@ the settings of a variable number of panels.</p>
     }
   }
 </code></pre>
-<p>The <code>Settings</code> object, exposed via <code>IPlugin.Settings</code> as follows</p>
+<p>The <code>Settings</code> object, exposed via
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.IPlugin.html">IPlugin</a><code>.Settings</code> as follows</p>
 <pre><code class="lang-C#">public object Settings { get =&gt; BuildSettings(); set =&gt; settings = value as Settings; }
 </code></pre>
 <p>contains a list of <code>DisplayPanelSettings</code> objects, one per
@@ -118,7 +119,8 @@ panel:</p>
 </code></pre>
 <p>Note that <code>panels</code> in <code>Settings</code> is not user-editable because it is a field,
 not a property.</p>
-<p>The host assigns a value to <code>IPlugin.Settings</code> in two cases:</p>
+<p>The host assigns a value to
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.IPlugin.html">IPlugin</a><code>.Settings</code> in two cases:</p>
 <ul>
 <li>when it reads the saved settings on program startup;</li>
 <li>when it saves the settings edited by the user.</li>
@@ -130,7 +132,8 @@ future use.</p>
 <p>After reading the Settings properties of all plugins, the host
 application re-creates its layout, with all
 docked and floating panels that were open in the last
-session. It calls <code>IPlugin.CreatePanel</code> for every panel
+session. It calls
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.IPlugin.html">IPlugin</a><code>.CreatePanel</code> for every panel
 that needs to be present in the layout. This is where we use the saved
 settings of the panels:</p>
 <pre><code class="lang-C#">  public UserControl CreatePanel()

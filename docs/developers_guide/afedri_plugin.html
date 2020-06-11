@@ -80,6 +80,302 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="afedri-plugin">Afedri Plugin</h1>
 
+<p>The source code of this plugin is available
+<a href="https://github.com/VE3NEA/HamCockpit/tree/master/VE3NEA.HamCockpitPlugins.Afedri">here</a>
+<img src="../images/GitHub.png" alt="GitHub">.</p>
+<p>This is an example of a plugin that interfaces Ham Cockpit with an SDR radio. The
+<a href="https://www.afedri-sdr.com/index.php/new-afe822x-sdr-net-dual-channel">Afedri radio</a>
+provides a stream of I/Q (quadrature) values that the program may use to display
+a wideband waterfall display or band scope, demodulate the signals and play back the audio,
+or perhaps decode the digital or CW signals in the specialized plugins.</p>
+<p>Afedri has a configurable sampling rate and, depending on the model, up to 4 I/Q channels
+that may be tuned to either different frequencies or be phase-synchronized on the same
+frequency for diversity reception. (<em>A diversity reception plugin is another cool idea for
+the third party developers</em>).</p>
+<p>The plugin consists of three units, <code>AfedriDevice.cs</code>, <code>Settings.cs</code> and <code>Afedri.cs</code>.</p>
+<p>The plugin class, <code>Afedri</code>, implements two interfaces,
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.IPlugin.html">IPlugin</a>
+and
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.html">ISignalSource</a>.</p>
+<h2 id="low-level-functions">Low Level Functions</h2>
+<p>The low level functions that talk to the radio hardware are implemented in the
+<code>AfedriDevice</code>
+class. This class is not described here because its functions are specific to the
+Afedri radio, developers of the interfaces for other radios will have to write their own
+low level functions. Here is the list of public methods in the <code>AfedriDevice</code> class:</p>
+<pre><code class="lang-C#">    internal void Start(Settings settings) {...}
+
+    internal void Stop() {...}
+
+    internal bool IsActive() {...}
+
+    internal int SetFrequency(long frequency, int channel) {...}
+
+    internal byte[] ReadIq() {...}
+</code></pre>
+<h2 id="the-settings-object">The Settings Object</h2>
+<p>The plugin uses the
+<code>Settings</code> object to store the <code>MultichannelMode</code> and the
+<code>SamplingRate</code> settings of the radio, and the center frequencies of the receiver
+channels. In addition to that, it has three helper methods,
+<code>ChannelCount</code>, <code>FrequencyCount</code> and <code>IsSync</code>, that derive the corresponding
+parameters from <code>MultichannelMode</code>.</p>
+<pre><code class="lang-C#">class Settings
+{
+  [DisplayName(&quot;Multichannel Mode&quot;)]
+  [Description(&quot;Enable 1, 2 or 4 channels, synchronized or independent&quot;)]
+  [TypeConverter(typeof(EnumDescriptionConverter))]
+  [DefaultValue(MultichannelMode.DUAL_CHANNEL_MODE_OFF)]
+  public MultichannelMode MultichannelMode { get; set; } = MultichannelMode.DUAL_CHANNEL_MODE_OFF;
+
+  [DisplayName(&quot;Sampling Rate&quot;)]
+  [Description(&quot;Receiver's output sampling rate&quot;)]
+  [DefaultValue(Afedri.DEFAULT_SAMPLING_RATE)]
+  public int SamplingRate { get; set; } = Afedri.DEFAULT_SAMPLING_RATE;
+
+  [Browsable(false)]
+  public Int64[] Frequencies { get; set; } = new Int64[] { 14000000, 14000000, 14000000, 14000000 };
+
+  public int ChannelCount() {...}
+  public int FrequencyCount() {...}
+  public bool IsSync() {...}
+}
+</code></pre>
+<p>Since the frequencies should not be editable, the
+<code>Frequencies</code> property
+it is decorated with the <code>[Browsable(false)]</code> attribute.</p>
+<p>The other two properties in <code>Settings</code> are decorated with attributes in a way similar to that
+used in  <a href="first_plugin.html">Creating Your First Plugin</a>, but there is one new attribute,
+<code>TypeConverter</code>, that makes use of the
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginHelpers.EnumDescriptionConverter.html">EnumDescriptionConverter</a>
+class available as part of the Plugin API:</p>
+<pre><code class="lang-C#">[TypeConverter(typeof(EnumDescriptionConverter))]
+</code></pre>
+<p>Due to this attribute, the drop-down editor for the <code>Enum</code> property shows the
+human-readable names of the enum values rather than their identifiers:
+<img src="../images/Enum.png" alt="Enum"></p>
+<p>The names are included as attributes in the declaration of the Enum type:</p>
+<pre><code class="lang-C#">  enum MultichannelMode : byte
+  {
+    [Description(&quot;Single Channel&quot;)]
+    DUAL_CHANNEL_MODE_OFF = 0,
+
+    [Description(&quot;Dual Channel, Synchronized&quot;)]
+    DIVERSITY_MODE = 1,
+
+    [Description(&quot;Dual Channel, Independent&quot;)]
+    DUAL_CHANNEL_MODE = 2,
+
+    [Description(&quot;Quad Channel, Synchronized&quot;)]
+    QUAD_DIVERSITY_MODE = 4,
+
+    [Description(&quot;Quad Channel, Independent&quot;)]
+    QUAD_CHANNEL_MODE = 5
+  }
+</code></pre>
+<h2 id="iplugin">IPlugin</h2>
+<p>The <code>Afedri</code> class implements the <code>IPlugin</code> interface in the same way as in the previously described plugins,
+such as the one in <a href="first_plugin.html">Creating Your First Plugin</a>:</p>
+<pre><code class="lang-C#">    public string Name =&gt; &quot;Afedri-822x SDR&quot;;
+    public string Author =&gt; &quot;VE3NEA&quot;;
+    public bool Enabled { get; set; }
+    public object Settings { get =&gt; settings; set =&gt; setSettings(value as Settings); }
+    public ToolStrip ToolStrip =&gt; null;
+    public ToolStripItem StatusItem =&gt; null;
+</code></pre>
+<h2 id="isignalsource">ISignalSource</h2>
+<p><code>ISignalSource</code> inherits the from <code>ISampleStream</code> and <code>ITuner</code>, and adds a few of
+its own members.</p>
+<h3 id="isignalsource--isamplestream">ISignalSource : ISampleStream</h3>
+<p>The members of <code>ISampleStream</code> allow the host application to receive I/Q samples
+from the plugin and find out the format of these data:</p>
+<pre><code class="lang-C#">public SignalFormat Format { get; private set; }
+int Read(float[] buffer, int offset, int count) {...};
+event EventHandler&lt;SamplesAvailableEventArgs&gt; SamplesAvailable;
+</code></pre>
+<h4 id="format">Format</h4>
+<p>The <a href="signal_format.html">Signal Format</a> article explains how the
+<code>SignalFormat</code> class works.</p>
+<p>The plugin creates an instance of <code>SignalFormat</code>,
+populates it
+with the characteristics of its I/Q data, and exposes the object as a
+read-only property. If the data characteristics change, e.g., when the user
+changes the sampling rate in the Settings dialog, the plugin reflects the changes
+in the <code>Format</code> object.</p>
+<p>Here is how the properties of <code>Format</code> are calculated:</p>
+<pre><code class="lang-C#">int rate = settings.SamplingRate;
+Format = new SignalFormat(rate, true, settings.IsSync(), settings.ChannelCount(),
+    -(int)(rate * 0.47), (int)(rate * 0.47), 0);
+</code></pre>
+<ul>
+<li><code>SamplingRate</code> is set to the sampling rate of the radio;</li>
+<li><code>IsComplex</code> is set to true since the radio produces complex-valued (I/Q) samples;</li>
+<li><code>IsSync</code> depends on the <code>MultichannelMode</code> setting, it is set to true
+if multiple channels are synchronized, or false if they are independent;</li>
+<li><code>Channels</code> is the number of data channels the radio is configured to deliver;</li>
+<li><code>DialOffset</code> is set to 0, the operating frequency is assumed to be at the
+center of the sampled band;</li>
+<li><code>PassbandLow</code> and <code>PassbandHigh</code> are symmetric around the center, they are
+set to cut off the last 3% of the sampled bandwidth at each side, where the
+mirror images and other artifacts may be present.</li>
+</ul>
+<p>The constructor uses default values
+(<code>Sideband = Sideband.Upper</code> and <code>StageGain = 0</code>)
+for the rest of the parameters.</p>
+<h4 id="read">Read</h4>
+<p>The plugins that interface with the radios are used by the
+<a href="dsp_pipeline.html">DSP Pipeline</a> as sources of I/Q or audio data.
+The pipeline may call the <code>Read</code> method of the plugin at any time and request any
+number of samples. Moreover, this call will likely be made on a worker thread.
+To satisfy these requirements, the plugin uses a thread-safe ring buffer
+for storing and serving the data. The plugin uses the
+<a class="xref" href="../api/VE3NEA.HamCockpit.DspFun.RingBuffer.html">RingBuffer</a>
+class from the
+<a href="dsp_functions.html">library of DSP functions</a>
+available as part of the <em>Ham Cockpit</em> API.</p>
+<pre><code class="lang-C#">private readonly RingBuffer buffer = new RingBuffer(DEFAULT_SAMPLING_RATE);
+</code></pre>
+<p>The ring buffer stores the samples in the single precision
+floating point format. When the samples from the radio
+arrive, the plugin writes them to the ring buffer
+using the <code>WriteInt16</code> method, and the 16-bit integer
+values are automatically converted to <code>floats:</code></p>
+<pre><code class="lang-C#">buffer.WriteInt16(receivedBytes, receivedBytes.Length);
+</code></pre>
+<p>The <code>Read</code> method simply reads the data from the ring buffer
+to the provided buffer:</p>
+<pre><code class="lang-C#">public int Read(float[] buffer, int offset, int count) 
+{ 
+  return this.buffer.Read(buffer, offset, count); 
+}
+</code></pre>
+<h4 id="samplesavailable">SamplesAvailable</h4>
+<p>Not all signal processing plugins are parts of the
+synchronous data processing in the
+DSP Pipeline. There are some that read the input samples but do
+not produce the output. Examples are band scopes,
+S-meters, decoders, etc. These plugins rely on the
+<code>SamplesAvailable</code> event in obtaining the data.
+The Afedri plugin invokes this event using the
+<code>SamplesAvailable</code> event of the ring buffer:</p>
+<pre><code class="lang-C#">buffer.SamplesAvailable += (o, e) =&gt; SamplesAvailable?.Invoke(this, e);
+</code></pre>
+<h3 id="isignalsource-1">ISignalSource</h3>
+<p>The methods of the <code>ISignalSource</code> interface allow the host
+application to initialize, start and stop the data source,
+and receive a notification when the data source stops working:</p>
+<pre><code class="lang-C#">public void Initialize() { }
+public bool Active { get =&gt; device.IsActive(); set =&gt; SetActive(value); }
+public event EventHandler&lt;StoppedEventArgs&gt; Stopped;
+</code></pre>
+<h4 id="initialize">Initialize</h4>
+<p>This method is empty in the Afedri plugin since the radio does
+not require initialization.</p>
+<h4 id="active">Active</h4>
+<p>The host application uses the <code>Active</code> property to
+start and stop the data feed, and to read the current status
+of the plugin. Here is how this property is set:</p>
+<pre><code class="lang-C#">private void SetActive(bool value)
+{
+  if (value == Active) return;
+
+  if (value)
+  {
+    int rate = settings.SamplingRate;
+    Format = new SignalFormat(rate, true, settings.IsSync(), settings.ChannelCount(),
+      -(int)(rate * 0.47), (int)(rate * 0.47), 0);
+
+    buffer.Resize(rate * settings.ChannelCount()); //0.5s worth of data
+    device.Start(settings);
+    Tuned?.Invoke(this, new EventArgs());
+
+    stopping = false;
+    iqThread = new Thread(new ThreadStart(IqThreadProcedure)) { IsBackground = true };
+    iqThread.Start();
+  }
+  else
+  {
+    stopping = true;
+    iqThread.Join();
+    device.Stop();
+  }
+}
+</code></pre>
+<p>When the plugin is activated, the <code>SetActive</code> method
+updates the parameters in <code>Format</code>, starts the device,
+and invokes the <code>Tuned</code> event so that the host application
+knows to read the current frequency. It also starts the worker
+thread, <code>iqThread</code> (see below), that reads I/Q data from the radio
+in a loop.</p>
+<p>When the plugin is deactivated, is terminates the worker
+thread and stops the device.</p>
+<h4 id="stopped">Stopped</h4>
+<p>The host application needs to know when something goes wrong
+with the radio and the plugin is no longer able to produce
+the data, e.g., because the radio was turned off. The <code>Stopped</code>
+event is used as a notification of this condition.</p>
+<p>When TCP communication with the radio fails, the
+plugin stops the device and invokes this event, as shown in the
+<code>SetDialFrequency</code> example below.</p>
+<h3 id="isignalsource--ituner">ISignalSource : ITuner</h3>
+<p>The <code>ITuner</code> interface allows the host application to read and set the dial frequency of the radio and
+receive notifications when the frequency changes:</p>
+<pre><code class="lang-C#">    public long GetDialFrequency(int channel = 0)
+    {
+      return settings.Frequencies[channel];
+    }
+
+    public void SetDialFrequency(long frequency, int channel = 0)
+    {
+      settings.Frequencies[channel] = frequency;
+      if (Active)
+        try
+        {
+          device.SetFrequency(frequency, channel);
+          Tuned?.Invoke(this, new EventArgs());
+        }
+        catch (Exception e)
+        {
+          device.Stop();
+          var exception = new Exception($&quot;Afedri command CI_FREQUENCY failed:\n\n{e.Message}&quot;);
+          Stopped?.Invoke(this, new StoppedEventArgs(exception));
+        }
+    }
+
+    public event EventHandler Tuned;
+</code></pre>
+<p>Implementation of this interface is simple because Afedri does not have a front panel control to change its frequency.
+The <code>GetDialFrequency</code> simply returns the frequency of the specified channel stored in <code>Settings</code>,
+<code>SetDialFrequency</code>  stores the new value in <code>Settings</code> and uses the low level function to
+actually set the frequency, and
+the <code>Tuned</code> event is invoked when the plugin sends the new frequency to the radio.</p>
+<p>If communication with the radio fails during <code>SetDialFrequency</code>, the plugin stops the device and invokes
+the <code>Stopped</code> event.</p>
+<h3 id="iqthread">iqThread</h3>
+<p>The worker thread, <code>iqThread</code>, is started or stopped when the <code>Active</code> property changes.
+The thread procedure, shown below, reads I/Q samples from the radio and writes them to the ring buffer.</p>
+<p>If an error occurs, it stops the device and invokes the <code>Stopped</code> event. Note that the event is posted
+from the worker thread to the main thread of the program using <code>context.Post()</code>.</p>
+<pre><code class="lang-C#">private void IqThreadProcedure()
+{
+  try
+  {
+    while (!stopping)
+    {
+      var receivedBytes = device.ReadIq();
+      buffer.WriteInt16(receivedBytes, receivedBytes.Length);
+    }
+  }
+  catch (Exception e)
+  {
+    //exception occurred on the UDP reading thread. 
+    //stop Afedri, notify the host and terminate the thread
+    device.Stop();
+    var exception = new Exception($&quot;Unable to read I/Q data from Afedri SDR:\n\n{e.Message}&quot;);
+    context.Post(s =&gt; Stopped?.Invoke(this, new StoppedEventArgs(exception)), null);
+  }
+}
+</code></pre>
 </article>
           </div>
           

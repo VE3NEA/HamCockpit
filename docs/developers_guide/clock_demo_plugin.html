@@ -93,9 +93,10 @@ a child of
 <a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.usercontrol">UserControl</a>,
 that we want to appear on the toolbar. This control is just a panel with a few labels to display
 the date, time, and the UTC/Local switch. The control is located in the
-<a href="https://github.com/VE3NEA/HamCockpit/blob/master/VE3NEA.HamCockpitPlugins.ClockDemo/Clock.cs">Clock</a>
-unit.</p>
-<p>The plugin implements only one interface, <a href="">IPlugin</a>. Implementation is similar to that described in
+<code>Clock.cs</code> unit.</p>
+<p>The plugin implements only one interface,
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.IPlugin.html">IPlugin</a>.
+Implementation is similar to that described in
 <a href="first_plugin.html">Creating Your First Plugin</a>,
 the only important difference is the <code>ToolStrip</code> property: it is no longer <code>null</code>, we initialize
 it with an instance of the

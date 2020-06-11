@@ -12,38 +12,38 @@ using VE3NEA.HamCockpit.DspFun;
 namespace VE3NEA.HamCockpitPlugins.Afedri
 {
   [StructLayout(LayoutKind.Sequential, Pack = 1)]
-  public struct DiscoveryMessage
+  internal struct DiscoveryMessage
   {
-    public UInt16 Length;
-    public UInt16 Key;
-    public byte Op;
+    internal UInt16 Length;
+    internal UInt16 Key;
+    internal byte Op;
     [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 16)]
-    public char[] Name;
+    internal char[] Name;
     [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 16)]
-    public char[] Sn;
+    internal char[] Sn;
     [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 16)]
-    public byte[] IpAddr;
-    public UInt16 Port;
-    public byte CustomField;
+    internal byte[] IpAddr;
+    internal UInt16 Port;
+    internal byte CustomField;
     [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 6)]
-    public byte[] MacAddr;
-    public UInt16 HwVer;
-    public UInt16 FwVer;
-    public UInt16 BtVer;
-    public byte FpgaId;
-    public byte FpgaRev;
-    public byte Opts;
-    public byte Mode;
-    public UInt16 SubNet;
-    public UInt16 GwAddr;
-    public UInt16 DataIpAddr;
-    public UInt16 DataPort;
-    public byte Fpga;
-    public byte Status;
+    internal byte[] MacAddr;
+    internal UInt16 HwVer;
+    internal UInt16 FwVer;
+    internal UInt16 BtVer;
+    internal byte FpgaId;
+    internal byte FpgaRev;
+    internal byte Opts;
+    internal byte Mode;
+    internal UInt16 SubNet;
+    internal UInt16 GwAddr;
+    internal UInt16 DataIpAddr;
+    internal UInt16 DataPort;
+    internal byte Fpga;
+    internal byte Status;
     [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.U1, SizeConst = 15)]
-    public byte[] Future;
+    internal byte[] Future;
 
-    public static DiscoveryMessage CreateFromBytes(byte[] bytes)
+    internal static DiscoveryMessage CreateFromBytes(byte[] bytes)
     {
       GCHandle handle = GCHandle.Alloc(bytes, GCHandleType.Pinned);
       DiscoveryMessage result =
@@ -56,9 +56,9 @@ namespace VE3NEA.HamCockpitPlugins.Afedri
 
   class AfedriDevice
   {
-    public const int IQ_PACKET_HEADER_SIZE = 4;
-    public DiscoveryMessage discoveryMessage;
-    public int MaxCenterFrequency;
+    private const int IQ_PACKET_HEADER_SIZE = 4;
+    private DiscoveryMessage discoveryMessage;
+    private int MaxCenterFrequency;
 
     //discovery
     private const int DISCOVERY_SERVER_PORT = 48321;
@@ -87,14 +87,14 @@ namespace VE3NEA.HamCockpitPlugins.Afedri
     private UdpClient udpClient;
 
 
-    public void Start(Settings settings)
+    internal void Start(Settings settings)
     {
       DiscoverRadio();
       SetupRadio(settings);
       StartListeningToIq();
     }
 
-    public void Stop()
+    internal void Stop()
     {
       try { udpClient.Close(); } catch { }
       try { tcpClient.Close(); } catch { }
@@ -102,12 +102,12 @@ namespace VE3NEA.HamCockpitPlugins.Afedri
       tcpClient = null;
     }
 
-    public bool IsActive()
+    internal bool IsActive()
     {
       return udpClient != null;
     }
 
-    public int SetFrequency(long frequency, int channel)
+    internal int SetFrequency(long frequency, int channel)
     {
       try
       {
@@ -127,7 +127,7 @@ namespace VE3NEA.HamCockpitPlugins.Afedri
       return (int)frequency;
     }
 
-    public byte[] ReadIq()
+    internal byte[] ReadIq()
     {
         return udpClient.Receive(ref afedriEndPoint).Skip(IQ_PACKET_HEADER_SIZE).ToArray();
     }
