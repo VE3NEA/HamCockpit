@@ -85,8 +85,173 @@
 <img src="../images/GitHub.png" alt="GitHub">.</p>
 <p>In this example we demonstrate how to implement multiple plugins
 in the same .NET assembly, how to create the plugins that are used
-in the <a href="dsp_pipeline.html">DSP Pipeline</a>, and how to make use
+in <a href="dsp_pipeline.html">DSP Pipeline</a>, and how to make use
 of the <a href="dsp_functions.html">DspFun</a> library for signal processing.</p>
+<h2 id="three-plugins-in-the-same-assembly">Three Plugins in the Same Assembly</h2>
+<p>The three demodulators presented here demodulate CW, SSB and RTTY respectively.
+The demodulation process is the same for all three modes, the difference
+is only in the parameter values. Demodulation is implemented in the base class,
+<code>BaseDemodulator</code>, each plugin inherits from that class and changes the
+default values of the
+<code>Pitch</code> and <code>Sideband</code> parameters, as well as the plugin and mode names:</p>
+<pre><code class="lang-C#">public abstract class BaseDemodulator : IPlugin, IDemodulator
+{
+  ...
+}
+
+[Export(typeof(IPlugin))]
+[Export(typeof(IDemodulator))]
+public class CwDemodulator : BaseDemodulator
+{
+  public CwDemodulator()
+  {
+    pluginName = &quot;CW Demodulator&quot;;
+    modeName = &quot;CW&quot;;
+    settings.Pitch = 600;
+    settings.Sideband = Sideband.Upper;
+  }
+}
+
+[Export(typeof(IPlugin))]
+[Export(typeof(IDemodulator))]
+public class SsbDemodulator : BaseDemodulator
+{
+  public SsbDemodulator()
+  {
+    pluginName = &quot;SSB Demodulator&quot;;
+    modeName = &quot;SSB&quot;;
+    settings.Pitch = 0;
+    settings.Sideband = Sideband.Upper;
+  }
+}
+
+[Export(typeof(IPlugin))]
+[Export(typeof(IDemodulator))]
+public class RttyDemodulator : BaseDemodulator
+{
+  public RttyDemodulator()
+  {
+    pluginName = &quot;RTTY Demodulator&quot;;
+    modeName = &quot;RTTY&quot;;
+    settings.Pitch = 2125;
+    settings.Sideband = Sideband.Lower;
+  }
+
+...
+}
+</code></pre>
+<p>The derived classes export <code>IPlugin</code>,
+which turns them into plugins,  and <code>IDEmodulator</code>, so that
+<a href="dsp_pipeline.html">DSP Pipeline</a>
+can use them for demodulation.</p>
+<h1 id="demodulation">Demodulation</h1>
+<p>The demodulation process includes these steps:</p>
+<ul>
+<li>resample the input I/Q signal down to 12 kHz, the standard sampling rate
+for audio processing;</li>
+<li>flip the sideband if necessary;</li>
+<li>if <code>Pitch</code> is non-zero, mix the signal up to the pitch frequency;</li>
+<li>apply a 0..6 kHz filter to suppress the lower sideband.</li>
+</ul>
+<p>The <a href="dsp_functions.html">DspFun</a> library that comes with Ham Cockpit
+has classes for all these signal processing tasks, which makes our
+job much easier. Moreover, these classes
+implement the
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.html">ISampleStream</a>
+interface, so they are easy to cascade.</p>
+<h1 id="idemodulator--iinitsamplestream">IDemodulator : IInitSampleStream</h1>
+<h2 id="iinitsamplestreaminitialize">IInitSampleStream.Initialize</h2>
+<p>The
+<code>Initialize</code> method implemented by the plugins
+creates objects that will preform the signal processing tasks
+and connects them in a chain:</p>
+<pre><code class="lang-C#">private ISampleStream signal;
+...
+public void Initialize(ISampleStream source)
+{
+  //input signal
+  signal = source;
+
+  //resampler
+  Resampler resampler = new Resampler(SignalFormat.AUDIO_SAMPLING_RATE, 30);
+  resampler.Initialize(signal);
+  signal = resampler;
+
+  //sideband flipper
+  flipper = new SidebandFlipper();
+  flipper.Initialize(signal);
+  signal = flipper;
+
+  //mixer
+  mixer = new Mixer(settings.Pitch);
+  mixer.Initialize(signal);
+  signal = mixer;
+
+  //filter
+  float Fc = 2962f / SignalFormat.AUDIO_SAMPLING_RATE;
+  var realTaps = Dsp.BlackmanSincKernel(Fc, 235);
+  Complex32[] taps = Dsp.FloatToComplex32(realTaps);
+  Dsp.Mix(taps, 0.25); //shift filter passband -3..3 kHz -&gt; 0..6 kHz
+  filter = new ComplexFirFilter(taps);
+  filter.Initialize(signal);
+  signal = filter;
+}
+</code></pre>
+<p>The <code>ComplexFirFilter</code> needs an array of filter taps as an input
+parameter to the constructor. We use the helper methods from
+<a href="dsp_functions.html">DspFun</a>
+to generate the taps.</p>
+<h1 id="idemodulator--isamplestream">IDemodulator : ISampleStream</h1>
+<h2 id="isamplestreamformat">ISampleStream.Format</h2>
+<p>The output from the demodulator is real-valued audio data filtered
+to 0..6000 Hz. To create the Format property that describes the output format of
+the demodulator, <code>signal.Format</code> of the last processing stage
+is used as a prototype, and the new parameters are set as follows:</p>
+<pre><code class="lang-C#"> format = new SignalFormat(signal.Format)
+  {
+    IsComplex = false,
+    PassbandLow = 0,
+    PassbandHigh = 6000,
+    Sideband = settings.Sideband
+};
+</code></pre>
+<h2 id="isamplestreamread">ISampleStream.Read</h2>
+<p>The <code>Read</code> method of the demodulator is called by the next plugin in the DSP Pipeline
+chain. When this method is called, the demodulator calls Read
+on the previous plugin in the chain to get input data, and
+uses its own signal processing blocks to produce
+downsampled, freq-shifted, sideband-flipped and 6kHz-filtered I/Q
+data. The final step is to discard the imaginary part of
+the I/Q values and make it real-valued data:</p>
+<pre><code class="lang-C#">public int Read(float[] buffer, int offset, int count)
+{
+  //input I/Q
+  int read = count * Dsp.COMPONENTS_IN_COMPLEX;
+  if (inputBuffer == null || inputBuffer.Length &lt; read) inputBuffer = new float[read];
+
+  //read downsampled, freq-shifted, sideband-flipped and 6kHz-filtered I/Q
+  read = signal.Read(inputBuffer, 0, read);
+  count = read / Dsp.COMPONENTS_IN_COMPLEX;
+
+  //complex to real
+  for (int i = 0; i &lt; count; i++) buffer[offset + i] = inputBuffer[i * Dsp.COMPONENTS_IN_COMPLEX] * 100f;
+
+  SamplesAvailable?.Invoke(this, new SamplesAvailableEventArgs(buffer, offset, count));
+  return count;
+}
+</code></pre>
+<h1 id="idemodulator--imodeswitch">IDemodulator : IModeSwitch</h1>
+<h2 id="imodeswitchmode">IModeSwitch.Mode</h2>
+<p>The <code>Mode</code> property returns the name of the mode demodulated by
+the plugin. The setter is not implemented since each demodulator
+supports only one mode:</p>
+<pre><code class="lang-C#">public string Mode { get =&gt; modeName; set =&gt; throw new NotImplementedException(); }
+</code></pre>
+<h2 id="imodeswitchsideband">IModeSwitch.Sideband</h2>
+<p>The <code>Sideband</code> property is read-write, it reflects the <code>Enabled</code> state
+of <code>SidebandFlipper</code> used in the demodulator:</p>
+<pre><code class="lang-C#">public Sideband Sideband { get =&gt; settings.Sideband; set =&gt; SetSideband(value); }
+</code></pre>
 </article>
           </div>
           

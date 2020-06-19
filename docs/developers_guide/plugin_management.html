@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Introduction | Ham Cockpit </title>
+    <title>Plugin Management | Ham Cockpit </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Introduction | Ham Cockpit ">
+    <meta name="title" content="Plugin Management | Ham Cockpit ">
     <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -78,33 +78,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="introduction">Introduction</h1>
+<h1 id="plugin-management">Plugin Management</h1>
 
-<p><em>Ham Cockpit</em> is a universal, plugin-based software for Radio Amateurs.
-The functions available in the program depend entirely on the set of installed
-plugins. Some standard plugins come with the software, a wide variety of optional
-and third party plugins is (or will be) available on the Internet.</p>
-<p>The standard plugins make <em>Ham Cockpit</em> an SDR client that interfaces with
-SDR radios, processes the I/Q and audio streams, and outputs processed audio
-to a sound card. A waterfall display plugin also comes as standard.</p>
-<p>Third party developers can create all kinds of plugins -
-freeware, shareware, commercial, open source, - limited only by the imagination,
-including:</p>
-<ul>
-<li><p>plugins that replace the standard plugins, with more functions or better
-characteristics,</p>
-</li>
-<li><p>plugins that add new signal processing functions, such as denoising, notch filters,
-diversity combining algorithms, demodulators for new modes, decoders for the digital
-modes, skimmers, and interfaces to the new types of SDR radios;</p>
-</li>
-<li><p>all kinds of non-DSP plugins for QSO logging, cluster monitoring, award tracking,
-propagation prediction, contesting, SO2R operation, pileup management, etc.</p>
-</li>
-</ul>
-<p>By selecting the proper plugins, the end user will be able build a system
-optimized for his or her particular needs, and have all functions, previously
-spread across multiple programs, in one integrated environment.</p>
+<p>The plugin management system of Ham Cockpit is based on the
+<a href="https://docs.microsoft.com/en-us/dotnet/framework/mef/">MEF library</a> that is part of the .NET Framework 4. MEF automatically discovers
+and loads the plugins, and makes connections between the interfaces exported and
+imported by the plugins and the host application.</p>
+<p>To be found by Ham Cockpit, a plugin must be placed in the
+program's installation directory, and must export the <code>IPlugin</code> interface
+as described in the
+<a href="first_plugin.html">Creating Your First Plugin</a>
+section. The plugins may optionally export other interfaces defined by the host
+application, such as
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.IVisualPlugin.html">IVisualPlugin</a>,
+if they have a visual representation, or
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.html">ISignalSource</a>
+if they input signals from an SDR radio.</p>
+<p>In addition to the standard interfaces, the plugins may define their own interfaces
+for communication between the plugins. For example, a plugin that downloads spots
+from the DX clusters could define and export its own interface, e.g., <code>ISpotSource</code>,
+and a band map plugin could import this interface. Upon program startup,
+MEF would connect the export to the import, and the band map plugin would be able
+to receive cluster spots through this interface and plot them on the band map.
+All such connections are established by MEF automatically.</p>
 </article>
           </div>
           

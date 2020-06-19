@@ -44,7 +44,9 @@ namespace VE3NEA.HamCockpitPlugins.Demodulators
     public void Initialize(ISampleStream source)
     {
       //for now, if there are multiple channels, process all
-      //todo: decide what to discard if multiple sync or non-sync channels
+      //TODO: decide what to discard if multiple sync or non-sync channels
+
+      //TODO: if source.Format.DialOffset is non-zero, mix it down to baseband
 
       if (!source.Format.IsComplex) throw new Exception("Input to demodulator must be I/Q");
       signal = source;
@@ -88,7 +90,7 @@ namespace VE3NEA.HamCockpitPlugins.Demodulators
         PassbandHigh = 6000,
         Sideband = settings.Sideband
         //todo: DialOffset =
-    };
+      };
     }
     #endregion
 
