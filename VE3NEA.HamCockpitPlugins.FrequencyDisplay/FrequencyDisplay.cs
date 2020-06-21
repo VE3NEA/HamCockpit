@@ -55,8 +55,7 @@ namespace VE3NEA.HamCockpitPlugins.FrequencyDisplay
       panel.Name = "Main Receiver";
       panel.bandplan = BandPlan;
       panel.pipeline = host.DspPipeline;
-
-      TunedEventHandler(null, null);
+      panel.UpdateDisplayedInfo();
 
       return panel;
     }
