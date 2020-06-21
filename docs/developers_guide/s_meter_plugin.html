@@ -80,6 +80,78 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="s-meter-plugin">S-Meter Plugin</h1>
 
+<p>The source code of this plugin is available
+<a href="https://github.com/VE3NEA/HamCockpit/tree/master/VE3NEA.HamCockpitPlugins.SMeter">here</a>
+<img src="../images/GitHub.png" alt="GitHub">.</p>
+<p>The S-Meter plugin demonstrates how to receive a copy of the data being processed in the
+<a href="dsp_pipeline.html">DSP Pipeline</a> for analysis and visualization.</p>
+<p>As in the <a href="frequency_display_plugin">previous example</a>, a reference to the
+<a href="dsp_pipeline.html">DSP Pipeline</a> is obtained using an importing constructor:</p>
+<pre><code class="lang-C#">[ImportingConstructor]
+SMeter([Import(typeof(IPluginHost))] IPluginHost host)
+{
+  pipeline = host.DspPipeline;
+}
+</code></pre>
+<p>When the visual panel is created, the plugin subscribes to two events,
+the <code>DspPipeline.StatusChanged</code> and
+<code>DspPipeline.ProcessedAudio.SamplesAvailable</code>:</p>
+<pre><code class="lang-C#">public UserControl CreatePanel()
+{
+  panel = new SMeterControl { Name = &quot;S-Meter&quot; };
+  pipeline.StatusChanged += StatusEventhandler;
+  pipeline.ProcessedAudio.SamplesAvailable += SamplesAvailableEventHandler;
+  return panel;
+}
+</code></pre>
+<p><code>StatusChanged</code> is used to disable the S-Meter when the radio is stopped,
+and <code>SamplesAvailable</code> is where processed audio data actually becomes
+available.</p>
+<p>The <code>SamplesAvailable</code> event is fired on the real-time signal processing thread.
+S-Meter cannot do its own data processing on this thread, it just stores the data
+in a buffer and passes the buffer to the main thread for processing and display.</p>
+<p>The event handler for this event is shown below. Note that the sampling rate and
+data block size, and even the number of channels, are not known in advance.
+The plugin reads the <code>Format</code> property to find out the current data parameters.</p>
+<pre><code class="lang-C#">private void SamplesAvailableEventHandler(object sender, SamplesAvailableEventArgs e)
+{
+  if (!pipeline.ProcessedAudio.IsAvailable) return;
+
+  //make a copy of the data
+  //the data may come in different formats, get only what is needed
+  var format = pipeline.ProcessedAudio.Format;
+  int stride = format.Channels * (format.IsComplex ? 2 : 1);
+  int count = e.Count / stride;
+  float[] data = new float[count];
+  for (int i = 0; i &lt; count; i++) data[i] = e.Data[e.Offset + i * stride];
+  
+  //tell the main thread to process and display the data
+  context.Post(s =&gt; ProcessData(data), null);
+}
+</code></pre>
+<p>Here is the method that performs data processing. It computes signal power,
+smooths the values over the time, and updates the meter display about 10 times
+a second:</p>
+<pre><code class="lang-C#">private void ProcessData(float[] data)
+{
+  if (!pipeline.ProcessedAudio.IsAvailable) return;
+
+  //calculate the value to display
+  foreach (var v in data) value += 0.0007f * (v * v - value);
+  value = Math.Max(0, value);
+
+  //the block size is not known in advance
+  //count the samples and update the control 10 times per second
+  sampleCount += data.Length;
+  if (sampleCount &gt; pipeline.ProcessedAudio.Format.SamplingRate / 10)
+  {
+    //if previous stages apply any gain, subtract it from the reading
+    float dB = Dsp.ToDb(value) - pipeline.ProcessedAudio.Format.TotalGain;
+    panel?.ShowValue(Math.Max(-100, Math.Min(0, dB)));
+    sampleCount = 0;
+  }
+}
+</code></pre>
 </article>
           </div>
           

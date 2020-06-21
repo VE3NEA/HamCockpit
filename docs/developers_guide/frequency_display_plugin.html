@@ -85,8 +85,8 @@
 <img src="../images/GitHub.png" alt="GitHub">.</p>
 <p>This plugin monitors the changes of the receive and transmit frequencies, T/R switch
 and Split mode, and shows these settings on a standard panel. The panel makes use of the
-<code>FrequencyDisplayPanel</code> control from the <a class="xref" href="../api/VE3NEA.HamCockpit.SharedControls.html">VE3NEA.HamCockpit.SharedControls</a>
-library.</p>
+<code>FrequencyDisplayPanel</code> control from the
+<a href="shared_controls.html">Shared Controls</a> library.</p>
 <p>The <code>IPlugin.CreatePanel</code> method creates an instance of
 <code>FrequencyDisplayPanel</code> and sets its properties:</p>
 <pre><code class="lang-C#">public UserControl CreatePanel()
@@ -103,7 +103,7 @@ library.</p>
 subscribes to a number of events available in <a href="dsp_pipeline.html">DSP Pipeline</a>.
 To access <code>DspPipeline</code>, it imports the
 <a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.IPluginHost.html">IPluginHost</a> interface from the host application.</p>
-<p>The <a href="https://docs.microsoft.com/en-us/dotnet/framework/mef/">MEF</a> engine
+<p>The <a href="https://docs.microsoft.com/en-us/dotnet/framework/mef/">MEF</a> framework
 used in <em>Ham Cockpit</em> to manage the plugins supports several
 ways of importing an interface. One of them is the
 <code>ImportingConstructor</code> attribute. The constructor of the plugin, decorated with
@@ -118,8 +118,8 @@ FrequencyDisplay([Import(typeof(IPluginHost))] IPluginHost host)
   host.DspPipeline.Transmitter.SettingsChanged += TunedEventHandler;
 }
 </code></pre>
-<p>The same event handler is used for all events, this handler simply updates the
-settings on the display panel:</p>
+<p>The same event handler is used for all events, this handler simply updates
+information on the display panel:</p>
 <pre><code class="lang-c#">private void TunedEventHandler(object sender, EventArgs e)
 {
   panel?.UpdateDisplayedInfo();

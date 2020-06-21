@@ -80,6 +80,28 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="shared-controls">Shared Controls</h1>
 
+<p>The <a class="xref" href="../api/VE3NEA.HamCockpit.SharedControls.html">VE3NEA.HamCockpit.SharedControls</a> namespace includes several visual
+controls that may be used by the plugin developers to perform common tasks.</p>
+<h2 id="frequencydisplaypanel">FrequencyDisplayPanel</h2>
+<p>The <code>FrequencyDisplayPanel</code> control may be used to display the receiver
+frequency, transmitter offset, the Split mode, and the TX/RX state of the radio:</p>
+<p><img src="../images/FrequencyDisplay.png" alt="Frequency Display"></p>
+<p>This control is used in the <em>Waterfall Display</em> and <em>Frequency Display</em>
+plugins, the <a href="frequency_display_plugin.html">Frequency Display Plugin</a>
+article explains how to use this control.</p>
+<h2 id="frequencyentryform">FrequencyEntryForm</h2>
+<p>This dialog is used to accept direct user input of the frequency. It is used
+in <code>FrequencyDisplayPanel</code>, but could also be used stand alone in the plugins.</p>
+<p><img src="../images/TuneDialog.png" alt="Tune Dialog"></p>
+<h2 id="ledfont">LedFont</h2>
+<p><code>LedFont</code> is a helper class that encapsulates the 7-segment LED-like font, useful
+for frequency displays, clocks and other numeric displays:</p>
+<p><img src="../images/LedFont.png" alt="Led Font"></p>
+<p>The code below assigns this font to the <code>FrequencyLabel</code> control:</p>
+<pre><code class="lang-C#">using VE3NEA.HamCockpit.SharedControls;
+...
+FrequencyLabel.Font = new Font(LedFont.Family, FrequencyLabel.Font.Size);
+</code></pre>
 </article>
           </div>
           
