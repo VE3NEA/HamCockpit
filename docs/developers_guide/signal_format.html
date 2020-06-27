@@ -80,6 +80,103 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="signal-format">Signal Format</h1>
 
+<p>Every plugin used in the <a href="dsp_pipeline.html">DSP Pipeline</a> to process
+I/Q and audio data has a <code>Format</code> property of type
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.html">SignalFormat</a> that describes
+the actual format of the data at the output of the plugin. The next plugin in the
+processing chain reads the <code>Format</code> of the previous stage and configures
+its own processing for the given input format.</p>
+<h2 id="constructors">Constructors</h2>
+<p>The <code>SignalFormat</code> class has three constructors:</p>
+<pre><code class="lang-C#">public SignalFormat(int samplingRate, bool isComplex, bool isSync, int channels, int passbandLow,
+      int passbandHigh, int dialOffset, Sideband sideband = Sideband.Upper, float stageGain = 0)
+    {
+      SamplingRate = samplingRate;
+      IsComplex = isComplex;
+      IsSync = isSync;
+      Channels = channels;
+      PassbandLow = passbandLow;
+      PassbandHigh = passbandHigh;
+      DialOffset = dialOffset;
+      Sideband = sideband;
+      StageGain = stageGain; 
+    }
+
+    public SignalFormat() : this(AUDIO_SAMPLING_RATE, false, true, 1, 0, AUDIO_SAMPLING_RATE / 2, 0) { }
+
+    public SignalFormat(SignalFormat prototype) { this.prototype = prototype; }
+  }
+</code></pre>
+<p>The first two constructors are used by the
+signal source plugins that appear at the start of the
+<code>Dsp Pipeline</code> chain.</p>
+<p>The third one is used by the signal processing
+plugins that receive data from the previous stage in the chain, process it, and pass
+it to the next stage. This constructor receives the <code>prototype</code> format as an
+argument, and all of its properties that are not explicitly assigned in the code
+take the values from the prototype format. The link to the prototype format is
+dynamic, that is, when a property in the prototype changes, this is immediately
+reflected in the corresponding property of the current format. Please see the
+<a href="https://github.com/VE3NEA/HamCockpit/blob/master/VE3NEA.HamCockpit.PluginAPI/SignalFormat.cs">source code</a>
+<img src="../images/GitHub.png" alt="GitHub">
+of the <code>SignalFormat</code> class for the implementation details.</p>
+<h2 id="properties">Properties</h2>
+<p>The data in the <a href="dsp_pipeline.html">DSP Pipeline</a> is passed between the stages
+in the form of an array of the floating point values. The following properties
+of the <code>Format</code> object help to interpret these values correctly.</p>
+<ul>
+<li><p><code>SamplingRate</code> is the sampling rate of the of the plugin output data, in samples
+per second.</p>
+</li>
+<li><p><code>IsComplex</code> is a boolean property that indicates if the data are real-valued or
+complex-valued. In the latter case, the array of floats contains pairs of values,
+the real part (I) is followed by the imaginary part (Q).</p>
+</li>
+<li><p><code>Channels</code> is the number of signal channels in the data. Examples of multi-channel
+data are stereo audio (two real-valued channels) and I/Q output of a four-band
+<em>Afedri</em> receiver (four complex-valued channels). In the N-channel data,
+the floating point array contains a sequence of samples, where each sample consists
+of N real or complex values.</p>
+</li>
+<li><p><code>IsSync</code> is a boolean property that indicates if the channels in the multi-channel
+data are phase synchronized (e.g., for diversity reception) or independent
+(e.g., for multi-band reception).</p>
+</li>
+<li><p><code>PassbandLow</code> and <code>PassbandHigh</code> are the lower and upper limits of the useful part
+of the sampled frequency range, in Hertz. In most cases, only a part of this range
+contains clean, artifact-free signals.</p>
+<p>As an example, audio output from a transceiver may be sampled at a rate of 24 kHz,
+but since the audio being sampled has passed through an SSB filter, the signals
+are present only in the range of 300-2700 Hz.</p>
+<p>An extreme case is an IF adapter on the
+IF output of a conventional transceiver. In this setup, the signal
+received by the adapter has passed through a roofing filter in the main radio
+with a typical passband of 15 to 18 kHz, and the LO in the adapter
+is set a few
+kHz below the actual IF frequency, to keep the image signals and aliases
+away from the received signals. Only a small part of the sampled
+range of frequencies, -48...48 kHz, contains received signals. A plugin
+that interfaces with an IF adapter should set the <code>PassbandLow</code> and
+<code>PassbandHigh</code> properties to cut off the unused parts of the spectrum:</p>
+<p><img src="../images/SoftRock_IF.gif" alt="Soft Rock I F"></p>
+</li>
+<li><p><code>DialOffset</code> is the offset of the point in the sampled spectrum that
+corresponds to the dial frequency of the radio. The dial frequency is
+the frequency reported
+via the <a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.ITuner.html">ITuner</a> interface,
+it is usually displayed on the front panel of the radio. On the chart above,
+the dial offset is positive, it is equal to the distance between the IF and LO points.</p>
+</li>
+<li><p><code>Sideband</code>. In most cases, there is a direct relation between the frequency
+of the signal
+in the sampled data and the original RF frequency of the same signal.
+The <code>Sideband</code> property is set to <code>Sideband.Upper</code> if higher RF frequencies map
+to higher frequencies in the data, and <code>Sideband.Lower</code> otherwise. In some
+cases, however, e.g., in the demodulated FM signals, there is no relation between
+the RF frequencies and audio frequencies. For such signals, the <code>Sideband</code> should
+be set to <code>Sideband.None</code>.</p>
+</li>
+</ul>
 </article>
           </div>
           
