@@ -80,6 +80,56 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="dsp-pipeline">DSP Pipeline</h1>
 
+<p>In <em>Ham Cockpit</em>, the plugins that process I/Q and audio data in real time
+are organized in a <em>DSP Pipeline</em>.
+This article describes the architecture of <em>DSP Pipeline</em> and is intended
+for the plugin developers. Please see the
+<a href="../users_guide/dsp_pipeline.html">article in User's Guide</a>
+that explains <em>DSP Pipeline</em> from the user's perspective.</p>
+<h2 id="data-flow">Data Flow</h2>
+<p><em>DSP Pipeline</em> consists of a data input plugin, several data processing
+plugins, and a data output plugin. Operation of the pipeline
+is based on the data-pull model. The output plugin, typically
+<a href="../users_guide/plugins/audio_output.html">Audio Output to Soundcard</a>,
+calls the
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.Read.html#VE3NEA_HamCockpit_PluginAPI_ISampleStream_Read_System_Single___System_Int32_System_Int32_">Read(Single[], Int32, Int32)</a>
+method of the last processing plugin when it needs more data, e.g,
+when the soundcard requests another block of samples for playback.
+All processing plugins, connected in a chain, call the <code>Read</code>
+method of the preceding plugin, process received data, and return it
+to the caller. The data input plugin, when its <code>Read</code> method is called,
+returns the data received from the radio.</p>
+<h2 id="data-format">Data Format</h2>
+<p>The data are passed between the plugins as an array of <code>float</code> values,
+but the actual data format, described by the
+<a href="signal_format.html">Format</a> property, varies from plugin to plugin. The signal
+processing plugins receive and return I/Q data, while audio processing
+plugins have real-valued audio data at input and output. The
+demodulator plugins receive I/Q data and return the audio.</p>
+<h2 id="idsppipeline-interface">IDspPipeline Interface</h2>
+<p>The data processed in the <em>DSP Pipeline</em> are available outside of the
+pipeline via the
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.IDspPipeline.html">IDspPipeline</a> interface exposed
+by the plugin host object.
+The <a href="s_meter_plugin.html">S-Meter plugin</a>, published with source code,
+is one of the plugins that make use of these data.</p>
+<p>The
+<code>IDspPipeline</code> interface
+exposes the properties
+<code>InputSignal</code>, <code>ProcessedSignal</code>, <code>DemodulatedAudio</code> and
+<code>ProcessedAudio</code> of type
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap.html">ISampleStreamTap</a>
+that allow the client
+plugins to tap the pipeline at different points.
+The data are delivered via the data-push model: to receive the data,
+the plugins subscribe to the
+<a class="xref" href="../api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.SamplesAvailable.html">SamplesAvailable</a>
+event exposed by the pipeline taps.</p>
+<p>In addition to the data taps, the <code>DspPipeline</code> exposes the
+<code>ModeSwitch</code>, <code>Transmitter</code> and <code>Tuner</code> properties that allow reading
+and changing the transmitter and receiver settings. See the
+<a href="frequency_display_plugin">Frequency Display plugin</a>, also available with
+source code, for an example that reads and displays these settings.</p>
 </article>
           </div>
           

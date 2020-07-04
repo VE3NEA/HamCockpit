@@ -12,7 +12,7 @@ try
 catch { }
 
 //edit this to change major/minor/build 
-string version = $"1.0.4.{revision}";
+string version = $"1.1.0.{revision}";
 
 //add this to pre-build tasks to transform .tt to .cs
 //"$(DevEnvDir)\TextTransform.exe" -a !!BuildConfiguration!$(Configuration) "$(SolutionDir)VersionInfo.tt"
