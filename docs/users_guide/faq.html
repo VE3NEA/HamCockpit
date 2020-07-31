@@ -105,6 +105,21 @@ tick the Unblock checkbox, then click on OK.</p>
 <p><code>%appdata%\Afreet\Products\HamCockpit</code></p>
 <p><code>%programdata%\Afreet\HamCockpit\</code></p>
 <hr>
+<p><strong>Q</strong> <em>How can I make the waterfall window visible if its command
+in the View menu is grayed, and the window is not anywhere on the screen?</em></p>
+<p><strong>A</strong> An item in the <em>View</em> menu is grayed when the corresponding plugin
+cannot produce more windows. The <em>Waterfall Display</em> plugin can show only
+one window, and, since its window is already open, its menu command is
+disabled. Where the window is located is another question. It looks like it
+is somewhere outside of your screen boundaries; sometimes this happens,
+especially if you have a multi-monitor setup or you have played with screen
+resolutions.</p>
+<p>To fix the problem, simply delete the settings file, <code>Settings.json</code>,
+where all program settings are stored. The file is located in the
+<code>User Data Folder</code> (see the previous question). Close Ham Cockpit before
+deleting the file, then start it again and configure the program from
+scratch.</p>
+<hr>
 </article>
           </div>
           

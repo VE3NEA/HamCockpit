@@ -80,8 +80,174 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="dsp-functions">DSP Functions</h1>
 
-<p>Reference:
-<a href="../api/VE3NEA.HamCockpit.DspFun.html">DspFun</a></p>
+<p>The <em>DSP Fun</em> library that comes with <em>Ham Cockpit</em> includes a number of signal processing
+classes that the plugin authors may use in their projects. The library is published with
+<a href="https://github.com/VE3NEA/HamCockpit/tree/master/VE3NEA.HamCockpit.DspFun">source code</a>
+<img src="../images/GitHub.png" alt="GitHub">, the class reference is
+<a href="../api/VE3NEA.HamCockpit.DspFun.html">here</a>. This article provides some code examples.
+For more examples, please see <a href="demodulator_plugins.html">Demodulator Plugins</a>.</p>
+<h2 id="audioclienterrors">AudioClientErrors</h2>
+<p>This class is useful when working with
+<a href="https://github.com/filoe/cscore">CSCore</a>, a popular audio I/O library. It
+provides the error messages not defined in the library.and should be used like this:</p>
+<pre><code class="lang-C#">private void RethrowException(Exception e)
+{
+  if (e is CoreAudioAPIException &amp;&amp; e.Message.Contains(&quot;Unknown HRESULT&quot;))
+    message = AudioClientErrors.Message((e as CoreAudioAPIException).ErrorCode);
+  else
+    message = e.Message;
+
+  throw new Exception(message);
+}
+</code></pre>
+<br>
+<h2 id="channelselector">ChannelSelector</h2>
+<p>is another class that works with the
+<a href="https://github.com/filoe/cscore">CSCore</a> library.
+it is used to extract one of the channels from a multi-channel audio data stream. Usage:</p>
+<pre><code class="lang-C#">CSCore.ISampleSource source = new ChannelSelector(source, ChannelMask.SpeakerFrontLeft);
+...
+source.Read(buffer, offset, count);
+</code></pre>
+<p>When the <code>Read</code> method is called on the <code>ChannelSelector</code> object, it reads
+multi-channel data from the <code>source</code> that was passed to the constructor and
+returns only the samples that belong to the specified channel
+(the <code>SpeakerFrontLeft</code> channel in the example above). Since both
+<code>source</code> and <code>ChannelSelector</code> implement the <code>CSCore.ISampleSource</code>
+interface, it is easy to chain multiple signal processors like this.</p>
+<h2 id="realfft-and-complexfft">RealFft and ComplexFft</h2>
+<p>are wrappers around the FFT functions in the
+<a href="https://software.intel.com/content/www/us/en/develop/tools/integrated-performance-primitives.html">Intel IPP library</a>,
+one of the best speed-optimized DSP libraries.
+These classes hide the complexity of invoking the IPP functions behind a simple
+interface:</p>
+<pre><code class="lang-C#">//create FFT object
+const int FFT_SIZE = 65536;
+ComplexFft fft = new ComplexFft(FFT_SIZE);
+
+//put time-domain data multiplied by the window function in fft.TimeData
+for (int i = 0; i &lt; FFT_SIZE; i++)
+  fft.TimeData[i] = data[i] * window[i];
+
+//compute forward FFT and put results in fft.FreqData
+fft.ComputeForward();
+
+//compute power spectrum from FreqData
+float[] pwr = fft.PowerSpectrum();
+
+</code></pre>
+<p>An example of <code>RealFft</code> is available in the
+<a href="demodulator_plugins.html">Demodulator Plugins</a>.</p>
+<h2 id="complexfirfilter-and-realfirfilter">ComplexFirFilter and RealFirFilter</h2>
+<p>is another pair of wrappers around the <em>IPP</em> functions. Sample code is available in
+<a href="demodulator_plugins.html">Demodulator Plugins</a>.</p>
+<h2 id="dspapproximateratio">Dsp.ApproximateRatio()</h2>
+<p>finds a rational <em>(L / M)</em> approximation of a floating point value
+with smallest possible <em>L</em> and <em>M</em> values.
+Useful for setting up sampling rate converters, such as
+<code>IppResampler</code>. Small <em>L</em> and <em>M</em> reduce the complexity
+of the resampler. Example:</p>
+<pre><code class="lang-C#">var InputRate = 44100;
+var DesiredRate = 48000;
+//allow the output rate to be within +/-1% from the desired value
+var RateTolerance = 0.01f;
+
+var (L, M) = Dsp.ApproximateRatio(DesiredRate / InputRate, RateTolerance);
+var OutputRate = (InputRate * L) / M;
+
+int filterLength = (60 * M) / L;
+//when resampling, allow the last 3% of the bandwidth 
+//to be contaminated with mirror images
+var usefulBandwidth = 0.97f;
+
+var resampler = new IppResampler(M, L, filterLength, usefulBandwidth, 10);
+</code></pre>
+<br>
+<h2 id="ippresampler">IppResampler</h2>
+<p>An instance of <code>IppResampler</code> may be created as shown in the <em>ApproximateRatio</em>
+section. If the data are complex and/or multi-channel, a separate resampler is
+used for each component. In the example below, two instances are used
+to resample I/Q data. The <code>offset</code> and <code>stride</code> parameters of the <code>Process</code> method
+allow resampling multi-component data stored in a floating point array:</p>
+<pre><code class="lang-C#">  int resampledCount = resamplerI.Process(inputData, 0, stride, count);
+  resamplerQ.Process(inputData, 1, stride, count);
+</code></pre>
+<p>Resampled data are stored in the <code>IppResampler.OutData</code> property.</p>
+<h2 id="multipassaverage">MultipassAverage</h2>
+<p>is used to apply multiple passes of the moving average filter to
+real data, one sample at a time.</p>
+<pre><code class="lang-C#">var stageDelay = 10; //in samples
+var boxLength = 2 * stageDelay + 1;
+var numberOfStages = 4;
+var totalFilterDelay = stageDelay * numberOfStages;
+
+var avg = new MultipassAverage(boxLength, numberOfStages);
+...
+float outputSample = avg.Process(inputSampoe);
+</code></pre>
+<br>
+<h2 id="omnirigclient">OmniRigClient</h2>
+<p>The <code>OmniRigClient</code> class talks to the
+<a href="http://www.dxatlas.com/omnirig">OmniRig engine</a>
+and uses it to control the radio via its CAT interface. Only the radio interfacing plugins
+need to use this class directly, all other
+plugins should talk to the radio plugin to read and set the radio parameters as
+demonstrated in the
+<a href="frequency_display_plugin.html">Frequency Display Demo plugin</a>.</p>
+<p>Create an instance of the <code>OmniRigClient</code> class:</p>
+<pre><code class="lang-C#">private readonly OmniRigClient Cat = new OmniRigClient();
+</code></pre>
+<p>Subscribe to its events to be notified when the radio settings change:</p>
+<pre><code class="lang-C#">Cat.Tuned += TunedEventHandler;
+Cat.ModeChanged += ModeChangedEventHandler;
+Cat.StatusChanged += StatusChangedEventHandler;
+</code></pre>
+<p>Select Rig1 or Rig2, depending on the user settings:</p>
+<pre><code class="lang-C#">Cat.RigNo = (int)settings.RigNo;
+</code></pre>
+<p>Enable the object only when your plugin activated, and disable it as soon as the
+plugin is deactivated. Remember that the <em>OmniRig engine</em> requires exclusive access
+to the COM port and thus should be turned off when not in use:</p>
+<pre><code class="lang-C#">private void SetActive(bool value)
+{
+  Cat.Active = value;
+  ...
+}
+</code></pre>
+<p>When the <em>OmniRigClient</em> object is active, use its methods and properties
+to read and change the radio settings:</p>
+<pre><code class="lang-C#">//read frequency
+var current_frequency = Cat.RxFrequency;
+
+//set frequency
+Cat.RxFrequency = (int)new_frequency;
+</code></pre>
+<br>
+<h2 id="ringbuffer">RingBuffer</h2>
+<p><code>RingBuffer</code> is a thread-safe buffer of the FIFO type for the floating point values.
+This class is used in all places in the plugins when the I/Q or audio data are
+received and consumed at different times, in different block sizes, and often on the
+different threads.</p>
+<p>One example is a radio-interfacing plugin. The thread on which
+the plugin talks to the radio cannot be used for data processing, the code that
+receives the sampled data just writes the samples to the ring buffer and returns.
+Another thread reads those samples from the buffer and processes them. An example
+if such code is available in the
+<a href="afedri_plugin.html">Afedri Plugin</a>.</p>
+<h2 id="slidingmax-and-slidingmin">SlidingMax and SlidingMin</h2>
+<p>These two classes implement the fast sliding minimum/maximum algorithm. Create an
+instance of the class like this:</p>
+<pre><code class="lang-C#">var max = new SlidingMax(2 * maxDelay + 1);
+</code></pre>
+<p>The parameter passed to the constructor is filter length that is computed from
+the desired filter delay, <code>maxDelay</code>, in samples.</p>
+<p>The object created above may be used to process the values online (one sample at
+a time):</p>
+<pre><code class="lang-C#">var filteredValue = max.Process(inputValue);
+</code></pre>
+<p>or to filter an array of floating point values in place:</p>
+<pre><code class="lang-C#">max.FilterArrayInplace(float_array);
+</code></pre>
 </article>
           </div>
           
