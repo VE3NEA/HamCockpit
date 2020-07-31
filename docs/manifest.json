@@ -208,18 +208,6 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.MinOrMax.html",
-          "hash": "Stinl4j2ARo5cLz+pGSVng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.-ctor.html",
           "hash": "psqUE6hOqqhLI8YzKpnhIg=="
         }
@@ -265,11 +253,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.yml",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.-ctor.html",
-          "hash": "b26n4et1vihwd8a7GSh5Dg=="
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.BaseSlidingFilter.MinOrMax.html",
+          "hash": "Stinl4j2ARo5cLz+pGSVng=="
         }
       },
       "is_incremental": false,
@@ -280,8 +268,8 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Read.html",
-          "hash": "zYVBIMUq6u9sMji/1JMdvQ=="
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.-ctor.html",
+          "hash": "b26n4et1vihwd8a7GSh5Dg=="
         }
       },
       "is_incremental": false,
@@ -342,6 +330,18 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.html",
           "hash": "W562W2T72Q2T6si25yTWyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.ChannelSelector.Read.html",
+          "hash": "zYVBIMUq6u9sMji/1JMdvQ=="
         }
       },
       "is_incremental": false,
@@ -498,6 +498,42 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.ComplexFirFilter.html",
           "hash": "gY/STxt036zk627xkl3HTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.COMPONENTS_IN_COMPLEX.html",
+          "hash": "s/dB/oqjVvvckpha7T7j9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanWindow.html",
+          "hash": "ND8E8qshurLqkMWmGJzQdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanHarrisWindow.html",
+          "hash": "EAvLdMsHT9G8nelp/0MOuw=="
         }
       },
       "is_incremental": false,
@@ -709,42 +745,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanHarrisWindow.html",
-          "hash": "EAvLdMsHT9G8nelp/0MOuw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.COMPONENTS_IN_COMPLEX.html",
-          "hash": "s/dB/oqjVvvckpha7T7j9w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.Dsp.BlackmanWindow.html",
-          "hash": "ND8E8qshurLqkMWmGJzQdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Ipp.yml",
       "output": {
         ".html": {
@@ -785,7 +785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.IppException.html",
-          "hash": "O66gnsfxzAIhIkNqttkg3w=="
+          "hash": "HnVwTLyT7nGMt3bIt9aO5A=="
         }
       },
       "is_incremental": false,
@@ -1012,6 +1012,18 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.yml",
       "output": {
         ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Scale.html",
+          "hash": "gTalEVm/jRSNfjIvBfNc9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.-ctor.html",
           "hash": "OXIsEMYZJWfVuplUNkrbNw=="
         }
@@ -1050,18 +1062,6 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.html",
           "hash": "SM16zvWHmipEXbVRH3Dk+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.MultipassAverage.Scale.html",
-          "hash": "gTalEVm/jRSNfjIvBfNc9g=="
         }
       },
       "is_incremental": false,
@@ -1360,18 +1360,6 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Resampler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.Resampler.html",
-          "hash": "lU1wYr1lCvz40cqCo1xJBA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Resampler.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.Resampler.-ctor.html",
           "hash": "/yaaAb+k2JSoGYKr7q4AKw=="
         }
@@ -1441,11 +1429,71 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.Resampler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.Resampler.html",
+          "hash": "lU1wYr1lCvz40cqCo1xJBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RigStatus.yml",
       "output": {
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.RigStatus.html",
           "hash": "kr0H8A5Ob9wFuGmWVm1S0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Count.html",
+          "hash": "9Fi1WF3fRrau4ilsMVf+KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.FillWithZeros.html",
+          "hash": "c5KGqEWmI020Azsz+ftWpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.SamplesAvailable.html",
+          "hash": "sfuDpeV5xp2qomZY9bx+eQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.-ctor.html",
+          "hash": "OpSJ5MUSOesOH4zRGE6a4A=="
         }
       },
       "is_incremental": false,
@@ -1530,54 +1578,6 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.html",
           "hash": "UfMc6Si8dwMYEGtlxm1MMg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.Count.html",
-          "hash": "9Fi1WF3fRrau4ilsMVf+KA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.FillWithZeros.html",
-          "hash": "c5KGqEWmI020Azsz+ftWpw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.SamplesAvailable.html",
-          "hash": "sfuDpeV5xp2qomZY9bx+eQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.RingBuffer.-ctor.html",
-          "hash": "OpSJ5MUSOesOH4zRGE6a4A=="
         }
       },
       "is_incremental": false,
@@ -1804,6 +1804,18 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.yml",
       "output": {
         ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.-ctor.html",
+          "hash": "eUe+GOH4pWfbipeJj5OTaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.MinOrMax.html",
           "hash": "AjRYrYGKFE3bjmouRuRWwQ=="
         }
@@ -1825,23 +1837,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.DspFun.SlidingMin.-ctor.html",
-          "hash": "eUe+GOH4pWfbipeJj5OTaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/VE3NEA.HamCockpit.DspFun.yml",
       "output": {
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.DspFun.html",
-          "hash": "sZCM9jefT1Jz6n5QZ7Z4ag=="
+          "hash": "a3eyDbeAo7HNS3ShKJgY+Q=="
         }
       },
       "is_incremental": false,
@@ -1912,30 +1912,6 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegment.html",
-          "hash": "/hmIXOfY5u9IWx/44u9QBw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegments.html",
-          "hash": "ElG79qhbeJHPSJg/nntNeQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetBandStart.html",
           "hash": "r84VeOHfMlh3ttIBwjpc4Q=="
         }
@@ -1969,11 +1945,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.yml",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.Band.html",
-          "hash": "aQB7pkoBBIy2K7DANr9jDw=="
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegment.html",
+          "hash": "/hmIXOfY5u9IWx/44u9QBw=="
         }
       },
       "is_incremental": false,
@@ -1981,23 +1957,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.yml",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.StartFrequency.html",
-          "hash": "E348NpQcfLciBD4BX/bKBQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.EndFrequency.html",
-          "hash": "NePmzpoqhiPgI5V1xh/avQ=="
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandPlan.GetSegments.html",
+          "hash": "ElG79qhbeJHPSJg/nntNeQ=="
         }
       },
       "is_incremental": false,
@@ -2082,6 +2046,42 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.html",
           "hash": "tRbXIfMS8TUDjPRGz2xsUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.Band.html",
+          "hash": "aQB7pkoBBIy2K7DANr9jDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.StartFrequency.html",
+          "hash": "E348NpQcfLciBD4BX/bKBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.IBandSegment.EndFrequency.html",
+          "hash": "NePmzpoqhiPgI5V1xh/avQ=="
         }
       },
       "is_incremental": false,
@@ -2536,18 +2536,6 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.html",
-          "hash": "B0zNWBbwt6it1bqeA6MXiA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.Format.html",
           "hash": "37HQTpyaifBMsJzyzVSMvw=="
         }
@@ -2581,6 +2569,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStream.html",
+          "hash": "B0zNWBbwt6it1bqeA6MXiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap.yml",
       "output": {
         ".html": {
@@ -2598,18 +2598,6 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISampleStreamTap.html",
           "hash": "7kcrMtDViFvGoXgA/shphQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.Initialize.html",
-          "hash": "my3YNV8uZRzTZ4IppggZYg=="
         }
       },
       "is_incremental": false,
@@ -2646,6 +2634,18 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.html",
           "hash": "His8jnAmPfNz3ysJnBVVFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ISignalSource.Initialize.html",
+          "hash": "my3YNV8uZRzTZ4IppggZYg=="
         }
       },
       "is_incremental": false,
@@ -2728,6 +2728,18 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.yml",
       "output": {
         ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.SettingsChanged.html",
+          "hash": "G3/FtMaRVx5thMCcqSq/IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.Stopped.html",
           "hash": "EgQSwBNfzMaHO59kC6V1qA=="
         }
@@ -2742,18 +2754,6 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.html",
           "hash": "4BM7zaRs5TA9hQRDmYYXWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.ITransmitter.SettingsChanged.html",
-          "hash": "G3/FtMaRVx5thMCcqSq/IA=="
         }
       },
       "is_incremental": false,
@@ -2944,54 +2944,6 @@
       "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.StageGain.html",
-          "hash": "5p0fZWUv6VWfyR73XBNyxg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.TotalGain.html",
-          "hash": "VeVnA4nZ1yc0QRiCtZGk9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.-ctor.html",
-          "hash": "XvY/zO0fEyZxWRXsuySJYA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.html",
-          "hash": "+Hcuq0bmmHMHivglw+xK2A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.AUDIO_SAMPLING_RATE.html",
           "hash": "GfTKHqeyMzSsmUHOL6dlEw=="
         }
@@ -3090,6 +3042,54 @@
         ".html": {
           "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.Sideband.html",
           "hash": "1CeQFRl/RORKfi7/MDIMEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.StageGain.html",
+          "hash": "5p0fZWUv6VWfyR73XBNyxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.TotalGain.html",
+          "hash": "VeVnA4nZ1yc0QRiCtZGk9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.-ctor.html",
+          "hash": "XvY/zO0fEyZxWRXsuySJYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VE3NEA.HamCockpit.PluginAPI.SignalFormat.html",
+          "hash": "+Hcuq0bmmHMHivglw+xK2A=="
         }
       },
       "is_incremental": false,
@@ -3461,7 +3461,7 @@
       "output": {
         ".html": {
           "relative_path": "developers_guide/dsp_functions.html",
-          "hash": "P9LK6GlUFKqkA3yAWW53Pg=="
+          "hash": "QLoh4laORRYYDkMHNmzq0Q=="
         }
       },
       "is_incremental": false,

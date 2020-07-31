@@ -89,7 +89,7 @@ For more examples, please see <a href="demodulator_plugins.html">Demodulator Plu
 <h2 id="audioclienterrors">AudioClientErrors</h2>
 <p>This class is useful when working with
 <a href="https://github.com/filoe/cscore">CSCore</a>, a popular audio I/O library. It
-provides the error messages not defined in the library.and should be used like this:</p>
+provides the error messages not defined in the library and should be used like this:</p>
 <pre><code class="lang-C#">private void RethrowException(Exception e)
 {
   if (e is CoreAudioAPIException &amp;&amp; e.Message.Contains(&quot;Unknown HRESULT&quot;))
@@ -183,7 +183,7 @@ var totalFilterDelay = stageDelay * numberOfStages;
 
 var avg = new MultipassAverage(boxLength, numberOfStages);
 ...
-float outputSample = avg.Process(inputSampoe);
+float outputSample = avg.Process(inputSample);
 </code></pre>
 <br>
 <h2 id="omnirigclient">OmniRigClient</h2>
@@ -205,7 +205,7 @@ Cat.StatusChanged += StatusChangedEventHandler;
 <p>Select Rig1 or Rig2, depending on the user settings:</p>
 <pre><code class="lang-C#">Cat.RigNo = (int)settings.RigNo;
 </code></pre>
-<p>Enable the object only when your plugin activated, and disable it as soon as the
+<p>Enable the object only when your plugin is activated, and disable it as soon as the
 plugin is deactivated. Remember that the <em>OmniRig engine</em> requires exclusive access
 to the COM port and thus should be turned off when not in use:</p>
 <pre><code class="lang-C#">private void SetActive(bool value)
@@ -226,13 +226,13 @@ Cat.RxFrequency = (int)new_frequency;
 <h2 id="ringbuffer">RingBuffer</h2>
 <p><code>RingBuffer</code> is a thread-safe buffer of the FIFO type for the floating point values.
 This class is used in all places in the plugins when the I/Q or audio data are
-received and consumed at different times, in different block sizes, and often on the
+received and consumed at different times, in different block sizes, and often on
 different threads.</p>
 <p>One example is a radio-interfacing plugin. The thread on which
 the plugin talks to the radio cannot be used for data processing, the code that
 receives the sampled data just writes the samples to the ring buffer and returns.
 Another thread reads those samples from the buffer and processes them. An example
-if such code is available in the
+of such code is available in the
 <a href="afedri_plugin.html">Afedri Plugin</a>.</p>
 <h2 id="slidingmax-and-slidingmin">SlidingMax and SlidingMin</h2>
 <p>These two classes implement the fast sliding minimum/maximum algorithm. Create an
@@ -240,12 +240,12 @@ instance of the class like this:</p>
 <pre><code class="lang-C#">var max = new SlidingMax(2 * maxDelay + 1);
 </code></pre>
 <p>The parameter passed to the constructor is filter length that is computed from
-the desired filter delay, <code>maxDelay</code>, in samples.</p>
+the desired filter delay, <code>maxDelay</code>, expressed in samples.</p>
 <p>The object created above may be used to process the values online (one sample at
 a time):</p>
 <pre><code class="lang-C#">var filteredValue = max.Process(inputValue);
 </code></pre>
-<p>or to filter an array of floating point values in place:</p>
+<p>or to filter an array of floating point values in-place:</p>
 <pre><code class="lang-C#">max.FilterArrayInplace(float_array);
 </code></pre>
 </article>
