@@ -457,7 +457,7 @@
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.html",
     "title": "Class OmniRigClient | Ham Cockpit",
-    "keywords": "Class OmniRigClient A wrapper around the OmniRig COM object. Inheritance Object OmniRigClient Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class OmniRigClient Properties Name Description Active Gets or sets a value indicating whether this OmniRigClient is active. Mode Gets or sets the mode. RigNo Gets or sets the rig number. RxFrequency Gets or sets the RX frequency. Status Gets the status of the CAT connection. Methods Name Description GetStatusText() Gets the text that describes the current status of OmniRig. ShowDialog() Shows the OmniRig configuration dialog. Events Name Description ModeChanged Occurs when the mode changes. StatusChanged Occurs when the CAT connection status changes. Tuned Occurs when the dial frequency changes."
+    "keywords": "Class OmniRigClient A wrapper around the OmniRig COM object. Inheritance Object OmniRigClient Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public class OmniRigClient Properties Name Description Active Gets or sets a value indicating whether this OmniRigClient is active. Mode Gets or sets the mode. RigNo Gets or sets the rig number. RxFrequency Gets or sets the RX frequency. Split Gets or sets the Split mode. Status Gets the status of the CAT connection. Transmit Gets or sets the Transmit mode. TxFrequency Gets or sets the TX frequency. Methods Name Description GetStatusText() Gets the text that describes the current status of OmniRig. ShowDialog() Shows the OmniRig configuration dialog. Events Name Description ModeChanged Occurs when the mode changes. StatusChanged Occurs when the CAT connection status changes. TransmitChanged Occurs when the Transmit mode changes. Tuned Occurs when the dial frequency changes."
   },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Mode.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Mode.html",
@@ -484,6 +484,11 @@
     "title": "Method ShowDialog | Ham Cockpit",
     "keywords": "Method ShowDialog View Source ShowDialog() Shows the OmniRig configuration dialog. Declaration public void ShowDialog()"
   },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Split.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Split.html",
+    "title": "Property Split | Ham Cockpit",
+    "keywords": "Property Split View Source Split Gets or sets the Split mode. Declaration public bool Split { get; set; } Property Value Type Description Boolean The Split mode selected in the radio."
+  },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Status.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Status.html",
     "title": "Property Status | Ham Cockpit",
@@ -494,10 +499,25 @@
     "title": "Event StatusChanged | Ham Cockpit",
     "keywords": "Event StatusChanged Occurs when the CAT connection status changes. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler StatusChanged Returns Type Description EventHandler"
   },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit.html",
+    "title": "Property Transmit | Ham Cockpit",
+    "keywords": "Property Transmit View Source Transmit Gets or sets the Transmit mode. Declaration public bool Transmit { get; set; } Property Value Type Description Boolean The Transmit mode selected in the radio."
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.TransmitChanged.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.TransmitChanged.html",
+    "title": "Event TransmitChanged | Ham Cockpit",
+    "keywords": "Event TransmitChanged Occurs when the Transmit mode changes. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler TransmitChanged Returns Type Description EventHandler"
+  },
   "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned.html",
     "title": "Event Tuned | Ham Cockpit",
     "keywords": "Event Tuned Occurs when the dial frequency changes. Namespace : VE3NEA.HamCockpit.DspFun Assembly : VE3NEA.HamCockpit.DspFun.dll Syntax public event EventHandler Tuned Returns Type Description EventHandler"
+  },
+  "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency.html": {
+    "href": "api/VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency.html",
+    "title": "Property TxFrequency | Ham Cockpit",
+    "keywords": "Property TxFrequency View Source TxFrequency Gets or sets the TX frequency. Declaration public int TxFrequency { get; set; } Property Value Type Description Int32 The TX frequency."
   },
   "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeForward.html": {
     "href": "api/VE3NEA.HamCockpit.DspFun.RealFft.ComputeForward.html",
@@ -1607,7 +1627,7 @@
   "users_guide/third_party_plugins.html": {
     "href": "users_guide/third_party_plugins.html",
     "title": "Third Party Plugins | Ham Cockpit",
-    "keywords": "Third Party Plugins Australian band plan by Graham VK3GA Callsign Lookup plugin by Peter W6OP QRZ Plugin by Claus OE6CLD"
+    "keywords": "Third Party Plugins Australian band plan by Graham VK3GA Callsign Lookup plugin by Peter W6OP QRZ Plugin by Claus OE6CLD Space Weather Plugin by Peter W6OP"
   },
   "users_guide/user_interface.html": {
     "href": "users_guide/user_interface.html",

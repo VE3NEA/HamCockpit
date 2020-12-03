@@ -1192,6 +1192,18 @@ references:
   commentId: Overload:VE3NEA.HamCockpit.DspFun.OmniRigClient.ShowDialog
   fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.ShowDialog
   nameWithType: OmniRigClient.ShowDialog
+- uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.Split
+  name: Split
+  href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Split.html#VE3NEA_HamCockpit_DspFun_OmniRigClient_Split
+  commentId: P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Split
+  fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.Split
+  nameWithType: OmniRigClient.Split
+- uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.Split*
+  name: Split
+  href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Split.html
+  commentId: Overload:VE3NEA.HamCockpit.DspFun.OmniRigClient.Split
+  fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.Split
+  nameWithType: OmniRigClient.Split
 - uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.Status
   name: Status
   href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Status.html#VE3NEA_HamCockpit_DspFun_OmniRigClient_Status
@@ -1210,12 +1222,42 @@ references:
   commentId: E:VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged
   fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged
   nameWithType: OmniRigClient.StatusChanged
+- uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit
+  name: Transmit
+  href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit.html#VE3NEA_HamCockpit_DspFun_OmniRigClient_Transmit
+  commentId: P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit
+  fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit
+  nameWithType: OmniRigClient.Transmit
+- uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit*
+  name: Transmit
+  href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit.html
+  commentId: Overload:VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit
+  fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit
+  nameWithType: OmniRigClient.Transmit
+- uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.TransmitChanged
+  name: TransmitChanged
+  href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.TransmitChanged.html
+  commentId: E:VE3NEA.HamCockpit.DspFun.OmniRigClient.TransmitChanged
+  fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.TransmitChanged
+  nameWithType: OmniRigClient.TransmitChanged
 - uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned
   name: Tuned
   href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned.html
   commentId: E:VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned
   fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.Tuned
   nameWithType: OmniRigClient.Tuned
+- uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency
+  name: TxFrequency
+  href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency.html#VE3NEA_HamCockpit_DspFun_OmniRigClient_TxFrequency
+  commentId: P:VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency
+  fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency
+  nameWithType: OmniRigClient.TxFrequency
+- uid: VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency*
+  name: TxFrequency
+  href: api/VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency.html
+  commentId: Overload:VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency
+  fullName: VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency
+  nameWithType: OmniRigClient.TxFrequency
 - uid: VE3NEA.HamCockpit.DspFun.RealFft
   name: RealFft
   href: api/VE3NEA.HamCockpit.DspFun.RealFft.html
