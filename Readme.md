@@ -1,4 +1,4 @@
-![Pilots Hat 64](OnlineDocs/images/pilots_hat_64.png)
+![Pilots Hat 64](docs/images/pilots_hat_64.png)
 
 # Ham Cockpit
 
