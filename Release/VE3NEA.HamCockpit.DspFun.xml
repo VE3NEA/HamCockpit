@@ -729,6 +729,9 @@
         <member name="E:VE3NEA.HamCockpit.DspFun.OmniRigClient.ModeChanged">
             <summary>Occurs when the mode changes.</summary>
         </member>
+        <member name="E:VE3NEA.HamCockpit.DspFun.OmniRigClient.TransmitChanged">
+            <summary>Occurs when the Transmit mode changes.</summary>
+        </member>
         <member name="E:VE3NEA.HamCockpit.DspFun.OmniRigClient.StatusChanged">
             <summary>Occurs when the CAT connection status changes.</summary>
         </member>
@@ -744,6 +747,10 @@
             <summary>Gets or sets the RX frequency.</summary>
             <value>The RX frequency.</value>
         </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.TxFrequency">
+            <summary>Gets or sets the TX frequency.</summary>
+            <value>The TX frequency.</value>
+        </member>
         <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Mode">
             <summary>Gets or sets the mode.</summary>
             <value>The mode selected in the radio.</value>
@@ -751,6 +758,14 @@
         <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Status">
             <summary>Gets the status of the CAT connection.</summary>
             <value>The status of the CAT connection.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Split">
+            <summary>Gets or sets the Split mode.</summary>
+            <value>The Split mode selected in the radio.</value>
+        </member>
+        <member name="P:VE3NEA.HamCockpit.DspFun.OmniRigClient.Transmit">
+            <summary>Gets or sets the Transmit mode.</summary>
+            <value>The Transmit mode selected in the radio.</value>
         </member>
         <member name="M:VE3NEA.HamCockpit.DspFun.OmniRigClient.GetStatusText">
             <summary>Gets the text that describes the current status of OmniRig.</summary>

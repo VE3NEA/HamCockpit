@@ -1630,6 +1630,15 @@ references:
   fullName.vb: VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16(System.Byte(), System.Int32)
   nameWithType: RingBuffer.WriteInt16(Byte[], Int32)
   nameWithType.vb: RingBuffer.WriteInt16(Byte(), Int32)
+- uid: VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16(System.Int16[],System.Int32)
+  name: WriteInt16(Int16[], Int32)
+  href: api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16.html#VE3NEA_HamCockpit_DspFun_RingBuffer_WriteInt16_System_Int16___System_Int32_
+  commentId: M:VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16(System.Int16[],System.Int32)
+  name.vb: WriteInt16(Int16(), Int32)
+  fullName: VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16(System.Int16[], System.Int32)
+  fullName.vb: VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16(System.Int16(), System.Int32)
+  nameWithType: RingBuffer.WriteInt16(Int16[], Int32)
+  nameWithType.vb: RingBuffer.WriteInt16(Int16(), Int32)
 - uid: VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16*
   name: WriteInt16
   href: api/VE3NEA.HamCockpit.DspFun.RingBuffer.WriteInt16.html

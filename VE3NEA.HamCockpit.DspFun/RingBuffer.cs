@@ -87,17 +87,17 @@ namespace VE3NEA.HamCockpit.DspFun
       SamplesAvailable?.Invoke(this, new SamplesAvailableEventArgs((float[])buffer.Clone(), offset, count));
     }
 
-    //public void WriteInt16(Int16[] buffer, int wordCount)
-    //{
-    //  if (this.buffer == null || this.buffer.Length < wordCount)
-    //    this.buffer = new float[wordCount];
-    //
-    //  fixed (Int16* pInBuffer = buffer)
-    //  fixed (float* pOutBuffer = this.buffer)
-    //    sp.ippsConvert_16s32f_Sfs(pInBuffer, pOutBuffer, wordCount, 15);
-    //
-    //  Write(this.buffer, 0, wordCount);
-    //}
+    public void WriteInt16(Int16[] buffer, int wordCount)
+    {
+      if (this.buffer == null || this.buffer.Length < wordCount)
+        this.buffer = new float[wordCount];
+    
+      fixed (Int16* pInBuffer = buffer)
+      fixed (float* pOutBuffer = this.buffer)
+        sp.ippsConvert_16s32f_Sfs(pInBuffer, pOutBuffer, wordCount, 15);
+    
+      Write(this.buffer, 0, wordCount);
+    }
 
     //todo: avoid double buffering
 
